@@ -1,0 +1,464 @@
+{
+  "en": [
+    {
+      "id": "1",
+      "title": "Cleopatra VIP",
+      "image": "assets/images/1.png",
+      "time": "3 Hrs",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Sauna - Jacuzzi - Steam Bath": "Full thermal relaxation." },
+        "2": { "Hair Bath (Oil/Cream)": "Deep scalp nourishment." },
+        "3": { "Peeling & Foam Massage": "Traditional Kessa scrub with soap foam." },
+        "4": { "Full Body Chocolate Mask": "Antioxidant skin treatment." },
+        "5": { "Full Body Coconut Mask": "Tropical hydration." },
+        "6": { "Face Mask": "Facial revitalization." },
+        "7": { "Full Body Massage (60 Mins)": "Stress relief massage." }
+      }
+    },
+    {
+      "id": "2",
+      "title": "Damascus Hammam and Massage",
+      "image": "assets/images/2.png",
+      "time": "2 Hrs",
+      "salary": "34 €",
+      "after_disc": "25 €",
+      "details": { "1": "Sauna/Steam", "2": "Peeling with Loofah", "3": "Face Mask", "4": "Full Body Massage (50 Mins)" }
+    },
+    {
+      "id": "3",
+      "title": "Turkish Hammam and Massage",
+      "image": "assets/images/3.png",
+      "time": "2 Hrs",
+      "salary": "34 €",
+      "after_disc": "25 €",
+      "details": { "1": "Sauna/Steam", "2": "Kessa Mitten Peeling", "3": "Foam Massage", "4": "Full Body Massage (50 Mins)" }
+    },
+    {
+      "id": "4",
+      "title": "Moroccan Hammam and Massage",
+      "image": "assets/images/4.png",
+      "time": "2 Hrs",
+      "salary": "34 €",
+      "after_disc": "25 €",
+      "details": { "1": "Sauna/Steam", "2": "Moroccan Soap Peeling", "3": "Full Body Massage (50 Mins)" }
+    },
+    {
+      "id": "5",
+      "title": "Damascus Hammam",
+      "image": "assets/images/5.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Sauna/Steam", "2": "Peeling with Loofah & Soap" }
+    },
+    {
+      "id": "6",
+      "title": "Turkish Hammam",
+      "image": "assets/images/6.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Sauna/Steam", "2": "Kessa Mitten & Foam Massage" }
+    },
+    {
+      "id": "7",
+      "title": "Moroccan Hammam",
+      "image": "assets/images/7.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Sauna/Steam", "2": "Moroccan Soap & Mitten" }
+    },
+    {
+      "id": "8",
+      "title": "Aroma Massage",
+      "image": "assets/images/8.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Essential Oils", "2": "Relaxation focus" }
+    },
+    {
+      "id": "9",
+      "title": "Medical Massage",
+      "image": "assets/images/9.png",
+      "time": "60 Mins",
+      "salary": "25 €",
+      "after_disc": "20 €",
+      "details": { "1": "Outcome-based therapy", "2": "Targeted muscle relief" }
+    },
+    {
+      "id": "10",
+      "title": "Classic Massage",
+      "image": "assets/images/10.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Swedish techniques", "2": "Long gliding strokes" }
+    },
+    {
+      "id": "11",
+      "title": "Sports Massage",
+      "image": "assets/images/11.png",
+      "time": "60 Mins",
+      "salary": "25 €",
+      "after_disc": "20 €",
+      "details": { "1": "Muscle recovery", "2": "Flexibility focus" }
+    },
+    {
+      "id": "12",
+      "title": "Hot Stone Massage",
+      "image": "assets/images/12.png",
+      "time": "60 Mins",
+      "salary": "25 €",
+      "after_disc": "20 €",
+      "details": { "1": "Heated smooth stones", "2": "Deep heat penetration" }
+    },
+    {
+      "id": "13",
+      "title": "Anti Cellulite Massage",
+      "image": "assets/images/13.png",
+      "time": "60 Mins",
+      "salary": "25 €",
+      "after_disc": "20 €",
+      "details": { "1": "Fat tissue targeting", "2": "Skin smoothing" }
+    },
+    {
+      "id": "14",
+      "title": "Deep Tissue Massage",
+      "image": "assets/images/14.png",
+      "time": "60 Mins",
+      "salary": "25 €",
+      "after_disc": "20 €",
+      "details": { "1": "Connective tissue focus", "2": "Intense pressure" }
+    },
+    {
+      "id": "15",
+      "title": "Foot Massage",
+      "image": "assets/images/15.png",
+      "time": "30 Mins",
+      "salary": "15 €",
+      "after_disc": "10 €",
+      "details": { "1": "Reflex points", "2": "Tension release" }
+    },
+    {
+      "id": "16",
+      "title": "Full Back Massage",
+      "image": "assets/images/16.png",
+      "time": "30 Mins",
+      "salary": "15 €",
+      "after_disc": "10 €",
+      "details": { "1": "Back & Shoulder focus", "2": "Sedentary relief" }
+    },
+    {
+      "id": "17",
+      "title": "Salt Body Scrub and Massage",
+      "image": "assets/images/17.png",
+      "time": "2 Hrs",
+      "salary": "34 €",
+      "after_disc": "25 €",
+      "details": { "1": "Sea salt exfoliation", "2": "Full body massage" }
+    },
+    {
+      "id": "18",
+      "title": "Salt Body Scrub",
+      "image": "assets/images/18.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Deep skin cleansing" }
+    },
+    {
+      "id": "19",
+      "title": "Coconut Body Scrub and Massage",
+      "image": "assets/images/19.png",
+      "time": "2 Hrs",
+      "salary": "34 €",
+      "after_disc": "25 €",
+      "details": { "1": "Coconut exfoliation", "2": "Hydrating massage" }
+    },
+    {
+      "id": "20",
+      "title": "Coconut Body Scrub",
+      "image": "assets/images/20.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Tropical skin softening" }
+    },
+    {
+      "id": "21",
+      "title": "Clay Body Scrub and Massage",
+      "image": "assets/images/21.png",
+      "time": "2 Hrs",
+      "salary": "34 €",
+      "after_disc": "25 €",
+      "details": { "1": "Mineral clay scrub", "2": "Full massage" }
+    },
+    {
+      "id": "22",
+      "title": "Clay Body Scrub",
+      "image": "assets/images/22.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Detoxifying clay" }
+    },
+    {
+      "id": "23",
+      "title": "Coffee Body Scrub and Massage",
+      "image": "assets/images/23.png",
+      "time": "2 Hrs",
+      "salary": "34 €",
+      "after_disc": "25 €",
+      "details": { "1": "Caffeine exfoliation", "2": "Invigorating massage" }
+    },
+    {
+      "id": "24",
+      "title": "Coffee Body Scrub",
+      "image": "assets/images/24.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Anti-cellulite coffee scrub" }
+    },
+    {
+      "id": "25",
+      "title": "Honey Body Scrub and Massage",
+      "image": "assets/images/25.png",
+      "time": "2 Hrs",
+      "salary": "34 €",
+      "after_disc": "25 €",
+      "details": { "1": "Honey & Sugar scrub", "2": "Nourishing massage" }
+    },
+    {
+      "id": "26",
+      "title": "Chocolate Body Scrub and Massage",
+      "image": "assets/images/26.png",
+      "time": "2 Hrs",
+      "salary": "34 €",
+      "after_disc": "25 €",
+      "details": { "1": "Cocoa scrub", "2": "Relaxing massage" }
+    },
+    {
+      "id": "27",
+      "title": "Chocolate Body Scrub",
+      "image": "assets/images/27.png",
+      "time": "60 Mins",
+      "salary": "20 €",
+      "after_disc": "15 €",
+      "details": { "1": "Sweet skin revitalization" }
+    }
+  ],
+  "ar": [
+    {
+      "id": "1",
+      "title": "كليوباترا VIP",
+      "image": "assets/images/1.png",
+      "time": "3 ساعات",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "ساونا - جاكوزي - حمام بخار": "استرخاء حراري كامل." },
+        "2": { "حمام شعر (زيت / كريم)": "تغذية فروة الرأس بعمق." },
+        "3": { "تقشير وتدليك بالرغوة": "تقشير تقليدي بالكيسة والصابون." },
+        "4": { "قناع الشوكولاتة للجسم بالكامل": "علاج مضاد للأكسدة للبشرة." },
+        "5": { "قناع جوز الهند للجسم بالكامل": "ترطيب استوائي." },
+        "6": { "قناع الوجه": "إحياء الوجه." },
+        "7": { "تدليك الجسم بالكامل (60 دقيقة)": "تدليك مريح للتوتر." }
+      }
+    }
+  ],
+  "de": [
+    {
+      "id": "1",
+      "title": "Kleopatra VIP",
+      "image": "assets/images/1.png",
+      "time": "3 Std",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Sauna - Jacuzzi - Dampfbad": "Vollständige thermische Entspannung." },
+        "2": { "Haarbad (Öl/Creme)": "Tiefe Kopfnährung." },
+        "3": { "Peeling & Schaummassage": "Traditionelle Kessa-Peeling mit Seifenschaum." },
+        "4": { "Vollkörper-Schokoladenmaske": "Antioxidante Hautbehandlung." },
+        "5": { "Vollkörper-Kokosnussmaske": "Tropische Feuchtigkeitsversorgung." },
+        "6": { "Gesichtsmaske": "Gesichtsverjüngung." },
+        "7": { "Vollkörpermassage (60 Min)": "Stressabbau-Massage." }
+      }
+    }
+  ],
+  "fr": [
+    {
+      "id": "1",
+      "title": "Cléopâtre VIP",
+      "image": "assets/images/1.png",
+      "time": "3 H",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Sauna - Jacuzzi - Bain de vapeur": "Relaxation thermale complète." },
+        "2": { "Bain de cheveux (Huile/Crème)": "Nutrition profonde du cuir chevelu." },
+        "3": { "Gommage & Massage à la mousse": "Gommage Kessa traditionnel avec mousse de savon." },
+        "4": { "Masque chocolat pour tout le corps": "Traitement cutané antioxydant." },
+        "5": { "Masque coco pour tout le corps": "Hydratation tropicale." },
+        "6": { "Masque pour le visage": "Revitalisation faciale." },
+        "7": { "Massage du corps complet (60 min)": "Massage anti-stress." }
+      }
+    }
+  ],
+  "ru": [
+    {
+      "id": "1",
+      "title": "Клеопатра VIP",
+      "image": "assets/images/1.png",
+      "time": "3 часа",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Сауна - Джакузи - Парная": "Полное термическое расслабление." },
+        "2": { "Ванна для волос (Масло/Крем)": "Глубокое питание кожи головы." },
+        "3": { "Пилинг и пенная массаж": "Традиционный пилинг Кесса с мыльной пеной." },
+        "4": { "Шоколадная маска для всего тела": "Антиоксидантное лечение кожи." },
+        "5": { "Кокосовая маска для всего тела": "Тропическое увлажнение." },
+        "6": { "Маска для лица": "Омоложение лица." },
+        "7": { "Массаж всего тела (60 мин)": "Массаж для снятия стресса." }
+      }
+    }
+  ],
+  "it": [
+    {
+      "id": "1",
+      "title": "Cleopatra VIP",
+      "image": "assets/images/1.png",
+      "time": "3 Ore",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Sauna - Jacuzzi - Bagno di vapore": "Completo rilassamento termico." },
+        "2": { "Bagno per capelli (Olio/Crema)": "Profonda nutrizione del cuoio capelluto." },
+        "3": { "Peeling & Massaggio schiuma": "Tradizionale scrub Kessa con schiuma di sapone." },
+        "4": { "Maschera cioccolato corpo intero": "Trattamento cutaneo antiossidante." },
+        "5": { "Maschera cocco corpo intero": "Idratazione tropicale." },
+        "6": { "Maschera viso": "Rivitalizzazione facciale." },
+        "7": { "Massaggio corpo intero (60 min)": "Massaggio rilassante anti-stress." }
+      }
+    }
+  ],
+  "hu": [
+    {
+      "id": "1",
+      "title": "Kleopátra VIP",
+      "image": "assets/images/1.png",
+      "time": "3 óra",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Szauna - Jacuzzi - Gőzfürdő": "Teljes hőrelaxáció." },
+        "2": { "Hajfürdő (Olaj/Krém)": "Mély fejbőr táplálás." },
+        "3": { "Hámlasztás & Habmasszázs": "Hagyományos Kessa hámlasztás szappanhabbal." },
+        "4": { "Teljes test csokoládé maszk": "Antioxidáns bőrkezelés." },
+        "5": { "Teljes test kókusz maszk": "Trópusi hidratálás." },
+        "6": { "Arc maszk": "Arc felfrissítés." },
+        "7": { "Teljes test masszázs (60 perc)": "Stresszoldó masszázs." }
+      }
+    }
+  ],
+  "hr": [
+    {
+      "id": "1",
+      "title": "Kleopatra VIP",
+      "image": "assets/images/1.png",
+      "time": "3 sata",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Sauna - Jacuzzi - Parna kupelj": "Potpuno toplinsko opuštanje." },
+        "2": { "Kupka za kosu (Ulje/Krema)": "Duboko hranjenje kože vlasišta." },
+        "3": { "Ljuštanje & Pjena masaža": "Tradicionalno Kessa ljuštanje s pjenom sapuna." },
+        "4": { "Čokoladna maska za cijelo tijelo": "Antioksidacijsko liječenje kože." },
+        "5": { "Kokosova maska za cijelo tijelo": "Tropsko vlaženje." },
+        "6": { "Maska za lice": "Oživotljenje lica." },
+        "7": { "Masaža cijelog tijela (60 min)": "Masaža protiv stresa." }
+      }
+    }
+  ],
+  "es": [
+    {
+      "id": "1",
+      "title": "Cleopatra VIP",
+      "image": "assets/images/1.png",
+      "time": "3 Hrs",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Sauna - Jacuzzi - Baño de vapor": "Relajación térmica completa." },
+        "2": { "Baño de cabello (Aceite/Crema)": "Nutrición profunda del cuero cabelludo." },
+        "3": { "Peeling & Masaje con espuma": "Exfoliación Kessa tradicional con espuma de jabón." },
+        "4": { "Mascarilla de chocolate cuerpo completo": "Tratamiento cutáneo antioxidante." },
+        "5": { "Mascarilla de coco cuerpo completo": "Hidratación tropical." },
+        "6": { "Mascarilla facial": "Revitalización facial." },
+        "7": { "Masaje cuerpo completo (60 min)": "Masaje anti-estrés." }
+      }
+    }
+  ],
+  "cs": [
+    {
+      "id": "1",
+      "title": "Kleopatra VIP",
+      "image": "assets/images/1.png",
+      "time": "3 hod",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Sauna - Jacuzzi - Parní lázeň": "Úplná tepelná relaxace." },
+        "2": { "Koupel vlasů (Olej/Krém)": "Hloubková výživa vlasové pokožky." },
+        "3": { "Peeling & Pěnová masáž": "Tradiční Kessa peeling s mýdlovou pěnou." },
+        "4": { "Čokoládová maska celého těla": "Antioxidační péče o pleť." },
+        "5": { "Kokosová maska celého těla": "Tropická hydratace." },
+        "6": { "Maska na obličej": "Omlazení obličeje." },
+        "7": { "Masáž celého těla (60 min)": "Masáž proti stresu." }
+      }
+    }
+  ],
+  "lv": [
+    {
+      "id": "1",
+      "title": "Kleopatra VIP",
+      "image": "assets/images/1.png",
+      "time": "3 stundas",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "Pirts - Džakuzi - Tva pirts": "Pilna termiskā relaksācija." },
+        "2": { "Matu pirts (Eļa/Krēms)": "Dziļa matu barošanas uzturs." },
+        "3": { "Pīlings & Putu masāža": "Tradicionāls Kessa pīlings ar ziepju putu." },
+        "4": { "Šokolādes maska visa ķermenis": "Antioxidācijas ārstība." },
+        "5": { "Kokosriekstu maska visa ķermenis": "Tropiskā mitrināšana." },
+        "6": { "Sejas maska": "Sejas atjaunināšana." },
+        "7": { "Viss ķermeņa masāža (60 min)": "Stresa mazināšanas masāža." }
+      }
+    }
+  ],
+  "zh": [
+    {
+      "id": "1",
+      "title": "克利奥帕特拉 VIP",
+      "image": "assets/images/1.png",
+      "time": "3 小时",
+      "salary": "43 €",
+      "after_disc": "35 €",
+      "details": {
+        "1": { "桑拿 - 按摩浴缸 - 蒸汽浴": "完全热力放松。" },
+        "2": { "护发浴（油/霜）": "深层头皮滋养。" },
+        "3": { "去角质和泡沫按摩": "传统凯萨皂泡去角质。" },
+        "4": { "全身巧克力面膜": "抗氧化皮肤治疗。" },
+        "5": { "全身椰子面膜": "热带保湿。" },
+        "6": { "面部面膜": "面部焕活。" },
+        "7": { "全身按摩（60分钟）": "减压按摩。" }
+      }
+    }
+  ]
+}

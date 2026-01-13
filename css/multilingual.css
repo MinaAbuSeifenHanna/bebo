@@ -1,0 +1,378 @@
+/* multilingual.css - Styling for multilingual services */
+
+.language-selector-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.language-selector-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.language-selector-container h3 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.language-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.language-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.language-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.language-btn:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.language-btn.active {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  border-color: #ff6b6b;
+  box-shadow: 0 8px 30px rgba(255, 107, 107, 0.4);
+  transform: scale(1.05);
+}
+
+.language-btn.active::before {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Flag icons for languages */
+.language-btn[data-lang="en"]::after { content: ""; }
+.language-btn[data-lang="ar"]::after { content: ""; }
+.language-btn[data-lang="de"]::after { content: ""; }
+.language-btn[data-lang="fr"]::after { content: ""; }
+.language-btn[data-lang="ru"]::after { content: ""; }
+.language-btn[data-lang="it"]::after { content: ""; }
+.language-btn[data-lang="hu"]::after { content: ""; }
+.language-btn[data-lang="hr"]::after { content: ""; }
+.language-btn[data-lang="es"]::after { content: ""; }
+.language-btn[data-lang="cs"]::after { content: ""; }
+.language-btn[data-lang="lv"]::after { content: ""; }
+.language-btn[data-lang="zh"]::after { content: ""; }
+
+/* Improved navbar language dropdown */
+.dropdown.me-2 {
+  position: relative;
+  z-index: 9999; /* Very high z-index to appear above all content */
+  display: block !important; /* Force display */
+}
+
+.language-dropdown-toggle {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-right: 2.5rem;
+  min-width: 120px; /* Ensure minimum width */
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-dropdown-toggle::after {
+  content: "";
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.language-dropdown-toggle:hover {
+  background: linear-gradient(45deg, #5a67d8, #764ba2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+  background: white;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 0.5rem;
+  min-width: 200px;
+  animation: dropIn 0.3s ease;
+  z-index: 10000; /* Very high z-index for menu */
+  position: absolute !important;
+}
+
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  display: block !important;
+  width: 100%;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+  color: #333;
+  transform: translateX(5px);
+}
+
+/* Ensure navbar is above content */
+.navbar {
+  z-index: 9998;
+  position: relative;
+}
+
+/* Hero section should be behind navbar */
+.hero-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Performance Optimizations */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: optimizeQuality;
+}
+
+img.loading {
+  opacity: 0.6;
+  filter: blur(2px);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+img.loaded {
+  opacity: 1;
+  filter: none;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+img.error {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+/* Preload critical images */
+.critical-image {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  visibility: hidden;
+}
+
+/* Fix Services Visibility */
+#services-content {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+#services-content.show {
+  display: block !important;
+}
+
+.services-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  min-height: 200px !important;
+}
+
+#all-services-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  min-height: 200px !important;
+}
+
+#all-services-grid:empty::before {
+  content: "Loading services...";
+  display: block;
+  text-align: center;
+  padding: 50px;
+  color: #666;
+}
+
+/* RTL Support */
+[dir="rtl"] .language-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .language-btn {
+  text-align: right;
+}
+
+[dir="rtl"] .language-btn::after {
+  left: auto;
+  right: 0.5rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .language-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .language-btn {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .language-selector-container {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .language-btn {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Services display styling */
+.services-display {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.service-details {
+  background: rgba(52, 152, 219, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.service-detail-item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 5px;
+}
+
+.service-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 1rem 0;
+}
+
+.service-original-price {
+  text-decoration: line-through;
+  color: #95a5a6;
+  margin-right: 0.5rem;
+}
+
+.service-time {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}

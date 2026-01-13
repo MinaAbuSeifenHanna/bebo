@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Render</title>
+</head>
+
+<body>
+    <div id="all-services-grid"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/working-language-system.js"></script>
+    <script>
+        console.log('Test Script Running');
+        console.log('window.servicesData:', window.servicesData ? 'Defined' : 'Undefined');
+        if (window.servicesData) {
+            console.log('window.servicesData length:', window.servicesData.length);
+        }
+
+        try {
+            initializeLanguageSystem();
+            console.log('initializeLanguageSystem called');
+            console.log('window.allServices:', window.allServices ? 'Defined' : 'Undefined');
+            if (window.allServices) {
+                console.log('window.allServices length:', window.allServices.length);
+                console.log('First service title:', window.allServices[0].title);
+            }
+        } catch (e) {
+            console.error('Error calling initializeLanguageSystem:', e);
+        }
+    </script>
+</body>
+
+</html>

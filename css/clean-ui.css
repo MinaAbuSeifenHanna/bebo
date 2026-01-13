@@ -1,0 +1,365 @@
+/* Clean UI - Premium Spa Theme (Lavender, White, Gold) */
+:root {
+  /* Premium Palette */
+  --primary-color: #9b72cf;
+  /* Soft Lavender */
+  --primary-dark: #7e57c2;
+  --primary-light: #f3e5f5;
+  --accent-gold: #d4af37;
+  /* Subtle Gold */
+  --text-dark: #4a4a4a;
+  /* Soft Gray instead of harsh black */
+  --text-light: #7a7a7a;
+  --bg-body: #fdfbff;
+  /* Very faint lavender tint white */
+  --bg-card: #ffffff;
+
+  /* Shadows & Radius */
+  --card-radius: 16px;
+  --btn-radius: 50px;
+  --shadow-sm: 0 4px 15px rgba(155, 114, 207, 0.05);
+  /* Soft tinted shadow */
+  --shadow-hover: 0 10px 25px rgba(155, 114, 207, 0.15);
+
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+body {
+  font-family: 'Outfit', 'Segoe UI', sans-serif;
+  /* Modern, clean font suggestion */
+  background-color: var(--bg-body);
+  color: var(--text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+/* RTL Support */
+body.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+body.rtl .me-2 {
+  margin-left: 0.5rem !important;
+  margin-right: 0 !important;
+}
+
+body.rtl .ms-2 {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+}
+
+.section-title {
+  color: var(--primary-dark);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3rem !important;
+  font-size: 2.5rem;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-gold);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Sticky Navigation */
+.sticky-nav-container {
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.8rem 1rem;
+  margin: 0 auto 2rem;
+  border-radius: 50px;
+  box-shadow: 0 8px 32px 0 rgba(155, 114, 207, 0.15);
+  max-width: 90%;
+  transition: all 0.3s ease;
+}
+
+.sticky-nav-container.scrolled {
+  top: 0;
+  max-width: 100%;
+  border-radius: 0 0 20px 20px;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* Unified Tabs */
+.nav-tabs {
+  border: none;
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  background: transparent;
+  color: var(--text-dark);
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.nav-tabs .nav-link i {
+  font-size: 1.1em;
+}
+
+.nav-tabs .nav-link:hover {
+  background: rgba(155, 114, 207, 0.1);
+  transform: translateY(-2px);
+  color: var(--primary-dark);
+}
+
+.nav-tabs .nav-link.active {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 15px rgba(155, 114, 207, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Small bottom indicator for active tab */
+.nav-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+/* Cards */
+/* Service Grid */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+/* Cards */
+.service-card {
+  border: none;
+  border-radius: var(--card-radius);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-img-top {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.service-card:hover .card-img-top {
+  transform: scale(1.03);
+}
+
+.card-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  min-height: 3.5rem;
+  /* Keep min-height for some alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+/* Badges & Prices */
+.time-badge {
+  display: inline-block;
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 auto 10px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.original-price {
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.discounted-price {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn {
+  border-radius: var(--btn-radius);
+  padding: 0.6rem 1.8rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  letter-spacing: 0.3px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border: none;
+  box-shadow: 0 4px 12px rgba(155, 114, 207, 0.3);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(155, 114, 207, 0.4);
+}
+
+.btn-success {
+  background: var(--accent-gold);
+  /* Using gold for action buttons */
+  border: none;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background: #c5a028;
+  transform: translateY(-2px);
+}
+
+/* Modals */
+.modal-content {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1.5rem 2rem;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-footer {
+  border-top: none;
+  padding: 1.5rem 2rem;
+  background: #fafafa;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Floating Cart */
+.floating-cart-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 65px;
+  height: 65px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 5px 20px rgba(155, 114, 207, 0.4);
+  z-index: 1000;
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-cart-btn:hover {
+  background: var(--primary-dark);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background: var(--accent-gold);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Smooth Fade In */
+.tab-pane {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
