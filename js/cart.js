@@ -1,260 +1,288 @@
-// cart.js - Enhanced Cart Management with Sidebar
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-let cartSidebarInstance = null;
+// js/cart.js - Unified Cart System
+// Depends on: js/utils.js (for pathing)
 
-// Get current services from language system
-function getCurrentServices() {
-  return window.allServices || [];
-}
+(function () {
+  // --- State ---
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  let cartSidebarInstance = null;
 
-function addToCart(serviceId) {
-  const services = getCurrentServices();
-  let service = services.find(s => s.id === serviceId);
+  // --- Core Cart Functions ---
 
-  if (!service) {
-    const all = window.allServices || window.servicesData || [];
-    service = all.find(s => s.id === serviceId);
+  // Save to LocalStorage
+  function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartUI();
+  }
 
-    if (!service) {
-      console.error('Service not found:', serviceId);
-      // Try fallback if just loaded
-      setTimeout(() => addToCart(serviceId), 500);
+  // Add Item
+  window.addToCart = function (serviceId) {
+    // 1. Check Data Availability
+    if (!window.allServices || window.allServices.length === 0) {
+      console.warn('⚠️ Services data not loaded yet.');
+      alert('Please wait for services to load...');
       return;
+    }
+
+    // 2. Find Service
+    const service = window.allServices.find(s => String(s.id) === String(serviceId));
+    if (!service) {
+      console.error(`Service with ID ${serviceId} not found.`);
+      return;
+    }
+
+    // 3. Prepare Cart Item (Multi-language support)
+    const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+    const langData = service.translations?.[currentLang] || service.translations?.['en'];
+    const title = langData ? langData.title : (service.title || 'Service');
+
+    const product = {
+      id: service.id,
+      title: title, // Store current language title, or maybe store English and translate on render?
+      // Storing displayed title is easier for now, but less flexible if lang changes.
+      // Ideally we store only ID and quantity, and look up details on render. 
+      // But for safety (if service deleted), we store snapshot.
+      price_info: service.price_info, // Store full price object
+      image: service.image,
+      quantity: 1,
+      addedAt: new Date().toISOString()
+    };
+
+    // 4. Update Cart
+    const existingIndex = cart.findIndex(item => String(item.id) === String(serviceId));
+    if (existingIndex > -1) {
+      cart[existingIndex].quantity += 1;
+    } else {
+      cart.push(product);
+    }
+
+    saveCart();
+
+    // 5. User Feedback
+    // Check if sidebar exists, if so open it, else show alert
+    const sidebarEl = document.getElementById('cartSidebar');
+    if (sidebarEl) {
+      toggleCartSidebar(true);
+    } else {
+      alert(`✅ Added to cart: ${title}`);
+    }
+  };
+
+  // Remove Item
+  window.removeFromCart = function (serviceId) {
+    const index = cart.findIndex(item => String(item.id) === String(serviceId));
+    if (index > -1) {
+      cart.splice(index, 1);
+      saveCart();
+    }
+  };
+
+  // Clear Cart
+  window.clearCart = function () {
+    cart = [];
+    saveCart();
+  };
+
+  // Get Cart Totals
+  window.getCartTotal = function () {
+    return cart.reduce((total, item) => {
+      const price = parseFloat(item.price_info?.after_disc || item.price_info?.salary || 0);
+      return total + (price * (item.quantity || 1));
+    }, 0);
+  };
+
+  window.getCartCount = function () {
+    return cart.reduce((count, item) => count + (item.quantity || 1), 0);
+  };
+
+  // --- UI/Rendering Functions ---
+
+  function updateCartUI() {
+    // 1. Update Counters (Badges)
+    const count = window.getCartCount();
+    const badges = document.querySelectorAll('.cart-counter');
+    badges.forEach(el => {
+      el.textContent = count;
+      el.classList.remove('animate-bounce');
+      void el.offsetWidth; // trigger reflow
+      if (count > 0) el.classList.add('animate-bounce');
+    });
+
+    const cartBadge = document.getElementById('cartBadge');
+    if (cartBadge) cartBadge.textContent = count;
+
+    // 2. Update Sidebar if Open/Exist
+    renderCartSidebarItems();
+
+    // 3. Update Checkout Modal if Open (if used)
+    if (typeof renderCheckoutModalItems === 'function') renderCheckoutModalItems();
+  }
+
+  // Sidebar Management
+  window.toggleCartSidebar = function (forceOpen = false) {
+    const el = document.getElementById('cartSidebar');
+    if (!el) return;
+
+    if (!cartSidebarInstance) {
+      cartSidebarInstance = new bootstrap.Offcanvas(el);
+    }
+
+    if (forceOpen === true) {
+      cartSidebarInstance.show();
+    } else {
+      cartSidebarInstance.toggle();
+    }
+
+    renderCartSidebarItems();
+  };
+
+  function renderCartSidebarItems() {
+    const container = document.getElementById('cartItemsContainer');
+    const footer = document.getElementById('cartFooter');
+    const totalEl = document.getElementById('sidebarTotal');
+
+    if (!container) return;
+
+    if (cart.length === 0) {
+      container.innerHTML = `
+                <div class="text-center py-5 text-muted">
+                    <i class="fas fa-shopping-basket fa-3x mb-3 opacity-50"></i>
+                    <p>Your cart is empty</p>
+                    <button class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas">Start Shopping</button>
+                </div>
+            `;
+      if (footer) footer.style.display = 'none';
+      if (totalEl) totalEl.textContent = '€0.00';
+      return;
+    }
+
+    if (footer) footer.style.display = 'block';
+
+    container.innerHTML = cart.map(item => {
+      const price = parseFloat(item.price_info?.after_disc || 0).toFixed(2);
+      // Fix Image Path using Utils
+      let imgPath = item.image || 'assets/images/placeholder.png';
+      if (window.Utils && window.Utils.resolvePath) {
+        imgPath = window.Utils.resolvePath(imgPath);
+      }
+
+      return `
+                <div class="cart-item d-flex align-items-center mb-3 border-bottom pb-2">
+                    <img src="${imgPath}" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;" alt="${item.title}" onerror="this.src='${window.Utils ? window.Utils.resolvePath('assets/images/placeholder.png') : ''}'">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0 text-truncate" style="max-width: 160px;">${item.title}</h6>
+                        <small class="text-muted">€${price} x ${item.quantity}</small>
+                    </div>
+                    <button class="btn btn-sm text-danger" onclick="removeFromCart('${item.id}')">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            `;
+    }).join('');
+
+    if (totalEl) {
+      totalEl.textContent = `€${window.getCartTotal().toFixed(2)}`;
     }
   }
 
-  // Check if service already in cart
-  const existingIndex = cart.findIndex(item => item.id === serviceId);
+  // --- Booking Logic (Unified) ---
+  // This handles the WhatsApp message generation
+  window.processBooking = function (customerData) {
+    if (cart.length === 0) {
+      alert('Cart is empty!');
+      return;
+    }
 
-  if (existingIndex !== -1) {
-    cart[existingIndex].quantity = (cart[existingIndex].quantity || 1) + 1;
-    showNotification(getUIText('added') || 'Service quantity updated!', 'success');
-  } else {
-    // Clone necessary clean properties usually
-    cart.push({
-      id: service.id,
-      title: service.title,
-      image: service.image,
-      salary: service.salary,
-      after_disc: service.after_disc,
-      time: service.time || '',
-      quantity: 1,
-      addedAt: new Date().toISOString()
+    let servicesList = '';
+    cart.forEach(item => {
+      const price = parseFloat(item.price_info?.after_disc || 0);
+      const totalItem = price * item.quantity;
+      servicesList += `• ${item.title} (x${item.quantity}) - €${totalItem.toFixed(2)}\n`;
     });
-    showNotification(getUIText('added') || 'Service added to cart!', 'success');
-  }
 
-  saveCart();
+    const total = window.getCartTotal().toFixed(2);
 
-  // Open sidebar to show user what they added (UX best practice)
-  toggleCartSidebar(true);
-}
-
-function removeFromCart(serviceId) {
-  const index = cart.findIndex(item => item.id === serviceId);
-
-  if (index !== -1) {
-    cart.splice(index, 1);
-    saveCart();
-  }
-}
-
-function saveCart() {
-  localStorage.setItem('cart', JSON.stringify(cart));
-  updateCartCounter();
-  renderCartSidebarItems(); // Re-render sidebar if open
-}
-
-function getCartTotal() {
-  return cart.reduce((total, item) => {
-    // Robust parsing
-    let priceStr = (item.after_disc || item.salary || '0').toString();
-    // Remove non-numeric except dot/comma, replace comma with dot
-    let cleanPrice = priceStr.replace(/[^0-9.,]/g, '').replace(',', '.');
-    const price = parseFloat(cleanPrice) || 0;
-    return total + (price * (item.quantity || 1));
-  }, 0);
-}
-
-function getCartItemsCount() {
-  return cart.reduce((count, item) => count + (item.quantity || 1), 0);
-}
-
-function updateCartCounter() {
-  const counterElements = document.querySelectorAll('.cart-counter');
-  const count = getCartItemsCount();
-  counterElements.forEach(el => {
-    el.textContent = count;
-    // Animate badge
-    el.classList.remove('animate-bounce');
-    void el.offsetWidth; // trigger reflow
-    if (count > 0) el.classList.add('animate-bounce');
-  });
-
-  const badge = document.getElementById('cartBadge');
-  if (badge) badge.textContent = count;
-}
-
-// Sidebar Management
-function toggleCartSidebar(forceOpen = false) {
-  const el = document.getElementById('cartSidebar');
-  if (!el) return;
-
-  if (!cartSidebarInstance) {
-    cartSidebarInstance = new bootstrap.Offcanvas(el);
-  }
-
-  if (forceOpen === true) {
-    cartSidebarInstance.show();
-  } else {
-    cartSidebarInstance.toggle();
-  }
-
-  // Always render when opening
-  renderCartSidebarItems();
-  showCartItems(); // Ensure we are on list view not form view
-}
-
-
-function renderCartSidebarItems() {
-  const container = document.getElementById('cartItemsContainer');
-  const totalEl = document.getElementById('sidebarTotal');
-  const footer = document.getElementById('cartFooter');
-
-  if (!container) return;
-
-  if (cart.length === 0) {
-    container.innerHTML = `
-            <div class="empty-cart-message">
-                <div class="empty-cart-icon"><i class="fas fa-shopping-basket"></i></div>
-                <h5 class="mb-3">Your cart is empty</h5>
-                <p>Browse our services and find your perfect treatment.</p>
-                <button class="btn btn-outline-primary btn-sm rounded-pill" data-bs-dismiss="offcanvas">Start Shopping</button>
-            </div>
-        `;
-    if (footer) footer.style.display = 'none';
-    return;
-  }
-
-  if (footer) footer.style.display = 'block';
-
-  container.innerHTML = cart.map(item => {
-    let priceStr = (item.after_disc || item.salary || '0');
-    return `
-        <div class="cart-item">
-            <img src="${item.image || 'assets/images/placeholder.png'}" class="cart-item-image" alt="${item.title}" onerror="this.src='assets/images/backimage.png'">
-            <div class="cart-item-details">
-                <h6 class="cart-item-title">${item.title}</h6>
-                <div class="cart-item-price">${priceStr}</div>
-                ${item.quantity > 1 ? `<small class="text-muted">Quantity: ${item.quantity}</small>` : ''}
-            </div>
-            <button class="cart-item-remove" onclick="removeFromCart('${item.id}')" title="Remove">
-                <i class="fas fa-trash-alt"></i>
-            </button>
-        </div>
-        `;
-  }).join('');
-
-  if (totalEl) totalEl.textContent = `€${getCartTotal().toFixed(2)}`;
-}
-
-// Flow Switching
-function showCartItems() {
-  document.getElementById('cartItemsContainer').classList.remove('d-none');
-  document.getElementById('cartFooter').classList.remove('d-none');
-  document.getElementById('checkoutFormContainer').classList.add('d-none');
-}
-
-function showCheckoutForm() {
-  document.getElementById('cartItemsContainer').classList.add('d-none');
-  document.getElementById('cartFooter').classList.add('d-none');
-  document.getElementById('checkoutFormContainer').classList.remove('d-none');
-
-  // Set min date
-  const dateInput = document.getElementById('sidebarDate');
-  if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
-}
-
-// Submission
-function submitSidebarBooking() {
-  const name = document.getElementById('sidebarName').value;
-  const phone = document.getElementById('sidebarPhone').value;
-  const date = document.getElementById('sidebarDate').value;
-  const time = document.getElementById('sidebarTime').value;
-
-  if (!name || !date || !time) {
-    showNotification('Please fill in required fields', 'warning');
-    return;
-  }
-
-  // Build message
-  let servicesList = '';
-  cart.forEach(item => {
-    let priceStr = (item.after_disc || item.salary || '0').toString();
-    // Remove non-numeric except dot/comma, replace comma with dot
-    let cleanPrice = priceStr.replace(/[^0-9.,]/g, '').replace(',', '.');
-    let itemPrice = parseFloat(cleanPrice) || 0;
-
-    const itemTotal = itemPrice * (item.quantity || 1);
-    servicesList += `• ${item.title} (x${item.quantity || 1}) - €${itemTotal.toFixed(2)}\n`;
-  });
-
-  const total = getCartTotal().toFixed(2);
-
-  const message = `🌸 *New Booking Request* 🌸
-👤 *${name}*
-📞 ${phone || 'No phone provided'}
-📅 ${date} at ${time}
+    const message = `🌸 *New Booking Request* 🌸
+👤 *${customerData.name}*
+📞 ${customerData.phone || 'N/A'}
+📅 ${customerData.date} at ${customerData.time}
 
 💅 *Services:*
 ${servicesList}
 💰 *Total: €${total}*
 
-Confirm via: https://womenworldspa.com`;
+${customerData.notes ? `📝 Note: ${customerData.notes}` : ''}
 
-  console.log('Booking Data:', { name, phone, date, time, cart, total });
+Confirm via: womenworldspa.com`;
 
-  // WhatsApp logic
-  const waLink = `https://wa.me/201007920759?text=${encodeURIComponent(message)}`;
-  window.open(waLink, '_blank');
+    const waLink = `https://wa.me/201007920759?text=${encodeURIComponent(message)}`;
+    window.open(waLink, '_blank');
 
-  showNotification('Booking Sent! We will contact you shortly.', 'success');
+    // Clear cart and close UI
+    window.clearCart();
 
-  // Clear and close
-  cart = [];
-  saveCart();
+    // Hide UI
+    if (cartSidebarInstance) cartSidebarInstance.hide();
+    const modalEl = document.getElementById('checkoutModal');
+    if (modalEl) {
+      const modal = bootstrap.Modal.getInstance(modalEl);
+      if (modal) modal.hide();
+    }
 
-  if (cartSidebarInstance) cartSidebarInstance.hide();
+    // Show success
+    const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+    if (successModal) successModal.show();
+  };
 
-  // Show success modal if exists (optional, or just rely on notification)
-  const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-  if (successModal) successModal.show();
-}
+  // --- Cart Page Rendering (for cart.html) ---
+  window.renderCart = function () {
+    const container = document.getElementById('cart-items');
+    const totalEl = document.querySelector('#cart-total');
 
-// UX Utilities
-function showNotification(message, type = 'info') {
-  const notification = document.createElement('div');
-  notification.className = `alert alert-${type} position-fixed shadow-lg`;
-  notification.style.cssText = `
-    top: 20px;
-    right: 20px;
-    z-index: 1060;
-    min-width: 300px;
-    border-radius: 12px;
-    animation: slideIn 0.3s ease;
-  `;
-  notification.innerHTML = `
-    <div class="d-flex justify-content-between align-items-center">
-      <span><i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'} me-2"></i>${message}</span>
-      <button type="button" class="btn-close ms-2" onclick="this.parentElement.parentElement.remove()"></button>
-    </div>
-  `;
+    if (!container) return; // Not on cart page
 
-  document.body.appendChild(notification);
-  setTimeout(() => notification.remove(), 3500);
-}
+    if (cart.length === 0) {
+      container.innerHTML = '<p class="text-muted">Your cart is empty.</p>';
+      if (totalEl) totalEl.innerHTML = '<strong>Total</strong>: €0.00';
+      return;
+    }
 
-// Initialize
-document.addEventListener('DOMContentLoaded', function () {
-  updateCartCounter();
-});
+    container.innerHTML = cart.map(item => {
+      let imgPath = item.image || 'assets/images/placeholder.png';
+      if (window.Utils) imgPath = window.Utils.resolvePath(imgPath);
+      const price = parseFloat(item.price_info?.after_disc || 0).toFixed(2);
+
+      return `
+                <div class="card mb-3 shadow-sm">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-3 col-md-2">
+                             <img src="${imgPath}" class="img-fluid rounded-start h-100" style="object-fit: cover; min-height: 80px;" alt="${item.title}">
+                        </div>
+                        <div class="col-9 col-md-10">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="card-title mb-1">${item.title}</h5>
+                                    <p class="card-text mb-0"><small class="text-muted">€${price} x ${item.quantity}</small></p>
+                                </div>
+                                <button class="btn btn-outline-danger btn-sm" onclick="removeFromCart('${item.id}'); renderCart();">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+    }).join('');
+
+    const total = window.getCartTotal().toFixed(2);
+    if (totalEl) totalEl.innerHTML = `<strong>Total</strong>: €${total}`;
+  };
+
+  // Expose update function for others (legacy support)
+  window.updateCartCounter = updateCartUI;
+
+  // Initialize on load
+  document.addEventListener('DOMContentLoaded', () => {
+    updateCartUI();
+  });
+
+})();

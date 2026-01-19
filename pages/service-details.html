@@ -1,158 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Details - Women World Beauty & Spa</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/dark.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - Women World Spa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">Women World Beauty & Spa</a>
-      <div class="d-flex align-items-center">
-        <a href="../index.html" class="btn btn-outline-primary me-2">← Back</a>
-        <a href="cart.html" class="btn btn-outline-secondary me-2">
-          Cart
-          <span class="badge bg-danger cart-counter">0</span>
-        </a>
-      </div>
-    </div>
-  </nav>
 
-  <main class="container my-5">
-    <div id="service-details" class="row">
-      <!-- Dynamically rendered -->
-    </div>
-  </main>
+<body class="bg-light">
 
-  <footer class="bg-dark text-light text-center py-3">
-    <div class="container">
-      <p>&copy; 2026 Women World Beauty & Spa. All rights reserved.</p>
-      <p>Contact: +201007920759 | minaabuseifen@gmail.com</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/data.js"></script>
-  <script>
-    // Get service ID from URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const serviceId = urlParams.get('id');
-    const service = allServices.find(s => s.id === serviceId);
-    
-    if (service) {
-      // Parse details for display
-      const detailsArray = [];
-      if (typeof service.details === 'object') {
-        Object.entries(service.details).forEach(([key, detail]) => {
-          if (typeof detail === 'object') {
-            Object.entries(detail).forEach(([detailKey, detailValue]) => {
-              detailsArray.push(`${detailKey}: ${detailValue}`);
-            });
-          } else {
-            detailsArray.push(detail);
-          }
-        });
-      }
-      
-      document.getElementById('service-details').innerHTML = `
-        <div class="col-md-6">
-          <img src="${service.image}" class="img-fluid rounded shadow-lg" alt="${service.title}" style="width: 100%; height: auto; object-fit: cover;">
-        </div>
-        <div class="col-md-6">
-          <div class="time-badge">${service.time}</div>
-          <h1 class="mb-4">${service.title}</h1>
-          
-          <div class="price-container mb-4">
-            <span class="original-price">${service.salary}</span>
-            <span class="discounted-price">${service.after_disc}</span>
-          </div>
-          
-          <div class="service-details mb-4">
-            <h4>Service Details:</h4>
-            <ul class="list-unstyled">
-              ${detailsArray.map(detail => `<li class="mb-2">• ${detail}</li>`).join('')}
-            </ul>
-          </div>
-          
-          <div class="d-flex gap-3">
-            <button class="btn btn-primary btn-lg" onclick="addToCart('${service.id}')">
-              Add to Cart
-            </button>
-            <a href="../index.html#all-services" class="btn btn-outline-secondary btn-lg">
-              View More Services
+    <div class="container py-5 mt-4">
+        <!-- Back Link -->
+        <div class="mb-4">
+            <a href="../index.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">
+                <i class="fas fa-arrow-left me-1"></i> Back to Services
             </a>
-          </div>
         </div>
-      `;
-    } else {
-      document.getElementById('service-details').innerHTML = `
-        <div class="col-12 text-center">
-          <h1>Service Not Found</h1>
-          <p>The service you're looking for doesn't exist.</p>
-          <a href="../index.html" class="btn btn-primary">Back to Home</a>
+
+        <div class="details-hero">
+            <div class="row g-0">
+                <!-- Image Side -->
+                <div class="col-md-6 position-relative">
+                    <div class="details-img-container">
+                        <img id="det-image" src="" alt="Service Image">
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="col-md-6">
+                    <div class="details-content">
+                        <div class="details-info-header">
+                            <h1 id="det-title" class="display-5 fw-bold mb-3">Loading Service...</h1>
+                            <div class="d-flex flex-wrap gap-2">
+                                <div class="details-meta-item">
+                                    <i class="far fa-clock"></i> <span id="det-time">0 Mins</span>
+                                </div>
+                                <div class="details-meta-item">
+                                    <i class="fas fa-euro-sign"></i>
+                                    <span id="det-new-price" class="ms-1">0.00</span>
+                                    <span id="det-old-price" class="original-price ms-2"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="treatment-steps-container">
+                            <h4 class="fw-bold mb-4">Treatment Breakdown</h4>
+                            <ul id="det-steps" class="treatment-steps">
+                                <!-- Steps will be rendered here -->
+                            </ul>
+                        </div>
+
+                        <!-- Desktop CTA -->
+                        <div class="mt-5 d-none d-md-block">
+                            <button class="btn btn-success-custom btn-lg w-100 shadow-sm"
+                                onclick="addToCartFromDetails()">
+                                <i class="fas fa-cart-plus me-2"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      `;
-    }
-    
-    // Add to cart function
-    function addToCart(serviceId) {
-      const service = allServices.find(s => s.id === serviceId);
-      if (service) {
-        let cart = JSON.parse(localStorage.getItem('cart') || '[]');
-        const existingItem = cart.find(item => item.id === serviceId);
-        
-        if (existingItem) {
-          existingItem.quantity += 1;
-        } else {
-          cart.push({
-            id: service.id,
-            title: service.title,
-            price: service.after_disc,
-            quantity: 1,
-            image: service.image
-          });
-        }
-        
-        localStorage.setItem('cart', JSON.stringify(cart));
-        updateCartCounter();
-        
-        // Show success feedback
-        const button = event.target;
-        const originalText = button.textContent;
-        button.textContent = 'Added to Cart!';
-        button.classList.add('btn-success');
-        setTimeout(() => {
-          button.textContent = originalText;
-          button.classList.remove('btn-success');
-        }, 2000);
-      }
-    }
-    
-    // Update cart counter
-    function updateCartCounter() {
-      const cart = JSON.parse(localStorage.getItem('cart') || '[]');
-      const counters = document.querySelectorAll('.cart-counter');
-      counters.forEach(counter => {
-        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-        counter.textContent = totalItems;
-      });
-    }
-    
-    // Initialize cart counter on page load
-    updateCartCounter();
-    
-    // Add checkout functionality to cart button
-    document.querySelectorAll('a[href="cart.html"]').forEach(button => {
-      button.addEventListener('click', (e) => {
-        e.preventDefault();
-        // Redirect to main page for checkout
-        window.location.href = '../index.html';
-      });
-    });
-  </script>
+    </div>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="add-to-cart-sticky">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h6 class="mb-0 fw-bold" id="sticky-title">Service Name</h6>
+                    <span class="text-success fw-bold" id="sticky-price">0.00€</span>
+                </div>
+                <button class="btn btn-success-custom px-4" onclick="addToCartFromDetails()">
+                    <i class="fas fa-cart-plus me-1"></i> Add
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+    <!-- Configuration -->
+    <script src="../js/firebase-config.js"></script>
+
+    <!-- Core Tools -->
+    <script src="../js/utils.js"></script>
+
+    <!-- Data Loader -->
+    <script src="../js/firebase-data-loader.js"></script>
+
+    <!-- Cart Logic -->
+    <script src="../js/cart.js"></script>
+
+    <!-- Page Logic -->
+    <script src="../js/service-details.js"></script>
 </body>
+
 </html>

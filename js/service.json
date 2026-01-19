@@ -1,0 +1,1809 @@
+[
+    {
+        "id": "1",
+        "image": "assets/images/1.png",
+        "category": "packages",
+        "time": "3 Hrs",
+        "price_info": {
+          "salary": 43,
+          "after_disc": 35,
+          "currency": "€"
+        },
+        "translations": {
+    
+          "en": 
+          {
+            "title": "Cleopatra VIP",
+            "details": {
+              "1": { "name": "Sauna - Jacuzzi - Steam Bath", "desc": "Full thermal relaxation." },
+              "2": { "name": "Hair Bath (Oil/Cream)", "desc": "Deep scalp nourishment." },
+              "3": { "name": "Peeling & Foam Massage", "desc": "Traditional Kessa scrub with soap foam." },
+              "4": { "name": "Full Body Chocolate Mask", "desc": "Antioxidant skin treatment." },
+              "5": { "name": "Full Body Coconut Mask", "desc": "Tropical hydration." },
+              "6": { "name": "Face Mask", "desc": "Facial revitalization." },
+              "7": { "name": "Full Body Massage (60 Mins)", "desc": "Stress relief massage." }
+            }  },
+    
+          "ar": {
+          "title": "كليوباترا VIP",
+          "details": {
+            "1": {
+              "name": "سونا - جاكوزي - حمام بخار",
+              "desc": "استرخاء حراري كامل للجسم."
+            },
+            "2": {
+              "name": "حمام كريم/زيت للشعر",
+              "desc": "تغذية عميقة لفروة الرأس."
+            },
+            "3": {
+              "name": "تقشير وتدليك بالرغوة",
+              "desc": "فرك كيسة تقليدي مع رغوة الصابون."
+            },
+            "4": {
+              "name": "ماسك الشوكولاتة للجسم كامل",
+              "desc": "علاج مضاد للأكسدة للبشرة."
+            },
+            "5": {
+              "name": "ماسك جوز الهند للجسم كامل",
+              "desc": "ترطيب استوائي عميق."
+            },
+            "6": {
+              "name": "ماسك للوجه",
+              "desc": "تنشيط وتجديد حيوية الوجه."
+            },
+            "7": {
+              "name": "مساج كامل للجسم (60 دقيقة)",
+              "desc": "مساج لتخفيف التوتر والإجهاد."
+            }
+          }
+               },
+    
+          "de": {
+          "title": "Kleopatra VIP",
+          "details": {
+            "1": {
+              "name": "Sauna - Jacuzzi - Dampfbad",
+              "desc": "Vollständige thermische Entspannung."
+            },
+            "2": {
+              "name": "Haarbad (Öl/Creme)",
+              "desc": "Tiefenpflege für die Kopfhaut."
+            },
+            "3": {
+              "name": "Peeling & Schaummassage",
+              "desc": "Traditionelles Kessa-Peeling mit Seifenschaum."
+            },
+            "4": {
+              "name": "Ganzkörper-Schokoladenmaske",
+              "desc": "Antioxidative Hautbehandlung."
+            },
+            "5": {
+              "name": "Ganzkörper-Kokosmaske",
+              "desc": "Tropische Hydratation."
+            },
+            "6": {
+              "name": "Gesichtsmaske",
+              "desc": "Gesichtsrevitalisierung."
+            },
+            "7": {
+              "name": "Ganzkörpermassage (60 Min.)",
+              "desc": "Massage zur Stresslinderung."
+            }
+          }
+        },
+        "fr": {
+          "title": "Cléopâtre VIP",
+          "details": {
+            "1": {
+              "name": "Sauna - Jacuzzi - Bain à vapeur",
+              "desc": "Relaxation thermique complète."
+            },
+            "2": {
+              "name": "Soin des cheveux (Huile/Crème)",
+              "desc": "Nourrissage profond du cuir chevelu."
+            },
+            "3": {
+              "name": "Gommage & Massage à la mousse",
+              "desc": "Gommage traditionnel au gant Kessa avec mousse de savon."
+            },
+            "4": {
+              "name": "Masque au chocolat (Corps complet)",
+              "desc": "Soin antioxydant pour la peau."
+            },
+            "5": {
+              "name": "Masque à la noix de coco (Corps complet)",
+              "desc": "Hydratation tropicale."
+            },
+            "6": {
+              "name": "Masque facial",
+              "desc": "Revitalisation du visage."
+            },
+            "7": {
+              "name": "Massage complet du corps (60 min)",
+              "desc": "Massage relaxant contre le stress."
+            }
+          }
+        },
+        "ru": {
+          "title": "Клеопатра VIP",
+          "details": {
+            "1": {
+              "name": "Сауна - Джакузи - Паровая баня",
+              "desc": "Полное тепловое расслабление."
+            },
+            "2": {
+              "name": "Маска для волос (масло/крем)",
+              "desc": "Глубокое питание кожи головы."
+            },
+            "3": {
+              "name": "Пилинг и пенный массаж",
+              "desc": "Традиционный скраб рукавицей Кесса с мыльной пеной."
+            },
+            "4": {
+              "name": "Шоколадная маска для всего тела",
+              "desc": "Антиоксидантный уход за кожей."
+            },
+            "5": {
+              "name": "Кокосовая маска для всего тела",
+              "desc": "Тропическое увлажнение."
+            },
+            "6": {
+              "name": "Маска для лица",
+              "desc": "Восстановление и оживление кожи лица."
+            },
+            "7": {
+              "name": "Full Body Massage (60 мин)",
+              "desc": "Массаж для снятия стресса."
+            }
+          }
+        },
+        "es": {
+          "title": "Cleopatra VIP",
+          "details": {
+            "1": {
+              "name": "Sauna - Jacuzzi - Baño de vapor",
+              "desc": "Relajación térmica total."
+            },
+            "2": {
+              "name": "Baño capilar (Aceite/Crema)",
+              "desc": "Nutrición profunda del cuero cabelludo."
+            },
+            "3": {
+              "name": "Exfoliación y masaje con espuma",
+              "desc": "Exfoliación tradicional con guante Kessa y espuma de jabón."
+            },
+            "4": {
+              "name": "Mascarilla corporal de chocolate",
+              "desc": "Tratamiento antioxidante para la piel."
+            },
+            "5": {
+              "name": "Mascarilla corporal de coco",
+              "desc": "Hidratación tropical."
+            },
+            "6": {
+              "name": "Mascarilla facial",
+              "desc": "Revitalización facial."
+            },
+            "7": {
+              "name": "Masaje corporal completo (60 min)",
+              "desc": "Masaje para aliviar el estrés."
+            }
+          }
+        },
+        "it": {
+          "title": "Cleopatra VIP",
+          "details": {
+            "1": {
+              "name": "Sauna - Jacuzzi - Bagno di vapore",
+              "desc": "Rilassamento termico totale."
+            },
+            "2": {
+              "name": "Impacco per capelli (Olio/Crema)",
+              "desc": "Nutrizione profonda del cuoio capelluto."
+            },
+            "3": {
+              "name": "Peeling e massaggio con schiuma",
+              "desc": "Scrub tradizionale con guanto Kessa e schiuma di sapone."
+            },
+            "4": {
+              "name": "Maschera corpo al cioccolato",
+              "desc": "Trattamento antiossidante per la pelle."
+            },
+            "5": {
+              "name": "Maschera corpo al cocco",
+              "desc": "Idratazione tropicale."
+            },
+            "6": {
+              "name": "Maschera viso",
+              "desc": "Revitalizzazione del viso."
+            },
+            "7": {
+              "name": "Massaggio total body (60 min)",
+              "desc": "Massaggio per alleviare lo stress."
+            }
+          }
+        },
+        "sr": {
+          "title": "Kleopatra VIP",
+          "details": {
+            "1": {
+              "name": "Sauna - Jacuzzi - Parno kupatilo",
+              "desc": "Potpuna termička relaksacija."
+            },
+            "2": {
+              "name": "Tretman kose (ulje/krema)",
+              "desc": "Dubinska ishrana vlasišta."
+            },
+            "3": {
+              "name": "Piling i masaža penom",
+              "desc": "Tradicionalni Kessa piling sa sapunicom."
+            },
+            "4": {
+              "name": "Čokoladna maska za celo telo",
+              "desc": "Antioksidativni tretman kože."
+            },
+            "5": {
+              "name": "Kokos maska za celo telo",
+              "desc": "Tropska hidratacija."
+            },
+            "6": {
+              "name": "Maska za lice",
+              "desc": "Revitalizacija lica."
+            },
+            "7": {
+              "name": "Masaža celog tela (60 min)",
+              "desc": "Masaža za oslobađanje od stresa."
+            }
+          }
+        },
+    
+        "sk": {
+          "title": "Kleopatra VIP",
+          "details": {
+            "1": {
+              "name": "Sauna - Jacuzzi - Parný kúpeľ",
+              "desc": "Celková tepelná relaxácia."
+            },
+            "2": {
+              "name": "Vlasový kúpeľ (olej/krém)",
+              "desc": "Hĺbková výživa pokožky hlavy."
+            },
+            "3": {
+              "name": "Peeling a penová masáž",
+              "desc": "Tradičný peeling rukavicou Kessa s mydlovou penou."
+            },
+            "4": {
+              "name": "Čokoládová maska na celé telo",
+              "desc": "Antioxidačné ošetrenie pleti."
+            },
+            "5": {
+              "name": "Kokosová maska na celé telo",
+              "desc": "Tropická hydratácia."
+            },
+            "6": {
+              "name": "Pleťová maska",
+              "desc": "Revitalizácia tváre."
+            },
+            "7": {
+              "name": "Masáž celého tela (60 min)",
+              "desc": "Masáž na zmiernenie stresu."
+            }
+          }
+        },
+    
+    "et": {
+          "title": "Kleopatra VIP",
+          "details": {
+            "1": {
+              "name": "Saun - Mullivann - Aurusaun",
+              "desc": "Täielik termiline lõõgastus."
+            },
+            "2": {
+              "name": "Juuksehooldus (õli/kreem)",
+              "desc": "Peanaha sügavtoitmine."
+            },
+            "3": {
+              "name": "Koorimine ja vahumassaaž",
+              "desc": "Traditsiooniline Kessa koorimine seebivahuga."
+            },
+            "4": {
+              "name": "Kogu keha šokolaadimask",
+              "desc": "Antioksüdantne nahahooldus."
+            },
+            "5": {
+              "name": "Kogu keha kookosmask",
+              "desc": "Troopiline niisutus."
+            },
+            "6": {
+              "name": "Näomask",
+              "desc": "Näo elustamine."
+            },
+            "7": {
+              "name": "Kogu keha massaaž (60 min)",
+              "desc": "Stressi leevendav massaaž."
+            }
+          }
+        },
+        "hu": {
+          "title": "Kleopátra VIP",
+          "details": {
+            "1": {
+              "name": "Szauna - Jacuzzi - Gőzfürdő",
+              "desc": "Teljes termikus ellazulás."
+            },
+            "2": {
+              "name": "Hajkezelés (olaj/krém)",
+              "desc": "A fejbőr mélytáplálása."
+            },
+            "3": {
+              "name": "Peeling és habmasszázs",
+              "desc": "Hagyományos Kessa radírozás szappanhabbal."
+            },
+            "4": {
+              "name": "Teljes test csokoládé maszk",
+              "desc": "Antioxidáns bőrkezelés."
+            },
+            "5": {
+              "name": "Teljes test kókusz maszk",
+              "desc": "Trópusi hidratálás."
+            },
+            "6": {
+              "name": "Arcmaszk",
+              "desc": "Arcbőr revitalizálása."
+            },
+            "7": {
+              "name": "Teljes testmasszázs (60 perc)",
+              "desc": "Stresszoldó masszázs."
+            }
+          }
+        },
+    
+    "pl": {
+          "title": "Kleopatra VIP",
+          "details": {
+            "1": {
+              "name": "Sauna - Jacuzzi - Łaźnia parowa",
+              "desc": "Pełny relaks termiczny."
+            },
+            "2": {
+              "name": "Kąpiel włosów (olejek/krem)",
+              "desc": "Głębokie odżywienie skóry głowy."
+            },
+            "3": {
+              "name": "Peeling i masaż pianą",
+              "desc": "Tradycyjny peeling rękawicą Kessa z pianą mydlaną."
+            },
+            "4": {
+              "name": "Czekoladowa maska na całe ciało",
+              "desc": "Antyoksydacyjny zabieg na skórę."
+            },
+            "5": {
+              "name": "Kokosowa maska na całe ciało",
+              "desc": "Tropikalne nawilżenie."
+            },
+            "6": {
+              "name": "Maska na twarz",
+              "desc": "Rewitalizacja twarzy."
+            },
+            "7": {
+              "name": "Masaż całego ciała (60 min)",
+              "desc": "Masaż redukujący stres."
+            }
+          }
+        },
+    
+    "cs": {
+          "title": "Kleopatra VIP",
+          "details": {
+            "1": { "name": "Sauna - Jacuzzi - Parní lázeň", "desc": "Úplná tepelná relaxace." },
+            "2": { "name": "Vlasová kúra (olej/krém)", "desc": "Hloubková výživa pokožky hlavy." },
+            "3": { "name": "Peeling a pěnová masáž", "desc": "Tradiční peeling rukavicí Kessa s mýdlovou pěnou." },
+            "4": { "name": "Čokoládová maska na celé tělo", "desc": "Antioxidační ošetření pokožky." },
+            "5": { "name": "Kokosová maska na celé tělo", "desc": "Tropická hydratace." },
+            "6": { "name": "Pleťová maska", "desc": "Revitalizace obličeje." },
+            "7": { "name": "Masáž celého těla (60 min)", "desc": "Masáž pro zmírnění stresu." }
+          }
+        },
+    
+    "tr": {
+          "title": "Cleopatra VIP",
+          "details": {
+            "1": { "name": "Sauna - Jakuzi - Buhar Banyosu", "desc": "Tam termal rahatlama." },
+            "2": { "name": "Saç Bakımı (Yağ/Krem)", "desc": "Saç derisinin derinlemesine beslenmesi." },
+            "3": { "name": "Kese & Köpük Masajı", "desc": "Sabun köpüğü ile geleneksel Kese peelingi." },
+            "4": { "name": "Tüm Vücut Çikolata Maskesi", "desc": "Antioksidan cilt bakımı." },
+            "5": { "name": "Tüm Vücut Hindistan Cevizi Maskesi", "desc": "Tropikal nemlendirme." },
+            "6": { "name": "Yüz Maskesi", "desc": "Yüz canlandırma." },
+            "7": { "name": "Tüm Vücut Masajı (60 Dakika)", "desc": "Stres giderici masaj." }
+          }
+        },
+    
+        "zh": {
+          "title": "埃及艳后 VIP (Cleopatra VIP)",
+          "details": {
+            "1": { "name": "桑拿 - 按摩浴缸 - 蒸汽浴", "desc": "全方位热疗放松。" },
+            "2": { "name": "护发疗程 (油/霜)", "desc": "深层滋养头皮。" },
+            "3": { "name": "去角质与泡沫按摩", "desc": "传统 Kessa 手套去角质及皂泡。" },
+            "4": { "name": "全身巧克力面膜", "desc": "抗氧化皮肤调理。" },
+            "5": { "name": "全身椰子面膜", "desc": "热带深层补水。" },
+            "6": { "name": "面部面膜", "desc": "焕发面部活力。" },
+            "7": { "name": "全身按摩 (60分钟)", "desc": "缓解压力的舒压按摩。" }
+          }
+        },
+    
+        "ko": {
+          "title": "클레오파트라 VIP (Cleopatra VIP)",
+          "details": {
+            "1": { "name": "사우나 - 자쿠지 - 증기탕", "desc": "완벽한 열기 휴식." },
+            "2": { "name": "헤어 케어 (오일/크림)", "desc": "두피 깊숙이 영양 공급." },
+            "3": { "name": "필링 & 거품 마사지", "desc": "전통 케사 장갑 스크럽과 비누 거품." },
+            "4": { "name": "전신 초콜릿 팩", "desc": "피부 항산화 트리트먼트." },
+            "5": { "name": "전신 코코넛 팩", "desc": "열대 수분 공급." },
+            "6": { "name": "얼굴 팩", "desc": "얼굴 활력 회복." },
+            "7": { "name": "전신 마사지 (60분)", "desc": "스트레스 해소 마사지." }
+          }
+        }
+      }
+    },
+    
+    
+    {
+        "id": "2",
+        "image": "assets/images/2.png",
+        "category": "packages",
+        "time": "2 Hrs",
+        "price_info": {
+          "salary": 34,
+          "after_disc": 25,
+          "currency": "€"
+        },
+        "translations": {
+          "en": {
+            "title": "Damascus Hammam and Massage",
+            "details": {
+              "1": { "name": "Sauna/Steam", "desc": "Heat and steam therapy." },
+              "2": { "name": "Peeling with Loofah", "desc": "Traditional skin exfoliation." },
+              "3": { "name": "Face Mask", "desc": "Facial skin treatment." },
+              "4": { "name": "Full Body Massage (50 Mins)", "desc": "Relaxing full body session." }
+            }
+          },
+          "ar": {
+            "title": "حمام دمشقي ومساج",
+            "details": {
+              "1": { "name": "سونا / بخار", "desc": "علاج بالحرارة والبخار." },
+              "2": { "name": "تقشير باللوفة", "desc": "تقشير الجلد التقليدي." },
+              "3": { "name": "ماسك للوجه", "desc": "علاج لبشرة الوجه." },
+              "4": { "name": "مساج كامل للجسم (50 دقيقة)", "desc": "جلسة استرخاء كاملة." }
+            }
+          },
+          "de": {
+            "title": "Damaskus Hammam und Massage",
+            "details": {
+              "1": { "name": "Sauna/Dampfbad", "desc": "Hitze- und Dampftherapie." },
+              "2": { "name": "Peeling mit Luffa", "desc": "Traditionelles Hautpeeling." },
+              "3": { "name": "Gesichtsmaske", "desc": "Gesichtshautbehandlung." },
+              "4": { "name": "Ganzkörpermassage (50 Min.)", "desc": "Entspannende Ganzkörpersitzung." }
+            }
+          },
+          "fr": {
+            "title": "Hammam de Damas et Massage",
+            "details": {
+              "1": { "name": "Sauna/Vapeur", "desc": "Thérapie par la chaleur et la vapeur." },
+              "2": { "name": "Gommage au Luffa", "desc": "Exfoliation traditionnelle de la peau." },
+              "3": { "name": "Masque Facial", "desc": "Soin de la peau du visage." },
+              "4": { "name": "Massage complet du corps (50 min)", "desc": "Séance de relaxation complète." }
+            }
+          },
+          "ru": {
+            "title": "Дамасский хаммам и массаж",
+            "details": {
+              "1": { "name": "Сауна/Пар", "desc": "Тепловая и паровая терапия." },
+              "2": { "name": "Пилинг мочалкой", "desc": "Традиционное отшелушивание кожи." },
+              "3": { "name": "Маска для лица", "desc": "Уход за кожей лица." },
+              "4": { "name": "Массаж всего тела (50 мин)", "desc": "Сеанс расслабления всего тела." }
+            }
+          },
+          "es": {
+            "title": "Hammam de Damasco y Masaje",
+            "details": {
+              "1": { "name": "Sauna/Vapor", "desc": "Terapia de calor y vapor." },
+              "2": { "name": "Exfoliación con lufa", "desc": "Exfoliación tradicional de la piel." },
+              "3": { "name": "Mascarilla facial", "desc": "Tratamiento de la piel del rostro." },
+              "4": { "name": "Masaje corporal completo (50 min)", "desc": "Sesión relajante de cuerpo completo." }
+            }
+          },
+          "it": {
+            "title": "Hammam di Damasco e Massaggio",
+            "details": {
+              "1": { "name": "Sauna/Vapore", "desc": "Terapia del calore e del vapore." },
+              "2": { "name": "Peeling con luffa", "desc": "Esfoliazione tradizionale della pelle." },
+              "3": { "name": "Maschera viso", "desc": "Trattamento della pelle del viso." },
+              "4": { "name": "Massaggio total body (50 min)", "desc": "Sessione rilassante per tutto il corpo." }
+            }
+          },
+          "sr": {
+            "title": "Damaščanski hamam i masaža",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Terapija toplotom i parom." },
+              "2": { "name": "Piling lufom", "desc": "Tradicionalni piling kože." },
+              "3": { "name": "Maska za lice", "desc": "Tretman kože lica." },
+              "4": { "name": "Masaža celog tela (50 min)", "desc": "Sesija opuštanja celog tela." }
+            }
+          },
+          "sk": {
+            "title": "Damašský hamam a masáž",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Tepelná a parná terapia." },
+              "2": { "name": "Peeling lufou", "desc": "Tradičný peeling pokožky." },
+              "3": { "name": "Pleťová maska", "desc": "Ošetrenie pleti tváre." },
+              "4": { "name": "Masáž celého tela (50 min)", "desc": "Relaxačná masáž celého tela." }
+            }
+          },
+          "et": {
+            "title": "Damaskuse hammam ja massaaž",
+            "details": {
+              "1": { "name": "Saun/Aur", "desc": "Soojus- ja auruteraapia." },
+              "2": { "name": "Koorimine luffaga", "desc": "Traditsiooniline naha koorimine." },
+              "3": { "name": "Näomask", "desc": "Näonaha hooldus." },
+              "4": { "name": "Kogu keha massaaž (50 min)", "desc": "Lõõgastav kogu keha seanss." }
+            }
+          },
+          "hu": {
+            "title": "Damaszkuszi hammam és masszázs",
+            "details": {
+              "1": { "name": "Szauna/Gőz", "desc": "Hő- és gőzterápia." },
+              "2": { "name": "Peeling luffával", "desc": "Hagyományos bőrradírozás." },
+              "3": { "name": "Arcmaszk", "desc": "Arckezelés." },
+              "4": { "name": "Teljes testmasszázs (50 perc)", "desc": "Pihentető teljes testkezelés." }
+            }
+          },
+          "pl": {
+            "title": "Hammam damasceński i masaż",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Terapia ciepłem i parą." },
+              "2": { "name": "Peeling luffą", "desc": "Tradycyjne złuszczanie skóry." },
+              "3": { "name": "Maska na twarz", "desc": "Zabieg na skórę twarzy." },
+              "4": { "name": "Masaż całego ciała (50 min)", "desc": "Relaksująca sesja całego ciała." }
+            }
+          },
+          "cs": {
+            "title": "Damašský hammam a masáž",
+            "details": {
+              "1": { "name": "Sauna/Pára", "desc": "Tepelná a parní terapie." },
+              "2": { "name": "Peeling lufou", "desc": "Tradiční peeling pokožky." },
+              "3": { "name": "Pleťová maska", "desc": "Ošetření pleti." },
+              "4": { "name": "Masáž celého těla (50 min)", "desc": "Relaxační masáž celého těla." }
+            }
+          },
+          "tr": {
+            "title": "Şam Hamamı ve Masaj",
+            "details": {
+              "1": { "name": "Sauna/Buhar", "desc": "Isı ve buhar terapisi." },
+              "2": { "name": "Kabak Lifi ile Peeling", "desc": "Geleneksel cilt peelingi." },
+              "3": { "name": "Yüz Maskesi", "desc": "Yüz cilt bakımı." },
+              "4": { "name": "Tüm Vücut Masajı (50 Dakika)", "desc": "Rahatlatıcı tam vücut seansı." }
+            }
+          },
+          "zh": {
+            "title": "大马士革汉曼与按摩 (Damascus Hammam & Massage)",
+            "details": {
+              "1": { "name": "桑拿/蒸汽", "desc": "热力与蒸汽疗法。" },
+              "2": { "name": "丝瓜络去角质", "desc": "传统皮肤去角质。" },
+              "3": { "name": "面部面膜", "desc": "面部皮肤护理。" },
+              "4": { "name": "全身按摩 (50分钟)", "desc": "全身放松疗程。" }
+            }
+          },
+          "ko": {
+            "title": "다마스쿠스 하맘 및 마사지",
+            "details": {
+              "1": { "name": "사우나/증기", "desc": "열 및 증기 요법." },
+              "2": { "name": "루파 필링", "desc": "전통적인 피부 각질 제거." },
+              "3": { "name": "얼굴 팩", "desc": "얼굴 피부 관리." },
+              "4": { "name": "전신 마사지 (50분)", "desc": "편안한 전신 마사지 세션." }
+            }
+          }
+        }
+      },
+    
+    
+      {
+        "id": "3",
+        "image": "assets/images/3.png",
+        "category": "packages",
+        "time": "2 Hrs",
+        "price_info": {
+          "salary": 34,
+          "after_disc": 25,
+          "currency": "€"
+        },
+        "translations": {
+          "en": {
+            "title": "Turkish Hammam and Massage",
+            "details": {
+              "1": { "name": "Sauna/Steam", "desc": "Therapeutic heat and steam." },
+              "2": { "name": "Kessa Mitten Peeling", "desc": "Traditional Turkish scrub." },
+              "3": { "name": "Foam Massage", "desc": "Soft soap foam massage." },
+              "4": { "name": "Full Body Massage (50 Mins)", "desc": "Deep relaxation session." }
+            }
+          },
+          "ar": {
+            "title": "حمام تركي ومساج",
+            "details": {
+              "1": { "name": "سونا / بخار", "desc": "حرارة وبخار علاجي." },
+              "2": { "name": "تقشير بليف الكيسة", "desc": "فرك تركي تقليدي." },
+              "3": { "name": "مساج بالرغوة", "desc": "تدليك برغوة الصابون الناعمة." },
+              "4": { "name": "مساج كامل للجسم (50 دقيقة)", "desc": "جلسة استرخاء عميق." }
+            }
+          },
+          "de": {
+            "title": "Türkisches Hammam und Massage",
+            "details": {
+              "1": { "name": "Sauna/Dampf", "desc": "Therapeutische Hitze." },
+              "2": { "name": "Kessa-Handschuh Peeling", "desc": "Traditionelles türkisches Peeling." },
+              "3": { "name": "Schaummassage", "desc": "Sanfte Seifenschaummassage." },
+              "4": { "name": "Ganzkörpermassage (50 Min.)", "desc": "Tiefe Entspannung." }
+            }
+          },
+          "fr": {
+            "title": "Hammam Turc et Massage",
+            "details": {
+              "1": { "name": "Sauna/Vapeur", "desc": "Chaleur thérapeutique." },
+              "2": { "name": "Gommage au Gant Kessa", "desc": "Exfoliation turque traditionnelle." },
+              "3": { "name": "Massage à la Mousse", "desc": "Massage doux à la mousse de savon." },
+              "4": { "name": "Massage complet du corps (50 min)", "desc": "Relaxation profonde." }
+            }
+          },
+          "ru": {
+            "title": "Турецкий хаммам и массаж",
+            "details": {
+              "1": { "name": "Сауна/Пар", "desc": "Лечебное тепло и пар." },
+              "2": { "name": "Пилинг рукавицей Кесса", "desc": "Традиционный турецкий скраб." },
+              "3": { "name": "Пенный массаж", "desc": "Массаж мягкой мыльной пеной." },
+              "4": { "name": "Массаж всего тела (50 мин)", "desc": "Глубокое расслабление." }
+            }
+          },
+          "es": {
+            "title": "Hammam Turco y Masaje",
+            "details": {
+              "1": { "name": "Sauna/Vapor", "desc": "Calor terapéutico." },
+              "2": { "name": "Exfoliación con Guante Kessa", "desc": "Exfoliación turca tradicional." },
+              "3": { "name": "Masaje de Espuma", "desc": "Masaje suave con espuma de jabón." },
+              "4": { "name": "Masaje corporal completo (50 min)", "desc": "Relajación profunda." }
+            }
+          },
+          "it": {
+            "title": "Hammam Turco e Massaggio",
+            "details": {
+              "1": { "name": "Sauna/Vapore", "desc": "Calore terapeutico." },
+              "2": { "name": "Peeling con Guanto Kessa", "desc": "Esfoliazione turca tradizionale." },
+              "3": { "name": "Massaggio con Schiuma", "desc": "Massaggio con soffice schiuma." },
+              "4": { "name": "Massaggio total body (50 min)", "desc": "Rilassamento profondo." }
+            }
+          },
+          "sr": {
+            "title": "Turski hamam i masaža",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Terapeutska toplota." },
+              "2": { "name": "Piling Kessa rukavicom", "desc": "Tradicionalni turski piling." },
+              "3": { "name": "Masaža penom", "desc": "Masaža nežnom sapunicom." },
+              "4": { "name": "Masaža celog tela (50 min)", "desc": "Duboko opuštanje." }
+            }
+          },
+          "sk": {
+            "title": "Turecký hamam a masáž",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Liečivé teplo." },
+              "2": { "name": "Peeling rukavicou Kessa", "desc": "Tradičný turecký peeling." },
+              "3": { "name": "Penová masáž", "desc": "Masáž jemnou mydlovou penou." },
+              "4": { "name": "Masáž celého tela (50 min)", "desc": "Hĺbková relaxácia." }
+            }
+          },
+          "et": {
+            "title": "Türgi hammam ja massaaž",
+            "details": {
+              "1": { "name": "Saun/Aur", "desc": "Terapeutiline soojus." },
+              "2": { "name": "Koorimine Kessa kindaga", "desc": "Traditsiooniline türgi koorimine." },
+              "3": { "name": "Vahumassaaž", "desc": "Pehme seebivahumassaaž." },
+              "4": { "name": "Kogu keha massaaž (50 min)", "desc": "Sügav lõõgastus." }
+            }
+          },
+          "hu": {
+            "title": "Török hammam és masszázs",
+            "details": {
+              "1": { "name": "Szauna/Gőz", "desc": "Terápiás hő." },
+              "2": { "name": "Kessa kesztyűs peeling", "desc": "Hagyományos török radírozás." },
+              "3": { "name": "Habmasszázs", "desc": "Lágy szappanhabos masszázs." },
+              "4": { "name": "Teljes testmasszázs (50 perc)", "desc": "Mély ellazulás." }
+            }
+          },
+          "pl": {
+            "title": "Turecki hammam i masaż",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Ciepło terapeutyczne." },
+              "2": { "name": "Peeling rękawicą Kessa", "desc": "Tradycyjny peeling turecki." },
+              "3": { "name": "Masaż w pianie", "desc": "Masaż miękką pianą mydlaną." },
+              "4": { "name": "Masaż całego ciała (50 min)", "desc": "Głęboki relaks." }
+            }
+          },
+          "cs": {
+            "title": "Turecký hammam a masáž",
+            "details": {
+              "1": { "name": "Sauna/Pára", "desc": "Léčivé teplo." },
+              "2": { "name": "Peeling rukavicí Kessa", "desc": "Tradiční turecký peeling." },
+              "3": { "name": "Pěnová masáž", "desc": "Masáž jemnou mýdlovou pěnou." },
+              "4": { "name": "Masáž celého těla (50 min)", "desc": "Hluboká relaxace." }
+            }
+          },
+          "tr": {
+            "title": "Türk Hamamı ve Masaj",
+            "details": {
+              "1": { "name": "Sauna/Buhar", "desc": "Terapötik ısı." },
+              "2": { "name": "Kese Peelingi", "desc": "Geleneksel Türk kesesi." },
+              "3": { "name": "Köpük Masajı", "desc": "Yumuşak sabun köpüğü masajı." },
+              "4": { "name": "Tüm Vücut Masajı (50 Dakika)", "desc": "Derin rahatlama." }
+            }
+          },
+          "zh": {
+            "title": "土耳其汉曼与按摩 (Turkish Hammam & Massage)",
+            "details": {
+              "1": { "name": "桑拿/蒸汽", "desc": "理疗热力。" },
+              "2": { "name": "Kessa 手套去角质", "desc": "传统土耳其式去角质。" },
+              "3": { "name": "泡沫按摩", "desc": "柔软皂泡按摩。" },
+              "4": { "name": "全身按摩 (50分钟)", "desc": "深层放松疗程。" }
+            }
+          },
+          "ko": {
+            "title": "터키식 하맘 및 마사지",
+            "details": {
+              "1": { "name": "사우나/증기", "desc": "치료용 열기." },
+              "2": { "name": "케사 글러브 필링", "desc": "전통 터키식 스크럽." },
+              "3": { "name": "거품 마사지", "desc": "부드러운 비누 거품 마사지." },
+              "4": { "name": "전신 마사지 (50분)", "desc": "깊은 휴식 세션." }
+            }
+          }
+        }
+      },
+    
+    
+      {
+        "id": "4",
+        "image": "assets/images/4.png",
+        "category": "packages",
+        "time": "2 Hrs",
+        "price_info": {
+          "salary": 34,
+          "after_disc": 25,
+          "currency": "€"
+        },
+        "translations": {
+          "en": {
+            "title": "Moroccan Hammam and Massage",
+            "details": {
+              "1": { "name": "Sauna/Steam", "desc": "Pre-scrub heat relaxation." },
+              "2": { "name": "Moroccan Soap Peeling", "desc": "Traditional black soap exfoliation." },
+              "3": { "name": "Full Body Massage (50 Mins)", "desc": "Rejuvenating massage session." }
+            }
+          },
+          "ar": {
+            "title": "حمام مغربي ومساج",
+            "details": {
+              "1": { "name": "سونا / بخار", "desc": "استرخاء بالحرارة قبل التقشير." },
+              "2": { "name": "تقشير بالصابون المغربي", "desc": "تقشير تقليدي بالصابون الأسود." },
+              "3": { "name": "مساج كامل للجسم (50 دقيقة)", "desc": "جلسة مساج لتجديد النشاط." }
+            }
+          },
+          "de": {
+            "title": "Marokkanisches Hammam und Massage",
+            "details": {
+              "1": { "name": "Sauna/Dampf", "desc": "Wärmeentspannung vor dem Peeling." },
+              "2": { "name": "Marokkanisches Seifenpeeling", "desc": "Traditionelles Peeling mit schwarzer Seife." },
+              "3": { "name": "Ganzkörpermassage (50 Min.)", "desc": "Verjüngende Massagesitzung." }
+            }
+          },
+          "fr": {
+            "title": "Hammam Marocain et Massage",
+            "details": {
+              "1": { "name": "Sauna/Vapeur", "desc": "Relaxation thermique avant gommage." },
+              "2": { "name": "Gommage au Savon Noir", "desc": "Exfoliation traditionnelle marocaine." },
+              "3": { "name": "Massage complet du corps (50 min)", "desc": "Séance de massage revigorante." }
+            }
+          },
+          "ru": {
+            "title": "Марокканский хаммам и массаж",
+            "details": {
+              "1": { "name": "Сауна/Пар", "desc": "Тепловое расслабление перед пилингом." },
+              "2": { "name": "Марокканский мыльный пилинг", "desc": "Традиционное отшелушивание черным мылом." },
+              "3": { "name": "Массаж всего тела (50 мин)", "desc": "Омолаживающий сеанс массажа." }
+            }
+          },
+          "es": {
+            "title": "Hammam Marroquí y Masaje",
+            "details": {
+              "1": { "name": "Sauna/Vapor", "desc": "Relajación térmica pre-exfoliación." },
+              "2": { "name": "Exfoliación con Jabón Marroquí", "desc": "Exfoliación tradicional con jabón negro." },
+              "3": { "name": "Masaje corporal completo (50 min)", "desc": "Sesión de masaje rejuvenecedor." }
+            }
+          },
+          "it": {
+            "title": "Hammam Marocchino e Massaggio",
+            "details": {
+              "1": { "name": "Sauna/Vapore", "desc": "Rilassamento termico pre-scrub." },
+              "2": { "name": "Peeling al Sapone Marocchino", "desc": "Esfoliazione tradizionale con sapone nero." },
+              "3": { "name": "Massaggio total body (50 min)", "desc": "Sessione di massaggio rigenerante." }
+            }
+          },
+          "sr": {
+            "title": "Marokanski hamam i masaža",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Toplotna relaksacija pre pilinga." },
+              "2": { "name": "Piling marokanskim sapunom", "desc": "Tradicionalni piling crnim sapunom." },
+              "3": { "name": "Masaža celog tela (50 min)", "desc": "Masaža za podmlađivanje." }
+            }
+          },
+          "sk": {
+            "title": "Marocký hamam a masáž",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Tepelná relaxácia pred peelingom." },
+              "2": { "name": "Peeling marockým mydlom", "desc": "Tradičný peeling čiernym mydlom." },
+              "3": { "name": "Masáž celého tela (50 min)", "desc": "Omladzujúca masážna kúra." }
+            }
+          },
+          "et": {
+            "title": "Maroko hammam ja massaaž",
+            "details": {
+              "1": { "name": "Saun/Aur", "desc": "Soojuslõõgastus enne koorimist." },
+              "2": { "name": "Koorimine Maroko seebiga", "desc": "Traditsiooniline musta seebi koorimine." },
+              "3": { "name": "Kogu keha massaaž (50 min)", "desc": "Noorendav massaažiseanss." }
+            }
+          },
+          "hu": {
+            "title": "Marokkói hammam és masszázs",
+            "details": {
+              "1": { "name": "Szauna/Gőz", "desc": "Hőrelaxáció radírozás előtt." },
+              "2": { "name": "Marokkói szappanos peeling", "desc": "Hagyományos fekete szappanos bőrradír." },
+              "3": { "name": "Teljes testmasszázs (50 perc)", "desc": "Fiatalító masszázs élmény." }
+            }
+          },
+          "pl": {
+            "title": "Hammam marokański i masaż",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Relaks termiczny przed peelingiem." },
+              "2": { "name": "Peeling mydłem marokańskim", "desc": "Tradycyjne złuszczanie czarnym mydłem." },
+              "3": { "name": "Masaż całego ciała (50 min)", "desc": "Odmładzająca sesja masażu." }
+            }
+          },
+          "cs": {
+            "title": "Marocký hammam a masáž",
+            "details": {
+              "1": { "name": "Sauna/Pára", "desc": "Tepelná relaxace před peelingem." },
+              "2": { "name": "Peeling marockým mýdlem", "desc": "Tradiční peeling černým mýdlem." },
+              "3": { "name": "Masáž celého těla (50 min)", "desc": "Omlazující masážní seance." }
+            }
+          },
+          "tr": {
+            "title": "Fas Hamamı ve Masaj",
+            "details": {
+              "1": { "name": "Sauna/Buhar", "desc": "Kese öncesi ısıl rahatlama." },
+              "2": { "name": "Fas Sabunu ile Peeling", "desc": "Geleneksel siyah sabun eksfoliasyonu." },
+              "3": { "name": "Tüm Vücut Masajı (50 Dakika)", "desc": "Gençleştirici masaj seansı." }
+            }
+          },
+          "zh": {
+            "title": "摩洛哥汉曼与按摩 (Moroccan Hammam & Massage)",
+            "details": {
+              "1": { "name": "桑拿/蒸汽", "desc": "去角质前的热力放松。" },
+              "2": { "name": "摩洛哥皂去角质", "desc": "传统黑皂去角质护理。" },
+              "3": { "name": "全身按摩 (50分钟)", "desc": "焕发活力的按摩疗程。" }
+            }
+          },
+          "ko": {
+            "title": "모로코식 하맘 및 마사지",
+            "details": {
+              "1": { "name": "사우나/증기", "desc": "스크럽 전 열기 이완." },
+              "2": { "name": "모로코 비누 필링", "desc": "전통 블랙 솝 각질 제거." },
+              "3": { "name": "전신 마사지 (50분)", "desc": "활력을 되찾아주는 마사지." }
+            }
+          }
+        }
+      },
+    
+      {
+        "id": "5",
+        "image": "assets/images/5.png",
+        "category": "hammam",
+        "time": "60 Mins",
+        "price_info": {
+          "salary": 20,
+          "after_disc": 15,
+          "currency": "€"
+        },
+        "translations": {
+          "en": {
+            "title": "Damascus Hammam",
+            "details": {
+              "1": { "name": "Sauna/Steam", "desc": "Relaxing heat and steam session." },
+              "2": { "name": "Peeling with Loofah & Soap", "desc": "Skin exfoliation with traditional loofah and soap." }
+            }
+          },
+          "ar": {
+            "title": "حمام دمشقي",
+            "details": {
+              "1": { "name": "سونا / بخار", "desc": "جلسة استرخاء بالحرارة والبخار." },
+              "2": { "name": "تقشير باللوفة والصابون", "desc": "تقشير الجسم باللوفة التقليدية والصابون." }
+            }
+          },
+          "de": {
+            "title": "Damaskus Hammam",
+            "details": {
+              "1": { "name": "Sauna/Dampfbad", "desc": "Entspannende Hitze- und Dampfsitzung." },
+              "2": { "name": "Peeling mit Luffa & Seife", "desc": "Hautpeeling mit traditioneller Luffa und Seife." }
+            }
+          },
+          "fr": {
+            "title": "Hammam de Damas",
+            "details": {
+              "1": { "name": "Sauna/Vapeur", "desc": "Séance de relaxation par la chaleur et la vapeur." },
+              "2": { "name": "Gommage au Luffa & Savon", "desc": "Exfoliation de la peau avec luffa traditionnel et savon." }
+            }
+          },
+          "ru": {
+            "title": "Дамасский хаммам",
+            "details": {
+              "1": { "name": "Сауна/Пар", "desc": "Расслабляющий сеанс тепла и пара." },
+              "2": { "name": "Пилинг мочалкой и мылом", "desc": "Отшелушивание кожи традиционной мочалкой и мылом." }
+            }
+          },
+          "es": {
+            "title": "Hammam de Damasco",
+            "details": {
+              "1": { "name": "Sauna/Vapor", "desc": "Sesión relajante de calor y vapor." },
+              "2": { "name": "Exfoliación con Lufa y Jabón", "desc": "Exfoliación de la piel con lufa tradicional y jabón." }
+            }
+          },
+          "it": {
+            "title": "Hammam di Damasco",
+            "details": {
+              "1": { "name": "Sauna/Vapore", "desc": "Sessione rilassante di calore e vapore." },
+              "2": { "name": "Peeling con Luffa e Sapone", "desc": "Esfoliazione della pelle con luffa tradizionale e sapone." }
+            }
+          },
+          "sr": {
+            "title": "Damaščanski hamam",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Opuštajuća sesija toplote i pare." },
+              "2": { "name": "Piling lufom i sapunom", "desc": "Piling kože tradicionalnom lufom i sapunom." }
+            }
+          },
+          "sk": {
+            "title": "Damašský hamam",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Relaxačná tepelná a parná procedúra." },
+              "2": { "name": "Peeling lufou a mydlom", "desc": "Exfoliácia pokožky tradičnou lufou a mydlom." }
+            }
+          },
+          "et": {
+            "title": "Damaskuse hammam",
+            "details": {
+              "1": { "name": "Saun/Aur", "desc": "Lõõgastav soojuse ja auru seanss." },
+              "2": { "name": "Koorimine luffa ja seebiga", "desc": "Naha koorimine traditsioonilise luffa ja seebiga." }
+            }
+          },
+          "hu": {
+            "title": "Damaszkuszi hammam",
+            "details": {
+              "1": { "name": "Szauna/Gőz", "desc": "Pihentető hő- és gőzkezelés." },
+              "2": { "name": "Peeling luffával és szappannal", "desc": "Bőrradírozás hagyományos luffával és szappannal." }
+            }
+          },
+          "pl": {
+            "title": "Hammam damasceński",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Relaksująca sesja ciepła i pary." },
+              "2": { "name": "Peeling luffą i mydłem", "desc": "Złuszczanie skóry tradycyjną luffą i mydłem." }
+            }
+          },
+          "cs": {
+            "title": "Damašský hammam",
+            "details": {
+              "1": { "name": "Sauna/Pára", "desc": "Relaxační tepelná a parní seance." },
+              "2": { "name": "Peeling lufou a mýdlem", "desc": "Peeling pokožky tradiční lufou a mýdlem." }
+            }
+          },
+          "tr": {
+            "title": "Şam Hamamı",
+            "details": {
+              "1": { "name": "Sauna/Buhar", "desc": "Rahatlatıcı ısı ve buhar seansı." },
+              "2": { "name": "Kabak Lifi ve Sabun ile Peeling", "desc": "Geleneksel lif ve sabun ile cilt peelingi." }
+            }
+          },
+          "zh": {
+            "title": "大马士革汉曼 (Damascus Hammam)",
+            "details": {
+              "1": { "name": "桑拿/蒸汽", "desc": "舒缓的热力与蒸汽疗程。" },
+              "2": { "name": "丝瓜络与皂液去角质", "desc": "使用传统丝瓜络和肥皂去角质。" }
+            }
+          },
+          "ko": {
+            "title": "다마스쿠스 하맘",
+            "details": {
+              "1": { "name": "사우나/증기", "desc": "편안한 열기 및 증기 세션." },
+              "2": { "name": "루파 및 비누 필링", "desc": "전통적인 루파와 비누를 이용한 각질 제거." }
+            }
+          }
+        }
+      },
+    
+    
+      {
+        "id": "6",
+        "image": "assets/images/6.png",
+        "category": "hammam",
+        "time": "60 Mins",
+        "price_info": {
+          "salary": 20,
+          "after_disc": 15,
+          "currency": "€"
+        },
+        "translations": {
+          "en": {
+            "title": "Turkish Hammam",
+            "details": {
+              "1": { "name": "Sauna/Steam", "desc": "Therapeutic heat and steam session." },
+              "2": { "name": "Kessa Mitten & Foam Massage", "desc": "Traditional scrub followed by a soft soap foam massage." }
+            }
+          },
+          "ar": {
+            "title": "حمام تركي",
+            "details": {
+              "1": { "name": "سونا / بخار", "desc": "جلسة حرارة وبخار علاجية." },
+              "2": { "name": "ليف الكيسة ومساج بالرغوة", "desc": "تقشير تقليدي متبوع بمساج رغوة الصابون الناعمة." }
+            }
+          },
+          "de": {
+            "title": "Türkisches Hammam",
+            "details": {
+              "1": { "name": "Sauna/Dampfbad", "desc": "Therapeutische Hitze- und Dampfsitzung." },
+              "2": { "name": "Kessa-Handschuh & Schaummassage", "desc": "Traditionelles Peeling gefolgt von einer sanften Seifenschaummassage." }
+            }
+          },
+          "fr": {
+            "title": "Hammam Turc",
+            "details": {
+              "1": { "name": "Sauna/Vapeur", "desc": "Séance de chaleur et vapeur thérapeutique." },
+              "2": { "name": "Gant Kessa & Massage à la Mousse", "desc": "Gommage traditionnel suivi d'un massage à la mousse de savon." }
+            }
+          },
+          "ru": {
+            "title": "Турецкий хаммам",
+            "details": {
+              "1": { "name": "Сауна/Пар", "desc": "Лечебный сеанс тепла и пара." },
+              "2": { "name": "Рукавица Кесса и пенный массаж", "desc": "Традиционный пилинг и массаж мягкой мыльной пеной." }
+            }
+          },
+          "es": {
+            "title": "Hammam Turco",
+            "details": {
+              "1": { "name": "Sauna/Vapor", "desc": "Sesión terapéutica de calor y vapor." },
+              "2": { "name": "Guante Kessa y Masaje de Espuma", "desc": "Exfoliación tradicional seguida de un masaje de espuma suave." }
+            }
+          },
+          "it": {
+            "title": "Hammam Turco",
+            "details": {
+              "1": { "name": "Sauna/Vapore", "desc": "Sessione terapeutica di calore e vapore." },
+              "2": { "name": "Guanto Kessa e Massaggio con Schiuma", "desc": "Scrub tradizionale seguito da un massaggio con soffice schiuma." }
+            }
+          },
+          "sr": {
+            "title": "Turski hamam",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Terapeutska sesija toplote i pare." },
+              "2": { "name": "Kessa rukavica i masaža penom", "desc": "Tradicionalni piling i masaža nežnom sapunicom." }
+            }
+          },
+          "sk": {
+            "title": "Turecký hamam",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Liečebná tepelná a parná procedúra." },
+              "2": { "name": "Rukavica Kessa a penová masáž", "desc": "Tradičný peeling a masáž jemnou mydlovou penou." }
+            }
+          },
+          "et": {
+            "title": "Türgi hammam",
+            "details": {
+              "1": { "name": "Saun/Aur", "desc": "Terapeutiline soojuse ja auru seanss." },
+              "2": { "name": "Kessa kinnas ja vahumassaaž", "desc": "Traditsiooniline koorimine ja pehme seebivahumassaaž." }
+            }
+          },
+          "hu": {
+            "title": "Török hammam",
+            "details": {
+              "1": { "name": "Szauna/Gőz", "desc": "Terápiás hő- és gőzkezelés." },
+              "2": { "name": "Kessa kesztyű és habmasszázs", "desc": "Hagyományos radírozás és lágy szappanhabos masszázs." }
+            }
+          },
+          "pl": {
+            "title": "Turecki hammam",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Terapeutyczna sesja ciepła i pary." },
+              "2": { "name": "Rękawica Kessa i masaż w pianie", "desc": "Tradycyjny peeling i masaż miękką pianą mydlaną." }
+            }
+          },
+          "cs": {
+            "title": "Turecký hammam",
+            "details": {
+              "1": { "name": "Sauna/Pára", "desc": "Léčebná tepelná a parní seance." },
+              "2": { "name": "Rukavice Kessa a pěnová masáž", "desc": "Tradiční peeling a masáž jemnou mýdlovou pěnou." }
+            }
+          },
+          "tr": {
+            "title": "Türk Hamamı",
+            "details": {
+              "1": { "name": "Sauna/Buhar", "desc": "Terapötik ısı ve buhar seansı." },
+              "2": { "name": "Kese ve Köpük Masajı", "desc": "Geleneksel kese ve yumuşak sabun köpüğü masajı." }
+            }
+          },
+          "zh": {
+            "title": "土耳其汉曼 (Turkish Hammam)",
+            "details": {
+              "1": { "name": "桑拿/蒸汽", "desc": "理疗热力与蒸汽疗程。" },
+              "2": { "name": "Kessa 手套与泡沫按摩", "desc": "传统去角质及随后的柔软皂泡按摩。" }
+            }
+          },
+          "ko": {
+            "title": "터키식 하맘",
+            "details": {
+              "1": { "name": "사우나/증기", "desc": "치료용 열기 및 증기 세션." },
+              "2": { "name": "케사 글러브 및 거품 마사지", "desc": "전통 스크럽 후 부드러운 비누 거품 마사지." }
+            }
+          }
+        }
+      },
+    
+    
+      {
+        "id": "7",
+        "image": "assets/images/7.png",
+        "category": "hammam",
+        "time": "60 Mins",
+        "price_info": {
+          "salary": 20,
+          "after_disc": 15,
+          "currency": "€"
+        },
+        "translations": {
+          "en": {
+            "title": "Moroccan Hammam",
+            "details": {
+              "1": { "name": "Sauna/Steam", "desc": "Heat relaxation before exfoliation." },
+              "2": { "name": "Moroccan Soap & Mitten", "desc": "Traditional scrub with black soap and Kessa mitten." }
+            }
+          },
+          "ar": {
+            "title": "حمام مغربي",
+            "details": {
+              "1": { "name": "سونا / بخار", "desc": "استرخاء بالحرارة قبل عملية التقشير." },
+              "2": { "name": "صابون مغربي وليفة", "desc": "تقشير تقليدي بالصابون الأسود والليفة المغربية (الكيسة)." }
+            }
+          },
+          "de": {
+            "title": "Marokkanisches Hammam",
+            "details": {
+              "1": { "name": "Sauna/Dampf", "desc": "Wärmeentspannung vor dem Peeling." },
+              "2": { "name": "Marokkanische Seife & Handschuh", "desc": "Traditionelles Peeling mit schwarzer Seife und Kessa-Handschuh." }
+            }
+          },
+          "fr": {
+            "title": "Hammam Marocain",
+            "details": {
+              "1": { "name": "Sauna/Vapeur", "desc": "Relaxation thermique avant le gommage." },
+              "2": { "name": "Savon Marocain & Gant", "desc": "Gommage traditionnel au savon noir et gant Kessa." }
+            }
+          },
+          "ru": {
+            "title": "Марокканский хаммам",
+            "details": {
+              "1": { "name": "Сауна/Пар", "desc": "Тепловое расслабление перед пилингом." },
+              "2": { "name": "Марокканское мыло и рукавица", "desc": "Традиционный пилинг с черным мылом и рукавицей Кесса." }
+            }
+          },
+          "es": {
+            "title": "Hammam Marroquí",
+            "details": {
+              "1": { "name": "Sauna/Vapor", "desc": "Relajación térmica antes de la exfoliación." },
+              "2": { "name": "Jabón Marroquí y Guante", "desc": "Exfoliación tradicional con jabón negro y guante Kessa." }
+            }
+          },
+          "it": {
+            "title": "Hammam Marocchino",
+            "details": {
+              "1": { "name": "Sauna/Vapore", "desc": "Rilassamento termico prima dello scrub." },
+              "2": { "name": "Sapone Marocchino e Guanto", "desc": "Esfoliazione tradizionale con sapone nero e guanto Kessa." }
+            }
+          },
+          "sr": {
+            "title": "Marokanski hamam",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Toplotna relaksacija pre pilinga." },
+              "2": { "name": "Marokanski sapun i rukavica", "desc": "Tradicionalni piling crnim sapunom i Kessa rukavicom." }
+            }
+          },
+          "sk": {
+            "title": "Marocký hamam",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Tepelná relaxácia pred peelingom." },
+              "2": { "name": "Marocké mydlo a rukavica", "desc": "Tradičný peeling čiernym mydlom a rukavicou Kessa." }
+            }
+          },
+          "et": {
+            "title": "Maroko hammam",
+            "details": {
+              "1": { "name": "Saun/Aur", "desc": "Soojuslõõgastus enne koorimist." },
+              "2": { "name": "Maroko seep ja kinnas", "desc": "Traditsiooniline koorimine musta seebi ja Kessa kindaga." }
+            }
+          },
+          "hu": {
+            "title": "Marokkói hammam",
+            "details": {
+              "1": { "name": "Szauna/Gőz", "desc": "Hőrelaxáció radírozás előtt." },
+              "2": { "name": "Marokkói szappan és kesztyű", "desc": "Hagyományos radírozás fekete szappannal és Kessa kesztyűvel." }
+            }
+          },
+          "pl": {
+            "title": "Hammam marokański",
+            "details": {
+              "1": { "name": "Sauna/Para", "desc": "Relaks termiczny przed peelingiem." },
+              "2": { "name": "Mydło marokańskie i rękawica", "desc": "Tradycyjny peeling czarnym mydłem i rękawicą Kessa." }
+            }
+          },
+          "cs": {
+            "title": "Marocký hammam",
+            "details": {
+              "1": { "name": "Sauna/Pára", "desc": "Tepelná relaxace před peelingem." },
+              "2": { "name": "Marocké mýdlo a rukavice", "desc": "Tradiční peeling černým mýdlem a rukavicí Kessa." }
+            }
+          },
+          "tr": {
+            "title": "Fas Hamamı",
+            "details": {
+              "1": { "name": "Sauna/Buhar", "desc": "Kese öncesi ısıl rahatlama." },
+              "2": { "name": "Fas Sabunu ve Kese", "desc": "Geleneksel siyah sabun ve Kese ile peeling." }
+            }
+          },
+          "zh": {
+            "title": "摩洛哥汉曼 (Moroccan Hammam)",
+            "details": {
+              "1": { "name": "桑拿/蒸汽", "desc": "去角质前的热力放松。" },
+              "2": { "name": "摩洛哥皂与去角质手套", "desc": "使用黑皂和传统 Kessa 手套进行去角质。" }
+            }
+          },
+          "ko": {
+            "title": "모로코식 하맘",
+            "details": {
+              "1": { "name": "사우나/증기", "desc": "스크럽 전 열기 이완." },
+              "2": { "name": "모로코 비누 및 미튼", "desc": "블랙 솝과 케사 글러브를 이용한 전통 스크럽." }
+            }
+          }
+        }
+      },
+    
+      {
+        "id": "8",
+        "image": "assets/images/8.png",
+        "category": "massages",
+        "time": "60 Mins",
+        "price_info": { "salary": 20, "after_disc": 15, "currency": "€" },
+        "translations": {
+          "en": { "title": "Aroma Massage", "details": { "1": { "name": "Essential Oils", "desc": "Use of therapeutic aromatic oils." }, "2": { "name": "Relaxation focus", "desc": "Designed for mental and physical calm." } } },
+          "ar": { "title": "مساج عطري", "details": { "1": { "name": "زيوت عطرية", "desc": "استخدام الزيوت العطرية العلاجية." }, "2": { "name": "تركيز على الاسترخاء", "desc": "مصمم للهدوء النفسي والجسدي." } } },
+          "de": { "title": "Aroma-Massage", "details": { "1": { "name": "Ätherische Öle", "desc": "Verwendung therapeutischer Aromaöle." }, "2": { "name": "Fokus auf Entspannung", "desc": "Zur geistigen und körperlichen Ruhe." } } },
+          "fr": { "title": "Massage Aromatique", "details": { "1": { "name": "Huiles Essentielles", "desc": "Utilisation d'huiles aromatiques." }, "2": { "name": "Focus Relaxation", "desc": "Conçu pour le calme mental et physique." } } },
+          "ru": { "title": "Аромамассаж", "details": { "1": { "name": "Эфирные масла", "desc": "Использование лечебных масел." }, "2": { "name": "Релаксация", "desc": "Для душевного и физического покоя." } } },
+          "es": { "title": "Masaje Aromático", "details": { "1": { "name": "Aceites Esenciales", "desc": "Uso de aceites terapéuticos." }, "2": { "name": "Foco en relajación", "desc": "Calma mental y física." } } },
+          "it": { "title": "Massaggio Aromatico", "details": { "1": { "name": "Oli Essenziali", "desc": "Uso di oli aromatici terapeutici." }, "2": { "name": "Focus sul relax", "desc": "Calma mentale e fisica." } } },
+          "sr": { "title": "Aroma masaža", "details": { "1": { "name": "Eterična ulja", "desc": "Upotreba terapeutskih ulja." }, "2": { "name": "Fokus na opuštanje", "desc": "Mentalni i fizički mir." } } },
+          "sk": { "title": "Aróma masáž", "details": { "1": { "name": "Esenciálne oleje", "desc": "Použitie liečivých olejov." }, "2": { "name": "Zameranie na relax", "desc": "Duševný a fyzický pokoj." } } },
+          "et": { "title": "Aroomimassaaž", "details": { "1": { "name": "Eeterlikud õlid", "desc": "Terapeutiliste õlide kasutus." }, "2": { "name": "Lõõgastus", "desc": "Vaimne ja füüsiline rahu." } } },
+          "hu": { "title": "Aroma masszázs", "details": { "1": { "name": "Illóolajok", "desc": "Terápiás olajok használata." }, "2": { "name": "Relaxáció", "desc": "Lelki és testi nyugalom." } } },
+          "pl": { "title": "Masaż aromatyczny", "details": { "1": { "name": "Olejki eteryczne", "desc": "Użycie olejków terapeutycznych." }, "2": { "name": "Relaksacja", "desc": "Spokój umysłowy i fizyczny." } } },
+          "cs": { "title": "Aroma masáž", "details": { "1": { "name": "Esenciální oleje", "desc": "Použití aromatických olejů." }, "2": { "name": "Relaxace", "desc": "Duševní a fyzický klid." } } },
+          "tr": { "title": "Aroma Masajı", "details": { "1": { "name": "Esansiyel Yağlar", "desc": "Terapötik aromatik yağlar." }, "2": { "name": "Rahatlama odaklı", "desc": "Zihinsel ve fiziksel huzur." } } },
+          "zh": { "title": "香薰按摩", "details": { "1": { "name": "精油", "desc": "使用疗愈性香薰精油。" }, "2": { "name": "专注于放松", "desc": "旨在身心平静。" } } },
+          "ko": { "title": "아로마 마사지", "details": { "1": { "name": "에센셜 오일", "desc": "치료용 아로마 오일 사용." }, "2": { "name": "휴식 집중", "desc": "심신의 안정을 위한 설계." } } }
+        }
+      },
+    
+      {
+        "id": "9",
+        "image": "assets/images/9.png",
+        "category": "massages",
+        "time": "60 Mins",
+        "price_info": { "salary": 25, "after_disc": 20, "currency": "€" },
+        "translations": {
+          "en": { "title": "Medical Massage", "details": { "1": { "name": "Outcome-based therapy", "desc": "Focus on specific medical issues." }, "2": { "name": "Targeted muscle relief", "desc": "Deep work on problematic areas." } } },
+          "ar": { "title": "مساج طبي", "details": { "1": { "name": "علاج مبني على نتائج", "desc": "التركيز على مشاكل صحية محددة." }, "2": { "name": "تخفيف عضلي مستهدف", "desc": "عمل عميق على المناطق المصابة." } } },
+          "de": { "title": "Medizinische Massage", "details": { "1": { "name": "Ergebnisorientierte Therapie", "desc": "Fokus auf med. Probleme." }, "2": { "name": "Gezielte Muskelentlastung", "desc": "Tiefe Arbeit an Problemzonen." } } },
+          "fr": { "title": "Massage Médical", "details": { "1": { "name": "Thérapie ciblée", "desc": "Focus sur des problèmes spécifiques." }, "2": { "name": "Soulagement musculaire", "desc": "Travail profond sur les zones." } } },
+          "ru": { "title": "Медицинский массаж", "details": { "1": { "name": "Результативная терапия", "desc": "Решение конкретных проблем." }, "2": { "name": "Проработка мышц", "desc": "Глубокая работа с проблемными зонами." } } },
+          "es": { "title": "Masaje Médico", "details": { "1": { "name": "Terapia de resultados", "desc": "Foco en problemas médicos." }, "2": { "name": "Alivio muscular dirigido", "desc": "Trabajo profundo en zonas." } } },
+          "it": { "title": "Massaggio Medico", "details": { "1": { "name": "Terapia mirata", "desc": "Focus su problemi specifici." }, "2": { "name": "Sollievo muscolare", "desc": "Lavoro profondo sulle aree." } } },
+          "sr": { "title": "Medicinska masaža", "details": { "1": { "name": "Terapija fokusirana na rezultat", "desc": "Lečenje konkretnih problema." }, "2": { "name": "Ciljano olakšanje mišića", "desc": "Dubinski rad na zonama." } } },
+          "sk": { "title": "Liečebná masáž", "details": { "1": { "name": "Výsledne orientovaná terapia", "desc": "Zameranie na zdrav. problémy." }, "2": { "name": "Cielená úľava svalov", "desc": "Hĺbková práca na oblastiach." } } },
+          "et": { "title": "Ravimassaaž", "details": { "1": { "name": "Tulemuspõhine teraapia", "desc": "Keskendumine tervisemuredele." }, "2": { "name": "Lihaspinge leevendamine", "desc": "Süvatöö probleemsete piirkondadega." } } },
+          "hu": { "title": "Gyógymasszázs", "details": { "1": { "name": "Eredményorientált terápia", "desc": "Fókusz az egészségügyi gondokon." }, "2": { "name": "Célzott izomlazítás", "desc": "Mélyreható munka a területeken." } } },
+          "pl": { "title": "Masaż medyczny", "details": { "1": { "name": "Terapia celowana", "desc": "Skupienie na problemach med." }, "2": { "name": "Ulga dla mięśni", "desc": "Głęboka praca nad obszarami." } } },
+          "cs": { "title": "Léčebná masáž", "details": { "1": { "name": "Cílená terapie", "desc": "Zaměření na zdrav. potíže." }, "2": { "name": "Cílená úleva svalů", "desc": "Hloubková práce na zónách." } } },
+          "tr": { "title": "Medikal Masaj", "details": { "1": { "name": "Sonuç odaklı terapi", "desc": "Belirli tıbbi sorunlara odaklanır." }, "2": { "name": "Hedeflenen kas rahatlaması", "desc": "Sorunlu bölgelerde derin çalışma." } } },
+          "zh": { "title": "医疗按摩", "details": { "1": { "name": "针对性疗法", "desc": "专注于特定医疗问题。" }, "2": { "name": "局部肌肉缓解", "desc": "对问题区域进行深层处理。" } } },
+          "ko": { "title": "의료 마사지", "details": { "1": { "name": "결과 중심 요법", "desc": "특정 의료 문제에 집중." }, "2": { "name": "타겟 근육 완화", "desc": "문제 부위 심층 케어." } } }
+        }
+      },
+    
+      {
+        "id": "10",
+        "image": "assets/images/10.png",
+        "category": "massages",
+        "time": "60 Mins",
+        "price_info": { "salary": 20, "after_disc": 15, "currency": "€" },
+        "translations": {
+          "en": { "title": "Classic Massage", "details": { "1": { "name": "Swedish techniques", "desc": "Standard relaxing massage methods." }, "2": { "name": "Long gliding strokes", "desc": "To improve circulation and ease tension." } } },
+          "ar": { "title": "مساج كلاسيكي", "details": { "1": { "name": "تقنيات سويدية", "desc": "طرق التدليك الاسترخائي القياسية." }, "2": { "name": "حركات انزلاقية طويلة", "desc": "لتحسين الدورة الدموية وتخفيف التوتر." } } },
+          "de": { "title": "Klassische Massage", "details": { "1": { "name": "Schwedische Techniken", "desc": "Standard-Entspannungsmethoden." }, "2": { "name": "Lange Gleitbewegungen", "desc": "Zur Durchblutungsförderung." } } },
+          "fr": { "title": "Massage Classique", "details": { "1": { "name": "Techniques Suédoises", "desc": "Méthodes standards de relaxation." }, "2": { "name": "Effleurages longs", "desc": "Améliore la circulation et détend." } } },
+          "ru": { "title": "Классический массаж", "details": { "1": { "name": "Шведские техники", "desc": "Стандартные методы релаксации." }, "2": { "name": "Длинные поглаживания", "desc": "Для кровообращения и снятия стресса." } } },
+          "es": { "title": "Masaje Clásico", "details": { "1": { "name": "Técnicas suecas", "desc": "Métodos estándar de relajación." }, "2": { "name": "Movimientos largos", "desc": "Mejora circulación y tensión." } } },
+          "it": { "title": "Massaggio Classico", "details": { "1": { "name": "Tecniche svedesi", "desc": "Metodi standard di rilassamento." }, "2": { "name": "Movimenti lunghi", "desc": "Migliora la circolazione." } } },
+          "sr": { "title": "Klasična masaža", "details": { "1": { "name": "Švedske tehnike", "desc": "Standardne metode opuštanja." }, "2": { "name": "Dugi klizni pokreti", "desc": "Za cirkulaciju i oslobađanje napetosti." } } },
+          "sk": { "title": "Klasická masáž", "details": { "1": { "name": "Švédske techniky", "desc": "Štandardné relaxačné metódy." }, "2": { "name": "Dlhé kĺzavé ťahy", "desc": "Zlepšenie obehu a uvoľnenie." } } },
+          "et": { "title": "Klassikaline massaaž", "details": { "1": { "name": "Rootsi tehnikad", "desc": "Standardsed lõõgastusmeetodid." }, "2": { "name": "Pikad silitused", "desc": "Vereringe parandamiseks." } } },
+          "hu": { "title": "Klasszikus masszázs", "details": { "1": { "name": "Svéd technikák", "desc": "Alapvető relaxációs módszerek." }, "2": { "name": "Hosszú simító mozdulatok", "desc": "Keringésjavítás és feszültségoldás." } } },
+          "pl": { "title": "Masaż klasyczny", "details": { "1": { "name": "Techniki szwedzkie", "desc": "Standardowe metody relaksu." }, "2": { "name": "Długie głaskanie", "desc": "Poprawa krążenia i odprężenie." } } },
+          "cs": { "title": "Klasická masáž", "details": { "1": { "name": "Švédské techniky", "desc": "Standardní relaxační metody." }, "2": { "name": "Dlouhé tahy", "desc": "Zlepšení oběhu a uvolnění napětí." } } },
+          "tr": { "title": "Klasik Masaj", "details": { "1": { "name": "İsveç teknikleri", "desc": "Standart rahatlama yöntemleri." }, "2": { "name": "Uzun kayma hareketleri", "desc": "Dolaşımı artırmak ve gerginliği azaltmak için." } } },
+          "zh": { "title": "经典按摩", "details": { "1": { "name": "瑞典式按摩技术", "desc": "标准放松按摩方法。" }, "2": { "name": "长距离推拿", "desc": "促进血液循环，缓解紧张。" } } },
+          "ko": { "title": "클래식 마사지", "details": { "1": { "name": "스웨디시 기술", "desc": "표준 휴식 마사지 방법." }, "2": { "name": "부드러운 슬라이딩", "desc": "순환 개선 및 긴장 완화." } } }
+        }
+      },
+    
+      {
+        "id": "11",
+        "image": "assets/images/11.png",
+        "category": "massages",
+        "time": "60 Mins",
+        "price_info": { "salary": 25, "after_disc": 20, "currency": "€" },
+        "translations": {
+          "en": { "title": "Sports Massage", "details": { "1": { "name": "Muscle recovery", "desc": "Assists in recovery after physical activity." }, "2": { "name": "Flexibility focus", "desc": "Improves range of motion and prevents injury." } } },
+          "ar": { "title": "مساج رياضي", "details": { "1": { "name": "استشفاء عضلي", "desc": "يساعد في الاستشفاء بعد النشاط البدني." }, "2": { "name": "تركيز على المرونة", "desc": "يحسن مدى الحركة ويمنع الإصابات." } } },
+          "de": { "title": "Sportmassage", "details": { "1": { "name": "Muskelregeneration", "desc": "Unterstützt die Erholung nach dem Sport." }, "2": { "name": "Fokus auf Flexibilität", "desc": "Verbessert die Beweglichkeit." } } },
+          "fr": { "title": "Massage Sportif", "details": { "1": { "name": "Récupération musculaire", "desc": "Aide à la récupération après l'effort." }, "2": { "name": "Focus flexibilité", "desc": "Améliore l'amplitude des mouvements." } } },
+          "ru": { "title": "Спортивный массаж", "details": { "1": { "name": "Восстановление мышц", "desc": "Помогает восстановиться после нагрузок." }, "2": { "name": "Гибкость", "desc": "Улучшает диапазон движений." } } },
+          "es": { "title": "Masaje Deportivo", "details": { "1": { "name": "Recuperación muscular", "desc": "Ayuda tras la actividad física." }, "2": { "name": "Foco en flexibilidad", "desc": "Mejora el rango de movimiento." } } },
+          "it": { "title": "Massaggio Sportivo", "details": { "1": { "name": "Recupero muscolare", "desc": "Aiuta il recupero dopo lo sport." }, "2": { "name": "Focus flessibilità", "desc": "Migliora la mobilità." } } },
+          "sr": { "title": "Sportska masaža", "details": { "1": { "name": "Oporavak mišića", "desc": "Pomaže u oporavku nakon fizičke aktivnosti." }, "2": { "name": "Fokus na fleksibilnost", "desc": "Poboljšava opseg pokreta." } } },
+          "sk": { "title": "Športová masáž", "details": { "1": { "name": "Regenerácia svalov", "desc": "Pomáha pri obnove po záťaži." }, "2": { "name": "Flexibilita", "desc": "Zlepšuje rozsah pohybu." } } },
+          "et": { "title": "Spordimassaaž", "details": { "1": { "name": "Lihaste taastumine", "desc": "Aitab taastuda pärast koormust." }, "2": { "name": "Paindlikkus", "desc": "Parandab liikumisulatust." } } },
+          "hu": { "title": "Sportmasszázs", "details": { "1": { "name": "Izomregeneráció", "desc": "Segíti a fizikai aktivitás utáni felépülést." }, "2": { "name": "Rugalmasság", "desc": "Javítja a mozgástartományt." } } },
+          "pl": { "title": "Masaż sportowy", "details": { "1": { "name": "Regeneracja mięśni", "desc": "Wspomaga regenerację po wysiłku." }, "2": { "name": "Elastyczność", "desc": "Poprawia zakres ruchu." } } },
+          "cs": { "title": "Sportovní masáž", "details": { "1": { "name": "Svalová regenerace", "desc": "Pomáhá po fyzické aktivitě." }, "2": { "name": "Flexibilita", "desc": "Zlepšuje rozsah pohybu." } } },
+          "tr": { "title": "Spor Masajı", "details": { "1": { "name": "Kas onarımı", "desc": "Fiziksel aktivite sonrası toparlanmaya yardımcı olur." }, "2": { "name": "Esneklik odaklı", "desc": "Hareket aralığını geliştirir." } } },
+          "zh": { "title": "运动按摩", "details": { "1": { "name": "肌肉恢复", "desc": "帮助体力活动后的恢复。" }, "2": { "name": "增强灵活性", "desc": "改善活动范围并预防受伤。" } } },
+          "ko": { "title": "스포츠 마사지", "details": { "1": { "name": "근육 회복", "desc": "신체 활동 후 회복을 돕습니다." }, "2": { "name": "유연성 집중", "desc": "가동 범위를 개선하고 부상을 방지합니다." } } }
+        }
+      },
+    
+      {
+        "id": "12",
+        "image": "assets/images/12.png",
+        "category": "massages",
+        "time": "60 Mins",
+        "price_info": { "salary": 25, "after_disc": 20, "currency": "€" },
+        "translations": {
+          "en": { "title": "Hot Stone Massage", "details": { "1": { "name": "Heated smooth stones", "desc": "Placing warm volcanic stones on key points." }, "2": { "name": "Deep heat penetration", "desc": "Relaxes tight muscles and relieves pain." } } },
+          "ar": { "title": "مساج الأحجار الساخنة", "details": { "1": { "name": "أحجار ناعمة مسخنة", "desc": "وضع أحجار بركانية دافئة على نقاط رئيسية." }, "2": { "name": "تغلغل حراري عميق", "desc": "يرخي العضلات المشدودة ويخفف الألم." } } },
+          "de": { "title": "Hot Stone Massage", "details": { "1": { "name": "Beheizte glatte Steine", "desc": "Warme Steine auf Energiepunkten." }, "2": { "name": "Tiefe Wärmewirkung", "desc": "Löst Verspannungen durch Tiefenwärme." } } },
+          "fr": { "title": "Massage aux Pierres Chaudes", "details": { "1": { "name": "Pierres lisses chauffées", "desc": "Pierres volcaniques sur les points clés." }, "2": { "name": "Chaleur profonde", "desc": "Détend les muscles et soulage la douleur." } } },
+          "ru": { "title": "Массаж горячими камнями", "details": { "1": { "name": "Гладкие нагретые камни", "desc": "Теплые вулканические камни на точки тела." }, "2": { "name": "Глубокий прогрев", "desc": "Расслабляет мышцы и снимает боль." } } },
+          "es": { "title": "Masaje con Piedras Calientes", "details": { "1": { "name": "Piedras lisas calientes", "desc": "Piedras volcánicas en puntos clave." }, "2": { "name": "Calor profundo", "desc": "Relaja los músculos tensos." } } },
+          "it": { "title": "Massaggio con Pietre Calde", "details": { "1": { "name": "Pietre calde levigate", "desc": "Pietre vulcaniche calde su punti chiave." }, "2": { "name": "Calore profondo", "desc": "Scioglie le tensioni muscolari." } } },
+          "sr": { "title": "Masaža toplim kamenjem", "details": { "1": { "name": "Zagrejan glatki kamen", "desc": "Vulkansko kamenje na ključnim tačkama." }, "2": { "name": "Duboko prodiranje toplote", "desc": "Opušta napete mišiće." } } },
+          "sk": { "title": "Masáž horúcimi kameňmi", "details": { "1": { "name": "Hladké horúce kamene", "desc": "Teplé kamene na kľúčových bodoch." }, "2": { "name": "Hĺbkové teplo", "desc": "Uvoľňuje stuhnuté svaly." } } },
+          "et": { "title": "Kuumakivimassaaž", "details": { "1": { "name": "Soojendatud siledad kivid", "desc": "Soojad vulkaanilised kivid kehal." }, "2": { "name": "Süvasoojus", "desc": "Lõõgastab pinges lihaseid." } } },
+          "hu": { "title": "Lávaköves masszázs", "details": { "1": { "name": "Hevített sima kövek", "desc": "Meleg vulkáni kövek a testpontokon." }, "2": { "name": "Mély hőhatás", "desc": "Ellazítja a feszült izmokat." } } },
+          "pl": { "title": "Masaż gorącymi kamieniami", "details": { "1": { "name": "Gładkie gorące kamienie", "desc": "Ciepłe kamienie wulkaniczne." }, "2": { "name": "Głębokie ciepło", "desc": "Rozluźnia napięte mięśnie." } } },
+          "cs": { "title": "Masáž horkými kameny", "details": { "1": { "name": "Nahřáté hladké kameny", "desc": "Teplé kameny na klíčových bodech." }, "2": { "name": "Hloubkové teplo", "desc": "Uvolňuje ztuhlé svaly." } } },
+          "tr": { "title": "Sıcak Taş Masajı", "details": { "1": { "name": "Isıtılmış düz taşlar", "desc": "Kilit noktalara sıcak volkanik taşlar." }, "2": { "name": "Derin ısı nüfuzu", "desc": "Sertleşmiş kasları gevşetir." } } },
+          "zh": { "title": "热石按摩", "details": { "1": { "name": "加热的光滑原石", "desc": "在关键穴位放置温热的火山石。" }, "2": { "name": "热力深层渗透", "desc": "放松紧绷肌肉并缓解疼痛。" } } },
+          "ko": { "title": "핫스톤 마사지", "details": { "1": { "name": "가열된 매끄러운 돌", "desc": "주요 부위에 따뜻한 화산석 배치." }, "2": { "name": "심층 열 침투", "desc": "뭉친 근육을 풀고 통증을 완화합니다." } } }
+        }
+      },
+    
+      {
+        "id": "13",
+        "image": "assets/images/13.png",
+        "category": "massages",
+        "time": "60 Mins",
+        "price_info": { "salary": 25, "after_disc": 20, "currency": "€" },
+        "translations": {
+          "en": { "title": "Anti Cellulite Massage", "details": { "1": { "name": "Fat tissue targeting", "desc": "Specialized strokes to break down fat deposits." }, "2": { "name": "Skin smoothing", "desc": "Improves skin texture and elasticity." } } },
+          "ar": { "title": "مساج السيلوليت", "details": { "1": { "name": "استهداف الأنسجة الدهنية", "desc": "حركات متخصصة لتفكيك التجمعات الدهنية." }, "2": { "name": "تنظيم وتنعيم الجلد", "desc": "يحسن ملمس الجلد ومرونته." } } },
+          "de": { "title": "Anti-Cellulite-Massage", "details": { "1": { "name": "Fettgewebe-Targeting", "desc": "Gezielte Griffe gegen Fettdepots." }, "2": { "name": "Hautglättung", "desc": "Verbessert Textur und Elastizität." } } },
+          "fr": { "title": "Massage Anti-Cellulite", "details": { "1": { "name": "Ciblage adipeux", "desc": "Mouvements pour casser les graisses." }, "2": { "name": "Lissage de la peau", "desc": "Améliore la texture et l'élasticité." } } },
+          "ru": { "title": "Антицеллюлитный массаж", "details": { "1": { "name": "Работа с жировой тканью", "desc": "Приемы для расщепления жировых отложений." }, "2": { "name": "Разглаживание кожи", "desc": "Улучшает текстуру и эластичность кожи." } } },
+          "es": { "title": "Masaje Anti-Celulítico", "details": { "1": { "name": "Tejido graso", "desc": "Técnicas para romper depósitos de grasa." }, "2": { "name": "Alisado de piel", "desc": "Mejora textura y elasticidad." } } },
+          "it": { "title": "Massaggio Anticellulite", "details": { "1": { "name": "Target tessuto adiposo", "desc": "Manovre per rompere gli accumuli grassi." }, "2": { "name": "Levigatura pelle", "desc": "Migliora texture ed elasticità." } } },
+          "sr": { "title": "Anticelulit masaža", "details": { "1": { "name": "Ciljanje masnog tkiva", "desc": "Specijalni pokreti za razgradnju masti." }, "2": { "name": "Glačanje kože", "desc": "Poboljšava teksturu i elastičnost." } } },
+          "sk": { "title": "Anticelulitídna masáž", "details": { "1": { "name": "Cielenie na tuk", "desc": "Hmaty na odbúravanie tukov." }, "2": { "name": "Vyhladenie pleti", "desc": "Zlepšuje textúru a pružnosť." } } },
+          "et": { "title": "Antitselluliidimassaaž", "details": { "1": { "name": "Rasvkoe sihtimine", "desc": "Võtted rasvaladestuste lõhustamiseks." }, "2": { "name": "Naha silumine", "desc": "Parandab naha tekstuuri." } } },
+          "hu": { "title": "Anticellulit masszázs", "details": { "1": { "name": "Zsírszövet célzása", "desc": "Speciális fogások a zsírlerakódások ellen." }, "2": { "name": "Bőrsimítás", "desc": "Javítja a bőr textúráját." } } },
+          "pl": { "title": "Masaż antycellulitowy", "details": { "1": { "name": "Redukcja tkanki tłuszczowej", "desc": "Ruchy rozbijające złogi tłuszczu." }, "2": { "name": "Wygładzanie skóry", "desc": "Poprawia teksturę i jędrność." } } },
+          "cs": { "title": "Anticelulitidní masáž", "details": { "1": { "name": "Cílení na tukovou tkáň", "desc": "Hmaty k odbourávání tuků." }, "2": { "name": "Vyhlazení pleti", "desc": "Zlepšuje texturu a pružnost." } } },
+          "tr": { "title": "Anti Selülit Masajı", "details": { "1": { "name": "Yağ dokusu hedefleme", "desc": "Yağ depolarını kırmak için özel hareketler." }, "2": { "name": "Cilt pürüzsüzleştirme", "desc": "Cilt dokusunu ve esnekliğini artırır." } } },
+          "zh": { "title": "抗脂肪按摩", "details": { "1": { "name": "针对脂肪组织", "desc": "旨在分解脂肪沉积的专业推拿。" }, "2": { "name": "平滑皮肤", "desc": "改善皮肤纹理和弹性。" } } },
+          "ko": { "title": "안티 셀룰라이트 마사지", "details": { "1": { "name": "지방 조직 타겟팅", "desc": "지방 침착물을 분해하기 위한 전문 기법." }, "2": { "name": "피부 평활화", "desc": "피부 결 및 탄력을 개선합니다." } } }
+        }
+      },
+    
+      {
+        "id": "14",
+        "image": "assets/images/14.png",
+        "category": "massages",
+        "time": "60 Mins",
+        "price_info": { "salary": 25, "after_disc": 20, "currency": "€" },
+        "translations": {
+          "en": { "title": "Deep Tissue Massage", "details": { "1": { "name": "Connective tissue focus", "desc": "Reaches deeper layers of muscle." }, "2": { "name": "Intense pressure", "desc": "Uses firm pressure to release chronic tension." } } },
+          "ar": { "title": "مساج الأنسجة العميقة", "details": { "1": { "name": "تركيز على الأنسجة الضامة", "desc": "يصل إلى الطبقات العميقة من العضلات." }, "2": { "name": "ضغط مكثف", "desc": "يستخدم ضغطاً قوياً لفك التشنجات المزمنة." } } },
+          "de": { "title": "Tiefengewebsmassage", "details": { "1": { "name": "Fokus auf Bindegewebe", "desc": "Erreicht tiefe Muskelschichten." }, "2": { "name": "Intensiver Druck", "desc": "Fester Druck gegen chronische Verspannungen." } } },
+          "fr": { "title": "Massage des Tissus Profonds", "details": { "1": { "name": "Tissu conjonctif", "desc": "Atteint les couches musculaires profondes." }, "2": { "name": "Pression intense", "desc": "Libère les tensions chroniques." } } },
+          "ru": { "title": "Глубокий массаж тканей", "details": { "1": { "name": "Соединительная ткань", "desc": "Проработка глубоких слоев мышц." }, "2": { "name": "Интенсивное давление", "desc": "Снятие хронического напряжения." } } },
+          "es": { "title": "Masaje de Tejido Profundo", "details": { "1": { "name": "Tejido conectivo", "desc": "Llega a capas musculares profundas." }, "2": { "name": "Presión intensa", "desc": "Libera tensión crónica." } } },
+          "it": { "title": "Massaggio Decontratturante", "details": { "1": { "name": "Tessuto connettivo", "desc": "Raggiunge gli strati muscolari profondi." }, "2": { "name": "Pressione intensa", "desc": "Scioglie le tensioni croniche." } } },
+          "sr": { "title": "Masaža dubokog tkiva", "details": { "1": { "name": "Fokus na vezivno tkivo", "desc": "Dopire do dubljih slojeva mišića." }, "2": { "name": "Intenzivan pritisak", "desc": "Snažan pritisak za hroničnu napetost." } } },
+          "sk": { "title": "Hĺbková masáž", "details": { "1": { "name": "Spojivové tkanivo", "desc": "Zasahuje hlboké svalové vrstvy." }, "2": { "name": "Intenzívny tlak", "desc": "Uvoľňuje chronické napätie." } } },
+          "et": { "title": "Süvakudede massaaž", "details": { "1": { "name": "Sidekoe fookus", "desc": "Jõuab lihaste süvakihtideni." }, "2": { "name": "Intensiivne surve", "desc": "Vabastab kroonilised pinged." } } },
+          "hu": { "title": "Mélyszöveti masszázs", "details": { "1": { "name": "Kötőszöveti fókusz", "desc": "Eléri a mélyebb izomrétegeket." }, "2": { "name": "Intenzív nyomás", "desc": "Oldja a krónikus feszültséget." } } },
+          "pl": { "title": "Masaż tkanek głębokich", "details": { "1": { "name": "Tkanka łączna", "desc": "Dociera do głębokich warstw mięśni." }, "2": { "name": "Intensywny ucisk", "desc": "Uwalnia przewlekłe napięcia." } } },
+          "cs": { "title": "Hloubková masáž", "details": { "1": { "name": "Pojivová tkáň", "desc": "Zasahuje hluboké svalové vrstvy." }, "2": { "name": "Intenzivní tlak", "desc": "Uvolňuje chronické napětí." } } },
+          "tr": { "title": "Derin Doku Masajı", "details": { "1": { "name": "Bağ dokusu odağı", "desc": "Kasların derin katmanlarına ulaşır." }, "2": { "name": "Yoğun basınç", "desc": "Kronik gerginliği gidermek için sert basınç." } } },
+          "zh": { "title": "深层组织按摩", "details": { "1": { "name": "结缔组织焦点", "desc": "触及肌肉深层。" }, "2": { "name": "强力指压", "desc": "通过稳固的压力缓解慢性紧张。" } } },
+          "ko": { "title": "딥 티슈 마사지", "details": { "1": { "name": "결합 조직 집중", "desc": "근육의 깊은 층까지 도달." }, "2": { "name": "강한 압박", "desc": "만성적인 긴장을 해소하기 위한 강한 압박." } } }
+        }
+      },
+    
+      {
+        "id": "15",
+        "image": "assets/images/15.png",
+        "category": "massages",
+        "time": "30 Mins",
+        "price_info": { "salary": 15, "after_disc": 10, "currency": "€" },
+        "translations": {
+          "en": { "title": "Foot Massage", "details": { "1": { "name": "Reflex points", "desc": "Targeting pressure points for whole body health." }, "2": { "name": "Tension release", "desc": "Relieves fatigue from walking or standing." } } },
+          "ar": { "title": "مساج القدمين", "details": { "1": { "name": "نقاط الانعكاس", "desc": "استهداف نقاط الضغط لصحة الجسم كاملًا." }, "2": { "name": "فك التوتر", "desc": "يخفف التعب الناتج عن المشي أو الوقوف." } } },
+          "de": { "title": "Fußmassage", "details": { "1": { "name": "Reflexzonen", "desc": "Druckpunkte für das allgemeine Wohlbefinden." }, "2": { "name": "Spannungslösung", "desc": "Lindert Müdigkeit nach dem Gehen." } } },
+          "fr": { "title": "Massage des Pieds", "details": { "1": { "name": "Points réflexes", "desc": "Cible les zones réflexes du corps." }, "2": { "name": "Libération des tensions", "desc": "Soulage la fatigue des jambes." } } },
+          "ru": { "title": "Массаж стоп", "details": { "1": { "name": "Рефлекторные точки", "desc": "Воздействие на точки для здоровья всего тела." }, "2": { "name": "Снятие напряжения", "desc": "Убирает усталость после ходьбы." } } },
+          "es": { "title": "Masaje de Pies", "details": { "1": { "name": "Puntos reflejos", "desc": "Foco en puntos para la salud general." }, "2": { "name": "Liberación de tensión", "desc": "Alivia la fatiga de estar de pie." } } },
+          "it": { "title": "Massaggio ai Piedi", "details": { "1": { "name": "Punti riflessi", "desc": "Stimolazione per il benessere generale." }, "2": { "name": "Rilascio tensioni", "desc": "Allevia la fatica del camminare." } } },
+          "sr": { "title": "Masaža stopala", "details": { "1": { "name": "Refleksne tačke", "desc": "Ciljanje tačaka za zdravlje celog tela." }, "2": { "name": "Oslobađanje napetosti", "desc": "Ublažava umor od hodanja." } } },
+          "sk": { "title": "Masáž nôh", "details": { "1": { "name": "Reflexné body", "desc": "Zameranie na body pre zdravie celého tela." }, "2": { "name": "Uvoľnenie napätia", "desc": "Zmierňuje únavu z chodenia." } } },
+          "et": { "title": "Jalamassaaž", "details": { "1": { "name": "Reflekspunktid", "desc": "Survepunktid kogu keha terviseks." }, "2": { "name": "Pingete leevendamine", "desc": "Vähendab käimisest tingitud väsimust." } } },
+          "hu": { "title": "Talpmasszázs", "details": { "1": { "name": "Reflexpontok", "desc": "Nyomópontok az egész test egészségéért." }, "2": { "name": "Feszültségoldás", "desc": "Enyhíti a járás okozta fáradtságot." } } },
+          "pl": { "title": "Masaż stóp", "details": { "1": { "name": "Refleksologia", "desc": "Punkty ucisku dla zdrowia całego ciała." }, "2": { "name": "Odprężenie", "desc": "Łagodzi zmęczenie po chodzeniu." } } },
+          "cs": { "title": "Masáž nohou", "details": { "1": { "name": "Reflexní body", "desc": "Cílení na body pro zdraví celého těla." }, "2": { "name": "Uvolnění napětí", "desc": "Zmírňuje únavu z chůze." } } },
+          "tr": { "title": "Ayak Masajı", "details": { "1": { "name": "Refleks noktaları", "desc": "Tüm vücut sağlığı için basınç noktaları." }, "2": { "name": "Gerginlik giderme", "desc": "Yürüme veya ayakta durma yorgunluğunu giderir." } } },
+          "zh": { "title": "足部按摩", "details": { "1": { "name": "反射点", "desc": "针对全身健康的压力点。" }, "2": { "name": "缓解紧张", "desc": "缓解行走或站立带来的疲劳。" } } },
+          "ko": { "title": "발 마사지", "details": { "1": { "name": "반사구", "desc": "전신 건강을 위한 지압점 타겟팅." }, "2": { "name": "긴장 해소", "desc": "걷거나 서 있을 때의 피로를 풀어줍니다." } } }
+        }
+      },
+    
+      {
+        "id": "16",
+        "image": "assets/images/16.png",
+        "category": "massages",
+        "time": "30 Mins",
+        "price_info": { "salary": 15, "after_disc": 10, "currency": "€" },
+        "translations": {
+          "en": { "title": "Full Back Massage", "details": { "1": { "name": "Back & Shoulder focus", "desc": "Concentrated work on the posterior chain." }, "2": { "name": "Sedentary relief", "desc": "Perfect for office workers or long travels." } } },
+          "ar": { "title": "مساج الظهر الكامل", "details": { "1": { "name": "تركيز على الظهر والأكتاف", "desc": "عمل مكثف على السلسلة الخلفية." }, "2": { "name": "إغاثة الخمول", "desc": "مثالي لموظفي المكاتب أو السفر الطويل." } } },
+          "de": { "title": "Rückenmassage", "details": { "1": { "name": "Rücken- & Schulterfokus", "desc": "Gezielte Arbeit am Rücken." }, "2": { "name": "Entlastung bei Inaktivität", "desc": "Ideal für Büroangestellte." } } },
+          "fr": { "title": "Massage du Dos Complet", "details": { "1": { "name": "Dos & Épaules", "desc": "Travail concentré sur la zone dorsale." }, "2": { "name": "Soulagement sédentaire", "desc": "Idéal pour le travail de bureau." } } },
+          "ru": { "title": "Полный массаж спины", "details": { "1": { "name": "Спина и плечи", "desc": "Концентрированная проработка спины." }, "2": { "name": "Снятие зажимов", "desc": "Идеально при сидячей работе." } } },
+          "es": { "title": "Masaje de Espalda Completa", "details": { "1": { "name": "Espalda y Hombros", "desc": "Trabajo concentrado en zona posterior." }, "2": { "name": "Alivio sedentarismo", "desc": "Ideal para trabajadores de oficina." } } },
+          "it": { "title": "Massaggio Schiena Completo", "details": { "1": { "name": "Focus Schiena e Spalle", "desc": "Lavoro intenso sulla catena posteriore." }, "2": { "name": "Sollievo sedentarietà", "desc": "Ottimo per chi lavora in ufficio." } } },
+          "sr": { "title": "Masaža celih leđa", "details": { "1": { "name": "Leđa i ramena", "desc": "Koncentrisan rad na leđnom delu." }, "2": { "name": "Olakšanje od sedenja", "desc": "Idealno za kancelarijske radnike." } } },
+          "sk": { "title": "Masáž celého chrbta", "details": { "1": { "name": "Chrbát a ramená", "desc": "Sústredená práca na zadnej časti." }, "2": { "name": "Úľava pri sedení", "desc": "Ideálne pre kancelárskych pracovníkov." } } },
+          "et": { "title": "Kogu selja massaaž", "details": { "1": { "name": "Selg ja õlad", "desc": "Kontsentreeritud töö seljapiirkonnaga." }, "2": { "name": "Istuvat tööd leevendav", "desc": "Ideaalne kontoritöötajatele." } } },
+          "hu": { "title": "Teljes hátmasszázs", "details": { "1": { "name": "Hát és váll fókusz", "desc": "Koncentrált munka a háti szakaszon." }, "2": { "name": "Ülőmunka enyhítése", "desc": "Ideális irodai dolgozóknak." } } },
+          "pl": { "title": "Masaż całych pleców", "details": { "1": { "name": "Plecy i ramiona", "desc": "Skupienie na tylnej partii ciała." }, "2": { "name": "Ulga dla siedzących", "desc": "Idealny dla pracowników biurowych." } } },
+          "cs": { "title": "Masáž celých zad", "details": { "1": { "name": "Záda a ramena", "desc": "Soustředěná práce na zadní části." }, "2": { "name": "Úleva při sezení", "desc": "Ideální pro kancelářské pracovníky." } } },
+          "tr": { "title": "Tam Sırt Masajı", "details": { "1": { "name": "Sırt ve Omuz odağı", "desc": "Arka zincir üzerinde yoğun çalışma." }, "2": { "name": "Sedanter rahatlama", "desc": "Ofis çalışanları veya uzun yolculuklar için mükemmel." } } },
+          "zh": { "title": "全背按摩", "details": { "1": { "name": "背部与肩部重点", "desc": "针对后链肌群的集中护理。" }, "2": { "name": "缓解久坐不适", "desc": "非常适合上班族或长途旅行者。" } } },
+          "ko": { "title": "전신 등 마사지", "details": { "1": { "name": "등 및 어깨 집중", "desc": "후면 부위의 집중 케어." }, "2": { "name": "사무직 피로 해소", "desc": "사무직 종사자나 장거리 여행자에게 적합." } } }
+        }
+      },
+    
+      {
+        "id": "17",
+        "image": "assets/images/17.png",
+        "category": "packages",
+        "time": "2 Hrs",
+        "price_info": { "salary": 34, "after_disc": 25, "currency": "€" },
+        "translations": {
+          "en": { "title": "Salt Body Scrub and Massage", "details": { "1": { "name": "Sea salt exfoliation", "desc": "Mineral-rich scrub for dead skin removal." }, "2": { "name": "Full body massage", "desc": "Relaxing session to hydrate and soothe." } } },
+          "ar": { "title": "تقشير الجسم بالملح ومساج", "details": { "1": { "name": "تقشير بملح البحر", "desc": "صنفرة غنية بالمعادن لإزالة الجلد الميت." }, "2": { "name": "مساج كامل للجسم", "desc": "جلسة استرخاء لترطيب وتهدئة الجسم." } } },
+          "de": { "title": "Meersalz-Peeling und Massage", "details": { "1": { "name": "Meersalz-Exfoliation", "desc": "Mineralstoffreiches Peeling." }, "2": { "name": "Ganzkörpermassage", "desc": "Entspannende Sitzung zur Hydratation." } } },
+          "fr": { "title": "Gommage au Sel et Massage", "details": { "1": { "name": "Exfoliation au sel de mer", "desc": "Gommage riche en minéraux." }, "2": { "name": "Massage complet du corps", "desc": "Session relaxante et hydratante." } } },
+          "ru": { "title": "Солевой пилинг и массаж", "details": { "1": { "name": "Пилинг морской солью", "desc": "Минеральный скраб для удаления ороговевшей кожи." }, "2": { "name": "Массаж всего тела", "desc": "Расслабляющий сеанс и увлажнение." } } },
+          "es": { "title": "Exfoliación con Sal y Masaje", "details": { "1": { "name": "Exfoliación con sal marina", "desc": "Eliminación de células muertas." }, "2": { "name": "Masaje corporal completo", "desc": "Sesión relajante e hidratante." } } },
+          "it": { "title": "Scrub al Sale e Massaggio", "details": { "1": { "name": "Esfoliazione al sale marino", "desc": "Scrub ricco di minerali." }, "2": { "name": "Massaggio total body", "desc": "Sessione rilassante e idratante." } } },
+          "sr": { "title": "Piling solju i masaža", "details": { "1": { "name": "Piling morskom solju", "desc": "Uklanjanje mrtvih ćelija kože." }, "2": { "name": "Masaža celog tela", "desc": "Opuštajuća sesija hidratacije." } } },
+          "sk": { "title": "Soľný peeling a masáž", "details": { "1": { "name": "Exfoliácia morskou soľou", "desc": "Minerálny peeling pokožky." }, "2": { "name": "Masáž celého tela", "desc": "Relaxačné ošetrenie a hydratácia." } } },
+          "et": { "title": "Soolakoorimine ja massaaž", "details": { "1": { "name": "Meresoolaga koorimine", "desc": "Mineraaliderikas surnud naha eemaldus." }, "2": { "name": "Kogu keha massaaž", "desc": "Lõõgastav ja niisutav seanss." } } },
+          "hu": { "title": "Tengeri sós peeling és masszázs", "details": { "1": { "name": "Tengeri sós radírozás", "desc": "Ásványi anyagokban gazdag bőrradír." }, "2": { "name": "Teljes testmasszázs", "desc": "Hidratáló és nyugtató kezelés." } } },
+          "pl": { "title": "Peeling solny i masaż", "details": { "1": { "name": "Złuszczanie solą morską", "desc": "Bogaty w minerały peeling." }, "2": { "name": "Masaż całego ciała", "desc": "Relaksująca sesja nawilżająca." } } },
+          "cs": { "title": "Solný peeling a masáž", "details": { "1": { "name": "Peeling mořskou solí", "desc": "Odstranění odumřelé kůže." }, "2": { "name": "Masáž celého těla", "desc": "Relaxační a hydratační seance." } } },
+          "tr": { "title": "Tuz Peelingi ve Masaj", "details": { "1": { "name": "Deniz tuzu eksfoliasyonu", "desc": "Ölü deriyi temizlemek için mineral zengini peeling." }, "2": { "name": "Tüm vücut masajı", "desc": "Nemlendirici ve rahatlatıcı seans." } } },
+          "zh": { "title": "海盐去角质与按摩", "details": { "1": { "name": "海盐去角质", "desc": "富含矿物质的去角质护理。" }, "2": { "name": "全身按摩", "desc": "滋润并舒缓身心的按摩疗程。" } } },
+          "ko": { "title": "솔트 바디 스크럽 및 마사지", "details": { "1": { "name": "해수염 각질 제거", "desc": "죽은 피부 세포를 제거하는 미네랄 스크럽." }, "2": { "name": "전신 마사지", "desc": "수분 공급 및 진정을 위한 휴식 세션." } } }
+        }
+      },
+    
+      {
+        "id": "18",
+        "image": "assets/images/18.png",
+        "category": "scrubs",
+        "time": "60 Mins",
+        "price_info": { "salary": 20, "after_disc": 15, "currency": "€" },
+        "translations": {
+          "en": { "title": "Salt Body Scrub", "details": { "1": { "name": "Deep skin cleansing", "desc": "Removes impurities and brightens the skin." } } },
+          "ar": { "title": "تقشير الجسم بالملح", "details": { "1": { "name": "تنظيف عميق للبشرة", "desc": "يزيل الشوائب ويمنح البشرة نضارة." } } },
+          "de": { "title": "Salz-Körperpeeling", "details": { "1": { "name": "Tiefe Hautreinigung", "desc": "Entfernt Unreinheiten." } } },
+          "fr": { "title": "Gommage Corporel au Sel", "details": { "1": { "name": "Nettoyage profond", "desc": "Élimine les impuretés." } } },
+          "ru": { "title": "Солевой скраб для тела", "details": { "1": { "name": "Глубокое очищение", "desc": "Удаляет загрязнения и освежает." } } },
+          "es": { "title": "Exfoliación Corporal con Sal", "details": { "1": { "name": "Limpieza profunda", "desc": "Elimina impurezas y da brillo." } } },
+          "it": { "title": "Scrub Corpo al Sale", "details": { "1": { "name": "Pulizia profonda della pelle", "desc": "Rimuove le impurità." } } },
+          "sr": { "title": "Piling tela solju", "details": { "1": { "name": "Dubinsko čišćenje kože", "desc": "Uklanja nečistoće." } } },
+          "sk": { "title": "Soľný telový peeling", "details": { "1": { "name": "Hĺbkové čistenie pleti", "desc": "Odstraňuje nečistoty." } } },
+          "et": { "title": "Soolaga kehakoorimine", "details": { "1": { "name": "Sügav naha puhastus", "desc": "Eemaldab mustuse." } } },
+          "hu": { "title": "Sós testradír", "details": { "1": { "name": "Mély bőrtisztítás", "desc": "Eltávolítja a szennyeződéseket." } } },
+          "pl": { "title": "Peeling solny ciała", "details": { "1": { "name": "Głębokie oczyszczanie", "desc": "Usuwa zanieczyszczenia." } } },
+          "cs": { "title": "Solný tělový peeling", "details": { "1": { "name": "Hloubkové čištění pleti", "desc": "Odstraňuje nečistoty." } } },
+          "tr": { "title": "Vücut Tuz Peelingi", "details": { "1": { "name": "Derin cilt temizliği", "desc": "Kirleri temizler ve cildi aydınlatır." } } },
+          "zh": { "title": "身体海盐去角质", "details": { "1": { "name": "深层皮肤清洁", "desc": "去除杂质，提亮肤色。" } } },
+          "ko": { "title": "솔트 바디 스크럽", "details": { "1": { "name": "딥 클렌징", "desc": "불순물을 제거하고 피부를 맑게 합니다." } } }
+        }
+      },
+    
+      {
+        "id": "19",
+        "image": "assets/images/19.png",
+        "category": "packages",
+        "time": "2 Hrs",
+        "price_info": { "salary": 34, "after_disc": 25, "currency": "€" },
+        "translations": {
+          "en": { "title": "Coconut Body Scrub and Massage", "details": { "1": { "name": "Coconut exfoliation", "desc": "Gentle tropical scrub for smooth skin." }, "2": { "name": "Hydrating massage", "desc": "Full body massage with coconut oil focus." } } },
+          "ar": { "title": "تقشير الجسم بجوز الهند ومساج", "details": { "1": { "name": "تقشير بجوز الهند", "desc": "صنفرة استوائية ناعمة لبشرة حريرية." }, "2": { "name": "مساج مرطب", "desc": "تدليك للجسم مع التركيز على زيت جوز الهند." } } },
+          "de": { "title": "Kokos-Peeling und Massage", "details": { "1": { "name": "Kokos-Exfoliation", "desc": "Sanftes tropisches Peeling." }, "2": { "name": "Hydrierende Massage", "desc": "Massage mit Fokus auf Kokosöl." } } },
+          "fr": { "title": "Gommage à la Noix de Coco et Massage", "details": { "1": { "name": "Exfoliation coco", "desc": "Gommage tropical doux." }, "2": { "name": "Massage hydratant", "desc": "Massage à l'huile de coco." } } },
+          "ru": { "title": "Кокосовый пилинг и массаж", "details": { "1": { "name": "Кокосовый пилинг", "desc": "Нежный тропический скраб." }, "2": { "name": "Увлажняющий массаж", "desc": "Массаж с кокосовым маслом." } } },
+          "es": { "title": "Exfoliación de Coco y Masaje", "details": { "1": { "name": "Exfoliación con coco", "desc": "Exfoliación tropical suave." }, "2": { "name": "Masaje hidratante", "desc": "Masaje con enfoque en aceite de coco." } } },
+          "it": { "title": "Scrub al Cocco e Massaggio", "details": { "1": { "name": "Esfoliazione al cocco", "desc": "Scrub tropicale delicato." }, "2": { "name": "Massaggio idratante", "desc": "Massaggio con olio di cocco." } } },
+          "sr": { "title": "Piling kokosom i masaža", "details": { "1": { "name": "Piling kokosom", "desc": "Nežni tropski piling." }, "2": { "name": "Hidratantna masaža", "desc": "Masaža kokosovim uljem." } } },
+          "sk": { "title": "Kokosový peeling a masáž", "details": { "1": { "name": "Kokosová exfoliácia", "desc": "Jemný tropický peeling." }, "2": { "name": "Hydratačná masáž", "desc": "Masáž s kokosovým olejom." } } },
+          "et": { "title": "Kookoskoorimine ja massaaž", "details": { "1": { "name": "Kookosega koorimine", "desc": "Õrn troopiline koorimine." }, "2": { "name": "Niisutav massaaž", "desc": "Massaaž kookosõliga." } } },
+          "hu": { "title": "Kókuszos peeling és masszázs", "details": { "1": { "name": "Kókuszos radírozás", "desc": "Gyengéd trópusi bőrmegújítás." }, "2": { "name": "Hidratáló masszázs", "desc": "Masszázs kókuszolajjal." } } },
+          "pl": { "title": "Peeling kokosowy i masaż", "details": { "1": { "name": "Złuszczanie kokosem", "desc": "Delikatny tropikalny peeling." }, "2": { "name": "Masaż nawilżający", "desc": "Masaż z olejkiem kokosowym." } } },
+          "cs": { "title": "Kokosový peeling a masáž", "details": { "1": { "name": "Kokosový peeling", "desc": "Jemná tropická péče." }, "2": { "name": "Hydratační masáž", "desc": "Masáž kokosovým olejem." } } },
+          "tr": { "title": "Hindistan Cevizi Peelingi ve Masaj", "details": { "1": { "name": "Hindistan cevizi eksfoliasyonu", "desc": "Pürüzsüz cilt için nazik tropikal peeling." }, "2": { "name": "Nemlendirici masaj", "desc": "Hindistan cevizi yağı odaklı vücut masajı." } } },
+          "zh": { "title": "椰子身体去角质与按摩", "details": { "1": { "name": "椰子去角质", "desc": "柔和的热带风情去角质。" }, "2": { "name": "保湿按摩", "desc": "专注于椰子油润养的全身按摩。" } } },
+          "ko": { "title": "코코넛 바디 스크럽 및 마사지", "details": { "1": { "name": "코코넛 각질 제거", "desc": "매끄러운 피부를 위한 부드러운 열대 스크럽." }, "2": { "name": "보습 마사지", "desc": "코코넛 오일을 이용한 전신 마사지." } } }
+        }
+      },
+    
+      {
+        "id": "20",
+        "image": "assets/images/20.png",
+        "category": "scrubs",
+        "time": "60 Mins",
+        "price_info": { "salary": 20, "after_disc": 15, "currency": "€" },
+        "translations": {
+          "en": { "title": "Coconut Body Scrub", "details": { "1": { "name": "Tropical skin softening", "desc": "Leaves the skin smooth, glowing, and smelling like paradise." } } },
+          "ar": { "title": "تقشير الجسم بجوز الهند", "details": { "1": { "name": "تنعيم البشرة الاستوائي", "desc": "يترك البشرة ناعمة ومتوهجة وبرائحة استوائية رائعة." } } },
+          "de": { "title": "Kokos-Körperpeeling", "details": { "1": { "name": "Tropische Hautglättung", "desc": "Macht die Haut geschmeidig." } } },
+          "fr": { "title": "Gommage Corporel à la Noix de Coco", "details": { "1": { "name": "Adoucissement tropical", "desc": "Laisse la peau douce et éclatante." } } },
+          "ru": { "title": "Кокосовый скраб для тела", "details": { "1": { "name": "Тропическое смягчение", "desc": "Делает кожу гладкой и сияющей." } } },
+          "es": { "title": "Exfoliación Corporal de Coco", "details": { "1": { "name": "Suavizado tropical", "desc": "Deja la piel suave y radiante." } } },
+          "it": { "title": "Scrub Corpo al Cocco", "details": { "1": { "name": "Addolcimento tropicale", "desc": "Lascia la pelle morbida e lucente." } } },
+          "sr": { "title": "Piling tela kokosom", "details": { "1": { "name": "Tropsko omekšavanje kože", "desc": "Čini kožu glatkom i sjajnom." } } },
+          "sk": { "title": "Kokosový telový peeling", "details": { "1": { "name": "Tropické zjemnenie pleti", "desc": "Zanecháva pleť hladkú a žiarivú." } } },
+          "et": { "title": "Kookosega kehakoorimine", "details": { "1": { "name": "Troopiline pehmendus", "desc": "Jätab naha pehmeks ja säravaks." } } },
+          "hu": { "title": "Kókuszos testradír", "details": { "1": { "name": "Trópusi bőrpuhítás", "desc": "Sima és ragyogó bőrt eredményez." } } },
+          "pl": { "title": "Peeling kokosowy ciała", "details": { "1": { "name": "Tropikalne wygładzenie", "desc": "Pozostawia skórę gładką i promienną." } } },
+          "cs": { "title": "Kokosový tělový peeling", "details": { "1": { "name": "Tropické zjemnění pleti", "desc": "Zanechává pleť hladkou a zářivou." } } },
+          "tr": { "title": "Vücut Hindistan Cevizi Peelingi", "details": { "1": { "name": "Tropikal cilt yumuşatma", "desc": "Cildi pürüzsüz, parlak ve harika kokulu bırakır." } } },
+          "zh": { "title": "身体椰子去角质", "details": { "1": { "name": "热带柔肤护理", "desc": "令肌肤光滑亮泽，散发迷人芬芳。" } } },
+          "ko": { "title": "코코넛 바디 스크럽", "details": { "1": { "name": "열대풍 피부 연화", "desc": "피부를 부드럽고 빛나게 가꾸어 줍니다." } } }
+        }
+      },
+    
+      {
+        "id": "21",
+        "image": "assets/images/21.png",
+        "category": "packages",
+        "time": "2 Hrs",
+        "price_info": { "salary": 34, "after_disc": 25, "currency": "€" },
+        "translations": {
+          "en": { "title": "Clay Body Scrub and Massage", "details": { "1": { "name": "Mineral clay scrub", "desc": "Purifying treatment with mineral-rich clay." }, "2": { "name": "Full massage", "desc": "Relaxing full body massage session." } } },
+          "ar": { "title": "تقشير الجسم بالطمي ومساج", "details": { "1": { "name": "تقشير بالطمي المعدني", "desc": "علاج منقي للبشرة بالطمي الغني بالمعادن." }, "2": { "name": "مساج كامل", "desc": "جلسة مساج استرخائي كامل للجسم." } } },
+          "de": { "title": "Tonerde-Peeling und Massage", "details": { "1": { "name": "Mineral-Tonerde-Peeling", "desc": "Reinigende Behandlung mit Tonerde." }, "2": { "name": "Ganzmassage", "desc": "Entspannende Ganzkörpermassage." } } },
+          "fr": { "title": "Gommage à l'Argile et Massage", "details": { "1": { "name": "Gommage à l'argile", "desc": "Soin purifiant à l'argile minérale." }, "2": { "name": "Massage complet", "desc": "Séance de massage relaxante." } } },
+          "ru": { "title": "Глиняный пилинг и массаж", "details": { "1": { "name": "Минеральный глиняный скраб", "desc": "Очищающая процедура с глиной." }, "2": { "name": "Полный массаж", "desc": "Сеанс расслабляющего массажа." } } },
+          "es": { "title": "Exfoliación de Arcilla y Masaje", "details": { "1": { "name": "Exfoliación con arcilla", "desc": "Tratamiento purificante mineral." }, "2": { "name": "Masaje completo", "desc": "Sesión de masaje corporal completo." } } },
+          "it": { "title": "Scrub all'Argilla e Massaggio", "details": { "1": { "name": "Scrub all'argilla minerale", "desc": "Trattamento purificante minerale." }, "2": { "name": "Massaggio completo", "desc": "Sessione di massaggio total body." } } },
+          "sr": { "title": "Piling glinom i masaža", "details": { "1": { "name": "Piling mineralnom glinom", "desc": "Tretman čišćenja bogat mineralima." }, "2": { "name": "Kompletna masaža", "desc": "Opuštajuća masaža celog tela." } } },
+          "sk": { "title": "Ílový peeling a masáž", "details": { "1": { "name": "Minerálny ílový peeling", "desc": "Čistiace ošetrenie ílom." }, "2": { "name": "Celková masáž", "desc": "Relaxačná masáž celého tela." } } },
+          "et": { "title": "Savikoorimine ja massaaž", "details": { "1": { "name": "Mineraalsavi koorimine", "desc": "Puhastav mineraaliderikas hoolitsus." }, "2": { "name": "Täielik massaaž", "desc": "Lõõgastav kogu keha massaaž." } } },
+          "hu": { "title": "Agyagos bőrradír és masszázs", "details": { "1": { "name": "Ásványi agyagos peeling", "desc": "Tisztító kezelés ásványi agyaggal." }, "2": { "name": "Teljes masszázs", "desc": "Relaxáló teljes testmasszázs." } } },
+          "pl": { "title": "Peeling glinkowy i masaż", "details": { "1": { "name": "Glinkowy peeling mineralny", "desc": "Oczyszczający zabieg glinką." }, "2": { "name": "Masaż całego ciała", "desc": "Relaksująca sesja masażu." } } },
+          "cs": { "title": "Jílový peeling a masáž", "details": { "1": { "name": "Minerální jílový peeling", "desc": "Čisticí ošetření minerálním jílem." }, "2": { "name": "Celková masáž", "desc": "Relaxační masáž celého těla." } } },
+          "tr": { "title": "Kil Peelingi ve Masaj", "details": { "1": { "name": "Mineralli kil peelingi", "desc": "Kil ile arındırıcı cilt bakımı." }, "2": { "name": "Tam masaj", "desc": "Rahatlatıcı tüm vücut masajı." } } },
+          "zh": { "title": "矿物泥去角质与按摩", "details": { "1": { "name": "矿物泥去角质", "desc": "富含矿物质的净化护理。" }, "2": { "name": "全身按摩", "desc": "全身放松按摩疗程。" } } },
+          "ko": { "title": "클레이 바디 스크럽 및 마사지", "details": { "1": { "name": "미네랄 클레이 스크럽", "desc": "미네랄이 풍부한 클레이 정화 트리트먼트." }, "2": { "name": "전신 마사지", "desc": "편안한 전신 마사지 세션." } } }
+        }
+      },
+    
+      {
+        "id": "22",
+        "image": "assets/images/22.png",
+        "category": "scrubs",
+        "time": "60 Mins",
+        "price_info": { "salary": 20, "after_disc": 15, "currency": "€" },
+        "translations": {
+          "en": { "title": "Clay Body Scrub", "details": { "1": { "name": "Detoxifying clay", "desc": "Draws out toxins and deeply cleanses pores." } } },
+          "ar": { "title": "تقشير الجسم بالطمي", "details": { "1": { "name": "طمي مزيل للسموم", "desc": "يستخلص السموم وينظف المسام بعمق." } } },
+          "de": { "title": "Tonerde-Körperpeeling", "details": { "1": { "name": "Entgiftende Tonerde", "desc": "Zieht Giftstoffe aus der Haut." } } },
+          "fr": { "title": "Gommage Corporel à l'Argile", "details": { "1": { "name": "Argile détoxifiante", "desc": "Élimine les toxines et purifie." } } },
+          "ru": { "title": "Глиняный скраб для тела", "details": { "1": { "name": "Детокс-глина", "desc": "Выводит токсины и очищает поры." } } },
+          "es": { "title": "Exfoliación de Arcilla", "details": { "1": { "name": "Arcilla desintoxicante", "desc": "Elimina toxinas y limpia profundamente." } } },
+          "it": { "title": "Scrub Corpo all'Argilla", "details": { "1": { "name": "Argilla detossinante", "desc": "Elimina le tossine e purifica i pori." } } },
+          "sr": { "title": "Piling tela glinom", "details": { "1": { "name": "Detoksikacija glinom", "desc": "Izvlači toksine i čisti pore." } } },
+          "sk": { "title": "Ílový telový peeling", "details": { "1": { "name": "Detoxikačný íl", "desc": "Vyťahuje toxíny a čistí póry." } } },
+          "et": { "title": "Saviga kehakoorimine", "details": { "1": { "name": "Detoks-savi", "desc": "Eemaldab mürkained ja puhastab poore." } } },
+          "hu": { "title": "Agyagos testradír", "details": { "1": { "name": "Méregtelenítő agyag", "desc": "Kiszívja a méreganyagokat." } } },
+          "pl": { "title": "Glinkowy peeling ciała", "details": { "1": { "name": "Glinka detoksykująca", "desc": "Wyciąga toksyny i oczyszcza pory." } } },
+          "cs": { "title": "Jílový tělový peeling", "details": { "1": { "name": "Detoxikační jíl", "desc": "Vytahuje toxiny a čistí póry." } } },
+          "tr": { "title": "Vücut Kil Peelingi", "details": { "1": { "name": "Detoks etkili kil", "desc": "Toksinleri atar ve gözenekleri temizler." } } },
+          "zh": { "title": "身体矿物泥去角质", "details": { "1": { "name": "排毒矿物泥", "desc": "吸出毒素并深层清洁毛孔。" } } },
+          "ko": { "title": "클레이 바디 스크럽", "details": { "1": { "name": "디톡스 클레이", "desc": "독소를 배출하고 모공을 깊게 클렌징합니다." } } }
+        }
+      },
+    
+      {
+        "id": "23",
+        "image": "assets/images/23.png",
+        "category": "packages",
+        "time": "2 Hrs",
+        "price_info": { "salary": 34, "after_disc": 25, "currency": "€" },
+        "translations": {
+          "en": { "title": "Coffee Body Scrub and Massage", "details": { "1": { "name": "Caffeine exfoliation", "desc": "Stimulates blood flow and tightens skin." }, "2": { "name": "Invigorating massage", "desc": "Energizing massage to boost circulation." } } },
+          "ar": { "title": "تقشير الجسم بالقهوة ومساج", "details": { "1": { "name": "تقشير بالكافيين", "desc": "يحفز تدفق الدم ويشد الجلد." }, "2": { "name": "مساج منشط", "desc": "تدليك حيوي لتعزيز الدورة الدموية." } } },
+          "de": { "title": "Kaffee-Peeling und Massage", "details": { "1": { "name": "Koffein-Exfoliation", "desc": "Durchblutungsfördernd und hautstraffend." }, "2": { "name": "Belebende Massage", "desc": "Vitalisierende Massage." } } },
+          "fr": { "title": "Gommage au Café et Massage", "details": { "1": { "name": "Exfoliation à la caféine", "desc": "Stimule la circulation et raffermit." }, "2": { "name": "Massage énergisant", "desc": "Massage pour booster le tonus." } } },
+          "ru": { "title": "Кофейный пилинг и массаж", "details": { "1": { "name": "Кофеиновый пилинг", "desc": "Стимулирует кровоток и подтягивает кожу." }, "2": { "name": "Бодрящий массаж", "desc": "Энергичный массаж для циркуляции." } } },
+          "es": { "title": "Exfoliación de Café y Masaje", "details": { "1": { "name": "Exfoliación con cafeína", "desc": "Estimula el flujo sanguíneo y tensa." }, "2": { "name": "Masaje vigorizante", "desc": "Masaje energético para la circulación." } } },
+          "it": { "title": "Scrub al Caffè e Massaggio", "details": { "1": { "name": "Esfoliatione alla caffeina", "desc": "Stimola il flusso e rassoda la pelle." }, "2": { "name": "Massaggio rinvigorente", "desc": "Massaggio energizzante." } } },
+          "sr": { "title": "Piling kofom i masaža", "details": { "1": { "name": "Piling kofeinom", "desc": "Stimuliše cirkulaciju i zateže kožu." }, "2": { "name": "Okrepljujuća masaža", "desc": "Energetska masaža za cirkulaciju." } } },
+          "sk": { "title": "Kávový peeling a masáž", "details": { "1": { "name": "Kofeínová exfoliácia", "desc": "Stimuluje krvný obeh a vypína pleť." }, "2": { "name": "Povzbudzujúca masáž", "desc": "Energizujúca masážna seansa." } } },
+          "et": { "title": "Kohvikoorimine ja massaaž", "details": { "1": { "name": "Kofeiiniga koorimine", "desc": "Stimuleerib vereringet ja pinguldab." }, "2": { "name": "Värskendav massaaž", "desc": "Energiline massaaž vereringe parandamiseks." } } },
+          "hu": { "title": "Kávés bőrradír és masszázs", "details": { "1": { "name": "Koffeines radírozás", "desc": "Élénkíti a keringést és feszesít." }, "2": { "name": "Frissítő masszázs", "desc": "Energizáló masszázs élmény." } } },
+          "pl": { "title": "Peeling kawowy i masaż", "details": { "1": { "name": "Złuszczanie kofeinowe", "desc": "Stymuluje krążenie i napina skórę." }, "2": { "name": "Masaż pobudzający", "desc": "Energetyzujący masaż dla krążenia." } } },
+          "cs": { "title": "Kávový peeling a masáž", "details": { "1": { "name": "Kofeinový peeling", "desc": "Stimuluje oběh a vypíná pleť." }, "2": { "name": "Povzbuzující masáž", "desc": "Energizující masážní seance." } } },
+          "tr": { "title": "Kahve Peelingi ve Masaj", "details": { "1": { "name": "Kafein eksfoliasyonu", "desc": "Kan akışını uyarır ve cildi sıkılaştırır." }, "2": { "name": "Canlandırıcı masaj", "desc": "Dolaşımı artıran enerjik masaj." } } },
+          "zh": { "title": "咖啡身体去角质与按摩", "details": { "1": { "name": "咖啡因去角质", "desc": "促进血液循环并紧致肌肤。" }, "2": { "name": "焕活按摩", "desc": "增强循环的活力按摩。" } } },
+          "ko": { "title": "커피 바디 스크럽 및 마사지", "details": { "1": { "name": "카페인 각질 제거", "desc": "혈류를 자극하고 피부를 탄력 있게 합니다." }, "2": { "name": "활력 마사지", "desc": "순환을 돕는 에너지 마사지." } } }
+        }
+      },
+    
+      {
+        "id": "24",
+        "image": "assets/images/24.png",
+        "category": "scrubs",
+        "time": "60 Mins",
+        "price_info": { "salary": 20, "after_disc": 15, "currency": "€" },
+        "translations": {
+          "en": { "title": "Coffee Body Scrub", "details": { "1": { "name": "Anti-cellulite coffee scrub", "desc": "Exfoliates skin and helps reduce the appearance of cellulite." } } },
+          "ar": { "title": "تقشير الجسم بالقهوة", "details": { "1": { "name": "صنفرة قهوة للسيلوليت", "desc": "تقشر البشرة وتساعد في تقليل مظهر السيلوليت." } } },
+          "de": { "title": "Kaffee-Körperpeeling", "details": { "1": { "name": "Anti-Cellulite-Peeling", "desc": "Reduziert das Erscheinungsbild von Cellulite." } } },
+          "fr": { "title": "Gommage Corporel au Café", "details": { "1": { "name": "Gommage anti-cellulite", "desc": "Exfolie et aide à réduire la cellulite." } } },
+          "ru": { "title": "Кофейный скраб для тела", "details": { "1": { "name": "Антицеллюлитный скраб", "desc": "Отшелушивает и уменьшает проявления целлюлита." } } },
+          "es": { "title": "Exfoliación Corporal de Café", "details": { "1": { "name": "Exfoliante anti-celulítico", "desc": "Exfolia y reduce la apariencia de celulitis." } } },
+          "it": { "title": "Scrub Corpo al Caffè", "details": { "1": { "name": "Scrub anticellulite", "desc": "Esfolia e aiuta a ridurre la cellulite." } } },
+          "sr": { "title": "Piling tela kofom", "details": { "1": { "name": "Anticelulit piling", "desc": "Piling koji pomaže u smanjenju celulita." } } },
+          "sk": { "title": "Kávový telový peeling", "details": { "1": { "name": "Anticelulitídny peeling", "desc": "Pomáha znižovať výskyt celulitídy." } } },
+          "et": { "title": "Kohviga kehakoorimine", "details": { "1": { "name": "Antitselluliidi-koorimine", "desc": "Koorib ja vähendab tselluliidi nähtavust." } } },
+          "hu": { "title": "Kávés testradír", "details": { "1": { "name": "Anticellulit peeling", "desc": "Segít csökkenteni a narancsbőr láthatóságát." } } },
+          "pl": { "title": "Kawowy peeling ciała", "details": { "1": { "name": "Peeling antycellulitowy", "desc": "Złuszcza i pomaga redukować cellulit." } } },
+          "cs": { "title": "Kávový tělový peeling", "details": { "1": { "name": "Anticelulitidní peeling", "desc": "Pomáhá snižovat vzhled celulitidy." } } },
+          "tr": { "title": "Vücut Kahve Peelingi", "details": { "1": { "name": "Anti-selülit kahve peelingi", "desc": "Cildi yeniler ve selülit görünümünü azaltmaya yardımcı olur." } } },
+          "zh": { "title": "身体咖啡去角质", "details": { "1": { "name": "抗脂肪咖啡磨砂", "desc": "去角质并有助于减少橘皮组织的出现。" } } },
+          "ko": { "title": "커피 바디 스크럽", "details": { "1": { "name": "안티 셀룰라이트 스크럽", "desc": "각질을 제거하고 셀룰라이트 개선을 돕습니다." } } }
+        }
+      },
+    
+      {
+        "id": "25",
+        "image": "assets/images/25.png",
+        "category": "packages",
+        "time": "2 Hrs",
+        "price_info": { "salary": 34, "after_disc": 25, "currency": "€" },
+        "translations": {
+          "en": { "title": "Honey Body Scrub and Massage", "details": { "1": { "name": "Honey & Sugar scrub", "desc": "Natural exfoliation for ultra-soft skin." }, "2": { "name": "Nourishing massage", "desc": "Rich massage to feed and hydrate the skin." } } },
+          "ar": { "title": "تقشير الجسم بالعسل ومساج", "details": { "1": { "name": "تقشير بالعسل والسكر", "desc": "تقشير طبيعي لبشرة فائقة النعومة." }, "2": { "name": "مساج مغذي", "desc": "مساج غني لتغذية وترطيب البشرة." } } },
+          "de": { "title": "Honig-Peeling und Massage", "details": { "1": { "name": "Honig-Zucker-Peeling", "desc": "Natürliches Peeling für weiche Haut." }, "2": { "name": "Pflegende Massage", "desc": "Nährende Behandlung." } } },
+          "fr": { "title": "Gommage au Miel et Massage", "details": { "1": { "name": "Gommage miel et sucre", "desc": "Exfoliation naturelle pour peau douce." }, "2": { "name": "Massage nourrissant", "desc": "Soin riche pour hydrater la peau." } } },
+          "ru": { "title": "Медовый пилинг и массаж", "details": { "1": { "name": "Медово-сахарный скраб", "desc": "Натуральное отшелушивание для мягкости." }, "2": { "name": "Питательный массаж", "desc": "Питание и увлажнение кожи." } } },
+          "es": { "title": "Exfoliación de Miel y Masaje", "details": { "1": { "name": "Exfoliante de miel y azúcar", "desc": "Exfoliación natural para suavidad." }, "2": { "name": "Masaje nutritivo", "desc": "Nutre e hidrata profundamente." } } },
+          "it": { "title": "Scrub al Miele e Massaggio", "details": { "1": { "name": "Scrub miele e zucchero", "desc": "Esfoliazione naturale per pelle morbida." }, "2": { "name": "Massaggio nutriente", "desc": "Idratazione profonda della pelle." } } },
+          "sr": { "title": "Piling medom i masaža", "details": { "1": { "name": "Piling medom i šećerom", "desc": "Prirodni piling za meku kožu." }, "2": { "name": "Hranljiva masaža", "desc": "Masaža za hidrataciju kože." } } },
+          "sk": { "title": "Medový peeling a masáž", "details": { "1": { "name": "Medovo-cukrový peeling", "desc": "Prírodná exfoliácia pre jemnú pleť." }, "2": { "name": "Výživná masáž", "desc": "Masáž na vyživenie pokožky." } } },
+          "et": { "title": "Meekoorimine ja massaaž", "details": { "1": { "name": "Mee-suhkru koorimine", "desc": "Looduslik koorimine pehme naha saamiseks." }, "2": { "name": "Toitev massaaž", "desc": "Naha toitmine ja niisutamine." } } },
+          "hu": { "title": "Mézes bőrradír és masszázs", "details": { "1": { "name": "Mézes-cukros radírozás", "desc": "Természetes hámlasztás a puha bőrért." }, "2": { "name": "Tápláló masszázs", "desc": "Bőrtápláló és hidratáló kezelés." } } },
+          "pl": { "title": "Peeling miodowy i masaż", "details": { "1": { "name": "Peeling miodowo-cukrowy", "desc": "Naturalne złuszczanie dla miękkości." }, "2": { "name": "Masaż odżywczy", "desc": "Nawilżenie i odżywienie skóry." } } },
+          "cs": { "title": "Medový peeling a masáž", "details": { "1": { "name": "Medovo-cukrový peeling", "desc": "Přírodní exfoliace pro jemnou pleť." }, "2": { "name": "Výživná masáž", "desc": "Masáž pro výživu pokožky." } } },
+          "tr": { "title": "Bal Peelingi ve Masaj", "details": { "1": { "name": "Ballı şeker peelingi", "desc": "Yumuşacık bir cilt için doğal peeling." }, "2": { "name": "Besleyici masaj", "desc": "Cildi besleyen ve nemlendiren masaj." } } },
+          "zh": { "title": "蜂蜜去角质与按摩", "details": { "1": { "name": "蜂蜜糖砂去角质", "desc": "令肌肤倍感柔滑的天然去角质。" }, "2": { "name": "滋养按摩", "desc": "滋养并润泽肌肤的按摩。" } } },
+          "ko": { "title": "허니 바디 스크럽 및 마사지", "details": { "1": { "name": "허니 & 슈가 스크럽", "desc": "부드러운 피부를 위한 천연 각질 제거." }, "2": { "name": "영양 마사지", "desc": "피부에 영양과 수분을 공급하는 마사지." } } }
+        }
+      },
+    
+      {
+        "id": "26",
+        "image": "assets/images/26.png",
+        "category": "packages",
+        "time": "2 Hrs",
+        "price_info": { "salary": 34, "after_disc": 25, "currency": "€" },
+        "translations": {
+          "en": { "title": "Chocolate Body Scrub and Massage", "details": { "1": { "name": "Cocoa scrub", "desc": "Antioxidant-rich cocoa for skin renewal." }, "2": { "name": "Relaxing massage", "desc": "Sweetly scented relaxation session." } } },
+          "ar": { "title": "تقشير الجسم بالشوكولاتة ومساج", "details": { "1": { "name": "تقشير بالكاكاو", "desc": "كاكاو غني بمضادات الأكسدة لتجديد البشرة." }, "2": { "name": "مساج استرخائي", "desc": "جلسة استرخاء برائحة ذكية ومنعشة." } } },
+          "de": { "title": "Schoko-Peeling und Massage", "details": { "1": { "name": "Kakao-Peeling", "desc": "Antioxidantienreiches Kakao-Peeling." }, "2": { "name": "Entspannungsmassage", "desc": "Süß duftende Entspannung." } } },
+          "fr": { "title": "Gommage au Chocolat et Massage", "details": { "1": { "name": "Gommage au cacao", "desc": "Cacao antioxydant pour renouveler la peau." }, "2": { "name": "Massage relaxant", "desc": "Séance parfumée et relaxante." } } },
+          "ru": { "title": "Шоколадный пилинг и массаж", "details": { "1": { "name": "Какао-скраб", "desc": "Богатое антиоксидантами какао для обновления." }, "2": { "name": "Расслабляющий массаж", "desc": "Сладкая релаксация для тела." } } },
+          "es": { "title": "Exfoliación de Chocolate y Masaje", "details": { "1": { "name": "Exfoliante de cacao", "desc": "Cacao antioxidante para renovar la piel." }, "2": { "name": "Masaje relajante", "desc": "Relajación con aroma dulce." } } },
+          "it": { "title": "Scrub al Cioccolato e Massaggio", "details": { "1": { "name": "Scrub al cacao", "desc": "Cacao antiossidante per rinnovare la pelle." }, "2": { "name": "Massaggio rilassante", "desc": "Rilassamento dal profumo dolce." } } },
+          "sr": { "title": "Piling čokoladom i masaža", "details": { "1": { "name": "Piling kakaom", "desc": "Kakao bogat antioksidansima za obnovu kože." }, "2": { "name": "Opuštajuća masaža", "desc": "Slatka mirisna relaksacija." } } },
+          "sk": { "title": "Čokoládový peeling a masáž", "details": { "1": { "name": "Kakaový peeling", "desc": "Kakao s antioxidantmi na obnovu pleti." }, "2": { "name": "Relaxačná masáž", "desc": "Voňavá relaxačná seansa." } } },
+          "et": { "title": "Šokolaadikoorimine ja massaaž", "details": { "1": { "name": "Kakaokoorimine", "desc": "Antioksüdantiderikas kakao naha uuenemiseks." }, "2": { "name": "Lõõgastav massaaž", "desc": "Magusalt lõhnav lõõgastus." } } },
+          "hu": { "title": "Csokoládés bőrradír és masszázs", "details": { "1": { "name": "Kakaós peeling", "desc": "Antioxidánsokban gazdag bőrmegújítás." }, "2": { "name": "Relaxáló masszázs", "desc": "Édes illatú kényeztetés." } } },
+          "pl": { "title": "Peeling czekoladowy i masaż", "details": { "1": { "name": "Peeling kakaowy", "desc": "Bogate w antyoksydanty kakao dla skóry." }, "2": { "name": "Masaż relaksujący", "desc": "Słodka sesja odprężająca." } } },
+          "cs": { "title": "Čokoládový peeling a masáž", "details": { "1": { "name": "Kakaový peeling", "desc": "Kakao s antioxidanty pro obnovu pleti." }, "2": { "name": "Relaxační masáž", "desc": "Voňavá relaxační seance." } } },
+          "tr": { "title": "Çikolata Peelingi ve Masaj", "details": { "1": { "name": "Kakaolu peeling", "desc": "Cilt yenileme için antioksidan kedi kakao." }, "2": { "name": "Rahatlatıcı masaj", "desc": "Tatlı kokulu rahatlama seansı." } } },
+          "zh": { "title": "巧克力去角质与按摩", "details": { "1": { "name": "可可砂去角质", "desc": "富含抗氧化剂的可可，令肌肤焕新。" }, "2": { "name": "放松按摩", "desc": "伴随甜美芬芳的放松疗程。" } } },
+          "ko": { "title": "초콜릿 바디 스크럽 및 마사지", "details": { "1": { "name": "코코아 스크럽", "desc": "피부 재생을 위한 항산화 코코아." }, "2": { "name": "릴랙싱 마사지", "desc": "달콤한 향기의 휴식 세션." } } }
+        }
+      },
+    
+      {
+        "id": "27",
+        "image": "assets/images/27.png",
+        "category": "scrubs",
+        "time": "60 Mins",
+        "price_info": { "salary": 20, "after_disc": 15, "currency": "€" },
+        "translations": {
+          "en": { "title": "Chocolate Body Scrub", "details": { "1": { "name": "Sweet skin revitalization", "desc": "Improves skin tone while indulging your senses." } } },
+          "ar": { "title": "تقشير الجسم بالشوكولاتة", "details": { "1": { "name": "تجديد حيوي للبشرة", "desc": "يحسن لون البشرة مع إمتاع حواسك." } } },
+          "de": { "title": "Schokoladen-Körperpeeling", "details": { "1": { "name": "Süße Hautbelebung", "desc": "Verbessert den Hautton." } } },
+          "fr": { "title": "Gommage Corporel au Chocolat", "details": { "1": { "name": "Revitalisation douce", "desc": "Améliore le teint de la peau." } } },
+          "ru": { "title": "Шоколадный скраб для тела", "details": { "1": { "name": "Сладкое оживление кожи", "desc": "Улучшает тон кожи и радует чувства." } } },
+          "es": { "title": "Exfoliación Corporal de Chocolate", "details": { "1": { "name": "Revitalización dulce", "desc": "Mejora el tono de la piel." } } },
+          "it": { "title": "Scrub Corpo al Cioccolato", "details": { "1": { "name": "Rivitalizzazione dolce", "desc": "Migliora il tono della pelle." } } },
+          "sr": { "title": "Piling tela čokoladom", "details": { "1": { "name": "Slatka revitalizacija kože", "desc": "Poboljšava tonus kože." } } },
+          "sk": { "title": "Čokoládový telový peeling", "details": { "1": { "name": "Sladká revitalizácia pleti", "desc": "Zlepšuje tón pokožky." } } },
+          "et": { "title": "Šokolaadiga kehakoorimine", "details": { "1": { "name": "Magus naha elustamine", "desc": "Parandab nahatooni." } } },
+          "hu": { "title": "Csokoládés testradír", "details": { "1": { "name": "Édes bőrmegújítás", "desc": "Javítja a bőrtónust." } } },
+          "pl": { "title": "Czekoladowy peeling ciała", "details": { "1": { "name": "Słodka rewitalizacja", "desc": "Poprawia koloryt skóry." } } },
+          "cs": { "title": "Čokoládový tělový peeling", "details": { "1": { "name": "Sladká revitalizace pleti", "desc": "Zlepšuje tón pokožky." } } },
+          "tr": { "title": "Vücut Çikolata Peelingi", "details": { "1": { "name": "Tatlı cilt canlandırma", "desc": "Duyularınızı şımartırken cilt tonunu iyileştirir." } } },
+          "zh": { "title": "身体巧克力去角质", "details": { "1": { "name": "甜润焕肤护理", "desc": "在愉悦感官的同时改善肤色。" } } },
+          "ko": { "title": "초콜릿 바디 스크럽", "details": { "1": { "name": "달콤한 피부 활력", "desc": "피부 톤을 개선하고 감각을 즐겁게 합니다." } } }
+        }
+      }
+]

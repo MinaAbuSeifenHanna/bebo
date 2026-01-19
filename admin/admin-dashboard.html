@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Women World Beauty & Spa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .table-hover tbody tr:hover {
+            background-color: rgba(139, 92, 246, 0.05);
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-spin {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Header -->
+    <nav class="gradient-bg shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center justify-center w-10 h-10 bg-white rounded-lg">
+                        <i class="fas fa-spa text-purple-600"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-white text-xl font-bold">Admin Dashboard</h1>
+                        <p class="text-purple-100 text-sm">Women World Beauty & Spa</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span id="userEmail" class="text-white text-sm"></span>
+                    <button 
+                        onclick="logout()" 
+                        class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-4 py-2 rounded-lg transition duration-200"
+                    >
+                        <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-sm">Total Services</p>
+                        <p id="totalServices" class="text-2xl font-bold text-gray-800">0</p>
+                    </div>
+                    <div class="bg-purple-100 rounded-full p-3">
+                        <i class="fas fa-list text-purple-600"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-sm">Categories</p>
+                        <p id="totalCategories" class="text-2xl font-bold text-gray-800">0</p>
+                    </div>
+                    <div class="bg-green-100 rounded-full p-3">
+                        <i class="fas fa-tags text-green-600"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-sm">Last Updated</p>
+                        <p id="lastUpdated" class="text-lg font-bold text-gray-800">Never</p>
+                    </div>
+                    <div class="bg-blue-100 rounded-full p-3">
+                        <i class="fas fa-clock text-blue-600"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-orange-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-500 text-sm">Status</p>
+                        <p class="text-lg font-bold text-green-600">Connected</p>
+                    </div>
+                    <div class="bg-orange-100 rounded-full p-3">
+                        <i class="fas fa-database text-orange-600"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actions Bar -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div class="flex items-center space-x-4">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search services..."
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    >
+                    <select id="categoryFilter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500">
+                        <option value="">All Categories</option>
+                        <option value="packages">Packages</option>
+                        <option value="massages">Massages</option>
+                        <option value="hammam">Hammam</option>
+                        <option value="scrubs">Scrubs</option>
+                    </select>
+                </div>
+                <div class="flex space-x-4">
+                    <button 
+                        onclick="openAddModal()"
+                        class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition duration-200 transform hover:scale-105"
+                    >
+                        <i class="fas fa-plus mr-2"></i>Add New Service
+                    </button>
+                    <button 
+                        onclick="refreshData()"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition duration-200"
+                    >
+                        <i class="fas fa-sync mr-2"></i>Refresh
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Table -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full table-hover">
+                    <thead class="bg-gray-50 border-b">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Image</th>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title (EN)</th>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
+                            <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Time</th>
+                            <th class="px-6 py-4 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="servicesTableBody" class="bg-white divide-y divide-gray-200">
+                        <!-- Services will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Loading State -->
+            <div id="loadingState" class="text-center py-12">
+                <div class="inline-flex items-center">
+                    <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600 mr-3"></div>
+                    <span class="text-gray-600">Loading services...</span>
+                </div>
+            </div>
+            
+            <!-- Empty State -->
+            <div id="emptyState" class="hidden text-center py-12">
+                <i class="fas fa-inbox text-gray-400 text-5xl mb-4"></i>
+                <p class="text-gray-500 text-lg">No services found</p>
+                <p class="text-gray-400">Add your first service to get started</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Modal (Add/Edit) -->
+    <div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-5xl max-h-screen overflow-y-auto m-4">
+            <div class="sticky top-0 bg-white border-b px-6 py-4 flex justify-between items-center">
+                <h2 id="modalTitle" class="text-xl font-bold text-gray-800">Add New Service</h2>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            
+            <form id="serviceForm" class="p-6 space-y-6">
+                <!-- Basic Info -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Service ID</label>
+                        <input 
+                            type="text" 
+                            id="serviceId" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+                            placeholder="28"
+                        >
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Category</label>
+                        <select 
+                            id="serviceCategory" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+                        >
+                            <option value="">Select Category</option>
+                            <option value="packages">Packages</option>
+                            <option value="massages">Massages</option>
+                            <option value="hammam">Hammam</option>
+                            <option value="scrubs">Scrubs</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Image Path -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Image Path (Local Asset)</label>
+                    <input 
+                        type="text" 
+                        id="serviceImage" 
+                        required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+                        placeholder="assets/images/1.png"
+                    >
+                    <p class="text-xs text-gray-500 mt-1">Enter relative path to local image file (e.g., assets/images/1.png)</p>
+                </div>
+
+                <!-- Pricing -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Original Price</label>
+                        <input 
+                            type="text" 
+                            id="serviceSalary" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+                            placeholder="43 €"
+                        >
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Discounted Price</label>
+                        <input 
+                            type="text" 
+                            id="serviceAfterDisc" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+                            placeholder="35 €"
+                        >
+                    </div>
+                </div>
+
+                <!-- Multilingual Content -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-800 border-b pb-2">Multilingual Content</h3>
+                    
+                    <!-- English -->
+                    <div class="border rounded-lg p-4 bg-gray-50">
+                        <h4 class="font-medium text-gray-700 mb-3">English (en)</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Title</label>
+                                <input 
+                                    type="text" 
+                                    id="titleEn" 
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+                                    placeholder="Cleopatra VIP"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Time</label>
+                                <input 
+                                    type="text" 
+                                    id="timeEn" 
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+                                    placeholder="3 Hrs"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Details (JSON)</label>
+                                <textarea 
+                                    id="detailsEn" 
+                                    rows="4"
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 font-mono text-sm"
+                                    placeholder='{"1": {"Sauna - Jacuzzi - Steam Bath": "Full thermal relaxation."}}'
+                                ></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arabic -->
+                    <div class="border rounded-lg p-4 bg-gray-50">
+                        <h4 class="font-medium text-gray-700 mb-3">Arabic (ar)</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Title</label>
+                                <input 
+                                    type="text" 
+                                    id="titleAr" 
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+                                    placeholder="كليوباترا VIP"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Time</label>
+                                <input 
+                                    type="text" 
+                                    id="timeAr" 
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500"
+                                    placeholder="3 ساعات"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Details (JSON)</label>
+                                <textarea 
+                                    id="detailsAr" 
+                                    rows="4"
+                                    required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 font-mono text-sm"
+                                    placeholder='{"1": {"ساونا - جاكوزي - حمام بخار": "استرخاء حراري كامل."}}'
+                                ></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="flex justify-end space-x-4 pt-6 border-t">
+                    <button 
+                        type="button" 
+                        onclick="closeModal()"
+                        class="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition duration-200"
+                    >
+                        Cancel
+                    </button>
+                    <button 
+                        type="submit"
+                        class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition duration-200"
+                    >
+                        <i class="fas fa-save mr-2"></i>
+                        <span id="submitBtnText">Add Service</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-xl p-6 max-w-md m-4">
+            <div class="text-center">
+                <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-exclamation-triangle text-red-600 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Delete Service</h3>
+                <p class="text-gray-600 mb-6">Are you sure you want to delete "<span id="deleteServiceName"></span>"? This action cannot be undone.</p>
+                <div class="flex justify-center space-x-4">
+                    <button 
+                        onclick="closeDeleteModal()"
+                        class="px-6 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition duration-200"
+                    >
+                        Cancel
+                    </button>
+                    <button 
+                        onclick="confirmDelete()"
+                        class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition duration-200"
+                    >
+                        <i class="fas fa-trash mr-2"></i>Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Dashboard Script -->
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

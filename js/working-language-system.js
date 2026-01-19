@@ -1,43 +1,61 @@
 // working-language-system.js - Complete working language switching system
-// Relies on data.js for originalServices and translation dictionaries
+// Now uses Firebase Firestore data instead of static data.js
 
 let currentLanguage = localStorage.getItem('selectedLanguage') || 'en';
 
-// Main function to update window.allServices based on current language
+// Main function to update window.allServices based on current language from Firebase
 function updateAllServices() {
-  // Use servicesData from data.js (which is now window.servicesData)
-  let sourceData = window.servicesData || window.originalServices;
+  // Use Firebase data instead of static data
+  let sourceData = window.allServices || [];
 
-  if (!sourceData && typeof servicesData !== 'undefined') {
-    sourceData = servicesData;
+  if (!sourceData || sourceData.length === 0) {
+    console.warn('⚠️ No Firebase services data available for language update');
+    return;
   }
 
-  if (!sourceData) {
-    console.error('CRITICAL: servicesData not found in data.js or global scope');
-    // Try one last attempt to see if we can find it in common locations
-    if (window.services && Array.isArray(window.services)) sourceData = window.services;
+  console.log(`🌐 Updating ${sourceData.length} services to language: ${currentLanguage}`);
 
-    if (!sourceData) return;
-  }
-
+  // Update services with current language translations
   window.allServices = sourceData.map(service => {
     // Clone service
     const translated = { ...service };
 
-    // Select specific language for Title
-    translated.title = service.title[currentLanguage] || service.title['en'];
+    // Select specific language for Title (handle both string and object formats)
+    if (typeof service.title === 'object' && service.title[currentLanguage]) {
+      translated.title = service.title[currentLanguage];
+    } else if (typeof service.title === 'object' && service.title['en']) {
+      translated.title = service.title['en'];
+    } else {
+      translated.title = service.title || 'Service';
+    }
 
-    // Select specific language for Time
-    translated.time = service.time[currentLanguage] || service.time['en'];
+    // Select specific language for Time (handle both string and object formats)
+    if (typeof service.time === 'object' && service.time[currentLanguage]) {
+      translated.time = service.time[currentLanguage];
+    } else if (typeof service.time === 'object' && service.time['en']) {
+      translated.time = service.time['en'];
+    } else {
+      translated.time = service.time || '';
+    }
 
-    // Select specific language for Details
-    // details structure is { en: {...}, ar: {...} }
-    translated.details = service.details[currentLanguage] || service.details['en'];
+    // Select specific language for Details (handle nested object structure)
+    if (typeof service.details === 'object' && service.details[currentLanguage]) {
+      translated.details = service.details[currentLanguage];
+    } else if (typeof service.details === 'object' && service.details['en']) {
+      translated.details = service.details['en'];
+    } else {
+      translated.details = service.details || {};
+    }
 
     return translated;
   });
 
-  console.log(`Updated services for language: ${currentLanguage}`);
+  console.log(`✅ Updated ${window.allServices.length} services for language: ${currentLanguage}`);
+  
+  // Re-render services if UI is ready
+  if (typeof renderAllSections === 'function') {
+    renderAllSections();
+  }
 }
 
 // Get UI Text (labels)
