@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Women World Beauty & Spa - Luxury Spa in Hurghada</title>
+  <title>World Spa & Beauty - Luxury Spa in Hurghada</title>
   <meta name="description"
     content="Premium luxury spa services in Hurghada, Egypt. Professional hammam, massage, body treatments, and beauty packages.">
   <meta name="keywords" content="spa, hammam, massage, hurghada, beauty, treatments, relaxation, wellness">
-  <meta name="author" content="Women World Beauty & Spa">
-  <meta property="og:title" content="Women World Beauty & Spa - Hurghada">
+  <meta name="author" content="World Spa & Beauty">
+  <meta property="og:title" content="World Spa & Beauty - Hurghada">
   <meta property="og:description" content="Luxury spa services and treatments in Hurghada, Egypt">
-  <meta property="og:image" content="assets/images/logo.jpg">
-  <meta property="og:url" content="https://womenworldspa.com">
+  <meta property="og:image" content="assets/images/logo.png">
+  <meta property="og:url" content="https://worldspabeauty.com">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
 
@@ -22,7 +22,9 @@
   <link rel="canonical" href="https://womenworldspa.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -62,124 +64,149 @@
 </head>
 
 <body>
-  <!-- Top Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#">Women World Beauty & Spa</a>
-
-      <!-- Desktop Navigation -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home" data-i18n="home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#salon" data-i18n="salon">Salon</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery" data-i18n="gallery">Gallery</a>
-          </li>
-        </ul>
-
-        <!-- Desktop Action Bar -->
-        <div class="d-none d-lg-flex align-items-center gap-2">
-          <a href="https://wa.me/01007920759" class="btn btn-success btn-sm" data-i18n="whatsapp">
-            <i class="fab fa-whatsapp me-1"></i> WhatsApp
-          </a>
-          <a href="tel:+201007920759" class="btn btn-primary btn-sm" data-i18n="phone">
-            <i class="fas fa-phone me-1"></i> Phone
-          </a>
-          <a href="#" class="btn btn-outline-secondary btn-sm" onclick="toggleCartSidebar()">
-            <i class="fas fa-shopping-cart me-1"></i>
-            <span data-i18n="cart">Cart</span>
-            <span class="badge bg-danger cart-counter">0</span>
+  <!-- Combined Sticky Universal Header (Responsive) -->
+  <div class="universal-sticky-header">
+    <div class="container-fluid container-lg">
+      <header class="main-utility-header">
+        <div class="utility-header-row">
+          <!-- Brand Logo (Sticky) -->
+          <a class="header-brand" href="#">
+            <img src="assets/images/logo.png" alt="Women World Beauty & Spa" class="brand-logo-img">
           </a>
 
-          <!-- Language Selector -->
-          <div class="dropdown">
-            <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-              id="languageDropdownBtn">
-              English
+          <div class="utility-actions">
+            <button class="icon-btn d-lg-none" id="mobileMenuBtn" data-bs-toggle="collapse"
+              data-bs-target="#mobileMenu">
+              <i class="fas fa-bars"></i>
             </button>
-            <ul class="dropdown-menu" id="languageDropdownMenu">
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">🇺🇸 English</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('ar')">🇸🇦 العربية</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')">🇩🇪 Deutsch</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('ru')">🇷🇺 Русский</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">🇮🇹 Italiano</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')">🇭🇺 Magyar</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('hr')">🇭🇷 Hrvatski</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">🇪🇸 Español</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('cs')">🇨🇿 Čeština</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('lv')">🇱🇻 Latviešu</a></li>
-              <li><a class="dropdown-item" href="#" onclick="switchLanguage('zh')">🇨🇳 中文</a></li>
-            </ul>
+            <a href="tel:+201007920759" class="icon-btn">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a href="https://wa.me/201007920759" class="icon-btn">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <button class="icon-btn" onclick="toggleTheme()" id="theme-toggle" title="Toggle Light/Dark Mode">
+              <i class="fas fa-moon theme-toggle-icon"></i>
+            </button>
+            <button class="icon-btn position-relative" onclick="window.location.href='pages/cart.html'">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-badge-dot cart-counter">0</span>
+            </button>
+            <div class="dropdown">
+              <button class="icon-btn dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown"
+                id="langSwitcherBtn">
+                <i class="fas fa-globe"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">🇺🇸 English</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('ar')">🇸🇦 العربية</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')">🇩🇪 Deutsch</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('ru')">🇷🇺 Русский</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">🇮🇹 Italiano</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')">🇭🇺 Magyar</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('hr')">🇭🇷 Hrvatski</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">🇪🇸 Español</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('cs')">🇨🇿 Čeština</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('lv')">🇱🇻 Latviešu</a></li>
+                <li><a class="dropdown-item" href="#" onclick="switchLanguage('zh')">🇨🇳 中文</a></li>
+              </ul>
+            </div>
+            <i class="fas fa-moon"></i>
+            </button>
           </div>
         </div>
-      </div>
+      </header>
 
-      <!-- Mobile Action Bar -->
-      <div class="d-flex d-lg-none align-items-center gap-2">
-        <a href="https://wa.me/01007920759" class="btn btn-success btn-sm" data-i18n="whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="tel:+201007920759" class="btn btn-primary btn-sm" data-i18n="phone">
-          <i class="fas fa-phone"></i>
-        </a>
-        <a href="#" class="btn btn-outline-secondary btn-sm" onclick="toggleCartSidebar()">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="badge bg-danger cart-counter">0</span>
-        </a>
+      <!-- Tier 1: Primary Global Navigation (Permanent) -->
+      <nav class="primary-global-nav">
+        <ul class="nav justify-content-center border-0" id="primaryNav" role="tablist">
+          <li class="nav-item">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-content"
+              type="button" role="tab">
+              <span data-i18n="home">Home</span>
+            </button>
+          </li>
+          <li class="nav-separator">|</li>
+          <li class="nav-item">
+            <button class="nav-link" id="salon-tab" data-bs-toggle="tab" data-bs-target="#salon-content" type="button"
+              role="tab">
+              <span data-i18n="salon">Salon</span>
+            </button>
+          </li>
+          <li class="nav-separator">|</li>
+          <li class="nav-item">
+            <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery-content"
+              type="button" role="tab">
+              <span data-i18n="gallery">Gallery</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
 
-        <!-- Mobile Language Selector -->
-        <div class="dropdown">
-          <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            id="mobileLanguageDropdownBtn">
-            🌍
-          </button>
-          <ul class="dropdown-menu" id="mobileLanguageDropdownMenu">
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">🇺🇸 English</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('ar')">🇸🇦 العربية</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')">🇩🇪 Deutsch</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('ru')">🇷🇺 Русский</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">🇮🇹 Italiano</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')">🇭🇺 Magyar</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('hr')">🇭🇷 Hrvatski</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">🇪🇸 Español</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('cs')">🇨🇿 Čeština</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('lv')">🇱🇻 Latviešu</a></li>
-            <li><a class="dropdown-item" href="#" onclick="switchLanguage('zh')">🇨🇳 中文</a></li>
-          </ul>
-        </div>
-
-        <!-- Hamburger Menu -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Tier 2: Secondary Service Tabs (Conditional) -->
+      <div id="service-nav-container">
+        <nav class="universal-nav-tabs">
+          <div class="scrolling-tabs-wrapper">
+            <ul class="nav nav-tabs border-0" id="serviceTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-local-tab" data-bs-toggle="tab" data-bs-target="#home-content"
+                  type="button" role="tab">
+                  <span data-i18n="home">Home</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="all-tab" data-bs-toggle="tab" data-bs-target="#services-content"
+                  type="button" role="tab" data-category="all">
+                  <span data-i18n="allServices">All Services</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="packages-tab" data-bs-toggle="tab" data-bs-target="#services-content"
+                  type="button" role="tab" data-category="packages">
+                  <span data-i18n="packages">Packages</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="massages-tab" data-bs-toggle="tab" data-bs-target="#services-content"
+                  type="button" role="tab" data-category="massages">
+                  <span data-i18n="massages">Massages</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hammam-tab" data-bs-toggle="tab" data-bs-target="#services-content"
+                  type="button" role="tab" data-category="hammam">
+                  <span data-i18n="hammam">Hammam</span>
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="scrub-tab" data-bs-toggle="tab" data-bs-target="#services-content"
+                  type="button" role="tab" data-category="scrubs">
+                  <span data-i18n="scrub">Body Scrubs</span>
+                </button>
+              </li>
+            </ul>
+            <div class="scroll-fade-end"></div>
+          </div>
+        </nav>
       </div>
     </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="collapse navbar-collapse d-lg-none" id="mobileMenu">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#home" data-i18n="home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#salon" data-i18n="salon">Salon</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#gallery" data-i18n="gallery">Gallery</a>
-      </li>
-    </ul>
   </div>
 
-  <!-- Main Content -->
+  <!-- Universal Menu Collapse (Optional for extra links) -->
+  <div class="collapse navbar-collapse d-lg-none" id="mobileMenu">
+    <div class="container py-3">
+      <ul class="navbar-nav">
+        <!-- We can put extra links here if needed, or keep it empty/remove it -->
+        <li class="nav-item">
+          <a class="nav-link" href="pages/cart.html" data-i18n="cart">Cart</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <main>
-    <!-- Hero Section -->
+    <!-- Content sections follow -->
     <section id="home" class="hero-section">
       <div class="hero-image">
         <img src="assets/images/backimage.png" alt="Women World Beauty & Spa" class="w-100">
@@ -188,77 +215,41 @@
 
     <!-- Secondary Tabs and Content -->
     <!-- Secondary Tabs and Content -->
-    <div class="container">
-      <!-- Sticky Navigation Wrapper -->
-      <div class="sticky-nav-container">
-        <ul class="nav nav-tabs border-0 justify-content-center" id="serviceTabs" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-content" type="button"
-              role="tab">
-              <i class="fas fa-home me-2"></i>
-              <span data-i18n="home">Home</span>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
+    <!-- Content Sections will be rendered here -->
 
-            <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#services-content"
-              type="button" role="tab" data-category="all">
-              <i class="fas fa-spa me-2"></i>
-              <span data-i18n="allServices">All Services</span>
-            </button>
-
-
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="packages-tab" data-bs-toggle="tab" data-bs-target="#services-content"
-              type="button" role="tab" data-category="packages">
-              <i class="fas fa-gift me-2"></i>
-              <span data-i18n="packages">Packages</span>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="massages-tab" data-bs-toggle="tab" data-bs-target="#services-content"
-              type="button" role="tab" data-category="massages">
-              <i class="fas fa-hand-sparkles me-2"></i>
-              <span data-i18n="massages">Massages</span>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="hammam-tab" data-bs-toggle="tab" data-bs-target="#services-content"
-              type="button" role="tab" data-category="hammam">
-              <i class="fas fa-hot-tub me-2"></i>
-              <span data-i18n="hammam">Hammam</span>
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="scrub-tab" data-bs-toggle="tab" data-bs-target="#services-content"
-              type="button" role="tab" data-category="scrubs">
-              <i class="fas fa-spray-can me-2"></i>
-              <span data-i18n="scrub">Body Scrubs</span>
-            </button>
-          </li>
-        </ul>
+    <!-- Tab Content -->
+    <div class="tab-content" id="mainTabContent">
+      <!-- Home Tab Content -->
+      <div class="tab-pane fade show active" id="home-content" role="tabpanel">
+        <div class="content-wrapper">
+          <!-- Content will be rendered by renderHomeContent() -->
+        </div>
       </div>
 
-      <!-- Tab Content -->
-      <div class="tab-content" id="mainTabContent">
-        <!-- Home Tab Content -->
-        <div class="tab-pane fade" id="home-content" role="tabpanel">
-          <div class="content-wrapper">
-            <!-- Content will be rendered by renderHomeContent() -->
-          </div>
+      <!-- Salon Tab Content -->
+      <div class="tab-pane fade" id="salon-content" role="tabpanel">
+        <div class="content-wrapper">
+          <!-- Content will be rendered by renderSalonContent() -->
         </div>
+      </div>
 
-        <!-- Services Tab Content - Single Dynamic Container -->
-        <div class="tab-pane fade show active" id="services-content" role="tabpanel">
-          <div class="content-wrapper">
-            <h2 class="section-title text-center mb-4" id="section-title" data-i18n="allServices">All Services</h2>
-            <div class="services-container" id="all-services-grid">
-              <!-- Dynamically rendered -->
-            </div>
+      <!-- Gallery Tab Content -->
+      <div class="tab-pane fade" id="gallery-content" role="tabpanel">
+        <div class="content-wrapper">
+          <!-- Content will be rendered by renderGalleryContent() -->
+        </div>
+      </div>
+
+      <!-- Services Tab Content - Single Dynamic Container -->
+      <div class="tab-pane fade" id="services-content" role="tabpanel">
+        <div class="content-wrapper">
+          <h2 class="section-title text-center mb-4" id="section-title" data-i18n="allServices">All Services</h2>
+          <div class="services-container" id="all-services-grid">
+            <!-- Dynamically rendered -->
           </div>
         </div>
       </div>
+    </div>
     </div>
   </main>
 
@@ -389,10 +380,12 @@
   <!-- Cart Sidebar (Offcanvas) -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="cartSidebarLabel">
-        <i class="fas fa-shopping-bag text-primary"></i> <span data-i18n="cart">Your Cart</span>
+      <h5 class="offcanvas-title" id="cartSidebarLabel"
+        style="font-weight: 800; text-transform: uppercase; letter-spacing: 2px;">
+        Your selection
       </h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+        style="font-size: 0.8rem;"></button>
     </div>
     <div class="offcanvas-body d-flex flex-column">
       <!-- Cart Items Container -->
@@ -457,7 +450,7 @@
   </div>
 
   <!-- Floating Cart Button -->
-  <button class="floating-cart-btn" onclick="toggleCartSidebar()" title="View Cart">
+  <button class="floating-cart-btn" onclick="window.location.href='pages/cart.html'" title="View Cart">
     <i class="fas fa-shopping-cart fa-lg"></i>
     <span id="cartBadge" class="cart-badge">0</span>
   </button>

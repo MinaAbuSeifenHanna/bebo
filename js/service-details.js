@@ -33,19 +33,21 @@
 
         // Update UI
         safeSetText('det-title', data.title);
-        safeSetText('det-time', service.time || '60 Mins');
+        safeSetText('det-time', service.duration || '2'); // Default to 2 if not found
         safeSetText('sticky-title', data.title);
 
         // Price
         const currency = service.price_info?.currency || '€';
         const price = service.price_info.after_disc;
-        safeSetText('det-new-price', `${currency}${price}`);
-        safeSetText('sticky-price', `${currency}${price}`);
+        const oldPrice = service.price_info.salary;
+
+        safeSetText('det-new-price', `${price}${currency}`);
+        safeSetText('sticky-price', `${price}${currency}`);
 
         const oldPriceEl = document.getElementById('det-old-price');
         if (oldPriceEl) {
-            if (service.price_info.salary && service.price_info.salary != service.price_info.after_disc) {
-                oldPriceEl.textContent = `${currency}${service.price_info.salary}`;
+            if (oldPrice && oldPrice != price) {
+                oldPriceEl.textContent = `${oldPrice}${currency}`;
                 oldPriceEl.style.display = 'inline';
             } else {
                 oldPriceEl.style.display = 'none';
@@ -56,24 +58,30 @@
         const imgEl = document.getElementById('det-image');
         if (imgEl && window.Utils) {
             imgEl.src = window.Utils.resolvePath(service.image || 'assets/images/placeholder.png');
-            imgEl.onerror = () => { imgEl.src = window.Utils.resolvePath('assets/images/backimage.png'); };
+            imgEl.onerror = () => { imgEl.src = window.Utils.resolvePath('assets/images/placeholder.png'); };
         }
 
-        // Steps/Details
+        // Features/Details Mapping
         const stepsCont = document.getElementById('det-steps');
         if (stepsCont && data.details) {
             stepsCont.innerHTML = Object.values(data.details).map(d => `
-                <li class="treatment-step">
-                    <div class="step-icon">
-                        <i class="fas fa-leaf"></i>
+                <div class="details-feature-item">
+                    <i class="fas fa-check"></i>
+                    <div class="f-content">
+                        <strong>${d.name}</strong>
+                        <span>${d.desc || 'Premium treatment step'}</span>
                     </div>
-                    <div>
-                        <strong class="d-block text-dark">${d.name}</strong>
-                        <span class="text-muted small">${d.desc || 'Included in treatment'}</span>
-                    </div>
-                </li>
+                </div>
             `).join('');
         }
+
+        // Trigger animations
+        document.querySelectorAll('.fade-in-up').forEach((el, index) => {
+            setTimeout(() => {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
 
         // Exposing helper for the HTML button
         window.addToCartFromDetails = function () {

@@ -58,13 +58,16 @@
     saveCart();
 
     // 5. User Feedback
-    // Check if sidebar exists, if so open it, else show alert
+    // Cart is now a standalone page, so we just update the UI counters
+    /*
     const sidebarEl = document.getElementById('cartSidebar');
     if (sidebarEl) {
       toggleCartSidebar(true);
     } else {
       alert(`✅ Added to cart: ${title}`);
     }
+    */
+    alert(`✅ Added to cart: ${title}`);
   };
 
   // Remove Item
@@ -159,30 +162,107 @@
 
     container.innerHTML = cart.map(item => {
       const price = parseFloat(item.price_info?.after_disc || 0).toFixed(2);
-      // Fix Image Path using Utils
+      const currency = item.price_info?.currency || '€';
+
       let imgPath = item.image || 'assets/images/placeholder.png';
       if (window.Utils && window.Utils.resolvePath) {
         imgPath = window.Utils.resolvePath(imgPath);
       }
 
       return `
-                <div class="cart-item d-flex align-items-center mb-3 border-bottom pb-2">
-                    <img src="${imgPath}" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;" alt="${item.title}" onerror="this.src='${window.Utils ? window.Utils.resolvePath('assets/images/placeholder.png') : ''}'">
-                    <div class="flex-grow-1">
-                        <h6 class="mb-0 text-truncate" style="max-width: 160px;">${item.title}</h6>
-                        <small class="text-muted">€${price} x ${item.quantity}</small>
+                <div class="cart-item-luxury fade-in-up" style="opacity: 1; transform: translateY(0);">
+                    <div class="cart-img-pill">
+                        <img src="${imgPath}" alt="${item.title}" onerror="this.src='${window.Utils ? window.Utils.resolvePath('assets/images/placeholder.png') : ''}'">
                     </div>
-                    <button class="btn btn-sm text-danger" onclick="removeFromCart('${item.id}')">
+                    <div class="cart-item-info">
+                        <div class="cart-item-title">${item.title}</div>
+                        <div class="cart-item-price">${price}${currency} x ${item.quantity}</div>
+                    </div>
+                    <button class="btn btn-sm text-danger border-0 bg-transparent" onclick="removeFromCart('${item.id}')">
                         <i class="fas fa-trash-alt"></i>
                     </button>
                 </div>
             `;
     }).join('');
 
-    if (totalEl) {
-      totalEl.textContent = `€${window.getCartTotal().toFixed(2)}`;
+    const subtotal = window.getCartTotal().toFixed(2);
+    const currency = cart[0]?.price_info?.currency || '€';
+
+    // Update Footer with Luxury Total
+    if (footer) {
+      footer.innerHTML = `
+            <div id="cartFooterItems">
+              <div class="cart-total-row">
+                  <span class="cart-total-label">Total Amount</span>
+                  <span class="cart-total-value">${subtotal}${currency}</span>
+              </div>
+              <button class="btn-book-luxury w-100 py-3" onclick="showCheckoutForm()">
+                  Proceed to Booking
+              </button>
+            </div>
+        `;
     }
   }
+
+  // --- Sidebar View Toggles ---
+  window.showCheckoutForm = function () {
+    // Check both potential containers (offcanvas or standalone page)
+    const itemsCont = document.getElementById('cartItemsContainer') || document.getElementById('cart-items');
+    const formCont = document.getElementById('checkoutFormContainer') || document.getElementById('checkout-form-container');
+    const footer = document.getElementById('cartFooterItems') || document.getElementById('cart-page-footer');
+    const pageTitle = document.getElementById('cart-page-title');
+
+    if (itemsCont) itemsCont.classList.add('d-none');
+    if (formCont) formCont.classList.remove('d-none');
+    if (footer) footer.classList.add('d-none');
+    if (pageTitle) pageTitle.style.display = 'none';
+  };
+
+  window.showCartItems = function () {
+    const itemsCont = document.getElementById('cartItemsContainer') || document.getElementById('cart-items');
+    const formCont = document.getElementById('checkoutFormContainer') || document.getElementById('checkout-form-container');
+    const footer = document.getElementById('cartFooterItems') || document.getElementById('cart-page-footer');
+    const pageTitle = document.getElementById('cart-page-title');
+
+    if (itemsCont) itemsCont.classList.remove('d-none');
+    if (formCont) formCont.classList.add('d-none');
+    if (footer) footer.classList.remove('d-none');
+    if (pageTitle) pageTitle.style.display = 'block';
+  };
+
+  window.submitSidebarBooking = function () {
+    const name = document.getElementById('sidebarName').value;
+    const phone = document.getElementById('sidebarPhone').value;
+    const date = document.getElementById('sidebarDate').value;
+    const time = document.getElementById('sidebarTime').value;
+
+    if (!name || !date || !time) {
+      alert('Please fill in all required fields');
+      return;
+    }
+
+    const customerData = { name, phone, date, time };
+    window.processBooking(customerData);
+  };
+
+  window.submitCartBooking = function () {
+    const name = document.getElementById('cart-name').value;
+    const phone = document.getElementById('cart-phone').value;
+    const date = document.getElementById('cart-date').value;
+    const time = document.getElementById('cart-time').value;
+    const notes = document.getElementById('cart-notes').value;
+    const transport = document.getElementById('cart-transport').checked;
+    const residence = document.getElementById('cart-residence').value;
+    const room = document.getElementById('cart-room').value;
+
+    if (!name || !date || !time) {
+      alert('Please fill in all required fields');
+      return;
+    }
+
+    const customerData = { name, phone, date, time, notes, transport, residence, room };
+    window.processBooking(customerData);
+  };
 
   // --- Booking Logic (Unified) ---
   // This handles the WhatsApp message generation
@@ -201,11 +281,16 @@
 
     const total = window.getCartTotal().toFixed(2);
 
+    let transportInfo = '';
+    if (customerData.transport) {
+      transportInfo = `\n🚗 *Transportation Info*\n📍 Place: ${customerData.residence || 'N/A'}\n🔢 Room: ${customerData.room || 'N/A'}\n`;
+    }
+
     const message = `🌸 *New Booking Request* 🌸
 👤 *${customerData.name}*
 📞 ${customerData.phone || 'N/A'}
 📅 ${customerData.date} at ${customerData.time}
-
+${transportInfo}
 💅 *Services:*
 ${servicesList}
 💰 *Total: €${total}*
@@ -236,45 +321,66 @@ Confirm via: womenworldspa.com`;
   // --- Cart Page Rendering (for cart.html) ---
   window.renderCart = function () {
     const container = document.getElementById('cart-items');
-    const totalEl = document.querySelector('#cart-total');
+    const footer = document.getElementById('cart-page-footer');
+    const totalEl = document.getElementById('cart-page-total');
 
     if (!container) return; // Not on cart page
 
+    const count = window.getCartCount();
+    const titleEl = document.getElementById('cart-page-title');
+    if (titleEl) {
+      titleEl.textContent = count > 0 ? `Your Selection (${count} ${count === 1 ? 'Service' : 'Services'})` : 'Your Selection';
+    }
+
     if (cart.length === 0) {
-      container.innerHTML = '<p class="text-muted">Your cart is empty.</p>';
-      if (totalEl) totalEl.innerHTML = '<strong>Total</strong>: €0.00';
+      container.innerHTML = `
+                <div class="text-center py-5">
+                    <div class="mb-4" style="font-size: 3rem; opacity: 0.1;"><i class="fas fa-shopping-bag"></i></div>
+                    <p class="text-muted" style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem;">Your selection is currently empty</p>
+                    <a href="../index.html" class="btn-book-luxury d-inline-block mt-3 px-4 py-2" style="width: auto; text-decoration: none;">Explore Services</a>
+                </div>
+            `;
+      if (footer) footer.style.display = 'none';
       return;
     }
 
-    container.innerHTML = cart.map(item => {
+    if (footer) footer.style.display = 'block';
+
+    // Add Clear All Button at top
+    const clearBtnHtml = `
+        <div class="text-end mb-3">
+            <button class="btn btn-sm btn-outline-dark border-0 text-muted" style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px;" onclick="if(confirm('Clear all selection?')) { clearCart(); renderCart(); }">
+                <i class="fas fa-times me-1"></i> Clear Selection
+            </button>
+        </div>
+    `;
+
+    container.innerHTML = clearBtnHtml + cart.map(item => {
       let imgPath = item.image || 'assets/images/placeholder.png';
       if (window.Utils) imgPath = window.Utils.resolvePath(imgPath);
       const price = parseFloat(item.price_info?.after_disc || 0).toFixed(2);
+      const currency = item.price_info?.currency || '€';
 
       return `
-                <div class="card mb-3 shadow-sm">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-3 col-md-2">
-                             <img src="${imgPath}" class="img-fluid rounded-start h-100" style="object-fit: cover; min-height: 80px;" alt="${item.title}">
-                        </div>
-                        <div class="col-9 col-md-10">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 class="card-title mb-1">${item.title}</h5>
-                                    <p class="card-text mb-0"><small class="text-muted">€${price} x ${item.quantity}</small></p>
-                                </div>
-                                <button class="btn btn-outline-danger btn-sm" onclick="removeFromCart('${item.id}'); renderCart();">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                            </div>
-                        </div>
+                <div class="cart-item-luxury fade-in-up" style="opacity: 1; transform: translateY(0);">
+                    <div class="cart-img-pill">
+                        <img src="${imgPath}" alt="${item.title}" onerror="this.src='${window.Utils ? window.Utils.resolvePath('assets/images/placeholder.png') : ''}'">
                     </div>
+                    <div class="cart-item-info">
+                        <div class="cart-item-title" style="font-size: 0.85rem;">${item.title}</div>
+                        <div class="cart-item-price">${price}${currency} x ${item.quantity}</div>
+                    </div>
+                    <button class="btn btn-sm text-danger border-0 bg-transparent d-flex align-items-center gap-1" onclick="removeFromCart('${item.id}'); renderCart();" title="Remove item">
+                        <i class="fas fa-trash-alt" style="font-size: 0.8rem;"></i>
+                        <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase;">Remove</span>
+                    </button>
                 </div>
             `;
     }).join('');
 
     const total = window.getCartTotal().toFixed(2);
-    if (totalEl) totalEl.innerHTML = `<strong>Total</strong>: €${total}`;
+    const currency = cart[0]?.price_info?.currency || '€';
+    if (totalEl) totalEl.textContent = `${total}${currency}`;
   };
 
   // Expose update function for others (legacy support)
@@ -283,6 +389,16 @@ Confirm via: womenworldspa.com`;
   // Initialize on load
   document.addEventListener('DOMContentLoaded', () => {
     updateCartUI();
+
+    // Transport Toggle Listener
+    const transportCheck = document.getElementById('cart-transport');
+    const residenceCont = document.getElementById('cart-residence-container');
+    if (transportCheck && residenceCont) {
+      transportCheck.addEventListener('change', (e) => {
+        if (e.target.checked) residenceCont.classList.remove('d-none');
+        else residenceCont.classList.add('d-none');
+      });
+    }
   });
 
 })();

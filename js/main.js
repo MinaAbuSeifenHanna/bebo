@@ -70,13 +70,23 @@ function renderSkeletons() {
   container.innerHTML = '';
   for (let i = 0; i < 8; i++) {
     const skeleton = document.createElement('div');
-    skeleton.className = 'skeleton-card';
+    skeleton.className = 'service-card-luxury skeleton';
     skeleton.innerHTML = `
-            <div class="skeleton-image skeleton"></div>
-            <div class="skeleton-title skeleton"></div>
-            <div class="skeleton-text skeleton"></div>
-            <div class="skeleton-text skeleton" style="width: 50%"></div>
-            <div class="skeleton-button skeleton"></div>
+            <div class="card-image-arched skeleton" style="margin-top: 20px;"></div>
+            <div class="card-title-banner skeleton" style="height: 50px;"></div>
+            <div class="card-info-row d-flex justify-content-between">
+              <div class="skeleton" style="height: 20px; width: 60px;"></div>
+              <div class="skeleton" style="height: 25px; width: 80px;"></div>
+            </div>
+            <div class="card-feature-list">
+              <div class="feature-item skeleton" style="height: 35px; width: 100%;"></div>
+              <div class="feature-item skeleton" style="height: 35px; width: 90%;"></div>
+              <div class="feature-item skeleton" style="height: 35px; width: 95%;"></div>
+            </div>
+            <div class="card-action-bar">
+              <div class="skeleton" style="height: 50px; flex-grow: 1; border-radius: 10px;"></div>
+              <div class="skeleton" style="height: 50px; width: 55px; border-radius: 10px;"></div>
+            </div>
         `;
     container.appendChild(skeleton);
   }
@@ -116,7 +126,10 @@ function renderCategory(category) {
   if (filteredServices.length > 0) {
     const fragment = document.createDocumentFragment();
     filteredServices.forEach(service => {
-      fragment.appendChild(createServiceCard(service));
+      const cardCol = createServiceCard(service);
+      fragment.appendChild(cardCol);
+      const card = cardCol.querySelector('.service-card-luxury');
+      if (card) cardObserver.observe(card);
     });
     container.appendChild(fragment);
   } else {
@@ -124,7 +137,7 @@ function renderCategory(category) {
   }
 }
 
-// --- Create reusable service card ---
+// --- Create reusable service card (Luxury Detailed) ---
 function createServiceCard(service) {
   const col = document.createElement('div');
   col.className = 'fade-in-up';
@@ -138,51 +151,75 @@ function createServiceCard(service) {
   const salary = priceObj.salary || '';
   const after_disc = priceObj.after_disc || salary;
 
-  const priceHtml = (salary === after_disc || !salary)
-    ? `<span class="discounted-price">${currency}${after_disc}</span>`
-    : `<span class="original-price">${currency}${salary}</span>
-       <span class="discounted-price">${currency}${after_disc}</span>`;
-
-  let detailsText = 'Experience a luxury spa treatment designed for relaxation and rejuvenation.';
-  if (langData && langData.description) {
-    detailsText = langData.description;
-  } else if (langData && langData.details) {
-    const detailsArray = Object.values(langData.details).map(d => typeof d === 'object' ? d.name : d);
-    detailsText = detailsArray.join(' • ');
+  // Feature List Parser
+  let features = [];
+  if (langData && langData.details) {
+    features = Object.values(langData.details).map(d => typeof d === 'object' ? d.name : d);
+  } else if (langData && langData.description) {
+    // Split by common separators if it's a flat string
+    features = langData.description.split(/[•·.|\n]/).map(s => s.trim()).filter(s => s.length > 5);
   }
+
+  // Fallback if no features
+  if (features.length === 0) features = ['Premium Spa Experience', 'Professional Therapist', 'Luxury Products'];
+
+  // Limit features to 7 for layout consistency
+  const displayedFeatures = features.slice(0, 7);
+
+  // Duration Logic (Check if 'duration' exists or extract from title/description)
+  const duration = service.duration || '2'; // Default to 2 for demo if not found
 
   // Use Utils for pathing
   let imagePath = service.image || 'assets/images/placeholder.png';
   if (window.Utils) imagePath = window.Utils.resolvePath(imagePath);
 
   col.innerHTML = `
-    <div class="service-card">
-      <div class="card-img-wrapper">
-        <img src="${imagePath}" alt="${title}" loading="lazy" onerror="this.src='${window.Utils ? window.Utils.resolvePath('assets/images/backimage.png') : ''}'">
-        <div class="duration-badge">
-             <i class="far fa-clock me-1"></i> ${service.time || '60 Mins'}
+    <div class="service-card-luxury" onclick="window.location.href='pages/booking.html?id=${service.id}'">
+      <div class="card-image-arched">
+        <img src="${imagePath}" alt="${title}" loading="lazy" onerror="this.src='${window.Utils ? window.Utils.resolvePath('assets/images/placeholder.png') : ''}'">
+      </div>
+      
+      <div class="card-title-banner">
+        <span>${title}</span>
+      </div>
+
+      <div class="card-info-row">
+        <div class="card-duration">${duration} <span>Hrs</span></div>
+        <div class="card-price-stack">
+          ${salary !== after_disc && salary ? `<span class="card-price-old">${currency}${salary}</span>` : ''}
+          <div class="card-price-main"><span>${currency}</span>${after_disc}</div>
         </div>
       </div>
-      <div class="card-body">
-        <h5 class="card-title text-primary-custom">${title}</h5>
-        <p class="card-text">${detailsText}</p>
-        <div class="price-container d-flex align-items-center mb-3">
-          ${priceHtml}
-        </div>
-        <div class="d-flex gap-2">
-          <button class="btn btn-primary-custom btn-sm flex-grow-1" onclick="viewDetails('${service.id}')">
-            <i class="fas fa-info-circle me-1"></i> ${typeof getUIText === 'function' ? getUIText('viewDetails') : 'Details'}
-          </button>
-          <button class="btn btn-success-custom btn-sm" onclick="window.addToCart('${service.id}')">
-            <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
+
+      <ul class="card-feature-list">
+        ${displayedFeatures.map(f => `
+          <li class="feature-item">
+            <i class="fas fa-check"></i>
+            <span>${f}</span>
+          </li>
+        `).join('')}
+      </ul>
+
+      <div class="card-action-bar">
+        <div class="btn-book-luxury text-center" style="line-height: 1.5;">Book Now</div>
+        <button class="btn-cart-luxury" onclick="event.stopPropagation(); window.addToCart('${service.id}')">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
       </div>
     </div>
   `;
 
   return col;
 }
+
+// --- Scroll Animation Observer ---
+const cardObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
 
 // Unified Tab Handler
 function handleTabClick(e) {
@@ -191,23 +228,77 @@ function handleTabClick(e) {
 
   const category = button.getAttribute('data-category');
   const target = button.getAttribute('data-bs-target');
+  const isLevel1Home = button.id === 'home-tab';
+  const isLevel2Home = button.id === 'home-local-tab';
 
-  if (target === '#home-content') {
+  const serviceNav = document.getElementById('service-nav-container');
+  if (serviceNav) {
+    if (target === '#home-content' || isLevel2Home) {
+      serviceNav.style.display = 'block';
+    } else if (button.closest('#primaryNav')) {
+      // If clicking Salon or Gallery from level 1, hide service nav
+      serviceNav.style.display = 'none';
+    }
+  }
+
+  // Handle Level 1 Home clicking -> Ensure Tier 2 Home is active
+  if (isLevel1Home) {
+    const localHomeTab = document.getElementById('home-local-tab');
+    if (localHomeTab) {
+      // Bootstrap tab switch
+      const tab = new bootstrap.Tab(localHomeTab);
+      tab.show();
+    }
+  }
+
+  if (target === '#home-content' || isLevel2Home) {
     renderHomeContent();
+  } else if (target === '#salon-content') {
+    renderSalonContent();
+  } else if (target === '#gallery-content') {
+    renderGalleryContent();
   } else {
     renderCategory(category || 'all');
   }
 
   const contentSection = document.querySelector('.tab-content');
   if (contentSection) {
-    const yOffset = -100;
+    const yOffset = -120; // Adjusted for sticky header
     const y = contentSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({ top: y, behavior: 'smooth' });
   }
 }
 
 function renderAllSections() {
-  renderCategory('all');
+  const activeTab = document.querySelector('.nav-link.active');
+  const serviceNav = document.getElementById('service-nav-container');
+
+  if (activeTab) {
+    const target = activeTab.getAttribute('data-bs-target');
+    const category = activeTab.getAttribute('data-category');
+    const isLevel2Home = activeTab.id === 'home-local-tab';
+
+    // Handle initial visibility
+    if (serviceNav) {
+      if (target === '#home-content' || isLevel2Home) {
+        serviceNav.style.display = 'block';
+      } else {
+        serviceNav.style.display = 'none';
+      }
+    }
+
+    if (target === '#home-content' || isLevel2Home) {
+      renderHomeContent();
+    } else if (target === '#salon-content') {
+      renderSalonContent();
+    } else if (target === '#gallery-content') {
+      renderGalleryContent();
+    } else {
+      renderCategory(category || 'all');
+    }
+  } else {
+    renderCategory('all');
+  }
 }
 
 function setupTabListeners() {
@@ -220,23 +311,104 @@ function renderHomeContent() {
   const container = document.getElementById('home-content');
   if (container) {
     container.innerHTML = `
-      <div class="text-center py-5">
-        <h2 class="section-title mb-4" data-i18n="welcome">Welcome to Women World Beauty & Spa</h2>
-        <p class="lead mb-4" data-i18n="homeDescription">Experience luxury spa treatments in heart of Hurghada</p>
+      <div class="text-center py-5 fade-in-up">
+        <h2 class="section-title mb-4" data-i18n="welcome">Welcome to World Spa & Beauty</h2>
+        <p class="lead mb-5" data-i18n="homeDescription">Experience luxury spa treatments in heart of Hurghada</p>
         <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="card border-0 shadow-lg">
-              <div class="card-body p-4">
-                <h5 class="card-title mb-3" data-i18n="contactInfo">Contact Information</h5>
-                <div class="contact-info">
-                  <p class="mb-2"><i class="fas fa-phone me-2"></i> +201007920759</p>
-                  <p class="mb-2"><i class="fas fa-envelope me-2"></i> minaabuseifen@gmail.com</p>
-                  <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i> Hurghada, Egypt</p>
+          <div class="col-md-10 col-lg-8">
+            <div class="contact-card-minimal">
+              <div class="card-body p-4 p-md-5">
+                <h5 class="card-title-bw mb-5" data-i18n="contactInfo">Contact Information</h5>
+                <div class="contact-info-grid">
+                  <a href="tel:+201007920759" class="contact-item-minimal">
+                    <div class="icon-bw"><i class="fas fa-phone"></i></div>
+                    <span class="fw-bold">+201007920759</span>
+                  </a>
+                  <a href="mailto:minaabuseifen@gmail.com" class="contact-item-minimal">
+                    <div class="icon-bw"><i class="fas fa-envelope"></i></div>
+                    <span class="fw-bold">minaabuseifen@gmail.com</span>
+                  </a>
+                  <div class="contact-item-minimal">
+                    <div class="icon-bw"><i class="fas fa-map-marker-alt"></i></div>
+                    <span class="fw-bold">Hurghada, Egypt</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    `;
+    if (typeof updateAllUIText === 'function') updateAllUIText();
+  }
+}
+
+function renderSalonContent() {
+  const container = document.getElementById('salon-content');
+  if (container) {
+    container.innerHTML = `
+      <div class="py-5 fade-in-up">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+             <div class="salon-img-box">
+                <img src="assets/images/backimage.png" alt="Salon" class="img-fluid w-100">
+             </div>
+          </div>
+          <div class="col-lg-6 px-lg-5">
+            <h2 class="section-title mb-4" data-i18n="salon">Our Salon</h2>
+            <p class="text-muted mb-5 lead">Welcome to our state-of-the-art beauty salon. We offer a wide range of professional beauty treatments tailored to your needs.</p>
+            <ul class="salon-services-list">
+               <li><div class="icon-bw-small"><i class="fas fa-check"></i></div> <span>Professional Hair Styling</span></li>
+               <li><div class="icon-bw-small"><i class="fas fa-check"></i></div> <span>Expert Makeup Services</span></li>
+               <li><div class="icon-bw-small"><i class="fas fa-check"></i></div> <span>Premium Nail Care</span></li>
+               <li><div class="icon-bw-small"><i class="fas fa-check"></i></div> <span>Luxury Facial Treatments</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `;
+    if (typeof updateAllUIText === 'function') updateAllUIText();
+  }
+}
+
+function renderGalleryContent() {
+  const container = document.getElementById('gallery-content');
+  if (container) {
+    container.innerHTML = `
+      <div class="py-5 fade-in-up">
+         <h2 class="section-title text-center mb-5" data-i18n="gallery">Photo Gallery</h2>
+         <div class="row g-3">
+            <div class="col-6 col-md-4">
+               <div class="gallery-item-bw">
+                  <img src="assets/images/1.png" alt="Gallery 1" class="img-fluid w-100 gallery-img">
+               </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="gallery-item-bw">
+                   <img src="assets/images/2.png" alt="Gallery 2" class="img-fluid w-100 gallery-img">
+                </div>
+             </div>
+             <div class="col-6 col-md-4">
+                <div class="gallery-item-bw">
+                   <img src="assets/images/3.png" alt="Gallery 3" class="img-fluid w-100 gallery-img">
+                </div>
+             </div>
+             <div class="col-6 col-md-4">
+                <div class="gallery-item-bw">
+                   <img src="assets/images/4.png" alt="Gallery 4" class="img-fluid w-100 gallery-img">
+                </div>
+             </div>
+             <div class="col-6 col-md-4">
+                <div class="gallery-item-bw">
+                   <img src="assets/images/backimage.png" alt="Gallery 5" class="img-fluid w-100 gallery-img">
+                </div>
+             </div>
+             <div class="col-6 col-md-4">
+                <div class="gallery-item-bw">
+                   <img src="assets/images/logo.jpg" alt="Gallery 6" class="img-fluid w-100 gallery-img">
+                </div>
+             </div>
+         </div>
       </div>
     `;
     if (typeof updateAllUIText === 'function') updateAllUIText();
@@ -348,7 +520,16 @@ function setupEventListeners() {
   if (themeToggle) {
     themeToggle.addEventListener('click', () => {
       document.body.classList.toggle('dark-theme');
-      themeToggle.textContent = document.body.classList.contains('dark-theme') ? '☀️' : '🌙';
+      const icon = themeToggle.querySelector('i');
+      if (icon) {
+        if (document.body.classList.contains('dark-theme')) {
+          icon.className = 'fas fa-sun';
+        } else {
+          icon.className = 'fas fa-moon';
+        }
+      } else {
+        themeToggle.textContent = document.body.classList.contains('dark-theme') ? '☀️' : '🌙';
+      }
     });
   }
 
@@ -362,6 +543,28 @@ function setupEventListeners() {
   const dateInput = document.getElementById('bookingDate');
   if (dateInput) {
     dateInput.min = new Date().toISOString().split('T')[0];
+  }
+
+  // Horizontal Scroll Fade Logic
+  const scrollTabs = document.querySelector('.scrolling-tabs-wrapper .nav-tabs');
+  const scrollFade = document.querySelector('.scroll-fade-end');
+  if (scrollTabs && scrollFade) {
+    scrollTabs.addEventListener('scroll', () => {
+      const remainingScroll = scrollTabs.scrollWidth - scrollTabs.clientWidth - scrollTabs.scrollLeft;
+      if (remainingScroll < 10) {
+        scrollFade.style.opacity = '0';
+      } else {
+        scrollFade.style.opacity = '1';
+      }
+    });
+  }
+
+  // Mouse Wheel to Horizontal Scroll for Tabs
+  if (scrollTabs) {
+    scrollTabs.addEventListener('wheel', (evt) => {
+      evt.preventDefault();
+      scrollTabs.scrollLeft += evt.deltaY;
+    });
   }
 }
 

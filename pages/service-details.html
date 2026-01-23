@@ -4,79 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Details - Women World Spa</title>
+    <title>Service Details - World Spa & Beauty</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="bg-light">
+<body>
 
-    <div class="container py-5 mt-4">
+    <div class="details-luxury-container">
         <!-- Back Link -->
-        <div class="mb-4">
-            <a href="../index.html" class="btn btn-outline-secondary btn-sm rounded-pill px-3">
-                <i class="fas fa-arrow-left me-1"></i> Back to Services
+        <div class="mb-5 d-flex align-items-center justify-content-between">
+            <a href="../index.html" class="icon-btn d-inline-flex align-items-center gap-2"
+                style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                <i class="fas fa-arrow-left"></i> Back to Services
             </a>
+            <button class="icon-btn" onclick="toggleTheme()" title="Toggle Dark Mode">
+                <i class="fas fa-moon theme-toggle-icon"></i>
+            </button>
         </div>
 
-        <div class="details-hero">
-            <div class="row g-0">
-                <!-- Image Side -->
-                <div class="col-md-6 position-relative">
-                    <div class="details-img-container">
-                        <img id="det-image" src="" alt="Service Image">
-                    </div>
-                </div>
+        <!-- Arched Hero -->
+        <div class="details-hero-arched fade-in-up">
+            <img id="det-image" src="" alt="Service Image">
+        </div>
 
-                <!-- Content Side -->
-                <div class="col-md-6">
-                    <div class="details-content">
-                        <div class="details-info-header">
-                            <h1 id="det-title" class="display-5 fw-bold mb-3">Loading Service...</h1>
-                            <div class="d-flex flex-wrap gap-2">
-                                <div class="details-meta-item">
-                                    <i class="far fa-clock"></i> <span id="det-time">0 Mins</span>
-                                </div>
-                                <div class="details-meta-item">
-                                    <i class="fas fa-euro-sign"></i>
-                                    <span id="det-new-price" class="ms-1">0.00</span>
-                                    <span id="det-old-price" class="original-price ms-2"></span>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Boxed Banner -->
+        <div class="details-title-banner fade-in-up">
+            <h1 id="det-title">Loading Service...</h1>
+        </div>
 
-                        <div class="treatment-steps-container">
-                            <h4 class="fw-bold mb-4">Treatment Breakdown</h4>
-                            <ul id="det-steps" class="treatment-steps">
-                                <!-- Steps will be rendered here -->
-                            </ul>
-                        </div>
-
-                        <!-- Desktop CTA -->
-                        <div class="mt-5 d-none d-md-block">
-                            <button class="btn btn-success-custom btn-lg w-100 shadow-sm"
-                                onclick="addToCartFromDetails()">
-                                <i class="fas fa-cart-plus me-2"></i> Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <!-- Luxury Info Bar -->
+        <div class="details-luxury-info fade-in-up">
+            <div class="item">
+                <span class="label">Duration</span>
+                <span class="value" id="det-time">0 Mins</span>
             </div>
+            <div class="item text-end">
+                <span class="label">Price</span>
+                <span class="value">
+                    <span id="det-old-price" class="original-price me-2"
+                        style="font-size: 0.8rem; opacity: 0.5;"></span>
+                    <span id="det-new-price">0.00€</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Feature Grid (Checklist) -->
+        <div class="details-feature-grid fade-in-up" id="det-steps">
+            <!-- Dynamic Features Loaded Here -->
+        </div>
+
+        <!-- Desktop Action -->
+        <div class="mt-5 text-center d-none d-md-block fade-in-up">
+            <button class="btn-book-luxury w-100" style="padding: 20px; font-size: 1.1rem;"
+                onclick="addToCartFromDetails()">
+                Add to Cart
+            </button>
         </div>
     </div>
 
-    <!-- Mobile Sticky CTA -->
+    <!-- Mobile Sticky CTA (Luxury Refined) -->
     <div class="add-to-cart-sticky">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
                 <div>
-                    <h6 class="mb-0 fw-bold" id="sticky-title">Service Name</h6>
-                    <span class="text-success fw-bold" id="sticky-price">0.00€</span>
+                    <h6 class="mb-0 fw-bold" id="sticky-title"
+                        style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Service Name</h6>
+                    <span class="fw-bold" id="sticky-price" style="font-size: 1.1rem;">0.00€</span>
                 </div>
-                <button class="btn btn-success-custom px-4" onclick="addToCartFromDetails()">
-                    <i class="fas fa-cart-plus me-1"></i> Add
+                <button class="btn-book-luxury px-4" style="padding: 12px 25px; border-radius: 6px;"
+                    onclick="addToCartFromDetails()">
+                    Add
                 </button>
             </div>
         </div>
@@ -90,6 +90,7 @@
 
     <!-- Core Tools -->
     <script src="../js/utils.js"></script>
+    <script src="../js/theme.js"></script>
 
     <!-- Data Loader -->
     <script src="../js/firebase-data-loader.js"></script>
