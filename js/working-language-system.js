@@ -4,51 +4,47 @@
 let currentLanguage = localStorage.getItem('selectedLanguage') || 'en';
 
 // Main function to update window.allServices based on current language from Firebase
+// Main function to update window.allServices based on current language from Firebase
 function updateAllServices() {
-  // Use Firebase data instead of static data
-  let sourceData = window.allServices || [];
+  // Use raw data as source to prevent translation pollution
+  let sourceData = window.rawServices && window.rawServices.length > 0
+    ? window.rawServices
+    : (window.allServices || []);
 
   if (!sourceData || sourceData.length === 0) {
-    console.warn('⚠️ No Firebase services data available for language update');
+    console.warn('⚠️ No services data available for language update');
     return;
   }
 
   console.log(`🌐 Updating ${sourceData.length} services to language: ${currentLanguage}`);
 
   // Update services with current language translations
-  window.allServices = sourceData.map(service => {
+  const updatedServices = sourceData.map(service => {
     // Clone service
     const translated = { ...service };
 
-    // Select specific language for Title (handle both string and object formats)
-    if (typeof service.title === 'object' && service.title[currentLanguage]) {
-      translated.title = service.title[currentLanguage];
-    } else if (typeof service.title === 'object' && service.title['en']) {
-      translated.title = service.title['en'];
-    } else {
-      translated.title = service.title || 'Service';
+    // Get translations for current language, fallback to English
+    const translation = (service.translations && service.translations[currentLanguage])
+      ? service.translations[currentLanguage]
+      : (service.translations && service.translations['en'] ? service.translations['en'] : {});
+
+    // Update Title
+    if (translation.title) {
+      translated.title = translation.title;
     }
 
-    // Select specific language for Time (handle both string and object formats)
-    if (typeof service.time === 'object' && service.time[currentLanguage]) {
-      translated.time = service.time[currentLanguage];
-    } else if (typeof service.time === 'object' && service.time['en']) {
-      translated.time = service.time['en'];
-    } else {
-      translated.time = service.time || '';
-    }
-
-    // Select specific language for Details (handle nested object structure)
-    if (typeof service.details === 'object' && service.details[currentLanguage]) {
-      translated.details = service.details[currentLanguage];
-    } else if (typeof service.details === 'object' && service.details['en']) {
-      translated.details = service.details['en'];
-    } else {
-      translated.details = service.details || {};
+    // Update Details
+    if (translation.details) {
+      translated.details = translation.details;
     }
 
     return translated;
   });
+
+  // Force Numerical Sort (1-27)
+  updatedServices.sort((a, b) => (parseInt(a.id) || 0) - (parseInt(b.id) || 0));
+
+  window.allServices = updatedServices;
 
   console.log(`✅ Updated ${window.allServices.length} services for language: ${currentLanguage}`);
 
@@ -85,7 +81,20 @@ function getUIText(key) {
       'bookingSuccess': 'Booking Confirmed!',
       'successMessage': 'Thank you! Your appointment has been booked via WhatsApp.',
       'close': 'Close',
-      'selectLanguage': 'Select Language'
+      'selectLanguage': 'Select Language',
+      'backToServices': 'Back to Services',
+      'completeBooking': 'Complete Your Booking',
+      'phone': 'Phone Number',
+      'preferredTime': 'Preferred Time',
+      'askTransport': 'Ask for transportation rate?',
+      'residencePlace': 'Residence Place',
+      'roomNumber': 'Room Number',
+      'specialNotes': 'Any special notes?',
+      'proceedBooking': 'Proceed to Booking',
+      'yourSelection': 'Your Selection',
+      'bookingTotal': 'Booking Total',
+      'duration': 'Duration',
+      'price': 'Price'
     },
     'ar': {
       'home': 'الرئيسية',
@@ -111,7 +120,20 @@ function getUIText(key) {
       'bookingSuccess': 'تم تأكيد الحجز!',
       'successMessage': 'شكراً لك! تم إرسال تفاصيل حجزك عبر واتساب.',
       'close': 'إغلاق',
-      'selectLanguage': 'اختر اللغة'
+      'selectLanguage': 'اختر اللغة',
+      'backToServices': 'العودة للخدمات',
+      'completeBooking': 'إكمال الحجز',
+      'phone': 'رقم الهاتف',
+      'preferredTime': 'وقت الموعد المفضل',
+      'askTransport': 'هل تود طلب توصيل؟',
+      'residencePlace': 'مكان الإقامة (فندق / منطقة)',
+      'roomNumber': 'رقم الغرفة',
+      'specialNotes': 'ملاحظات خاصة؟',
+      'proceedBooking': 'متابعة الحجز',
+      'yourSelection': 'اختياراتك',
+      'bookingTotal': 'إجمالي الحجز',
+      'duration': 'المدة',
+      'price': 'السعر'
     },
     'de': {
       'home': 'Startseite',
@@ -347,6 +369,174 @@ function getUIText(key) {
       'successMessage': '谢谢！您的预约已通过 WhatsApp 预订。',
       'close': '关闭',
       'selectLanguage': '选择语言'
+    },
+    'tr': {
+      'home': 'Ana Sayfa',
+      'allServices': 'Tüm Hizmetler',
+      'packages': 'Paketler',
+      'massages': 'Masajlar',
+      'hammam': 'Hamam',
+      'scrub': 'Vücut Peelingi',
+      'viewDetails': 'Detayları Gör',
+      'addToCart': 'Sepete Ekle',
+      'welcome': 'World Spa & Beauty\'ye Hoşgeldiniz',
+      'homeDescription': 'Hurghada\'nın kalbinde lüks spa deneyimi',
+      'contactInfo': 'İletişim Bilgileri',
+      'cart': 'Sepet',
+      'checkout': 'Ödeme',
+      'total': 'Toplam',
+      'name': 'İsim',
+      'date': 'Tarih',
+      'time': 'Saat',
+      'confirmBooking': 'Rezervasyonu Onayla',
+      'bookingSuccess': 'Rezervasyon Onaylandı!',
+      'successMessage': 'Teşekkürler! Randevunuz WhatsApp üzerinden alındı.',
+      'close': 'Kapat',
+      'selectLanguage': 'Dil Seçin'
+    },
+    'pl': {
+      'home': 'Strona główna',
+      'allServices': 'Wszystkie usługi',
+      'packages': 'Pakiety',
+      'massages': 'Masaże',
+      'hammam': 'Hammam',
+      'scrub': 'Peeling ciała',
+      'viewDetails': 'Zobacz szczegóły',
+      'addToCart': 'Dodaj do koszyka',
+      'welcome': 'Witamy w World Spa & Beauty',
+      'homeDescription': 'Poczuj luksusowe zabiegi spa w sercu Hurghady',
+      'contactInfo': 'Informacje kontaktowe',
+      'cart': 'Koszyk',
+      'checkout': 'Kasa',
+      'total': 'Suma',
+      'name': 'Imię',
+      'date': 'Data',
+      'time': 'Godzina',
+      'confirmBooking': 'Potwierdź rezerwację',
+      'bookingSuccess': 'Rezerwacja potwierdzona!',
+      'successMessage': 'Dziękujemy! Twoja wizyta została zarezerwowana przez WhatsApp.',
+      'close': 'Zamknij',
+      'selectLanguage': 'Wybierz język'
+    },
+    'et': {
+      'home': 'Avaleht',
+      'allServices': 'Kõik teenused',
+      'packages': 'Paketid',
+      'massages': 'Massaažid',
+      'hammam': 'Hammam',
+      'scrub': 'Kehakoorijad',
+      'viewDetails': 'Vaata lähemalt',
+      'addToCart': 'Lisa ostukorvi',
+      'welcome': 'Tere tulemast World Spa & Beauty-sse',
+      'homeDescription': 'Kogege luksuslikke spaateenuseid Hurghada südames',
+      'contactInfo': 'Kontaktinfo',
+      'cart': 'Ostukorv',
+      'checkout': 'Maksma',
+      'total': 'Kokku',
+      'name': 'Nimi',
+      'date': 'Kuupäev',
+      'time': 'Aeg',
+      'confirmBooking': 'Kinnita broneering',
+      'bookingSuccess': 'Broneering kinnitatud!',
+      'successMessage': 'Aitäh! Teie aeg on broneeritud WhatsAppi kaudu.',
+      'close': 'Sulge',
+      'selectLanguage': 'Vali keel'
+    },
+    'sr': {
+      'home': 'Početna',
+      'allServices': 'Sve usluge',
+      'packages': 'Paketi',
+      'massages': 'Masaže',
+      'hammam': 'Hamam',
+      'scrub': 'Piling tela',
+      'viewDetails': 'Pogledaj detalje',
+      'addToCart': 'Dodaj u korpu',
+      'welcome': 'Dobrodošli u World Spa & Beauty',
+      'homeDescription': 'Doživite luksuzne spa tretmane u srcu Hurgade',
+      'contactInfo': 'Kontakt informacije',
+      'cart': 'Korpa',
+      'checkout': 'Kasa',
+      'total': 'Ukupno',
+      'name': 'Ime',
+      'date': 'Datum',
+      'time': 'Vreme',
+      'confirmBooking': 'Potvrdi rezervaciju',
+      'bookingSuccess': 'Rezervacija potvrđena!',
+      'successMessage': 'Hvala! Vaš termin je rezervisan putem WhatsApp-a.',
+      'close': 'Zatvori',
+      'selectLanguage': 'Izaberi jezik'
+    },
+    'tr': {
+      'home': 'Ana Sayfa',
+      'allServices': 'Tüm Hizmetler',
+      'packages': 'Paketler',
+      'massages': 'Masajlar',
+      'hammam': 'Hamam',
+      'scrub': 'Vücut Peelingi',
+      'viewDetails': 'Detayları Gör',
+      'addToCart': 'Sepete Ekle',
+      'welcome': 'World Spa & Beauty\'ye Hoşgeldiniz',
+      'homeDescription': 'Hurghada\'nın kalbinde lüks spa deneyimi',
+      'contactInfo': 'İletişim Bilgileri',
+      'cart': 'Sepet',
+      'checkout': 'Ödeme',
+      'total': 'Toplam',
+      'name': 'İsim',
+      'date': 'Tarih',
+      'time': 'Saat',
+      'confirmBooking': 'Rezervasyonu Onayla',
+      'bookingSuccess': 'Rezervasyon Onaylandı!',
+      'successMessage': 'Teşekkürler! Randevunuz WhatsApp üzerinden alındı.',
+      'close': 'Kapat',
+      'selectLanguage': 'Dil Seçin'
+    },
+    'pl': {
+      'home': 'Strona główna',
+      'allServices': 'Wszystkie usługi',
+      'packages': 'Pakiety',
+      'massages': 'Masaże',
+      'hammam': 'Hammam',
+      'scrub': 'Peeling ciała',
+      'viewDetails': 'Zobacz szczegóły',
+      'addToCart': 'Dodaj do koszyka',
+      'welcome': 'Witamy w World Spa & Beauty',
+      'homeDescription': 'Poczuj luksusowe zabiegi spa w sercu Hurghady',
+      'contactInfo': 'Informacje kontaktowe',
+      'cart': 'Koszyk',
+      'checkout': 'Kasa',
+      'total': 'Suma',
+      'name': 'Imię',
+      'date': 'Data',
+      'time': 'Godzina',
+      'confirmBooking': 'Potwierdź rezerwację',
+      'bookingSuccess': 'Rezerwacja potwierdzona!',
+      'successMessage': 'Dziękujemy! Twoja wizyta została zarezerwowana przez WhatsApp.',
+      'close': 'Zamknij',
+      'selectLanguage': 'Wybierz język'
+    },
+    'et': {
+      'home': 'Avaleht',
+      'allServices': 'Kõik teenused',
+      'packages': 'Paketid',
+      'massages': 'Massaažid',
+      'hammam': 'Hammam',
+      'scrub': 'Kehakoorijad',
+      'viewDetails': 'Vaata lähemalt',
+      'addToCart': 'Lisa ostukorvi',
+      'welcome': 'Tere tulemast World Spa & Beauty-sse',
+      'homeDescription': 'Kogege luksuslikke spaateenuseid Hurghada südames',
+      'contactInfo': 'Kontaktinfo',
+      'cart': 'Ostukorv',
+      'checkout': 'Maksma',
+      'total': 'Kokku',
+      'name': 'Nimi',
+      'date': 'Kuupäev',
+      'time': 'Aeg',
+      'confirmBooking': 'Kinnita broneering',
+      'bookingSuccess': 'Broneering kinnitatud!',
+      'successMessage': 'Aitäh! Teie aeg on broneeritud WhatsAppi kaudu.',
+      'close': 'Sulge',
+      'selectLanguage': 'Vali keel'
     }
   };
 
@@ -415,10 +605,21 @@ function viewDetails(serviceId) {
   image.src = service.image;
   image.alt = service.title;
   time.textContent = service.time;
-  price.textContent = service.after_disc || service.salary;
 
-  if (service.after_disc && service.salary !== service.after_disc) {
-    priceOriginal.textContent = service.salary;
+  // Price Logic (New Schema)
+  const priceInfo = service.price_info || {};
+  const currency = priceInfo.currency || '€';
+  const salary = priceInfo.salary;
+  const afterDisc = priceInfo.after_disc;
+
+  // If after_disc exists, show it as main price. If salary differs, show salary as original.
+  // If no after_disc, use salary.
+  const mainPrice = afterDisc !== undefined ? afterDisc : salary;
+
+  price.textContent = `${currency}${mainPrice}`;
+
+  if (salary !== undefined && afterDisc !== undefined && salary > afterDisc) {
+    priceOriginal.textContent = `${currency}${salary}`;
     priceOriginal.classList.remove('d-none');
   } else {
     priceOriginal.textContent = '';
@@ -426,21 +627,15 @@ function viewDetails(serviceId) {
   }
 
   // Clear and populate details
+  // Service.details should be the object { "1": "...", "2": "..." } already selected by updateAllServices
   detailsList.innerHTML = '';
-  if (service.details) {
-    Object.entries(service.details).forEach(([key, value]) => {
+  if (service.details && typeof service.details === 'object') {
+    Object.values(service.details).forEach(value => {
       const li = document.createElement('li');
       li.className = 'list-group-item d-flex align-items-center';
 
-      // Handle nested object structure 
-      let detailText = value;
-      if (typeof value === 'object') {
-        const subKey = Object.keys(value)[0];
-        const subVal = value[subKey];
-        detailText = `${subKey}: ${subVal}`;
-      }
-
-      li.innerHTML = `<i class="fas fa-check-circle text-success me-2"></i> ${detailText}`;
+      // Value is expected to be a string
+      li.innerHTML = `<i class="fas fa-check-circle text-success me-2"></i> ${value}`;
       detailsList.appendChild(li);
     });
   }
@@ -481,7 +676,8 @@ function getLanguageName(code) {
   const names = {
     en: 'English', ar: 'العربية', de: 'Deutsch', fr: 'Français',
     ru: 'Русский', it: 'Italiano', hu: 'Magyar', hr: 'Hrvatski',
-    es: 'Español', cs: 'Čeština', lv: 'Latviešu', zh: '中文'
+    es: 'Español', cs: 'Čeština', lv: 'Latviešu', zh: '中文',
+    tr: 'Türkçe', pl: 'Polski', et: 'Eesti', sr: 'Srpski'
   };
   return names[code] || code.toUpperCase();
 }

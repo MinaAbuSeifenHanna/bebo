@@ -1,6 +1,7 @@
 // firebase-data-loader.js
 
 window.allServices = [];
+window.rawServices = []; // Source of truth
 window.isFirebaseLoaded = false;
 
 // 1. محاولة تحميل البيانات من الذاكرة المحلية فوراً (Caching)
@@ -8,7 +9,8 @@ function loadFromCache() {
     const cachedData = localStorage.getItem('spa_services_cache');
     if (cachedData) {
         try {
-            window.allServices = JSON.parse(cachedData);
+            window.rawServices = JSON.parse(cachedData);
+            window.allServices = [...window.rawServices]; // Initial copy
             window.isFirebaseLoaded = true;
             console.log("⚡ Instant Load: Data retrieved from LocalStorage");
 
@@ -42,7 +44,8 @@ function initializeFirebaseData() {
             }));
 
             // تحديث المتغير العام والذاكرة المحلية
-            window.allServices = processedServices;
+            window.rawServices = processedServices;
+            window.allServices = [...processedServices];
             localStorage.setItem('spa_services_cache', JSON.stringify(processedServices));
             window.isFirebaseLoaded = true;
 
@@ -61,7 +64,16 @@ function initializeFirebaseData() {
 
 // 3. دالة موحدة لتحديث كل أجزاء الموقع
 function triggerUIRender() {
-    if (typeof renderAllSections === 'function') renderAllSections();
+    if (typeof updateAllServices === 'function') {
+        // Ensure languages are processed first!
+        updateAllServices();
+    }
+
+    if (typeof renderAllSections === 'function') {
+        console.log("🎨 Triggering Render All Sections");
+        renderAllSections();
+    }
+
     if (typeof updateCartCounter === 'function') updateCartCounter();
 
     // لو إحنا في صفحة التفاصيل، نحدث بيانات الخدمة المعروضة

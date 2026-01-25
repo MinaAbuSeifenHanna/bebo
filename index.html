@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>World Spa & Beauty - Luxury Spa in Hurghada</title>
   <meta name="description"
     content="Premium luxury spa services in Hurghada, Egypt. Professional hammam, massage, body treatments, and beauty packages.">
@@ -65,87 +65,88 @@
 
 <body>
   <!-- Combined Sticky Universal Header (Responsive) -->
-  <div class="universal-sticky-header">
-    <div class="container-fluid container-lg">
-      <header class="main-utility-header">
-        <div class="utility-header-row">
-          <!-- Brand Logo (Sticky) -->
-          <a class="header-brand" href="#">
-            <img src="assets/images/logo.png" alt="Women World Beauty & Spa" class="brand-logo-img">
-          </a>
+  <!-- Combined Sticky Universal Header (Responsive) -->
+  <div class="sticky-header-wrapper">
+    <!-- Tier 1: Master Sticky Header (Logo + Global Nav) -->
+    <div class="master-sticky-header">
+      <div class="container-fluid container-lg">
+        <header class="main-utility-header">
+          <div class="utility-header-row">
+            <div class="utility-actions">
 
-          <div class="utility-actions">
-            <button class="icon-btn d-lg-none" id="mobileMenuBtn" data-bs-toggle="collapse"
-              data-bs-target="#mobileMenu">
-              <i class="fas fa-bars"></i>
-            </button>
-            <a href="tel:+201007920759" class="icon-btn">
-              <i class="fas fa-phone"></i>
-            </a>
-            <a href="https://wa.me/201007920759" class="icon-btn">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <button class="icon-btn" onclick="toggleTheme()" id="theme-toggle" title="Toggle Light/Dark Mode">
-              <i class="fas fa-moon theme-toggle-icon"></i>
-            </button>
-            <button class="icon-btn position-relative" onclick="window.location.href='pages/cart.html'">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="cart-badge-dot cart-counter">0</span>
-            </button>
-            <div class="dropdown">
-              <button class="icon-btn dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown"
-                id="langSwitcherBtn">
-                <i class="fas fa-globe"></i>
+              <a href="tel:+201007920759" class="icon-btn">
+                <i class="fas fa-phone"></i>
+              </a>
+              <a href="https://wa.me/201007920759" class="icon-btn">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <button class="icon-btn" onclick="toggleTheme()" id="theme-toggle" title="Toggle Light/Dark Mode">
+                <i class="fas fa-moon theme-toggle-icon"></i>
               </button>
-              <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">🇺🇸 English</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('ar')">🇸🇦 العربية</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')">🇩🇪 Deutsch</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('ru')">🇷🇺 Русский</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">🇮🇹 Italiano</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')">🇭🇺 Magyar</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('hr')">🇭🇷 Hrvatski</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">🇪🇸 Español</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('cs')">🇨🇿 Čeština</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('lv')">🇱🇻 Latviešu</a></li>
-                <li><a class="dropdown-item" href="#" onclick="switchLanguage('zh')">🇨🇳 中文</a></li>
-              </ul>
+              <button class="icon-btn position-relative" onclick="window.location.href='pages/cart.html'">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge-dot cart-counter">0</span>
+              </button>
+              <div class="dropdown">
+                <button class="icon-btn dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown"
+                  id="langSwitcherBtn">
+                  <i class="fas fa-globe"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">🇺🇸 English</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('ar')">🇸🇦 العربية</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')">🇩🇪 Deutsch</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('ru')">🇷🇺 Русский</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">🇮🇹 Italiano</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')">🇭🇺 Magyar</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('hr')">🇭🇷 Hrvatski</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">🇪🇸 Español</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('cs')">🇨🇿 Čeština</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('lv')">🇱🇻 Latviešu</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('zh')">🇨🇳 中文</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('tr')">🇹🇷 Türkçe</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('pl')">🇵🇱 Polski</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('et')">🇪🇪 Eesti</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="switchLanguage('sr')">🇷🇸 Srpski</a></li>
+                </ul>
+              </div>
+
             </div>
-            <i class="fas fa-moon"></i>
-            </button>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <!-- Tier 1: Primary Global Navigation (Permanent) -->
-      <nav class="primary-global-nav">
-        <ul class="nav justify-content-center border-0" id="primaryNav" role="tablist">
-          <li class="nav-item">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-content"
-              type="button" role="tab">
-              <span data-i18n="home">Home</span>
-            </button>
-          </li>
-          <li class="nav-separator">|</li>
-          <li class="nav-item">
-            <button class="nav-link" id="salon-tab" data-bs-toggle="tab" data-bs-target="#salon-content" type="button"
-              role="tab">
-              <span data-i18n="salon">Salon</span>
-            </button>
-          </li>
-          <li class="nav-separator">|</li>
-          <li class="nav-item">
-            <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery-content"
-              type="button" role="tab">
-              <span data-i18n="gallery">Gallery</span>
-            </button>
-          </li>
-        </ul>
-      </nav>
+        <!-- Tier 1: Primary Global Navigation (Permanent) -->
+        <nav class="primary-global-nav">
+          <ul class="nav justify-content-center border-0" id="primaryNav" role="tablist">
+            <li class="nav-item">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-content"
+                type="button" role="tab">
+                <span data-i18n="home">Home</span>
+              </button>
+            </li>
+            <li class="nav-separator">|</li>
+            <li class="nav-item">
+              <button class="nav-link" id="salon-tab" data-bs-toggle="tab" data-bs-target="#salon-content" type="button"
+                role="tab">
+                <span data-i18n="salon">Salon</span>
+              </button>
+            </li>
+            <li class="nav-separator">|</li>
+            <li class="nav-item">
+              <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery-content"
+                type="button" role="tab">
+                <span data-i18n="gallery">Gallery</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-      <!-- Tier 2: Secondary Service Tabs (Conditional) -->
-      <div id="service-nav-container">
+    <!-- Tier 2: Secondary Service Tabs (Sticky Stacked) -->
+    <div id="service-nav-container">
+      <div class="container-fluid container-lg">
         <nav class="universal-nav-tabs">
           <div class="scrolling-tabs-wrapper">
             <ul class="nav nav-tabs border-0" id="serviceTabs" role="tablist">
@@ -191,8 +192,8 @@
         </nav>
       </div>
     </div>
-  </div>
 
+  </div>
   <!-- Universal Menu Collapse (Optional for extra links) -->
   <div class="collapse navbar-collapse d-lg-none" id="mobileMenu">
     <div class="container py-3">
@@ -470,6 +471,7 @@
 
   <!-- Migration Script -->
   <script src="js/simple-migration.js"></script>
+  <script src="js/theme.js"></script>
 
   <script src="js/working-language-system.js"></script>
   <script src="js/cart.js"></script>

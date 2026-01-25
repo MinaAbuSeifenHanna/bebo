@@ -18,11 +18,33 @@
         <div class="mb-5 d-flex align-items-center justify-content-between">
             <a href="../index.html" class="icon-btn d-inline-flex align-items-center gap-2"
                 style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
-                <i class="fas fa-arrow-left"></i> Back to Services
+                <i class="fas fa-arrow-left"></i> <span data-i18n="backToServices">Back to Services</span>
             </a>
-            <button class="icon-btn" onclick="toggleTheme()" title="Toggle Dark Mode">
-                <i class="fas fa-moon theme-toggle-icon"></i>
-            </button>
+
+            <div class="dropdown">
+                <button class="icon-btn dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown"
+                    id="langSwitcherBtn">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">🇺🇸 English</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('ar')">🇸🇦 العربية</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')">🇩🇪 Deutsch</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('ru')">🇷🇺 Русский</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">🇮🇹 Italiano</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')">🇭🇺 Magyar</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('hr')">🇭🇷 Hrvatski</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">🇪🇸 Español</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('cs')">🇨🇿 Čeština</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('lv')">🇱🇻 Latviešu</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('zh')">🇨🇳 中文</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('tr')">🇹🇷 Türkçe</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('pl')">🇵🇱 Polski</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('et')">🇪🇪 Eesti</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('sr')">🇷🇸 Srpski</a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- Arched Hero -->
@@ -38,11 +60,11 @@
         <!-- Luxury Info Bar -->
         <div class="details-luxury-info fade-in-up">
             <div class="item">
-                <span class="label">Duration</span>
+                <span class="label" data-i18n="duration">Duration</span>
                 <span class="value" id="det-time">0 Mins</span>
             </div>
             <div class="item text-end">
-                <span class="label">Price</span>
+                <span class="label" data-i18n="price">Price</span>
                 <span class="value">
                     <span id="det-old-price" class="original-price me-2"
                         style="font-size: 0.8rem; opacity: 0.5;"></span>
@@ -59,7 +81,7 @@
         <!-- Desktop Action -->
         <div class="mt-5 text-center d-none d-md-block fade-in-up">
             <button class="btn-book-luxury w-100" style="padding: 20px; font-size: 1.1rem;"
-                onclick="addToCartFromDetails()">
+                onclick="addToCartFromDetails()" data-i18n="addToCart">
                 Add to Cart
             </button>
         </div>
@@ -75,7 +97,7 @@
                     <span class="fw-bold" id="sticky-price" style="font-size: 1.1rem;">0.00€</span>
                 </div>
                 <button class="btn-book-luxury px-4" style="padding: 12px 25px; border-radius: 6px;"
-                    onclick="addToCartFromDetails()">
+                    onclick="addToCartFromDetails()" data-i18n="addToCart">
                     Add
                 </button>
             </div>
@@ -94,12 +116,18 @@
 
     <!-- Data Loader -->
     <script src="../js/firebase-data-loader.js"></script>
+    <script src="../js/working-language-system.js"></script>
 
     <!-- Cart Logic -->
     <script src="../js/cart.js"></script>
 
     <!-- Page Logic -->
     <script src="../js/service-details.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof initializeLanguageSystem === 'function') initializeLanguageSystem();
+        });
+    </script>
 </body>
 
 </html>

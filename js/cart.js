@@ -272,40 +272,47 @@
       return;
     }
 
+    // تجهيز لستة الخدمات بالشكل الجديد
     let servicesList = '';
     cart.forEach(item => {
-      const price = parseFloat(item.price_info?.after_disc || 0);
-      const totalItem = price * item.quantity;
-      servicesList += `• ${item.title} (x${item.quantity}) - €${totalItem.toFixed(2)}\n`;
+      // جلب العنوان بناءً على اللغة الحالية
+      const lang = window.currentLang || 'en';
+      const title = item.translations?.[lang]?.title || item.translations?.['en']?.title || item.title;
+      const pricePerPerson = parseFloat(item.price_info?.after_disc || 0);
+      const duration = item.translations?.[lang]?.duration || 'N/A';
+      servicesList += `Title: ${title}
+Duration: ${duration}
+Price per person: €${pricePerPerson}
+Quantity: ${item.quantity}
+`;
     });
 
     const total = window.getCartTotal().toFixed(2);
 
-    let transportInfo = '';
-    if (customerData.transport) {
-      transportInfo = `\n🚗 *Transportation Info*\n📍 Place: ${customerData.residence || 'N/A'}\n🔢 Room: ${customerData.room || 'N/A'}\n`;
-    }
+    // بناء الرسالة بالصيغة المطلوبة بالظبط
+    const message = `Dear world SPA AND BEAUTY SALON
 
-    const message = `🌸 *New Booking Request* 🌸
-👤 *${customerData.name}*
-📞 ${customerData.phone || 'N/A'}
-📅 ${customerData.date} at ${customerData.time}
-${transportInfo}
-💅 *Services:*
+Kindly I want to reserve the following services:
+
+Name: ${customerData.name}
+Date: ${customerData.date}
+Time: ${customerData.time}
+Hotel: ${customerData.residence || 'Seegull hotel'}
+Room Number: ${customerData.room || '22'}
+
 ${servicesList}
-💰 *Total: €${total}*
+Total: €${total}
 
 ${customerData.notes ? `📝 Note: ${customerData.notes}` : ''}
 
-Confirm via: womenworldspa.com`;
+Confirm via: https://womenworldspa.com`;
 
+    // رقم الواتساب الخاص بك
     const waLink = `https://wa.me/201007920759?text=${encodeURIComponent(message)}`;
     window.open(waLink, '_blank');
 
-    // Clear cart and close UI
+    // مسح السلة وقفل المودال
     window.clearCart();
-
-    // Hide UI
     if (cartSidebarInstance) cartSidebarInstance.hide();
     const modalEl = document.getElementById('checkoutModal');
     if (modalEl) {
@@ -313,11 +320,10 @@ Confirm via: womenworldspa.com`;
       if (modal) modal.hide();
     }
 
-    // Show success
+    // إظهار رسالة النجاح
     const successModal = new bootstrap.Modal(document.getElementById('successModal'));
     if (successModal) successModal.show();
   };
-
   // --- Cart Page Rendering (for cart.html) ---
   window.renderCart = function () {
     const container = document.getElementById('cart-items');

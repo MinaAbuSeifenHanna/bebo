@@ -1,4 +1,4 @@
-[
+﻿[
    {
   "id": "1",
   "image": "assets/images/1.png",
@@ -4170,3 +4170,28 @@
 ]
 
 
+
+;
+
+  console.log('📊 Prepared to upload ' + finalServicesData.length + ' services...');
+
+  const collection = window.firebaseDB.collection('services');
+
+  for (const item of finalServicesData) {
+      // Clean ID
+      const docId = String(item.id).trim();
+      
+      try {
+          // setDoc using compat SDK syntax
+          await collection.doc(docId).set(item);
+          console.log('✅ [' + docId + '] Uploaded');
+      } catch (e) {
+          console.error('❌ Failed to upload [' + docId + ']', e);
+      }
+  }
+
+  console.log('🎉 SUCCESS: Firestore is now updated with 27 services!');
+  alert('🎉 SUCCESS: Firestore is now updated with 27 services!');
+}
+
+uploadNow();

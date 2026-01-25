@@ -18,11 +18,33 @@
         <div class="mb-5 d-flex align-items-center justify-content-between">
             <a href="../index.html" class="icon-btn d-inline-flex align-items-center gap-2"
                 style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
-                <i class="fas fa-arrow-left"></i> Back to Services
+                <i class="fas fa-arrow-left"></i> <span data-i18n="backToServices">Back to Services</span>
             </a>
-            <button class="icon-btn" onclick="toggleTheme()" title="Toggle Dark Mode">
-                <i class="fas fa-moon theme-toggle-icon"></i>
-            </button>
+
+            <div class="dropdown">
+                <button class="icon-btn dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown"
+                    id="langSwitcherBtn">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">🇺🇸 English</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('ar')">🇸🇦 العربية</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')">🇩🇪 Deutsch</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('ru')">🇷🇺 Русский</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">🇮🇹 Italiano</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')">🇭🇺 Magyar</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('hr')">🇭🇷 Hrvatski</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">🇪🇸 Español</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('cs')">🇨🇿 Čeština</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('lv')">🇱🇻 Latviešu</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('zh')">🇨🇳 中文</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('tr')">🇹🇷 Türkçe</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('pl')">🇵🇱 Polski</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('et')">🇪🇪 Eesti</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('sr')">🇷🇸 Srpski</a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- Service Details Content (Togglable) -->
@@ -63,27 +85,30 @@
         <!-- Checkout Form (Hidden by default) -->
         <div id="checkout-form-container" class="fade-in-up d-none" style="opacity: 1; transform: translateY(0);">
             <div class="mb-4">
-                <h2 class="section-title" style="font-size: 0.9rem;">Complete Your Booking</h2>
+                <div class="mb-4">
+                    <h2 class="section-title" style="font-size: 0.9rem;" data-i18n="completeBooking">Complete Your
+                        Booking</h2>
+                </div>
             </div>
             <form id="single-service-form" onsubmit="event.preventDefault(); window.submitSingleBooking();">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="form-name" placeholder="Full Name" required
-                        style="border: 0.5px solid #000; border-radius: 4px;">
-                    <label for="form-name">Full Name</label>
+                    <input type="text" class="form-control" id="form-name" placeholder="Full Name" data-i18n="name"
+                        required style="border: 0.5px solid #000; border-radius: 4px;">
+                    <label for="form-name" data-i18n="name">Full Name</label>
                 </div>
                 <div class="row g-2">
                     <div class="col-md-6 mb-3">
                         <div class="form-floating">
                             <input type="tel" class="form-control" id="form-phone" placeholder="Phone Number"
-                                style="border: 0.5px solid #000; border-radius: 4px;">
-                            <label for="form-phone">Phone Number (Optional)</label>
+                                data-i18n="phone" style="border: 0.5px solid #000; border-radius: 4px;">
+                            <label for="form-phone" data-i18n="phone">Phone Number (Optional)</label>
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="form-floating">
                             <input type="date" class="form-control" id="form-date" required
                                 style="border: 0.5px solid #000; border-radius: 4px;">
-                            <label for="form-date">Date</label>
+                            <label for="form-date" data-i18n="date">Date</label>
                         </div>
                     </div>
                 </div>
@@ -105,12 +130,13 @@
                         <option value="9:00 PM">9:00 PM</option>
                         <option value="10:00 PM">10:00 PM</option>
                     </select>
-                    <label for="form-time">Preferred Time</label>
+                    <label for="form-time" data-i18n="preferredTime">Preferred Time</label>
                 </div>
                 <div class="form-check mb-3">
                     <input class="form-check-input" type="checkbox" id="form-transport"
                         style="border: 0.5px solid #000;">
-                    <label class="form-check-label" for="form-transport" style="font-size: 0.85rem; font-weight: 600;">
+                    <label class="form-check-label" for="form-transport" style="font-size: 0.85rem; font-weight: 600;"
+                        data-i18n="askTransport">
                         Ask for transportation rate?
                     </label>
                 </div>
@@ -119,18 +145,19 @@
                         <input type="text" class="form-control" id="form-residence"
                             placeholder="Residence Place (e.g., Hotel Name)"
                             style="border: 0.5px solid #000; border-radius: 4px;">
-                        <label for="form-residence">Residence Place (e.g., Hotel Name)</label>
+                        <label for="form-residence" data-i18n="residencePlace">Residence Place (e.g., Hotel
+                            Name)</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="form-room" placeholder="Room Number"
                             style="border: 0.5px solid #000; border-radius: 4px;">
-                        <label for="form-room">Room Number</label>
+                        <label for="form-room" data-i18n="roomNumber">Room Number</label>
                     </div>
                 </div>
                 <div class="form-floating mb-4">
                     <textarea class="form-control" id="form-notes" placeholder="Notes"
                         style="height: 100px; border: 0.5px solid #000; border-radius: 4px;"></textarea>
-                    <label for="form-notes">Any special notes?</label>
+                    <label for="form-notes" data-i18n="specialNotes">Any special notes?</label>
                 </div>
 
                 <div class="d-flex gap-3 mt-4">
@@ -138,7 +165,8 @@
                         style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
                         Back to Info
                     </button>
-                    <button type="submit" class="btn-book-luxury flex-grow-1" style="width: auto;">
+                    <button type="submit" class="btn-book-luxury flex-grow-1" style="width: auto;"
+                        data-i18n="confirmBooking">
                         CONFIRM BOOKING
                     </button>
                 </div>
@@ -151,11 +179,11 @@
         <div class="container details-luxury-container py-0 my-0">
             <div class="d-flex align-items-center justify-content-between">
                 <div>
-                    <span class="cart-total-label d-block">Booking Total</span>
+                    <span class="cart-total-label d-block" data-i18n="bookingTotal">Booking Total</span>
                     <span class="cart-total-value" id="footer-total">0.00€</span>
                 </div>
                 <button class="btn-book-luxury px-5" style="padding: 18px 40px; border-radius: 8px; width: auto;"
-                    onclick="showCheckoutForm()">
+                    onclick="showCheckoutForm()" data-i18n="proceedBooking">
                     PROCEED TO BOOKING
                 </button>
             </div>
@@ -189,7 +217,13 @@
     <script src="../js/utils.js"></script>
     <script src="../js/theme.js"></script>
     <script src="../js/firebase-data-loader.js"></script>
+    <script src="../js/working-language-system.js"></script>
     <script src="../js/booking.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof initializeLanguageSystem === 'function') initializeLanguageSystem();
+        });
+    </script>
 </body>
 
 </html>

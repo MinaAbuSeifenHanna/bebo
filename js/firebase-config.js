@@ -29,13 +29,20 @@ function getServicesCollection() {
 
 // Helper function to listen to real-time updates
 function listenToServices(callback) {
+  // We grab by ID but string sorting is unreliable for numbers (1, 10, 2)
   const servicesQuery = getServicesCollection().orderBy('id', 'asc');
-  
+
   return servicesQuery.onSnapshot((snapshot) => {
     const services = [];
     snapshot.forEach((doc) => {
       services.push({ id: doc.id, ...doc.data() });
     });
+
+    // Client-side numerical sort to ensure 1, 2, 3... 10... 27 order
+    services.sort((a, b) => {
+      return (parseInt(a.id) || 0) - (parseInt(b.id) || 0);
+    });
+
     callback(services);
   }, (error) => {
     console.error('❌ Firebase listener error:', error);
@@ -48,9 +55,9 @@ window.getServicesCollection = getServicesCollection;
 window.listenToServices = listenToServices;
 
 // Migration function - run this in console to migrate data
-window.migrateToFirestore = async function() {
+window.migrateToFirestore = async function () {
   console.log('🔥 Starting migration to Firestore...');
-  
+
   try {
     // Check if Firebase is initialized
     if (!window.firebaseDB) {
@@ -60,7 +67,7 @@ window.migrateToFirestore = async function() {
 
     // Get existing services data from Firebase (already migrated)
     const services = window.allServices || [];
-    
+
     if (services.length === 0) {
       console.error('❌ No services data found. Firebase may not be loaded yet.');
       return;
@@ -71,7 +78,7 @@ window.migrateToFirestore = async function() {
     // Add categories to services
     const categorizedServices = services.map((service) => {
       let category = 'packages';
-      
+
       if (service.title.en.includes('Hammam')) {
         category = 'hammam';
       } else if (service.title.en.includes('Massage') && !service.title.en.includes('Hammam')) {
@@ -81,7 +88,7 @@ window.migrateToFirestore = async function() {
       } else if (service.title.en.includes('VIP') || service.title.en.includes('Cleopatra')) {
         category = 'packages';
       }
-      
+
       return {
         ...service,
         category: category
@@ -99,12 +106,12 @@ window.migrateToFirestore = async function() {
     }
 
     console.log('🎉 Migration completed!');
-    
+
     // Test the data by fetching it back
     console.log('🧪 Testing Firestore data...');
     const querySnapshot = await getServicesCollection().get();
     console.log(`✅ Found ${querySnapshot.docs.length} services in Firestore`);
-    
+
   } catch (error) {
     console.error('❌ Migration failed:', error);
   }

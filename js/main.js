@@ -99,15 +99,15 @@ function renderCategory(category) {
 
   if (!container) return;
 
-  // Update Header
-  if (titleEl) {
-    let titleKey = category === 'all' ? 'allServices' : category;
-    if (category === 'scrubs') titleKey = 'scrub';
-    titleEl.setAttribute('data-i18n', titleKey);
-    if (typeof getUIText === 'function') {
-      titleEl.textContent = getUIText(titleKey);
-    }
-  }
+  // Map UI categories (plural) to Firestore keys (singular)
+  const categoryMap = {
+    'massages': 'massage',
+    'scrubs': 'scrub',
+    'hammam': 'hammam',
+    'packages': 'packages'
+  };
+
+  const dbCategory = categoryMap[category] || category;
 
   // Filter Data
   const services = getCurrentServices();
@@ -120,7 +120,23 @@ function renderCategory(category) {
 
   let filteredServices = category === 'all'
     ? services
-    : services.filter(s => s.category === category);
+    : services.filter(s => s.category === dbCategory);
+
+  // Force strict numerical sort for display (1-27)
+  filteredServices.sort((a, b) => (parseInt(a.id) || 0) - (parseInt(b.id) || 0));
+
+  // Update Header (UI requires original key for i18n lookup)
+  if (titleEl) {
+    let titleKey = category === 'all' ? 'allServices' : category;
+    // Special handling if i18n keys differ from category names
+    if (category === 'scrubs') titleKey = 'scrub';
+    if (category === 'massages') titleKey = 'massages';
+
+    titleEl.setAttribute('data-i18n', titleKey);
+    if (typeof getUIText === 'function') {
+      titleEl.textContent = getUIText(titleKey);
+    }
+  }
 
   // Render Cards
   if (filteredServices.length > 0) {
@@ -142,22 +158,24 @@ function createServiceCard(service) {
   const col = document.createElement('div');
   col.className = 'fade-in-up';
 
-  const currentLang = localStorage.getItem('selectedLanguage') || 'en';
-  const langData = service.translations ? service.translations[currentLang] || service.translations['en'] : null;
-  const title = langData ? langData.title : (service.title || 'Service');
+  // Title is already translated by working-language-system.js
+  const title = service.title || 'Service';
 
+  // Price Logic (New Schema)
   const priceObj = service.price_info || {};
   const currency = priceObj.currency || '€';
-  const salary = priceObj.salary || '';
-  const after_disc = priceObj.after_disc || salary;
+  const salary = priceObj.salary;
+  const after_disc = priceObj.after_disc;
+  const mainPrice = after_disc !== undefined ? after_disc : (salary || 0);
 
   // Feature List Parser
   let features = [];
-  if (langData && langData.details) {
-    features = Object.values(langData.details).map(d => typeof d === 'object' ? d.name : d);
-  } else if (langData && langData.description) {
-    // Split by common separators if it's a flat string
-    features = langData.description.split(/[•·.|\n]/).map(s => s.trim()).filter(s => s.length > 5);
+  if (service.details && typeof service.details === 'object') {
+    // Service details is now an object { "1": "val", ... }
+    features = Object.values(service.details);
+  } else if (service.description) {
+    // Fallback if description string exists
+    features = service.description.split(/[•·.|\n]/).map(s => s.trim()).filter(s => s.length > 5);
   }
 
   // Fallback if no features
@@ -167,14 +185,16 @@ function createServiceCard(service) {
   const displayedFeatures = features.slice(0, 7);
 
   // Duration Logic (Check if 'duration' exists or extract from title/description)
-  const duration = service.duration || '2'; // Default to 2 for demo if not found
+  // service.time is "3 Hrs" string
+  let duration = service.time ? service.time.replace(/[^\d.]/g, '') : '2';
+  if (!duration) duration = '2';
 
   // Use Utils for pathing
   let imagePath = service.image || 'assets/images/placeholder.png';
   if (window.Utils) imagePath = window.Utils.resolvePath(imagePath);
 
   col.innerHTML = `
-    <div class="service-card-luxury" onclick="window.location.href='pages/booking.html?id=${service.id}'">
+    <div class="service-card-luxury" onclick="window.viewDetails('${service.id}')">
       <div class="card-image-arched">
         <img src="${imagePath}" alt="${title}" loading="lazy" onerror="this.src='${window.Utils ? window.Utils.resolvePath('assets/images/placeholder.png') : ''}'">
       </div>
@@ -186,8 +206,8 @@ function createServiceCard(service) {
       <div class="card-info-row">
         <div class="card-duration">${duration} <span>Hrs</span></div>
         <div class="card-price-stack">
-          ${salary !== after_disc && salary ? `<span class="card-price-old">${currency}${salary}</span>` : ''}
-          <div class="card-price-main"><span>${currency}</span>${after_disc}</div>
+          ${salary !== undefined && after_disc !== undefined && salary > after_disc ? `<span class="card-price-old">${currency}${salary}</span>` : ''}
+          <div class="card-price-main"><span>${currency}</span>${mainPrice}</div>
         </div>
       </div>
 
@@ -294,10 +314,20 @@ function renderAllSections() {
     } else if (target === '#gallery-content') {
       renderGalleryContent();
     } else {
+      // Default to all if category is missing
       renderCategory(category || 'all');
     }
   } else {
+    // FALLBACK: If no tab is active, default to All Services
+    console.log("⚠️ No active tab found, defaulting to All Services");
     renderCategory('all');
+
+    // Also try to set visual active state
+    const allTab = document.getElementById('all-tab');
+    if (allTab) {
+      const tab = new bootstrap.Tab(allTab);
+      tab.show();
+    }
   }
 }
 
@@ -516,24 +546,9 @@ function toggleTransportDetails() {
 
 // Setup event listeners
 function setupEventListeners() {
-  const themeToggle = document.querySelector('.theme-toggle');
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-theme');
-      const icon = themeToggle.querySelector('i');
-      if (icon) {
-        if (document.body.classList.contains('dark-theme')) {
-          icon.className = 'fas fa-sun';
-        } else {
-          icon.className = 'fas fa-moon';
-        }
-      } else {
-        themeToggle.textContent = document.body.classList.contains('dark-theme') ? '☀️' : '🌙';
-      }
-    });
-  }
+  // Theme toggle is handled globally by theme.js via onclick="toggleTheme()"
 
-  const navContainer = document.querySelector('.sticky-nav-container');
+  const navContainer = document.querySelector('.sticky-header-wrapper');
   if (navContainer) {
     window.addEventListener('scroll', () => {
       window.scrollY > 50 ? navContainer.classList.add('scrolled') : navContainer.classList.remove('scrolled');
@@ -583,3 +598,54 @@ window.viewDetails = function (id) {
     window.location.href = `pages/service-details.html?id=${id}`;
   }
 };
+// Upload JSON to Firestore (Temporary Helper)
+window.uploadServiceJsonToFirestore = async function (servicesData) {
+  console.log('🚀 Starting JSON upload to Firestore...');
+
+  if (!window.firebaseDB) {
+    console.error('❌ Firebase not initialized. Cannot upload.');
+    return;
+  }
+
+  if (!servicesData || !Array.isArray(servicesData)) {
+    console.error('❌ Invalid data provided. Please pass the JSON array as an argument.');
+    alert('Please pass the JSON array as an argument: uploadServiceJsonToFirestore([...])');
+    return;
+  }
+
+  try {
+    console.log(`📂 Processing ${servicesData.length} services...`);
+
+    const collection = window.firebaseDB.collection('services');
+    let count = 0;
+
+    for (const service of servicesData) {
+      if (!service.id) {
+        console.warn('⚠️ Skipping service without ID:', service);
+        continue;
+      }
+
+      // Use setDoc (overwrite) using string ID
+      await collection.doc(String(service.id)).set(service);
+      console.log(`✅ Uploaded Service ID: ${service.id}`);
+      count++;
+    }
+
+    console.log(`🎉 Successfully uploaded ${count} services to Firestore!`);
+    alert(`Successfully uploaded ${count} services to Firestore!`);
+
+  } catch (error) {
+    console.error('❌ Upload failed:', error);
+    alert('Upload failed. Check console for details.');
+  }
+};
+
+// Expose globally for language system
+window.renderAllSections = renderAllSections;
+window.renderCategory = renderCategory;
+window.renderHomeContent = renderHomeContent;
+window.renderSalonContent = renderSalonContent;
+window.renderGalleryContent = renderGalleryContent;
+
+// Check if we need to auto-trigger based on URL hash or params could be added here
+

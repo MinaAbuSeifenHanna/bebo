@@ -16,16 +16,42 @@
     <div class="mb-5 d-flex align-items-center justify-content-between">
       <a href="../index.html" class="icon-btn d-inline-flex align-items-center gap-2"
         style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
-        <i class="fas fa-arrow-left"></i> Back to Services
+        <i class="fas fa-arrow-left"></i> <span data-i18n="backToServices">Back to Services</span>
       </a>
-      <button class="icon-btn" onclick="toggleTheme()" title="Toggle Dark Mode">
-        <i class="fas fa-moon theme-toggle-icon"></i>
-      </button>
+      <div class="d-flex align-items-center gap-2">
+        <button class="icon-btn" onclick="toggleTheme()" title="Toggle Dark Mode">
+          <i class="fas fa-moon theme-toggle-icon"></i>
+        </button>
+        <div class="dropdown">
+          <button class="icon-btn dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown"
+            id="langSwitcherBtn">
+            <i class="fas fa-globe"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">🇺🇸 English</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('ar')">🇸🇦 العربية</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')">🇩🇪 Deutsch</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('ru')">🇷🇺 Русский</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">🇮🇹 Italiano</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')">🇭🇺 Magyar</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('hr')">🇭🇷 Hrvatski</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">🇪🇸 Español</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('cs')">🇨🇿 Čeština</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('lv')">🇱🇻 Latviešu</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('zh')">🇨🇳 中文</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('tr')">🇹🇷 Türkçe</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('pl')">🇵🇱 Polski</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('et')">🇪🇪 Eesti</a></li>
+            <li><a class="dropdown-item" href="#" onclick="switchLanguage('sr')">🇷🇸 Srpski</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- Title Banner -->
     <div class="details-title-banner fade-in-up" style="opacity: 1; transform: translateY(0);">
-      <h1 id="cart-page-title" data-i18n="cart">Your Selection</h1>
+      <h1 id="cart-page-title" data-i18n="yourSelection">Your Selection</h1>
     </div>
 
     <!-- Cart Items Container (Scrollable) -->
@@ -36,27 +62,27 @@
     <!-- Checkout Form (Hidden by default) -->
     <div id="checkout-form-container" class="fade-in-up d-none" style="opacity: 1; transform: translateY(0);">
       <div class="mb-4">
-        <h2 class="section-title" style="font-size: 0.9rem;">Complete Your Booking</h2>
+        <h2 class="section-title" style="font-size: 0.9rem;" data-i18n="completeBooking">Complete Your Booking</h2>
       </div>
       <form id="standalone-checkout-form" onsubmit="event.preventDefault(); window.submitCartBooking();">
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="cart-name" placeholder="Full Name" required
+          <input type="text" class="form-control" id="cart-name" placeholder="Full Name" required data-i18n="name"
             style="border: 0.5px solid #000; border-radius: 4px;">
-          <label for="cart-name">Full Name</label>
+          <label for="cart-name" data-i18n="name">Full Name</label>
         </div>
         <div class="row g-2">
           <div class="col-md-6 mb-3">
             <div class="form-floating">
-              <input type="tel" class="form-control" id="cart-phone" placeholder="Phone Number"
+              <input type="tel" class="form-control" id="cart-phone" placeholder="Phone Number" data-i18n="phone"
                 style="border: 0.5px solid #000; border-radius: 4px;">
-              <label for="cart-phone">Phone Number (Optional)</label>
+              <label for="cart-phone" data-i18n="phone">Phone Number (Optional)</label>
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <div class="form-floating">
               <input type="date" class="form-control" id="cart-date" required
                 style="border: 0.5px solid #000; border-radius: 4px;">
-              <label for="cart-date">Date</label>
+              <label for="cart-date" data-i18n="date">Date</label>
             </div>
           </div>
         </div>
@@ -77,11 +103,12 @@
             <option value="9:00 PM">9:00 PM</option>
             <option value="10:00 PM">10:00 PM</option>
           </select>
-          <label for="cart-time">Preferred Time</label>
+          <label for="cart-time" data-i18n="preferredTime">Preferred Time</label>
         </div>
         <div class="form-check mb-3">
           <input class="form-check-input" type="checkbox" id="cart-transport" style="border: 0.5px solid #000;">
-          <label class="form-check-label" for="cart-transport" style="font-size: 0.85rem; font-weight: 600;">
+          <label class="form-check-label" for="cart-transport" style="font-size: 0.85rem; font-weight: 600;"
+            data-i18n="askTransport">
             Ask for transportation rate?
           </label>
         </div>
@@ -89,18 +116,18 @@
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="cart-residence" placeholder="Residence Place (e.g., Hotel Name)"
               style="border: 0.5px solid #000; border-radius: 4px;">
-            <label for="cart-residence">Residence Place (e.g., Hotel Name)</label>
+            <label for="cart-residence" data-i18n="residencePlace">Residence Place (e.g., Hotel Name)</label>
           </div>
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="cart-room" placeholder="Room Number"
               style="border: 0.5px solid #000; border-radius: 4px;">
-            <label for="cart-room">Room Number</label>
+            <label for="cart-room" data-i18n="roomNumber">Room Number</label>
           </div>
         </div>
         <div class="form-floating mb-4">
           <textarea class="form-control" id="cart-notes" placeholder="Notes"
             style="height: 100px; border: 0.5px solid #000; border-radius: 4px;"></textarea>
-          <label for="cart-notes">Any special notes?</label>
+          <label for="cart-notes" data-i18n="specialNotes">Any special notes?</label>
         </div>
 
         <div class="d-flex gap-3 mt-4">
@@ -108,7 +135,7 @@
             style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
             Back to Selection
           </button>
-          <button type="submit" class="btn-book-luxury flex-grow-1" style="width: auto;">
+          <button type="submit" class="btn-book-luxury flex-grow-1" style="width: auto;" data-i18n="confirmBooking">
             CONFIRM BOOKING
           </button>
         </div>
@@ -130,7 +157,7 @@
         </div>
         <!-- This will trigger the checkout/booking form or WhatsApp flow -->
         <button class="btn-book-luxury px-5" style="padding: 18px 40px; border-radius: 8px; width: auto;"
-          onclick="showCheckoutForm()">
+          onclick="showCheckoutForm()" data-i18n="proceedBooking">
           PROCEED TO BOOKING
         </button>
       </div>
@@ -163,9 +190,11 @@
   <script src="../js/utils.js"></script>
   <script src="../js/theme.js"></script>
   <script src="../js/firebase-data-loader.js"></script>
+  <script src="../js/working-language-system.js"></script>
   <script src="../js/cart.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      if (typeof initializeLanguageSystem === 'function') initializeLanguageSystem();
       // Wait for cart items to render - renderCart logic is in cart.js
       if (window.renderCart) window.renderCart();
     });

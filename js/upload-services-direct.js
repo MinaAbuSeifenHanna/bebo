@@ -1,209 +1,211 @@
+window.uploadAllServicesDirectly = async function() {
+  console.log("?? Starting direct upload with hardcoded data...");
+  const servicesData = 
 [
-   {
-  "id": "1",
-  "image": "assets/images/1.png",
-  "category": "packages",
-  "time": "3 Hrs",
-  "price_info": {
-    "salary": 59,
-    "after_disc": 35,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "VIP Program",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Hammam",
-        "4": "Full Body Chocolate Mask",
-        "5": "Full Body Coconut Mask",
-        "6": "Face Mask",
-        "7": "Full Body Massage (60 Mins)"
-      }
-    },
-    "ar": {
-      "title": "برنامج VIP",
+    {
+        "id": "1",
+        "image": "assets/images/1.png",
+        "category": "packages",
+        "time": "3 Hrs",
+        "price_info": {
+          "salary": 59,
+          "after_disc": 35,
+          "currency": "€"
+        },
+        "translations": {
+    
+          "en": 
+          {
+            "title": "Cleopatra VIP",
+            "details": {
+              "1":  "Sauna - Steam bath",
+              "2": "Hair treatment - cream",
+              "3": "Full Body Chocolate Mask",
+              "4": "Full Body Coconut Mask",
+              "5": "Face Mask",
+              "6": "Full Body Massage (60 Mins)"
+            }  },
+
+"ar": {
+      "title": "كليوباترا VIP",
       "details": {
         "1": "سونا - حمام بخار",
         "2": "حمام كريم للشعر",
-        "3": "حمام مغربي",
-        "4": "ماسك شوكولاتة كامل للجسم",
-        "5": "ماسك جوز هند كامل للجسم",
-        "6": "ماسك للوجه",
-        "7": "مساج كامل للجسم (60 دقيقة)"
+        "3": "ماسك الشوكولاتة للجسم كامل",
+        "4": "ماسك جوز الهند للجسم كامل",
+        "5": "ماسك للوجه",
+        "6": "مساج كامل للجسم (60 دقيقة)"
       }
     },
     "de": {
-      "title": "VIP-Programm",
+      "title": "Cleopatra VIP",
       "details": {
         "1": "Sauna - Dampfbad",
         "2": "Haarkur - Creme",
-        "3": "Hammam",
-        "4": "Ganzkörper-Schokoladenmaske",
-        "5": "Ganzkörper-Kokosmaske",
-        "6": "Gesichtsmaske",
-        "7": "Ganzkörpermassage (60 Min.)"
+        "3": "Ganzkörper-Schokoladenmaske",
+        "4": "Ganzkörper-Kokosmaske",
+        "5": "Gesichtsmaske",
+        "6": "Ganzkörpermassage (60 Min.)"
       }
     },
     "fr": {
-      "title": "Programme VIP",
+      "title": "Cléopâtre VIP",
       "details": {
         "1": "Sauna - Hammam",
         "2": "Soin capillaire - crème",
-        "3": "Hammam",
-        "4": "Masque au chocolat pour tout le corps",
-        "5": "Masque à la noix de coco pour tout le corps",
-        "6": "Masque facial",
-        "7": "Massage complet du corps (60 min)"
+        "3": "Masque au chocolat pour tout le corps",
+        "4": "Masque à la noix de coco pour tout le corps",
+        "5": "Masque facial",
+        "6": "Massage complet du corps (60 min)"
       }
     },
     "ru": {
-      "title": "VIP-программа",
+      "title": "Клеопатра VIP",
       "details": {
         "1": "Сауна - Паровая баня",
         "2": "Крем для ухода за волосами",
-        "3": "Хаммам",
-        "4": "Шоколадная маска для всего тела",
-        "5": "Кокосовая маска для всего тела",
-        "6": "Маска для лица",
-        "7": "Массаж всего тела (60 мин.)"
+        "3": "Шоколадная маска для всего тела",
+        "4": "Кокосовая маска для всего тела",
+        "5": "Маска для лица",
+        "6": "Массаж всего тела (60 мин.)"
       }
     },
     "es": {
-      "title": "Programa VIP",
+      "title": "Cleopatra VIP",
       "details": {
         "1": "Sauna - Baño de vapor",
         "2": "Tratamiento capilar - crema",
-        "3": "Hammam",
-        "4": "Mascarilla de chocolate para todo el cuerpo",
-        "5": "Mascarilla de coco para todo el cuerpo",
-        "6": "Mascarilla facial",
-        "7": "Masaje corporal completo (60 min)"
+        "3": "Mascarilla corporal completa de chocolate",
+        "4": "Mascarilla corporal completa de coco",
+        "5": "Mascarilla facial",
+        "6": "Masaje corporal completo (60 min)"
       }
     },
     "it": {
-      "title": "Programma VIP",
+      "title": "Cleopatra VIP",
       "details": {
         "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Hammam",
-        "4": "Maschera al cioccolato per tutto il corpo",
-        "5": "Maschera al cocco per tutto il corpo",
-        "6": "Maschera per il viso",
-        "7": "Massaggio total body (60 min)"
+        "2": "Tratamiento per capelli - crema",
+        "3": "Maschera al cioccolato per tutto il corpo",
+        "4": "Maschera al cocco per tutto il corpo",
+        "5": "Maschera per il viso",
+        "6": "Massaggio completo del corpo (60 min)"
       }
     },
     "sr": {
-      "title": "VIP program",
+      "title": "Cleopatra VIP",
       "details": {
         "1": "Sauna - Parno kupatilo",
         "2": "Tretman kose - krema",
-        "3": "Hamam",
-        "4": "Čokoladna maska za celo telo",
-        "5": "Kokos maska za celo telo",
-        "6": "Maska za lice",
-        "7": "Masaža celog tela (60 min)"
+        "3": "Čokoladna maska za celo telo",
+        "4": "Kokosova maska za celo telo",
+        "5": "Maska za lice",
+        "6": "Masaža celog tela (60 min)"
       }
     },
     "sk": {
-      "title": "VIP program",
+      "title": "Cleopatra VIP",
       "details": {
         "1": "Sauna - Parný kúpeľ",
         "2": "Kúra na vlasy - krém",
-        "3": "Hammam",
-        "4": "Čokoládová maska na celé telo",
-        "5": "Kokosová maska na celé telo",
-        "6": "Pleťová maska",
-        "7": "Masáž celého tela (60 min)"
+        "3": "Čokoládová maska na celé telo",
+        "4": "Kokosová maska na celé telo",
+        "5": "Pleťová maska",
+        "6": "Masáž celého tela (60 min)"
       }
     },
     "et": {
-      "title": "VIP programm",
+      "title": "Cleopatra VIP",
       "details": {
         "1": "Saun - Aurusaun",
         "2": "Juuksehooldus - kreem",
-        "3": "Hamam",
-        "4": "Šokolaadi mähis kogu kehale",
-        "5": "Kookose mähis kogu kehale",
-        "6": "Näomask",
-        "7": "Kogu keha massaaž (60 min)"
+        "3": "Šokolaadi kogu keha mask",
+        "4": "Kookose kogu keha mask",
+        "5": "Näomask",
+        "6": "Kogu keha massaaž (60 min)"
       }
     },
     "hu": {
-      "title": "VIP program",
+      "title": "Kleopátra VIP",
       "details": {
         "1": "Szauna - Gőzfürdő",
         "2": "Hajápoló krém",
-        "3": "Hammam",
-        "4": "Teljes test csokoládé maszk",
-        "5": "Teljes test kókusz maszk",
-        "6": "Arcpakolás",
-        "7": "Teljes testmasszázs (60 perc)"
+        "3": "Teljes test csokoládé maszk",
+        "4": "Teljes test kókusz maszk",
+        "5": "Arcpakolás",
+        "6": "Teljes testmasszázs (60 perc)"
       }
     },
     "pl": {
-      "title": "Program VIP",
+      "title": "Kleopatra VIP",
       "details": {
         "1": "Sauna - Łaźnia parowa",
         "2": "Kuracja do włosów - krem",
-        "3": "Hammam",
-        "4": "Czekoladowa maska na całe ciało",
-        "5": "Kokosowa maska na całe ciało",
-        "6": "Maska na twarz",
-        "7": "Masaż całego ciała (60 min)"
+        "3": "Czekoladowa maska na całe ciało",
+        "4": "Kokosowa maska na całe ciało",
+        "5": "Maska na twarz",
+        "6": "Masaż całego ciała (60 min)"
       }
     },
     "cs": {
-      "title": "VIP program",
+      "title": "Cleopatra VIP",
       "details": {
         "1": "Sauna - Parní lázeň",
         "2": "Vlasová kúra - krém",
-        "3": "Hammam",
-        "4": "Čokoládová maska na celé tělo",
-        "5": "Kokosová maska na celé tělo",
-        "6": "Pleťová maska",
-        "7": "Masáž celého těla (60 min)"
+        "3": "Čokoládová maska na celé tělo",
+        "4": "Kokosová maska na celé tělo",
+        "5": "Pleťová maska",
+        "6": "Masáž celého těla (60 min)"
       }
     },
     "tr": {
-      "title": "VIP Programı",
+      "title": "Cleopatra VIP",
       "details": {
         "1": "Sauna - Buhar banyosu",
         "2": "Saç bakımı - krem",
-        "3": "Hamam",
-        "4": "Tüm Vücut Çikolata Maskesi",
-        "5": "Tüm Vücut Hindistan Cevizi Maskesi",
-        "6": "Yüz maskesi",
-        "7": "Tüm Vücut Masajı (60 dk)"
+        "3": "Tüm vücut çikolata maskesi",
+        "4": "Tüm vücut hindistan cevizi maskesi",
+        "5": "Yüz maskesi",
+        "6": "Tüm vücut masajı (60 dk)"
       }
     },
     "zh": {
-      "title": "VIP 方案",
+      "title": "克利奥帕特拉 VIP",
       "details": {
         "1": "桑拿 - 蒸汽浴",
         "2": "发质护理 - 发膜",
-        "3": "汉曼",
-        "4": "全身巧克力体膜",
-        "5": "全身椰子体膜",
-        "6": "面膜",
-        "7": "全身按摩 (60 分钟)"
+        "3": "全身巧克力体膜",
+        "4": "全身椰子体膜",
+        "5": "面膜",
+        "6": "全身按摩 (60 分钟)"
       }
     },
     "ko": {
-      "title": "VIP 프로그램",
+      "title": "클레오파트라 VIP",
       "details": {
         "1": "사우나 - 증기탕",
         "2": "헤어 트리트먼트 - 크림",
-        "3": "해맘",
-        "4": "전신 초콜릿 팩",
-        "5": "전신 코코넛 팩",
-        "6": "얼굴 팩",
-        "7": "전신 마사지 (60분)"
+        "3": "전신 초콜릿 팩",
+        "4": "전신 코코넛 팩",
+        "5": "얼굴 팩",
+        "6": "전신 마사지 (60분)"
       }
     }
   }
-},
+
+
+        },
+    
+
+
+        
+    
+        
+
+    
+    
+    
+    
     
     {
   "id": "2",
@@ -4168,5 +4170,31 @@
   }
 }
 ]
+;
+  
+  if (!window.firebaseDB) {
+      console.error("? Firebase DB instance not found. Make sure you run this on a page with Firebase initialized.");
+      alert("? Firebase DB instance not found.");
+      return;
+  }
 
+  const collection = window.firebaseDB.collection('services');
+  console.log('?? Uploading ' + servicesData.length + ' services...');
 
+  for (const service of servicesData) {
+      if (!service.id) continue;
+      console.log('?? Uploading service ' + service.id + '....');
+      try {
+          // Use string ID for document
+          await collection.doc(String(service.id)).set(service);
+      } catch (e) {
+          console.error('? Error uploading ' + service.id, e);
+      }
+  }
+
+  console.log("? SUCCESS: All 27 services have been uploaded to Firestore!");
+  alert("? SUCCESS: All 27 services have been uploaded to Firestore!");
+};
+
+// Auto-execute
+uploadAllServicesDirectly();
