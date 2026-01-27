@@ -279,31 +279,39 @@
       const lang = window.currentLang || 'en';
       const title = item.translations?.[lang]?.title || item.translations?.['en']?.title || item.title;
       const pricePerPerson = parseFloat(item.price_info?.after_disc || 0);
-      const duration = item.translations?.[lang]?.duration || 'N/A';
-      servicesList += `Title: ${title}
-Duration: ${duration}
-Price per person: €${pricePerPerson}
-Quantity: ${item.quantity}
+      const currency = item.price_info?.currency || '€';
+      const duration = item?.time || 'N/A';
+
+      servicesList += `Title : *${title}*
+
+Duration : ${duration}
+
+Price per person : ${pricePerPerson}${currency}
+
+Quantity : ${item.quantity}
+
 `;
     });
 
     const total = window.getCartTotal().toFixed(2);
+    const currency = cart[0]?.price_info?.currency || '€';
 
     // بناء الرسالة بالصيغة المطلوبة بالظبط
-    const message = `Dear world SPA AND BEAUTY SALON
+    const message = `Dear world SPA AND BEAUTY SALON 
 
 Kindly I want to reserve the following services:
 
-Name: ${customerData.name}
-Date: ${customerData.date}
-Time: ${customerData.time}
-Hotel: ${customerData.residence || 'Seegull hotel'}
-Room Number: ${customerData.room || '22'}
+Name : ${customerData.name}
 
-${servicesList}
-Total: €${total}
+Date : ${customerData.date}
 
-${customerData.notes ? `📝 Note: ${customerData.notes}` : ''}
+Time : ${customerData.time}
+
+Hotel : ${customerData.residence || 'Seegull hotel'}
+
+Room Number : ${customerData.room || '22'}
+
+${servicesList}Total : ${total}${currency}
 
 Confirm via: https://womenworldspa.com`;
 

@@ -24,7 +24,7 @@ const db = getFirestore(app);
 const servicesData = [
   {
     "id": "1",
-    "image": "assets/images/1.png",
+    "image": "assets/images/1.webp",
     "salary": "43 €",
     "after_disc": "35 €",
     "title": {
@@ -341,16 +341,16 @@ const servicesData = [
 // Migration function
 async function migrateServicesToFirestore() {
   console.log('🔥 Starting migration to Firestore...');
-  
+
   try {
     const servicesCollection = collection(db, 'services');
-    
+
     for (const service of servicesData) {
       const serviceDoc = doc(servicesCollection, service.id);
       await setDoc(serviceDoc, service);
       console.log(`✅ Migrated service: ${service.title.en} (ID: ${service.id})`);
     }
-    
+
     console.log('🎉 All services migrated successfully!');
   } catch (error) {
     console.error('❌ Migration error:', error);

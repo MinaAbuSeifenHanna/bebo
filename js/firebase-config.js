@@ -50,9 +50,35 @@ function listenToServices(callback) {
   });
 }
 
+// Helper function to listen to real-time updates for Salon services
+function listenToSalon(callback) {
+  const salonQuery = window.firebaseDB.collection('salon').orderBy('id', 'asc');
+
+  return salonQuery.onSnapshot((snapshot) => {
+    const services = [];
+    snapshot.forEach((doc) => {
+      services.push({ id: doc.id, ...doc.data() });
+    });
+
+    // Client-side sort similar to main services
+    services.sort((a, b) => {
+      // IDs are strings "salon-1", "salon-2". Extract number.
+      const numA = parseInt(a.id.replace('salon-', '')) || 0;
+      const numB = parseInt(b.id.replace('salon-', '')) || 0;
+      return numA - numB;
+    });
+
+    callback(services);
+  }, (error) => {
+    console.error('❌ Firebase Salon listener error:', error);
+    callback([]);
+  });
+}
+
 // Export helper functions
 window.getServicesCollection = getServicesCollection;
 window.listenToServices = listenToServices;
+window.listenToSalon = listenToSalon;
 
 // Migration function - run this in console to migrate data
 window.migrateToFirestore = async function () {

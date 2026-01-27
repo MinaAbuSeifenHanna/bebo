@@ -26,19 +26,25 @@ function loadFromCache() {
 function initializeFirebaseData() {
     console.log('🔥 Connecting to Firestore...');
 
-    if (!window.firebaseDB || !window.listenToServices) {
+    if (!window.firebaseDB || !window.listenToServices || !window.listenToSalon) {
         console.warn('⏳ Firebase not ready yet, retrying in 500ms...');
         setTimeout(initializeFirebaseData, 500);
         return;
     }
 
-    // استخدام الـ Listener (Realtime) لجلب البيانات
-    const unsubscribe = window.listenToServices((services) => {
-        if (services && services.length > 0) {
-            console.log(`✅ Live Sync: Received ${services.length} services`);
+    let spaServices = [];
+    let salonServices = [];
+
+    // Helper to merge and update
+    const updateGlobalState = () => {
+        // Merge both arrays
+        const combined = [...spaServices, ...salonServices];
+
+        if (combined.length > 0) {
+            console.log(`✅ Live Sync: Total ${combined.length} items (Spa: ${spaServices.length}, Salon: ${salonServices.length})`);
 
             // معالجة التصنيفات
-            const processedServices = services.map(service => ({
+            const processedServices = combined.map(service => ({
                 ...service,
                 category: service.category ? service.category.toLowerCase() : 'packages'
             }));
@@ -52,14 +58,23 @@ function initializeFirebaseData() {
             // Dispatch Custom Event
             const event = new CustomEvent('services-loaded', { detail: { services: processedServices } });
             window.dispatchEvent(event);
-            console.log('📢 Event dispatched: services-loaded');
 
             // تحديث الواجهة فوراً (Legacy Support)
             triggerUIRender();
         }
+    };
+
+    // استخدام الـ Listener (Realtime) لجلب البيانات
+    window.listenToServices((services) => {
+        spaServices = services || [];
+        updateGlobalState();
     });
 
-    window.firebaseUnsubscribe = unsubscribe;
+    // Listen to Salon Data
+    window.listenToSalon((services) => {
+        salonServices = services || [];
+        updateGlobalState();
+    });
 }
 
 // 3. دالة موحدة لتحديث كل أجزاء الموقع

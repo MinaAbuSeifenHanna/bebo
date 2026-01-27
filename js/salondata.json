@@ -1,0 +1,3302 @@
+[
+  {
+    "id": "1",
+    "image": "assets/images/salon/1.webp",
+    "category": "salon",
+    "price_info": {
+      "salary": 45,
+      "after_disc": 35,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Facial Treatment",
+        "details": {
+          "1": "Skin cleansing and makeup removal",
+          "2": "Skin analysis for treatment type",
+          "3": "Gentle exfoliation",
+          "4": "Steam treatment to open pores",
+          "5": "Extraction of impurities",
+          "6": "Facial massage for circulation",
+          "7": "Mask suited to skin type",
+          "8": "Toner and moisturizer",
+          "9": "Serum or sunscreen finish"
+        }
+      },
+      "ar": {
+        "title": "جلسة العناية بالوجه",
+        "details": {
+          "1": "تنظيف البشرة وإزالة المكياج",
+          "2": "تحليل البشرة لتحديد نوع العلاج",
+          "3": "تقشير لطيف للبشرة",
+          "4": "حمام بخار لفتح المسام",
+          "5": "إزالة الشوائب والرؤوس السوداء",
+          "6": "مساج للوجه لتحسين الدورة الدموية",
+          "7": "وضع ماسك مناسب لنوع البشرة",
+          "8": "استخدام التونر والمرطب",
+          "9": "لمسة نهائية بالسيروم أو واقي الشمس"
+        }
+      },
+      "de": {
+        "title": "Gesichtsbehandlung",
+        "details": {
+          "1": "Hautreinigung und Make-up-Entfernung",
+          "2": "Hautanalyse zur Bestimmung der Behandlung",
+          "3": "Sanftes Peeling",
+          "4": "Dampfbehandlung zum Öffnen der Poren",
+          "5": "Ausreinigung von Unreinheiten",
+          "6": "Gesichtsmassage zur Durchblutung",
+          "7": "Maske passend zum Hauttyp",
+          "8": "Toner und Feuchtigkeitspflege",
+          "9": "Abschluss mit Serum oder Sonnenschutz"
+        }
+      },
+      "fr": {
+        "title": "Soin du Visage",
+        "details": {
+          "1": "Nettoyage et démaquillage",
+          "2": "Analyse de peau",
+          "3": "Exfoliation douce",
+          "4": "Vapeur pour ouvrir les pores",
+          "5": "Extraction des impuretés",
+          "6": "Massage facial",
+          "7": "Masque adapté au type de peau",
+          "8": "Tonique et hydratant",
+          "9": "Sérum ou protection solaire"
+        }
+      },
+      "ru": {
+        "title": "Уход за лицом",
+        "details": {
+          "1": "Очищение кожи и демакияж",
+          "2": "Анализ типа кожи",
+          "3": "Мягкое отшелушивание",
+          "4": "Распаривание пор",
+          "5": "Чистка лица",
+          "6": "Массаж лица",
+          "7": "Маска по типу кожи",
+          "8": "Тоник и увлажнение",
+          "9": "Сыворотка или защита от солнца"
+        }
+      },
+      "es": {
+        "title": "Tratamiento Facial",
+        "details": {
+          "1": "Limpieza y desmaquillado",
+          "2": "Análisis de la piel",
+          "3": "Exfoliación suave",
+          "4": "Vapor para abrir poros",
+          "5": "Extracción de impurezas",
+          "6": "Masaje facial para circulación",
+          "7": "Mascarilla según tipo de piel",
+          "8": "Tónico e hidratante",
+          "9": "Sérum o protector solar"
+        }
+      },
+      "it": {
+        "title": "Trattamento Viso",
+        "details": {
+          "1": "Pulizia e rimozione trucco",
+          "2": "Analisi della pelle",
+          "3": "Esfoliazione delicata",
+          "4": "Vapore per aprire i pori",
+          "5": "Estrazione delle impurità",
+          "6": "Massaggio viso",
+          "7": "Maschera per tipo di pelle",
+          "8": "Tonico e idratante",
+          "9": "Siero o protezione solare"
+        }
+      },
+      "sr": {
+        "title": "Tretman lica",
+        "details": {
+          "1": "Čišćenje kože i skidanje šminke",
+          "2": "Analiza kože",
+          "3": "Blagi piling",
+          "4": "Parene za otvaranje pora",
+          "5": "Čišćenje nečistoća",
+          "6": "Masaža lica",
+          "7": "Maska prema tipu kože",
+          "8": "Tonik i hidratacija",
+          "9": "Serum ili zaštitna krema"
+        }
+      },
+      "sk": {
+        "title": "Ošetrenie tváre",
+        "details": {
+          "1": "Čistenie a odlíčenie pleti",
+          "2": "Analýza pleti",
+          "3": "Jemný peeling",
+          "4": "Para na otvorenie pórov",
+          "5": "Hĺbkové čistenie",
+          "6": "Masáž tváre",
+          "7": "Maska podľa typu pleti",
+          "8": "Tonikum a hydratácia",
+          "9": "Sérum alebo ochranný krém"
+        }
+      },
+      "et": {
+        "title": "Näohooldus",
+        "details": {
+          "1": "Naha puhastus ja meigieemaldus",
+          "2": "Naha analüüs",
+          "3": "Õrn koorimine",
+          "4": "Aur pooride avamiseks",
+          "5": "Mustuse eemaldamine",
+          "6": "Näomassaaž",
+          "7": "Nahatüübile vastav mask",
+          "8": "Toonik ja niisutaja",
+          "9": "Seerum või päikesekaitse"
+        }
+      },
+      "hu": {
+        "title": "Arckezelés",
+        "details": {
+          "1": "Arctisztítás és sminkeltávolítás",
+          "2": "Bőranalízis",
+          "3": "Gyengéd hámlasztás",
+          "4": "Gőzölés a pórusok megnyitására",
+          "5": "Szennyeződések eltávolítása",
+          "6": "Arcmasszázs a keringésért",
+          "7": "Bőrtípusnak megfelelő maszk",
+          "8": "Tonizálás és hidratálás",
+          "9": "Szérum vagy fényvédő"
+        }
+      },
+      "pl": {
+        "title": "Zabieg na twarz",
+        "details": {
+          "1": "Oczyszczanie i demakijaż",
+          "2": "Analiza cery",
+          "3": "Delikatny peeling",
+          "4": "Para na otwarcie porów",
+          "5": "Oczyszczanie z zanieczyszczeń",
+          "6": "Masaż twarzy",
+          "7": "Maska dobrana do cery",
+          "8": "Tonik i nawilżenie",
+          "9": "Serum lub ochrona przeciwsłoneczna"
+        }
+      },
+      "cs": {
+        "title": "Ošetření obličeje",
+        "details": {
+          "1": "Čištění a odlíčení pleti",
+          "2": "Analýza pleti",
+          "3": "Jemný peeling",
+          "4": "Pára k otevření pórů",
+          "5": "Čištění nečistot",
+          "6": "Masáž obličeje",
+          "7": "Maska podle typu pleti",
+          "8": "Tonizace a hydratace",
+          "9": "Sérum nebo ochrana proti slunci"
+        }
+      },
+      "tr": {
+        "title": "Cilt Bakımı",
+        "details": {
+          "1": "Cilt ve makyaj temizliği",
+          "2": "Cilt analizi",
+          "3": "Nazik peeling",
+          "4": "Gözenek açıcı buhar",
+          "5": "Kirlerin temizlenmesi",
+          "6": "Yüz masajı",
+          "7": "Cilt tipine uygun maske",
+          "8": "Tonik ve nemlendirici",
+          "9": "Serum veya güneş kremi"
+        }
+      },
+      "zh": {
+        "title": "面部护理",
+        "details": {
+          "1": "深层清洁及卸妆",
+          "2": "皮肤性质分析",
+          "3": "温和去角质",
+          "4": "蒸汽扩充毛孔",
+          "5": "清理皮肤杂质",
+          "6": "面部血液循环按摩",
+          "7": "针对性面膜护理",
+          "8": "爽肤及深层保湿",
+          "9": "精华液或防晒结尾"
+        }
+      },
+      "ko": {
+        "title": "페이셜 트리트먼트",
+        "details": {
+          "1": "피부 클렌징 및 메이크업 제거",
+          "2": "피부 상태 분석",
+          "3": "부드러운 각질 제거",
+          "4": "모공 케어 스팀",
+          "5": "피부 노폐물 추출",
+          "6": "순환 촉진 얼굴 마사지",
+          "7": "피부 타입별 맞춤 팩",
+          "8": "토너 및 수분 공급",
+          "9": "세럼 또는 자외선 차단제"
+        }
+      }
+    }
+  },
+  {
+    "id": "2",
+    "image": "assets/images/salon/2.webp",
+    "category": "salon",
+    "price_info": {
+      "salary": 35,
+      "after_disc": 25,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Pedicure Treatment",
+        "details": {
+          "1": "Foot cleansing and sanitizing",
+          "2": "Warm water foot soak",
+          "3": "Nail trimming and shaping",
+          "4": "Cuticle care and removal",
+          "5": "Dead skin removal (scrub/file)",
+          "6": "Exfoliation",
+          "7": "Moisturizing foot massage",
+          "8": "Nail polish application"
+        }
+      },
+      "ar": {
+        "title": "جلسة بديكير للقدمين",
+        "details": {
+          "1": "تنظيف وتعقيم القدمين",
+          "2": "نقع القدمين في ماء دافئ",
+          "3": "قص وتشكيل الأظافر",
+          "4": "العناية بالجلد الميت حول الأظافر",
+          "5": "إزالة الجلد الميت (سنفرة/برد)",
+          "6": "تقشير البشرة",
+          "7": "مساج مرطب للقدمين",
+          "8": "وضع طلاء الأظافر"
+        }
+      },
+      "de": {
+        "title": "Pediküre",
+        "details": {
+          "1": "Fußreinigung und Desinfektion",
+          "2": "Warmes Fußbad",
+          "3": "Kürzen und Formen der Nägel",
+          "4": "Nagelhautpflege",
+          "5": "Hornhautentfernung",
+          "6": "Peeling",
+          "7": "Feuchtigkeitsspendende Fußmassage",
+          "8": "Nagellack-Anwendung"
+        }
+      },
+      "fr": {
+        "title": "Pédicure",
+        "details": {
+          "1": "Nettoyage et désinfection des pieds",
+          "2": "Bain de pieds à l'eau tiède",
+          "3": "Coupe et limage des ongles",
+          "4": "Soin des cuticules",
+          "5": "Élimination des peaux mortes",
+          "6": "Exfoliation",
+          "7": "Massage hydratant des pieds",
+          "8": "Pose de vernis à ongles"
+        }
+      },
+      "ru": {
+        "title": "Педикюр",
+        "details": {
+          "1": "Очищение и дезинфекция стоп",
+          "2": "Теплая ванночка для ног",
+          "3": "Стрижка и придание формы ногтям",
+          "4": "Уход за кутикулой",
+          "5": "Удаление ороговевшей кожи",
+          "6": "Отшелушивание",
+          "7": "Увлажняющий массаж стоп",
+          "8": "Нанесение лака"
+        }
+      },
+      "es": {
+        "title": "Pedicura",
+        "details": {
+          "1": "Limpieza y desinfección de pies",
+          "2": "Baño de pies con agua tibia",
+          "3": "Corte y limado de uñas",
+          "4": "Cuidado de la cutícula",
+          "5": "Eliminación de piel muerta",
+          "6": "Exfoliación",
+          "7": "Masaje hidratante de pies",
+          "8": "Aplicación de esmalte"
+        }
+      },
+      "it": {
+        "title": "Pedicure",
+        "details": {
+          "1": "Pulizia e sanificazione piedi",
+          "2": "Pediluvio in acqua calda",
+          "3": "Taglio e limatura unghie",
+          "4": "Cura delle cuticole",
+          "5": "Rimozione pelle morta",
+          "6": "Esfoliazione",
+          "7": "Massaggio idratante piedi",
+          "8": "Applicazione smalto"
+        }
+      },
+      "sr": {
+        "title": "Pedikir",
+        "details": {
+          "1": "Čišćenje i dezinfekcija stopala",
+          "2": "Topla kupka za stopala",
+          "3": "Skraćivanje i oblikovanje noktiju",
+          "4": "Nega zanoktica",
+          "5": "Uklanjanje mrtve kože",
+          "6": "Piling",
+          "7": "Hidratantna masaža stopala",
+          "8": "Lakiranje noktiju"
+        }
+      },
+      "sk": {
+        "title": "Pedikúra",
+        "details": {
+          "1": "Čistenie a dezinfekcia nôh",
+          "2": "Teplý kúpeľ nôh",
+          "3": "Strihanie a tvarovanie nechtov",
+          "4": "Ošetrenie nechtovej kožičky",
+          "5": "Odstránenie odumretej kože",
+          "6": "Peeling",
+          "7": "Hydratačná masáž nôh",
+          "8": "Lakovanie nechtov"
+        }
+      },
+      "et": {
+        "title": "Pediküür",
+        "details": {
+          "1": "Jalgade puhastamine ja desinfitseerimine",
+          "2": "Soe jalavann",
+          "3": "Küünte lõikamine ja kujundamine",
+          "4": "Küünenaha hooldus",
+          "5": "Surnud naha eemaldamine",
+          "6": "Koorimine",
+          "7": "Niisutav jalamassaaž",
+          "8": "Küünelaki pealekandmine"
+        }
+      },
+      "hu": {
+        "title": "Pedikűr",
+        "details": {
+          "1": "Lábtisztítás és fertőtlenítés",
+          "2": "Meleg vizes lábáztatás",
+          "3": "Körömvágás és formázás",
+          "4": "Körömágybőr ápolása",
+          "5": "Elhalt bőr eltávolítása",
+          "6": "Bőrradírozás",
+          "7": "Hidratáló lábmasszázs",
+          "8": "Körömlakkozás"
+        }
+      },
+      "pl": {
+        "title": "Pedicure",
+        "details": {
+          "1": "Oczyszczanie i dezynfekcja stóp",
+          "2": "Ciepła kąpiel stóp",
+          "3": "Obcinanie i piłowanie paznokci",
+          "4": "Opracowanie skórek",
+          "5": "Usuwanie zrogowaciałego naskórka",
+          "6": "Peeling",
+          "7": "Nawilżający masaż stóp",
+          "8": "Malowanie paznokci"
+        }
+      },
+      "cs": {
+        "title": "Pedikúra",
+        "details": {
+          "1": "Čištění a dezinfekce nohou",
+          "2": "Teplá lázeň nohou",
+          "3": "Stříhání a tvarování nehtů",
+          "4": "Ošetření kůžičky",
+          "5": "Odstranění odumřelé kůže",
+          "6": "Peeling",
+          "7": "Hydratační masáž nohou",
+          "8": "Lakování nehtů"
+        }
+      },
+      "tr": {
+        "title": "Pedikür",
+        "details": {
+          "1": "Ayak temizliği ve dezenfeksiyonu",
+          "2": "Ilık su ile ayak banyosu",
+          "3": "Tırnak kesimi ve şekillendirme",
+          "4": "Et temizliği (Kütikül bakımı)",
+          "5": "Ölü deri temizliği (Topuk törpüsü)",
+          "6": "Peeling",
+          "7": "Nemlendirici ayak masajı",
+          "8": "Oje uygulaması"
+        }
+      },
+      "zh": {
+        "title": "足部美甲 (Pedicure)",
+        "details": {
+          "1": "足部清洁与消毒",
+          "2": "温水足浴",
+          "3": "修剪及修饰趾甲形状",
+          "4": "死皮及甲缘护理",
+          "5": "去除足底老茧死皮",
+          "6": "深层去角质",
+          "7": "滋润保湿按摩",
+          "8": "涂抹趾甲油"
+        }
+      },
+      "ko": {
+        "title": "페디큐어",
+        "details": {
+          "1": "발 세정 및 소독",
+          "2": "따뜻한 물 족욕",
+          "3": "발톱 트리밍 및 쉐이핑",
+          "4": "큐티클 케어 및 제거",
+          "5": "각질 제거 (스크럽/파일)",
+          "6": "각질 정리",
+          "7": "보습 발 마사지",
+          "8": "매니큐어 컬러 도포"
+        }
+      }
+    }
+  },
+  {
+    "id": "3",
+    "image": "assets/images/salon/3.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 30,
+      "after_disc": 20,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Manicure Treatment",
+        "details": {
+          "1": "Hand cleansing and sanitizing",
+          "2": "Nail trimming and shaping",
+          "3": "Cuticle care and pushing back",
+          "4": "Gentle exfoliation of hands",
+          "5": "Hand massage and moisturizing",
+          "6": "Nail polish application",
+          "7": "Quick-dry or UV curing"
+        }
+      },
+      "ar": {
+        "title": "جلسة مانيكير لليدين",
+        "details": {
+          "1": "تنظيف وتعقيم اليدين",
+          "2": "قص وتشكيل الأظافر",
+          "3": "العناية بالجلد المحيط بالأظافر",
+          "4": "تقشير لطيف لليدين",
+          "5": "مساج مرطب لليدين",
+          "6": "وضع طلاء الأظافر",
+          "7": "تجفيف سريع أو معالجة بالأشعة (للجيل)"
+        }
+      },
+      "de": {
+        "title": "Maniküre",
+        "details": {
+          "1": "Handreinigung und Desinfektion",
+          "2": "Kürzen und Formen der Nägel",
+          "3": "Nagelhautpflege",
+          "4": "Sanftes Handpeeling",
+          "5": "Handmassage und Feuchtigkeitspflege",
+          "6": "Nagellack-Anwendung",
+          "7": "Schnelltrocknung oder UV-Härtung"
+        }
+      },
+      "fr": {
+        "title": "Manucure",
+        "details": {
+          "1": "Nettoyage et désinfection des mains",
+          "2": "Coupe et limage des ongles",
+          "3": "Soin des cuticules",
+          "4": "Exfoliation douce des mains",
+          "5": "Massage et hydratation des mains",
+          "6": "Pose de vernis à ongles",
+          "7": "Séchage rapide ou polymérisation UV"
+        }
+      },
+      "ru": {
+        "title": "Маникюр",
+        "details": {
+          "1": "Очищение и дезинфекция рук",
+          "2": "Стрижка и придание формы ногтям",
+          "3": "Уход за кутикулой",
+          "4": "Мягкий пилинг рук",
+          "5": "Массаж и увлажнение рук",
+          "6": "Нанесение лака",
+          "7": "Быстрая сушка или УФ-отверждение"
+        }
+      },
+      "es": {
+        "title": "Manicura",
+        "details": {
+          "1": "Limpieza y desinfección de manos",
+          "2": "Corte y limado de uñas",
+          "3": "Cuidado de la cutícula",
+          "4": "Exfoliación suave de manos",
+          "5": "Masaje e hidratación de manos",
+          "6": "Aplicación de esmalte",
+          "7": "Secado rápido o curado UV"
+        }
+      },
+      "it": {
+        "title": "Manicure",
+        "details": {
+          "1": "Pulizia e sanificazione mani",
+          "2": "Taglio e limatura unghie",
+          "3": "Cura delle cuticole",
+          "4": "Esfoliazione delicata delle mani",
+          "5": "Massaggio e idratazione mani",
+          "6": "Applicazione smalto",
+          "7": "Asciugatura rapida o polimerizzazione UV"
+        }
+      },
+      "sr": {
+        "title": "Manikir",
+        "details": {
+          "1": "Čišćenje i dezinfekcija ruku",
+          "2": "Skraćivanje i oblikovanje noktiju",
+          "3": "Nega i potiskivanje zanoktica",
+          "4": "Blagi piling ruku",
+          "5": "Masaža i hidratacija ruku",
+          "6": "Lakiranje noktiju",
+          "7": "Brzo sušenje ili UV učvršćivanje"
+        }
+      },
+      "sk": {
+        "title": "Manikúra",
+        "details": {
+          "1": "Čistenie a dezinfekcia rúk",
+          "2": "Strihanie a tvarovanie nechtov",
+          "3": "Ošetrenie a zatlačenie kožičky",
+          "4": "Jemný peeling rúk",
+          "5": "Masáž a hydratácia rúk",
+          "6": "Lakovanie nechtov",
+          "7": "Rýchle schnutie alebo UV vytvrdzovanie"
+        }
+      },
+      "et": {
+        "title": "Maniküür",
+        "details": {
+          "1": "Käte puhastamine ja desinfitseerimine",
+          "2": "Küünte lõikamine ja kujundamine",
+          "3": "Küünenaha hooldus",
+          "4": "Õrn käte koorimine",
+          "5": "Käemassaaž ja niisutamine",
+          "6": "Küünelaki pealekandmine",
+          "7": "Kiirkuivatus või UV-kõvenemine"
+        }
+      },
+      "hu": {
+        "title": "Manikűr",
+        "details": {
+          "1": "Kéztisztítás és fertőtlenítés",
+          "2": "Körömvágás és formázás",
+          "3": "Körömágybőr ápolása",
+          "4": "Gyengéd kézradír",
+          "5": "Kézmasszázs és hidratálás",
+          "6": "Körömlakkozás",
+          "7": "Gyorsszárítás vagy UV-fényes kötés"
+        }
+      },
+      "pl": {
+        "title": "Manicure",
+        "details": {
+          "1": "Oczyszczanie i dezynfekcja dłoni",
+          "2": "Obcinanie i piłowanie paznokci",
+          "3": "Opracowanie skórek",
+          "4": "Delikatny peeling dłoni",
+          "5": "Masaż i nawilżanie dłoni",
+          "6": "Malowanie paznokci",
+          "7": "Szybkie schnięcie lub utwardzanie UV"
+        }
+      },
+      "cs": {
+        "title": "Manikúra",
+        "details": {
+          "1": "Čištění a dezinfekce rukou",
+          "2": "Stříhání a tvarování nechtů",
+          "3": "Ošetření kůžičky",
+          "4": "Jemný peeling rukou",
+          "5": "Masáž a hydratace rukou",
+          "6": "Lakování nehtů",
+          "7": "Rychlé schnutí nebo UV vytvrzení"
+        }
+      },
+      "tr": {
+        "title": "Manikür",
+        "details": {
+          "1": "El temizliği ve dezenfeksiyonu",
+          "2": "Tırnak kesimi ve şekillendirme",
+          "3": "Et bakımı ve kütikül itme",
+          "4": "Eller için nazik peeling",
+          "5": "El masajı ve nemlendirme",
+          "6": "Oje uygulaması",
+          "7": "Hızlı kurutma veya UV kürleme"
+        }
+      },
+      "zh": {
+        "title": "手部美甲 (Manicure)",
+        "details": {
+          "1": "手部清洁与消毒",
+          "2": "修剪及修饰指甲形状",
+          "3": "甲缘死皮护理",
+          "4": "手部温和去角质",
+          "5": "手部按摩与滋润",
+          "6": "涂抹指甲油",
+          "7": "快速烘干或UV固化 (针对甲油胶)"
+        }
+      },
+      "ko": {
+        "title": "매니큐어",
+        "details": {
+          "1": "손 세정 및 소독",
+          "2": "손톱 트리밍 및 쉐이핑",
+          "3": "큐티클 케어 및 정리",
+          "4": "부드러운 손 각질 제거",
+          "5": "손 마사지 및 보습",
+          "6": "매니큐어 컬러 도포",
+          "7": "퀵 드라이 또는 UV 경화"
+        }
+      }
+    }
+  },
+  {
+    "id": "4",
+    "image": "assets/images/salon/4.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 50,
+      "after_disc": 40,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Hard Gel Application",
+        "details": {
+          "1": "Nail cleansing and sanitizing",
+          "2": "Nail shaping and filing",
+          "3": "Cuticle care and push back",
+          "4": "Applying nail primer/base",
+          "5": "Sculpting or layering hard gel",
+          "6": "UV/LED curing for each layer",
+          "7": "Shaping and buffing for smooth finish",
+          "8": "Optional nail art or color application",
+          "9": "Final top coat and curing"
+        }
+      },
+      "ar": {
+        "title": "هارد جيل (Hard Gel)",
+        "details": {
+          "1": "تنظيف وتعقيم الأظافر",
+          "2": "برد وتشكيل الأظافر",
+          "3": "العناية بالجلد المحيط بالأظافر",
+          "4": "وضع البرايمر والأساس للجيل",
+          "5": "بناء وتشكيل الهارد جيل على الأظافر",
+          "6": "المعالجة بضوء UV/LED لكل طبقة",
+          "7": "برد وتنعيم الجيل لشكل انسيابي",
+          "8": "إضافة رسومات أو لون (اختياري)",
+          "9": "وضع الطبقة النهائية والتجفيف"
+        }
+      },
+      "de": {
+        "title": "Hard-Gel-Modellage",
+        "details": {
+          "1": "Nagelreinigung und Desinfektion",
+          "2": "Nagelformen und Feilen",
+          "3": "Nagelhautpflege",
+          "4": "Auftragen von Primer/Base",
+          "5": "Modellieren oder Schichten von Hard-Gel",
+          "6": "UV/LED-Härtung jeder Schicht",
+          "7": "Formen und Polieren für glattes Finish",
+          "8": "Optionales Nailart oder Farbgel",
+          "9": "Versiegelung und Aushärtung"
+        }
+      },
+      "fr": {
+        "title": "Pose de Gel Dur (Hard Gel)",
+        "details": {
+          "1": "Nettoyage et désinfection des ongles",
+          "2": "Limage et mise en forme",
+          "3": "Soin des cuticules",
+          "4": "Application du primer/base",
+          "5": "Sculptage ou superposition du gel dur",
+          "6": "Catalyse UV/LED pour chaque couche",
+          "7": "Limage et polissage pour une finition lisse",
+          "8": "Nail art ou couleur en option",
+          "9": "Top coat final et catalyse"
+        }
+      },
+      "ru": {
+        "title": "Укрепление жестким гелем",
+        "details": {
+          "1": "Очищение и дезинфекция ногтей",
+          "2": "Придание формы и опил ногтей",
+          "3": "Уход за кутикулой",
+          "4": "Нанесение праймера/базы",
+          "5": "Моделирование или наращивание гелем",
+          "6": "УФ/LED полимеризация каждого слоя",
+          "7": "Шлифовка геля для гладкости",
+          "8": "Дизайн или цвет (по желанию)",
+          "9": "Финишное покрытие и сушка"
+        }
+      },
+      "es": {
+        "title": "Aplicación de Gel Rígido",
+        "details": {
+          "1": "Limpieza y desinfección de uñas",
+          "2": "Limado y forma de uñas",
+          "3": "Cuidado de cutículas",
+          "4": "Aplicación de primer/base",
+          "5": "Esculpido o capas de gel rígido",
+          "6": "Curado UV/LED para cada capa",
+          "7": "Limado y pulido para acabado liso",
+          "8": "Arte o color opcional",
+          "9": "Capa final y curado"
+        }
+      },
+      "it": {
+        "title": "Applicazione Hard Gel",
+        "details": {
+          "1": "Pulizia e sanificazione unghie",
+          "2": "Limatura e forma unghie",
+          "3": "Cura delle cuticole",
+          "4": "Applicazione primer/base",
+          "5": "Modellatura o stratificazione hard gel",
+          "6": "Polimerizzazione UV/LED per ogni strato",
+          "7": "Limatura e lucidatura gel",
+          "8": "Nail art o colore opzionale",
+          "9": "Top coat finale e polimerizzazione"
+        }
+      },
+      "sr": {
+        "title": "Hard Gel (Izlivanje noktiju)",
+        "details": {
+          "1": "Čišćenje i dezinfekcija noktiju",
+          "2": "Oblikovanje i turpijanje noktiju",
+          "3": "Nega zanoktica",
+          "4": "Nanošenje prajmera/baze",
+          "5": "Modeliranje ili izlivanje gelom",
+          "6": "UV/LED učvršćivanje svakog sloja",
+          "7": "Oblikovanje i poliranje gela",
+          "8": "Nail art ili boja po izboru",
+          "9": "Završni sjaj i učvršćivanje"
+        }
+      },
+      "sk": {
+        "title": "Aplikácia tvrdého gélu",
+        "details": {
+          "1": "Čistenie a dezinfekcia nechtov",
+          "2": "Tvarovanie a pilníkovanie nechtov",
+          "3": "Ošetrenie kožičky",
+          "4": "Aplikácia primeru/bázy",
+          "5": "Modelovanie alebo vrstvenie gélu",
+          "6": "UV/LED vytvrdzovanie každej vrstvy",
+          "7": "Tvarovanie a leštenie gélu",
+          "8": "Nail art alebo farba (voliteľné)",
+          "9": "Záverečný top coat a vytvrdnutie"
+        }
+      },
+      "et": {
+        "title": "Ehitusgeeli paigaldus",
+        "details": {
+          "1": "Küünte puhastus ja desinfitseerimine",
+          "2": "Küünte kujundamine ja viilimine",
+          "3": "Küünenaha hooldus",
+          "4": "Kruntkihi ja aluse pealekandmine",
+          "5": "Ehitusgeeliga modelleerimine",
+          "6": "UV/LED-kuivatus iga kihi järel",
+          "7": "Geeli viilimine sileda viimistluseni",
+          "8": "Valikuline nail art või värv",
+          "9": "Lõppviimistlus ja kuivatus"
+        }
+      },
+      "hu": {
+        "title": "Építő zselé (Hard Gel)",
+        "details": {
+          "1": "Körömtisztítás és fertőtlenítés",
+          "2": "Körömformázás és reszelés",
+          "3": "Körömágybőr ápolása",
+          "4": "Primer és alapréteg felvitele",
+          "5": "Építő zselé felvitele vagy formázása",
+          "6": "UV/LED köttetés rétegenként",
+          "7": "Zselé formázása és polírozása",
+          "8": "Választható díszítés vagy színes zselé",
+          "9": "Fényzselé és záró köttetés"
+        }
+      },
+      "pl": {
+        "title": "Przedłużanie żelem twardym",
+        "details": {
+          "1": "Oczyszczanie i dezynfekcja paznokci",
+          "2": "Opracowanie kształtu i piłowanie",
+          "3": "Pielęgnacja skórek",
+          "4": "Aplikacja primera i bazy",
+          "5": "Modelowanie lub nadbudowa żelem",
+          "6": "Utwardzanie UV/LED każdej warstwy",
+          "7": "Opiłowanie i wygładzenie żelu",
+          "8": "Opcjonalne zdobienia lub kolor",
+          "9": "Top coat i ostateczne utwardzenie"
+        }
+      },
+      "cs": {
+        "title": "Modeláž tvrdým gelem",
+        "details": {
+          "1": "Čištění a dezinfekce nehtů",
+          "2": "Tvarování a pilování nehtů",
+          "3": "Ošetření kůžičky",
+          "4": "Nanesení primeru/báze",
+          "5": "Modelování nebo vrstvení gelu",
+          "6": "UV/LED vytvrzení každé vrstvy",
+          "7": "Tvarování a leštění gelu",
+          "8": "Volitelný nail art nebo barva",
+          "9": "Závěrečný top coat a vytvrzení"
+        }
+      },
+      "tr": {
+        "title": "Hard Jel (Protez Tırnak)",
+        "details": {
+          "1": "Tırnak temizliği ve dezenfeksiyonu",
+          "2": "Tırnak şekillendirme ve törpüleme",
+          "3": "Kütikül bakımı ve geri itme",
+          "4": "Primer ve baz uygulaması",
+          "5": "Hard jel ile tırnak inşası",
+          "6": "Her katman için UV/LED kurutma",
+          "7": "Pürüzsüz yüzey için törpüleme",
+          "8": "İsteğe bağlı nail art veya renk",
+          "9": "Son katman (top coat) ve kurutma"
+        }
+      },
+      "zh": {
+        "title": "硬胶美甲 (Hard Gel)",
+        "details": {
+          "1": "指甲清洁与消毒",
+          "2": "指甲修剪及打磨形状",
+          "3": "甲缘护理及死皮推除",
+          "4": "涂抹底胶或结合剂",
+          "5": "使用硬胶塑形或加固",
+          "6": "每一层进行UV/LED照灯固化",
+          "7": "打磨抛光使表面平滑",
+          "8": "可选美甲彩绘或颜色涂抹",
+          "9": "涂抹封层并进行最终固化"
+        }
+      },
+      "ko": {
+        "title": "하드 젤 (Hard Gel)",
+        "details": {
+          "1": "손톱 세정 및 소독",
+          "2": "손톱 모양 잡기 및 파일링",
+          "3": "큐티클 케어 및 정리",
+          "4": "젤 밀착을 위한 프라이머/베이스 도포",
+          "5": "하드 젤 조형 또는 레이어링",
+          "6": "각 층별 UV/LED 경화",
+          "7": "매끄러운 마무리를 위한 쉐이핑 및 버핑",
+          "8": "네일 아트 또는 컬러 젤 (선택 사항)",
+          "9": "최종 탑 코트 도포 및 경화"
+        }
+      }
+    }
+  },
+  {
+    "id": "5",
+    "image": "assets/images/salon/5.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 35,
+      "after_disc": 25,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Shellac / Gel Polish",
+        "details": {
+          "1": "Hand cleansing and sanitizing",
+          "2": "Nail trimming and shaping",
+          "3": "Cuticle care and push back",
+          "4": "Gentle buffing of nail surface",
+          "5": "Applying base coat",
+          "6": "Applying shellac color coat",
+          "7": "UV/LED curing for each coat",
+          "8": "Applying top coat and final curing",
+          "9": "Cuticle oil and moisturizing"
+        }
+      },
+      "ar": {
+        "title": "شيلك / جيل بوليش (Shellac)",
+        "details": {
+          "1": "تنظيف وتعقيم اليدين",
+          "2": "قص وتشكيل الأظافر",
+          "3": "العناية بالجلد المحيط بالأظافر",
+          "4": "صنفرة خفيفة لسطح الأظافر",
+          "5": "وضع طبقة الأساس (Base Coat)",
+          "6": "وضع طبقة لون الشيلك",
+          "7": "المعالجة بضوء UV/LED لكل طبقة",
+          "8": "وضع الطبقة النهائية والتجفيف",
+          "9": "زيت الأظافر وترطيب اليدين"
+        }
+      },
+      "de": {
+        "title": "Shellac / Gel-Lack",
+        "details": {
+          "1": "Handreinigung und Desinfektion",
+          "2": "Kürzen und Formen der Nägel",
+          "3": "Nagelhautpflege",
+          "4": "Sanftes Anrauen der Nageloberfläche",
+          "5": "Auftragen des Unterlacks",
+          "6": "Auftragen der Shellac-Farbe",
+          "7": "UV/LED-Härtung jeder Schicht",
+          "8": "Auftragen des Überlacks und Endhärtung",
+          "9": "Nagelöl und Handfeuchtigkeit"
+        }
+      },
+      "fr": {
+        "title": "Vernis Semi-Permanent (Shellac)",
+        "details": {
+          "1": "Nettoyage et désinfection des mains",
+          "2": "Coupe et limage des ongles",
+          "3": "Soin des cuticules",
+          "4": "Polissage doux de l'ongle",
+          "5": "Pose de la base",
+          "6": "Pose de la couleur Shellac",
+          "7": "Catalyse UV/LED pour chaque couche",
+          "8": "Top coat et catalyse finale",
+          "9": "Huile cuticule et hydratation"
+        }
+      },
+      "ru": {
+        "title": "Шеллак / Гель-лак",
+        "details": {
+          "1": "Очищение и дезинфекция рук",
+          "2": "Стрижка и придание формы",
+          "3": "Уход за кутикулой",
+          "4": "Легкая шлифовка ногтя",
+          "5": "Нанесение базового слоя",
+          "6": "Нанесение цветного шеллака",
+          "7": "УФ/LED сушка каждого слоя",
+          "8": "Топ и финальная сушка",
+          "9": "Масло для кутикулы и увлажнение"
+        }
+      },
+      "es": {
+        "title": "Esmaltado Shellac",
+        "details": {
+          "1": "Limpieza y desinfección de manos",
+          "2": "Corte y forma de uñas",
+          "3": "Cuidado de cutículas",
+          "4": "Pulido suave de la uña",
+          "5": "Aplicación de capa base",
+          "6": "Aplicación de color Shellac",
+          "7": "Curado UV/LED por capa",
+          "8": "Capa superior y curado final",
+          "9": "Aceite de cutícula e hidratación"
+        }
+      },
+      "it": {
+        "title": "Smalto Semipermanente (Shellac)",
+        "details": {
+          "1": "Pulizia e sanificazione mani",
+          "2": "Taglio e forma unghie",
+          "3": "Cura delle cuticole",
+          "4": "Lucidatura delicata unghie",
+          "5": "Applicazione base",
+          "6": "Applicazione colore Shellac",
+          "7": "Polimerizzazione UV/LED",
+          "8": "Top coat e polimerizzazione finale",
+          "9": "Olio cuticole e idratazione"
+        }
+      },
+      "sr": {
+        "title": "Šelak / Trajni lak",
+        "details": {
+          "1": "Čišćenje i dezinfekcija ruku",
+          "2": "Skraćivanje i oblikovanje noktiju",
+          "3": "Nega zanoktica",
+          "4": "Blago poliranje površine nokta",
+          "5": "Nanošenje baze",
+          "6": "Nanošenje šelak boje",
+          "7": "UV/LED učvršćivanje svakog sloja",
+          "8": "Završni sjaj i učvršćivanje",
+          "9": "Ulje za zanoktice i hidratacija"
+        }
+      },
+      "sk": {
+        "title": "Shellac / Gél lak",
+        "details": {
+          "1": "Čistenie a dezinfekcia rúk",
+          "2": "Strihanie a tvarovanie nechtov",
+          "3": "Ošetrenie kožičky",
+          "4": "Jemné preleštenie povrchu nechtov",
+          "5": "Aplikácia základnej vrstvy",
+          "6": "Aplikácia Shellac farby",
+          "7": "UV/LED vytvrdzovanie každej vrstvy",
+          "8": "Top coat a záverečné vytvrdnutie",
+          "9": "Olejček na kožičku a hydratácia"
+        }
+      },
+      "et": {
+        "title": "Shellac / Geellakk",
+        "details": {
+          "1": "Käte puhastus ja desinfitseerimine",
+          "2": "Küünte lõikamine ja kujundamine",
+          "3": "Küünenaha hooldus",
+          "4": "Küünepinna õrn poleerimine",
+          "5": "Aluskihi pealekandmine",
+          "6": "Shellac värvi pealekandmine",
+          "7": "UV/LED-kuivatus iga kihi järel",
+          "8": "Pealiskiht ja lõplik kuivatus",
+          "9": "Küünenahaõli ja niisutus"
+        }
+      },
+      "hu": {
+        "title": "Shellac / Géllakk",
+        "details": {
+          "1": "Kéztisztítás és fertőtlenítés",
+          "2": "Körömvágás és formázás",
+          "3": "Körömágybőr ápolása",
+          "4": "Körömfelület gyengéd polírozása",
+          "5": "Alapréteg felvitele",
+          "6": "Shellac szín felvitele",
+          "7": "UV/LED köttetés rétegenként",
+          "8": "Fedőréteg és záró köttetés",
+          "9": "Körömágybőr olaj és hidratálás"
+        }
+      },
+      "pl": {
+        "title": "Manicure hybrydowy (Shellac)",
+        "details": {
+          "1": "Oczyszczanie i dezynfekcja dłoni",
+          "2": "Opracowanie kształtu paznokci",
+          "3": "Pielęgnacja skórek",
+          "4": "Delikatne zmatowienie płytki",
+          "5": "Aplikacja bazy",
+          "6": "Aplikacja koloru Shellac",
+          "7": "Utwardzanie UV/LED każdej warstwy",
+          "8": "Top coat i końcowe utwardzanie",
+          "9": "Oliwka do skórek i nawilżanie"
+        }
+      },
+      "cs": {
+        "title": "Shellac / Gel lak",
+        "details": {
+          "1": "Čištění a dezinfekce rukou",
+          "2": "Stříhání a tvarování nehtů",
+          "3": "Ošetření kůžičky",
+          "4": "Jemné vyleštění povrchu nehtu",
+          "5": "Nanesení podkladové báze",
+          "6": "Nanesení barvy Shellac",
+          "7": "UV/LED vytvrzení každé vrstvy",
+          "8": "Top coat a konečné vytvrzení",
+          "9": "Olejíček na kůžičku a hydratace"
+        }
+      },
+      "tr": {
+        "title": "Shellac / Kalıcı Oje",
+        "details": {
+          "1": "El temizliği ve dezenfeksiyonu",
+          "2": "Tırnak kesimi ve şekillendirme",
+          "3": "Kütikül bakımı",
+          "4": "Tırnak yüzeyinin hafifçe parlatılması",
+          "5": "Baz kat uygulaması",
+          "6": "Shellac renk uygulaması",
+          "7": "Her kat için UV/LED kurutma",
+          "8": "Top coat ve son kurutma",
+          "9": "Kütikül yağı ve nemlendirme"
+        }
+      },
+      "zh": {
+        "title": "Shellac / 半永久甲油胶",
+        "details": {
+          "1": "手部清洁与消毒",
+          "2": "指甲修剪及打磨形状",
+          "3": "甲缘死皮护理",
+          "4": "轻微打磨指甲表面",
+          "5": "涂抹底胶 (Base Coat)",
+          "6": "涂抹 Shellac 颜色胶",
+          "7": "每一层进行UV/LED固化",
+          "8": "涂抹封层并最终固化",
+          "9": "涂抹指缘油及护手保湿"
+        }
+      },
+      "ko": {
+        "title": "쉘락 / 젤 네일",
+        "details": {
+          "1": "손 세정 및 소독",
+          "2": "손톱 트리밍 및 쉐이핑",
+          "3": "큐티클 케어 및 정리",
+          "4": "손톱 표면 부드러운 버핑",
+          "5": "베이스 코트 도포",
+          "6": "쉘락 컬러 도포",
+          "7": "각 층별 UV/LED 경화",
+          "8": "탑 코트 도포 및 최종 경화",
+          "9": "큐티클 오일 및 손 보습"
+        }
+      }
+    }
+  },
+  {
+    "id": "6",
+    "image": "assets/images/salon/6.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 35,
+      "after_disc": 25,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Wash, Blow-dry & Styling",
+        "details": {
+          "1": "Hair consultation for desired style",
+          "2": "Shampoo and scalp massage",
+          "3": "Conditioning treatment if needed",
+          "4": "Gently towel dry",
+          "5": "Blow-drying for volume and smoothness",
+          "6": "Flat iron or curling iron styling",
+          "7": "Final touch: shine serum or spray"
+        }
+      },
+      "ar": {
+        "title": "غسيل وتجفيف وتصفيف الشعر",
+        "details": {
+          "1": "استشارة لتحديد شكل التصفيف المطلوب",
+          "2": "غسيل بالشامبو ومساج لفروة الرأس",
+          "3": "وضع بلسم أو حمام كريم عند الحاجة",
+          "4": "تنشيف الشعر بلطف بالمنشفة",
+          "5": "تجفيف بالسشوار لإعطاء كثافة ونعومة",
+          "6": "تصفيف بالمكواة (ليّ أو كيرلي) حسب الطلب",
+          "7": "لمسة نهائية: سيروم أو سبراي للمعان"
+        }
+      },
+      "de": {
+        "title": "Waschen, Föhnen & Styling",
+        "details": {
+          "1": "Haarberatung für das gewünschte Styling",
+          "2": "Shampoo und Kopfhautmassage",
+          "3": "Pflegespülung bei Bedarf",
+          "4": "Sanftes Handtuchtrocknen",
+          "5": "Föhnen für Volumen und Geschmeidigkeit",
+          "6": "Styling mit Glätteisen oder Lockenstab",
+          "7": "Finish: Glanzserum oder Haarspray"
+        }
+      },
+      "fr": {
+        "title": "Lavage, Brushing & Coiffage",
+        "details": {
+          "1": "Consultation pour le style souhaité",
+          "2": "Shampooing et massage du cuir chevelu",
+          "3": "Soin revitalisant si nécessaire",
+          "4": "Séchage doux à la serviette",
+          "5": "Brushing pour volume et brillance",
+          "6": "Lissage au fer ou bouclage",
+          "7": "Touche finale: sérum ou spray brillance"
+        }
+      },
+      "ru": {
+        "title": "Мытье, сушка и укладка",
+        "details": {
+          "1": "Консультация по стилю укладки",
+          "2": "Шампунь и массаж головы",
+          "3": "Кондиционер по необходимости",
+          "4": "Бережная сушка полотенцем",
+          "5": "Укладка феном для объема и гладкости",
+          "6": "Выпрямление утюжком или завивка плойкой",
+          "7": "Финиш: сыворотка или спрей для блеска"
+        }
+      },
+      "es": {
+        "title": "Lavado, Secado y Planchado",
+        "details": {
+          "1": "Consulta para definir el estilo",
+          "2": "Champú y masaje capilar",
+          "3": "Acondicionador si es necesario",
+          "4": "Secado suave con toalla",
+          "5": "Secado con secador para volumen",
+          "6": "Peinado con plancha o rizador",
+          "7": "Toque final: sérum o spray de brillo"
+        }
+      },
+      "it": {
+        "title": "Lavaggio, Piega e Piastra",
+        "details": {
+          "1": "Consulenza per lo styling desiderato",
+          "2": "Shampoo e massaggio cutaneo",
+          "3": "Trattamento balsamo se necessario",
+          "4": "Asciugatura delicata con asciugamano",
+          "5": "Piega con phon per volume e morbidezza",
+          "6": "Styling con piastra o ferro arricciacapelli",
+          "7": "Tocco finale: siero o spray lucidante"
+        }
+      },
+      "sr": {
+        "title": "Pranje, feniranje i peglanje",
+        "details": {
+          "1": "Konsultacije o željenom stilu",
+          "2": "Šampon i masaža glave",
+          "3": "Kondicioner po potrebi",
+          "4": "Nežno sušenje peškirom",
+          "5": "Feniranje za volumen i glatkoću",
+          "6": "Stilizovanje presom ili figarom",
+          "7": "Završni sjaj: serum ili sprej"
+        }
+      },
+      "sk": {
+        "title": "Umývanie, fúkaná a styling",
+        "details": {
+          "1": "Konzultácia o požadovanom účese",
+          "2": "Šampón a masáž pokožky hlavy",
+          "3": "Kondicionér v prípade potreby",
+          "4": "Jemné sušenie uterákom",
+          "5": "Fúkaná pre objem a hladkosť",
+          "6": "Styling žehličkou alebo kulmou",
+          "7": "Finálna úprava: sérum alebo sprej pre lesk"
+        }
+      },
+      "et": {
+        "title": "Pesu, föönisoeng ja sirgendamine",
+        "details": {
+          "1": "Konsultatsioon soovitud stiili osas",
+          "2": "Šampoon ja peamassaaž",
+          "3": "Palsam vastavalt vajadusele",
+          "4": "Õrn rätikukuivatus",
+          "5": "Föönitamine kohevuse saavutamiseks",
+          "6": "Sirgendamine või lokkide tegemine",
+          "7": "Viimistlus: läigeseerum või sprei"
+        }
+      },
+      "hu": {
+        "title": "Mosás, szárítás és hajformázás",
+        "details": {
+          "1": "Konzultáció a vágyott stílusról",
+          "2": "Sampon és fejbőrmasszázs",
+          "3": "Kondicionáló kezelés igény szerint",
+          "4": "Gyengéd törölközőszárazra törlés",
+          "5": "Beszárítás a volumenért és puhaságért",
+          "6": "Formázás hajvasalóval vagy sütővassal",
+          "7": "Befejezés: fényszérum vagy hajlakk"
+        }
+      },
+      "pl": {
+        "title": "Mycie, modelowanie i prostowanie",
+        "details": {
+          "1": "Konsultacja i wybór stylizacji",
+          "2": "Szampon i masaż głowy",
+          "3": "Odżywka w razie potrzeby",
+          "4": "Delikatne osuszanie ręcznikiem",
+          "5": "Modelowanie na szczotkę (volume)",
+          "6": "Prostowanie lub kręcenie loków",
+          "7": "Wykończenie: serum lub spray nabłyszczający"
+        }
+      },
+      "cs": {
+        "title": "Mytí, foukaná a styling",
+        "details": {
+          "1": "Konzultace o požadovaném stylu",
+          "2": "Šampon a masáž pokožky hlavy",
+          "3": "Kondicionér v případě potřeby",
+          "4": "Jemné sušení ručníkem",
+          "5": "Foukaná pro objem a hladkost",
+          "6": "Styling žehličkou nebo kulmou",
+          "7": "Finální úprava: sérum nebo sprej pro lesk"
+        }
+      },
+      "tr": {
+        "title": "Yıkama, Fön ve Şekillendirme",
+        "details": {
+          "1": "İstenilen stil için saç analizi",
+          "2": "Şampuan ve saç derisi masajı",
+          "3": "İhtiyaç halinde bakım kremi",
+          "4": "Havluluk ile nazik kurutma",
+          "5": "Hacim ve pürüzsüzlük için fön",
+          "6": "Düzleştirici veya maşa uygulaması",
+          "7": "Son dokunuş: parlaklık veren serum"
+        }
+      },
+      "zh": {
+        "title": "洗发、吹风及造型",
+        "details": {
+          "1": "发型沟通建议",
+          "2": "洗发及头皮按摩",
+          "3": "根据需要进行护发处理",
+          "4": "用毛巾轻轻擦干",
+          "5": "吹风以增加蓬松感和顺滑度",
+          "6": "使用拉直板或卷发棒造型",
+          "7": "最后点缀：亮发精华或喷雾"
+        }
+      },
+      "ko": {
+        "title": "샴푸, 드라이 및 스타일링",
+        "details": {
+          "1": "원하는 스타일 상담",
+          "2": "샴푸 및 두피 마사지",
+          "3": "필요시 컨디셔닝 트리트먼트",
+          "4": "부드러운 타월 드라이",
+          "5": "볼륨과 윤기를 위한 블로우 드라이",
+          "6": "매직기 또는 아이롱 스타일링",
+          "7": "마무리: 광택 세럼 또는 스프레이"
+        }
+      }
+    }
+  },
+  {
+    "id": "7",
+    "image": "assets/images/salon/7.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 40,
+      "after_disc": 30,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Wash & Wavy Blow-Dry",
+        "details": {
+          "1": "Hair consultation",
+          "2": "Shampoo and scalp cleanse",
+          "3": "Apply conditioner",
+          "4": "Towel dry hair",
+          "5": "Apply heat protection product",
+          "6": "Blow-dry for volume",
+          "7": "Create waves using brush or styling tool",
+          "8": "Light serum or spray for hold and shine",
+          "9": "Final style check"
+        }
+      },
+      "ar": {
+        "title": "غسيل وسشوار ويفي",
+        "details": {
+          "1": "استشارة لتحديد شكل الويفي المطلوب",
+          "2": "غسيل بالشامبو وتنظيف فروة الرأس",
+          "3": "وضع بلسم للشعر",
+          "4": "تنشيف الشعر بالمنشفة",
+          "5": "وضع منتج حماية من الحرارة",
+          "6": "تجفيف بالسشوار لإعطاء كثافة",
+          "7": "عمل تموجات (ويفي) بالفرشاة أو مكواة التصفيف",
+          "8": "سيروم خفيف أو سبراي للتثبيت واللمعان",
+          "9": "المراجعة النهائية للشكل"
+        }
+      },
+      "de": {
+        "title": "Waschen & Wavy-Styling",
+        "details": {
+          "1": "Haarberatung",
+          "2": "Shampoo und Kopfhautreinigung",
+          "3": "Conditioner auftragen",
+          "4": "Handtuchtrocknen",
+          "5": "Hitzeschutz auftragen",
+          "6": "Föhnen für Volumen",
+          "7": "Wellen mit Bürste oder Stylingtool formen",
+          "8": "Leichtes Serum oder Spray für Halt und Glanz",
+          "9": "Abschlusskontrolle"
+        }
+      },
+      "fr": {
+        "title": "Lavage & Brushing Wavy",
+        "details": {
+          "1": "Consultation capillaire",
+          "2": "Shampooing et nettoyage du cuir chevelu",
+          "3": "Application de l'après-shampooing",
+          "4": "Séchage à la serviette",
+          "5": "Protection thermique",
+          "6": "Brushing pour le volume",
+          "7": "Création d'ondes (wavy) à la brosse ou au fer",
+          "8": "Sérum léger ou spray de maintien",
+          "9": "Vérification finale"
+        }
+      },
+      "ru": {
+        "title": "Мытье и укладка «волны»",
+        "details": {
+          "1": "Консультация",
+          "2": "Шампунь и очищение кожи головы",
+          "3": "Нанесение кондиционера",
+          "4": "Сушка полотенцем",
+          "5": "Термозащита",
+          "6": "Сушка феном для объема",
+          "7": "Создание волн щеткой или стайлером",
+          "8": "Легкая сыворотка или лак для блеска",
+          "9": "Финальная проверка"
+        }
+      },
+      "es": {
+        "title": "Lavado y Secado Ondulado",
+        "details": {
+          "1": "Consulta capilar",
+          "2": "Champú y limpieza del cuero cabelludo",
+          "3": "Aplicación de acondicionador",
+          "4": "Secado con toalla",
+          "5": "Protector térmico",
+          "6": "Secado con secador para volumen",
+          "7": "Creación de ondas con cepillo o plancha",
+          "8": "Sérum ligero o spray para fijación y brillo",
+          "9": "Revisión final"
+        }
+      },
+      "it": {
+        "title": "Lavaggio e Piega Mossi",
+        "details": {
+          "1": "Consulenza capelli",
+          "2": "Shampoo e pulizia cute",
+          "3": "Applicazione balsamo",
+          "4": "Asciugatura con asciugamano",
+          "5": "Protezione termica",
+          "6": "Piega per volume",
+          "7": "Creazione onde con spazzola o ferro",
+          "8": "Siero leggero o spray fissante",
+          "9": "Controllo finale"
+        }
+      },
+      "sr": {
+        "title": "Pranje i talasasto feniranje",
+        "details": {
+          "1": "Konsultacije",
+          "2": "Šampon i čišćenje temena",
+          "3": "Nanošenje regeneratora",
+          "4": "Sušenje peškirom",
+          "5": "Termo zaštita",
+          "6": "Feniranje za volumen",
+          "7": "Pravljenje talasa četkom ili figarom",
+          "8": "Blagi serum ili sprej za sjaj",
+          "9": "Finalna provera"
+        }
+      },
+      "sk": {
+        "title": "Umývanie a vlnitý styling",
+        "details": {
+          "1": "Konzultácia",
+          "2": "Šampón a čistenie pokožky hlavy",
+          "3": "Kondicionér",
+          "4": "Sušenie uterákom",
+          "5": "Tepelná ochrana",
+          "6": "Fúkaná pre objem",
+          "7": "Tvorba vĺn kefou alebo kulmou",
+          "8": "Ľahké sérum alebo sprej pre lesk",
+          "9": "Záverečná kontrola"
+        }
+      },
+      "et": {
+        "title": "Pesu ja lopsakad lained",
+        "details": {
+          "1": "Konsultatsioon",
+          "2": "Šampoon ja peanaha puhastus",
+          "3": "Palsami pealekandmine",
+          "4": "Rätikukuivatus",
+          "5": "Kuumakaitse",
+          "6": "Föönitamine kohevuse saavutamiseks",
+          "7": "Lainete tegemine harja või tangidega",
+          "8": "Kerge seerum või sprei läikeks",
+          "9": "Lõppkontroll"
+        }
+      },
+      "hu": {
+        "title": "Mosás és hullámos beszárítás",
+        "details": {
+          "1": "Konzultáció",
+          "2": "Sampon és fejbőrtisztítás",
+          "3": "Kondicionáló felvitele",
+          "4": "Törölközőszárazra törlés",
+          "5": "Hővédő alkalmazása",
+          "6": "Beszárítás a volumenért",
+          "7": "Hullámok készítése kefével vagy vassal",
+          "8": "Könnyű szérum vagy lakk a tartásért",
+          "9": "Záró ellenőrzés"
+        }
+      },
+      "pl": {
+        "title": "Mycie i fale (Wavy styling)",
+        "details": {
+          "1": "Konsultacja",
+          "2": "Szampon i oczyszczanie skóry głowy",
+          "3": "Nałożenie odżywki",
+          "4": "Osuszanie ręcznikiem",
+          "5": "Termoochrona",
+          "6": "Modelowanie objętości",
+          "7": "Tworzenie fal szczotką lub lokówką",
+          "8": "Lekkie serum lub spray nabłyszczający",
+          "9": "Kontrola końcowa"
+        }
+      },
+      "cs": {
+        "title": "Mytí a vlnitý styling",
+        "details": {
+          "1": "Konzultace",
+          "2": "Šampon a čištění pokožky hlavy",
+          "3": "Kondicionér",
+          "4": "Sušení ručníkem",
+          "5": "Tepelná ochrana",
+          "6": "Foukaná pro objem",
+          "7": "Vytvoření vln kartáčem nebo kulmou",
+          "8": "Lehké sérum nebo sprej pro lesk",
+          "9": "Závěrečná kontrola"
+        }
+      },
+      "tr": {
+        "title": "Yıkama & Su Dalgası Fön",
+        "details": {
+          "1": "Saç analizi",
+          "2": "Şampuan ve saç derisi temizliği",
+          "3": "Bakım kremi uygulaması",
+          "4": "Havluluk ile kurutma",
+          "5": "Isı koruyucu uygulaması",
+          "6": "Hacim için fön",
+          "7": "Fırça veya maşa ile dalga oluşturma",
+          "8": "Parlaklık ve tutuş için hafif serum",
+          "9": "Son kontrol"
+        }
+      },
+      "zh": {
+        "title": "洗发及大波浪造型",
+        "details": {
+          "1": "发型咨询建议",
+          "2": "洗发及头皮清洁",
+          "3": "使用护发素",
+          "4": "毛巾吸干水分",
+          "5": "涂抹防烫产品",
+          "6": "吹出蓬松感",
+          "7": "使用发梳或造型器打造波浪",
+          "8": "涂抹轻盈精华或亮发喷雾",
+          "9": "造型最终检查"
+        }
+      },
+      "ko": {
+        "title": "샴푸 및 웨이브 드라이",
+        "details": {
+          "1": "헤어 스타일 상담",
+          "2": "샴푸 및 두피 클렌징",
+          "3": "컨디셔너 도포",
+          "4": "타월 드라이",
+          "5": "열 보호제 도포",
+          "6": "볼륨 드라이",
+          "7": "브러시나 아이롱으로 웨이브 연출",
+          "8": "광택과 고정을 위한 세럼/스프레이",
+          "9": "최종 스타일 체크"
+        }
+      }
+    }
+  },
+  {
+    "id": "8",
+    "image": "assets/images/salon/8.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 30,
+      "after_disc": 20,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Haircut & Shaping",
+        "details": {
+          "1": "Consultation for desired style and length",
+          "2": "Hair wash (optional based on preference)",
+          "3": "Hair sectioning for precision",
+          "4": "Trim and shape according to style",
+          "5": "Check symmetry and balance",
+          "6": "Fine-tune layers or details",
+          "7": "Blow-dry and style (optional)",
+          "8": "Apply finishing products",
+          "9": "Final satisfaction review"
+        }
+      },
+      "ar": {
+        "title": "قص وتشكيل الشعر",
+        "details": {
+          "1": "استشارة لتحديد القصة والطول المطلوب",
+          "2": "غسيل الشعر (اختياري حسب الرغبة)",
+          "3": "تقسيم الشعر لضمان دقة القص",
+          "4": "قص وتشكيل الشعر حسب الموديل",
+          "5": "التأكد من تماثل وتوازن الجانبين",
+          "6": "ضبط الطبقات والتفاصيل الدقيقة",
+          "7": "تجفيف وتصفيف الشعر (اختياري)",
+          "8": "وضع لمسات نهائية بالمنتجات المناسبة",
+          "9": "المراجعة النهائية مع العميل"
+        }
+      },
+      "de": {
+        "title": "Haarschnitt & Formgebung",
+        "details": {
+          "1": "Beratung zu Stil und Länge",
+          "2": "Haarwäsche (optional nach Wunsch)",
+          "3": "Abteilen der Haare für Präzision",
+          "4": "Schneiden und Formgeben",
+          "5": "Symmetrie- und Balance-Check",
+          "6": "Feinschliff an Stufen oder Details",
+          "7": "Föhnen und Styling (optional)",
+          "8": "Auftragen von Finish-Produkten",
+          "9": "Abschlussbesprechung mit dem Kunden"
+        }
+      },
+      "fr": {
+        "title": "Coupe & Mise en forme",
+        "details": {
+          "1": "Consultation style et longueur",
+          "2": "Lavage des cheveux (optionnel)",
+          "3": "Séparation des mèches pour plus de précision",
+          "4": "Coupe et façonnage selon le style",
+          "5": "Vérification de la symétrie",
+          "6": "Ajustement des dégradés ou détails",
+          "7": "Brushing et coiffage (optionnel)",
+          "8": "Application de produits de finition",
+          "9": "Validation finale avec le client"
+        }
+      },
+      "ru": {
+        "title": "Стрижка и моделирование",
+        "details": {
+          "1": "Консультация по стилю и длине",
+          "2": "Мытье головы (по желанию)",
+          "3": "Деление на зоны для точности",
+          "4": "Стрижка и придание формы",
+          "5": "Проверка симметрии и баланса",
+          "6": "Доработка слоев или деталей",
+          "7": "Сушка и укладка (по желанию)",
+          "8": "Нанесение финишных средств",
+          "9": "Финальный осмотр с клиентом"
+        }
+      },
+      "es": {
+        "title": "Corte de Pelo y Estilo",
+        "details": {
+          "1": "Consulta de estilo y longitud",
+          "2": "Lavado de cabello (opcional)",
+          "3": "Seccionado para mayor precisión",
+          "4": "Corte y forma según el estilo",
+          "5": "Verificación de simetría y balance",
+          "6": "Ajuste de capas o detalles",
+          "7": "Secado y peinado (opcional)",
+          "8": "Aplicación de productos de acabado",
+          "9": "Revisión final con el cliente"
+        }
+      },
+      "it": {
+        "title": "Taglio e Modellatura",
+        "details": {
+          "1": "Consulenza su stile e lunghezza",
+          "2": "Lavaggio capelli (opzionale)",
+          "3": "Divisione in sezioni per precisione",
+          "4": "Taglio e forma in base allo stile",
+          "5": "Controllo simmetria e bilanciamento",
+          "6": "Rifinitura scalature o dettagli",
+          "7": "Piega e styling (opzionale)",
+          "8": "Applicazione prodotti finish",
+          "9": "Revisione finale con il cliente"
+        }
+      },
+      "sr": {
+        "title": "Šišanje i oblikovanje",
+        "details": {
+          "1": "Konsultacije o stilu i dužini",
+          "2": "Pranje kose (opciono)",
+          "3": "Deljenje kose na sekcije",
+          "4": "Šišanje i oblikovanje",
+          "5": "Provera simetrije",
+          "6": "Podešavanje slojeva ili detalja",
+          "7": "Feniranje i stilizovanje (opciono)",
+          "8": "Nanošenje završnih proizvoda",
+          "9": "Završna provera sa klijentom"
+        }
+      },
+      "sk": {
+        "title": "Strihanie a tvarovanie",
+        "details": {
+          "1": "Konzultácia o štýle a dĺžke",
+          "2": "Umývanie vlasov (voliteľné)",
+          "3": "Rozdelenie vlasov pre presnosť",
+          "4": "Strihanie a tvarovanie podľa štýlu",
+          "5": "Kontrola symetrie a rovnováhy",
+          "6": "Doladenie vrstiev alebo detailov",
+          "7": "Fúkaná a styling (voliteľné)",
+          "8": "Aplikácia záverečných produktov",
+          "9": "Záverečná kontrola s klientom"
+        }
+      },
+      "et": {
+        "title": "Juukselõikus ja kujundamine",
+        "details": {
+          "1": "Konsultatsioon stiili ja pikkuse osas",
+          "2": "Juuste pesu (valikuline)",
+          "3": "Juuste jaotamine täpsuse tagamiseks",
+          "4": "Lõikamine ja kujundamine",
+          "5": "Sümmeetria ja tasakaalu kontroll",
+          "6": "Kihtide ja detailide viimistlemine",
+          "7": "Föönitamine ja stiil (valikuline)",
+          "8": "Viimistlustoodete pealekandmine",
+          "9": "Lõplik ülevaatus kliendiga"
+        }
+      },
+      "hu": {
+        "title": "Hajvágás és formázás",
+        "details": {
+          "1": "Konzultáció a stílusról és hossziról",
+          "2": "Hajmosás (igény szerint)",
+          "3": "Haj felosztása a precizitásért",
+          "4": "Vágás és formázás a stílus alapján",
+          "5": "Szimmetria és egyensúly ellenőrzése",
+          "6": "Rétegek vagy részletek finomítása",
+          "7": "Szárítás és formázás (opcionális)",
+          "8": "Finish termékek alkalmazása",
+          "9": "Záró ellenőrzés a vendéggel"
+        }
+      },
+      "pl": {
+        "title": "Strzyżenie i formowanie",
+        "details": {
+          "1": "Konsultacja stylu i długości",
+          "2": "Mycie włosów (opcjonalnie)",
+          "3": "Sekcjowanie włosów dla precyzji",
+          "4": "Strzyżenie i nadanie kształtu",
+          "5": "Sprawdzenie symetrii i balansu",
+          "6": "Dopracowanie warstw i detali",
+          "7": "Modelowanie i stylizacja (opcjonalnie)",
+          "8": "Nałożenie produktów wykończeniowych",
+          "9": "Końcowa konsultacja z klientem"
+        }
+      },
+      "cs": {
+        "title": "Střih a tvarování",
+        "details": {
+          "1": "Konzultace o stylu a délce",
+          "2": "Mytí vlasů (volitelně)",
+          "3": "Rozdělení vlasů pro přesnost",
+          "4": "Střih a tvarování podle stylu",
+          "5": "Kontrola symetrie a rovnováhy",
+          "6": "Doladění vrstev nebo detailů",
+          "7": "Foukání a styling (volitelně)",
+          "8": "Aplikace finálních produktů",
+          "9": "Závěrečná kontrola s klientem"
+        }
+      },
+      "tr": {
+        "title": "Saç Kesimi ve Form",
+        "details": {
+          "1": "Stil ve boy seçimi için analiz",
+          "2": "Saç yıkama (isteğe bağlı)",
+          "3": "Hassas kesim için ayırma",
+          "4": "Stile göre kesim ve şekillendirme",
+          "5": "Simetri ve denge kontrolü",
+          "6": "Katların ve detayların ince ayarı",
+          "7": "Fön ve stil verme (isteğe bağlı)",
+          "8": "Sabitleyici ürün uygulaması",
+          "9": "Müşteri ile son kontrol"
+        }
+      },
+      "zh": {
+        "title": "理发与修剪造型",
+        "details": {
+          "1": "沟通发型风格与长度",
+          "2": "洗发服务（根据需要可选）",
+          "3": "精准分区以保证剪裁",
+          "4": "根据款式进行修剪和塑形",
+          "5": "检查对称性与整体平衡",
+          "6": "精修层次或细节",
+          "7": "吹风造型（可选）",
+          "8": "涂抹定型或护理产品",
+          "9": "最后由客户确认满意度"
+        }
+      },
+      "ko": {
+        "title": "커트 및 쉐이핑",
+        "details": {
+          "1": "원하는 스타일과 길이 상담",
+          "2": "샴푸 (선호도에 따른 선택 사항)",
+          "3": "정교한 커트를 위한 섹셔닝",
+          "4": "스타일에 따른 트리밍 및 쉐이핑",
+          "5": "대칭 및 밸런스 체크",
+          "6": "레이어 및 디테일 정밀 수정",
+          "7": "드라이 및 스타일링 (선택 사항)",
+          "8": "마무리 제품 도포",
+          "9": "고객 만족도 최종 확인"
+        }
+      }
+    }
+  },
+  {
+    "id": "9",
+    "image": "assets/images/salon/9.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 70,
+      "after_disc": 55,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Hair Coloring",
+        "details": {
+          "1": "Consultation to choose the perfect shade",
+          "2": "Section hair for even application",
+          "3": "Professional color mixing",
+          "4": "Apply color from roots to tips",
+          "5": "Processing for optimal duration",
+          "6": "Thorough rinsing",
+          "7": "Shampoo and specialized conditioning",
+          "8": "Blow-dry and styling",
+          "9": "Final check for even color and shine"
+        }
+      },
+      "ar": {
+        "title": "صبغة وتلوين الشعر",
+        "details": {
+          "1": "استشارة لاختيار الدرجة المثالية",
+          "2": "تقسيم الشعر لضمان توزيع متساوي",
+          "3": "خلط الألوان باحترافية",
+          "4": "وضع الصبغة من الجذور حتى الأطراف",
+          "5": "ترك اللون للفترة الزمنية المطلوبة",
+          "6": "غسل الشعر جيداً من الصبغة",
+          "7": "غسيل بالشامبو وبلسم مخصص للصبغة",
+          "8": "تجفيف وتصفيف الشعر بالسشوار",
+          "9": "المراجعة النهائية لتجانس اللون واللمعان"
+        }
+      },
+      "de": {
+        "title": "Haarfärbung",
+        "details": {
+          "1": "Beratung zur Wahl des perfekten Farbtons",
+          "2": "Abteilen der Haare für gleichmäßigen Auftrag",
+          "3": "Professionelles Anmischen der Farbe",
+          "4": "Farbauftrag vom Ansatz bis in die Spitzen",
+          "5": "Einwirkzeit für optimales Ergebnis",
+          "6": "Gründliches Ausspülen",
+          "7": "Shampoo und spezielle Pflegekur",
+          "8": "Föhnen und Styling",
+          "9": "Abschlusskontrolle für Farbe und Glanz"
+        }
+      },
+      "fr": {
+        "title": "Coloration des Cheveux",
+        "details": {
+          "1": "Consultation pour choisir la nuance idéale",
+          "2": "Séparation des cheveux pour une pose uniforme",
+          "3": "Mélange professionnel de la couleur",
+          "4": "Application de la racine aux pointes",
+          "5": "Temps de pause pour un résultat optimal",
+          "6": "Rincage minutieux",
+          "7": "Shampooing et soin post-coloration",
+          "8": "Brushing et coiffage",
+          "9": "Vérification finale de l'éclat et de l'uniformité"
+        }
+      },
+      "ru": {
+        "title": "Окрашивание волос",
+        "details": {
+          "1": "Консультация по выбору идеального оттенка",
+          "2": "Деление на зоны для ровного нанесения",
+          "3": "Профессиональное смешивание краски",
+          "4": "Нанесение от корней до кончиков",
+          "5": "Выдержка для оптимального результата",
+          "6": "Тщательное ополаскивание",
+          "7": "Шампунь и кондиционер для окрашенных волос",
+          "8": "Сушка феном и укладка",
+          "9": "Проверка ровности цвета и блеска"
+        }
+      },
+      "es": {
+        "title": "Coloración Capilar",
+        "details": {
+          "1": "Consulta para elegir el tono perfecto",
+          "2": "Seccionado para una aplicación uniforme",
+          "3": "Mezcla profesional del color",
+          "4": "Aplicación de raíces a puntas",
+          "5": "Tiempo de exposición adecuado",
+          "6": "Enjuague profundo",
+          "7": "Champú y acondicionador especial",
+          "8": "Secado y peinado",
+          "9": "Control final de uniformidad y brillo"
+        }
+      },
+      "it": {
+        "title": "Colorazione Capelli",
+        "details": {
+          "1": "Consulenza per la scelta della tonalità",
+          "2": "Divisione in sezioni per un'applicazione uniforme",
+          "3": "Miscelazione professionale del colore",
+          "4": "Applicazione dalle radici alle punte",
+          "5": "Tempo di posa per un risultato ottimale",
+          "6": "Risciacquo profondo",
+          "7": "Shampoo e balsamo post-colore",
+          "8": "Piega e styling",
+          "9": "Controllo finale del colore e della brillantezza"
+        }
+      },
+      "sr": {
+        "title": "Farbanje kose",
+        "details": {
+          "1": "Konsultacije o izboru idealne nijanse",
+          "2": "Deljenje kose radi ravnomernog nanošenja",
+          "3": "Profesionalno mešanje boje",
+          "4": "Nanošenje boje od korena do vrhova",
+          "5": "Vreme delovanja za najbolji rezultat",
+          "6": "Temeljno ispiranje",
+          "7": "Pranje šamponom i regeneratorom",
+          "8": "Feniranje i stilizovanje",
+          "9": "Završna provera ujednačenosti boje"
+        }
+      },
+      "sk": {
+        "title": "Farbenie vlasov",
+        "details": {
+          "1": "Konzultácia pri výbere odtieňa",
+          "2": "Rozdelenie vlasov pre rovnomernú aplikáciu",
+          "3": "Profesionálne miešanie farby",
+          "4": "Aplikácia od korienkov po končeky",
+          "5": "Doba pôsobenia farby",
+          "6": "Dôkladné opláchnutie",
+          "7": "Šampón a špeciálny kondicionér",
+          "8": "Fúkaná a styling",
+          "9": "Záverečná kontrola farby a lesku"
+        }
+      },
+      "et": {
+        "title": "Juuste värvimine",
+        "details": {
+          "1": "Konsultatsioon sobiva tooni valimiseks",
+          "2": "Juuste jaotamine ühtlaseks pealekandmiseks",
+          "3": "Värvi professionaalne segamine",
+          "4": "Värvi pealekandmine juurtest otsteni",
+          "5": "Värvi mõjuaeg",
+          "6": "Põhjalik loputamine",
+          "7": "Šampoon ja spetsiaalne palsam",
+          "8": "Föönitamine ja viimistlus",
+          "9": "Värvi ühtluse ja läike kontroll"
+        }
+      },
+      "hu": {
+        "title": "Hajfestés",
+        "details": {
+          "1": "Konzultáció a tökéletes árnyalatról",
+          "2": "Haj felosztása az egyenletes felvitelért",
+          "3": "Szín professzionális kikeverése",
+          "4": "Felvitel a hajtövektől a végekig",
+          "5": "Hatóidő kivárása",
+          "6": "Alapos öblítés",
+          "7": "Sampon és speciális kondicionáló",
+          "8": "Szárítás és formázás",
+          "9": "Záró ellenőrzés az egyenletességért"
+        }
+      },
+      "pl": {
+        "title": "Koloryzacja włosów",
+        "details": {
+          "1": "Konsultacja i wybór idealnego odcienia",
+          "2": "Podział włosów dla równomiernej aplikacji",
+          "3": "Profesjonalne mieszanie farby",
+          "4": "Nakładanie od nasady aż po same końce",
+          "5": "Czas ekspozycji dla optymalnego koloru",
+          "6": "Dokładne płukanie",
+          "7": "Mycie szamponem i odżywką",
+          "8": "Modelowanie i stylizacja",
+          "9": "Sprawdzenie jednolitości i blasku"
+        }
+      },
+      "cs": {
+        "title": "Barvení vlasů",
+        "details": {
+          "1": "Konzultace při výběru odstínu",
+          "2": "Rozdělení vlasů pro rovnoměrnou aplikaci",
+          "3": "Profesionální míchání barvy",
+          "4": "Nanášení od kořínků po konečky",
+          "5": "Doba působení barvy",
+          "6": "Důkladné opláchnutí",
+          "7": "Šampon a speciální kondicionér",
+          "8": "Foukaná a styling",
+          "9": "Závěrečná kontrola barvy a lesku"
+        }
+      },
+      "tr": {
+        "title": "Saç Boyama",
+        "details": {
+          "1": "Mükemmel ton seçimi için analiz",
+          "2": "Eşit uygulama için saç ayırma",
+          "3": "Profesyonel boya hazırlama",
+          "4": "Dipten uca boya uygulaması",
+          "5": "İdeal sonuç için bekletme",
+          "6": "Detaylı durulama",
+          "7": "Şampuan ve özel saç bakımı",
+          "8": "Fön ve stil verme",
+          "9": "Renk eşitliği ve parlaklık kontrolü"
+        }
+      },
+      "zh": {
+        "title": "专业染发护理",
+        "details": {
+          "1": "专业发色咨询建议",
+          "2": "分区以确保着色均匀",
+          "3": "专业配比调色",
+          "4": "从发根至发梢进行涂抹",
+          "5": "精确掌控上色时间",
+          "6": "彻底冲洗多余染剂",
+          "7": "洗发及固色护发处理",
+          "8": "吹风及造型设计",
+          "9": "发色均匀度及光泽检查"
+        }
+      },
+      "ko": {
+        "title": "헤어 컬러링 (염색)",
+        "details": {
+          "1": "완벽한 컬러 선정을 위한 상담",
+          "2": "균일한 도포를 위한 섹셔닝",
+          "3": "전문적인 컬러 믹싱",
+          "4": "뿌리부터 끝까지 컬러 도포",
+          "5": "최적의 결과를 위한 방치",
+          "6": "깨끗한 헹굼 과정",
+          "7": "샴푸 및 전용 컨디셔너",
+          "8": "드라이 및 스타일링",
+          "9": "컬러 균일도 및 윤기 확인"
+        }
+      }
+    }
+  },
+  {
+    "id": "10",
+    "image": "assets/images/salon/10.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 150,
+      "after_disc": 120,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Hair Extensions",
+        "details": {
+          "1": "Consultation for type, length, and color",
+          "2": "Prepare natural hair (cleaning, sectioning)",
+          "3": "Selection and preparation of extension pieces",
+          "4": "Attachment using chosen method",
+          "5": "Blending with natural hair for a seamless look",
+          "6": "Trim and shape extensions if needed",
+          "7": "Style (blow-dry, curling, or straightening)",
+          "8": "Apply finishing products for shine",
+          "9": "Final comfort and appearance check"
+        }
+      },
+      "ar": {
+        "title": "تركيب وصلات الشعر (إكستنشن)",
+        "details": {
+          "1": "استشارة لاختيار النوع، الطول، واللون المناسب",
+          "2": "تجهيز الشعر الطبيعي (تنظيف وتقسيم)",
+          "3": "اختيار وتجهيز خصلات الشعر",
+          "4": "تركيب الوصلات حسب الطريقة المختارة",
+          "5": "دمج الوصلات مع الشعر الطبيعي لمظهر انسيابي",
+          "6": "قص وتشكيل الوصلات عند الحاجة",
+          "7": "تصفيف الشعر (سشوار، كيرلي، أو ليس)",
+          "8": "وضع منتجات اللمعان واللمسات النهائية",
+          "9": "التأكد من الراحة والمظهر الطبيعي النهائي"
+        }
+      },
+      "de": {
+        "title": "Haarverlängerung",
+        "details": {
+          "1": "Beratung zu Typ, Länge und Farbe",
+          "2": "Vorbereitung des Eigenhaars",
+          "3": "Auswahl und Vorbereitung der Extensions",
+          "4": "Anbringen der Extensions (gewählte Methode)",
+          "5": "Verblenden für einen nahtlosen Look",
+          "6": "Extensions bei Bedarf kürzen und formen",
+          "7": "Styling (Föhnen, Locken oder Glätten)",
+          "8": "Finish-Produkte für Glanz auftragen",
+          "9": "Abschlusscheck für Komfort und Aussehen"
+        }
+      },
+      "fr": {
+        "title": "Extensions de Cheveux",
+        "details": {
+          "1": "Consultation (type, longueur, couleur)",
+          "2": "Préparation des cheveux (nettoyage, section)",
+          "3": "Sélection et préparation des mèches",
+          "4": "Pose des extensions selon la méthode",
+          "5": "Dégradé et fusion pour un look naturel",
+          "6": "Coupe et mise en forme si nécessaire",
+          "7": "Coiffage (brushing, boucles ou lissage)",
+          "8": "Produits de finition et brillance",
+          "9": "Vérification finale du confort et du rendu"
+        }
+      },
+      "ru": {
+        "title": "Наращивание волос",
+        "details": {
+          "1": "Консультация по типу, длине и цвету",
+          "2": "Подготовка волос (очищение, деление)",
+          "3": "Подбор и подготовка прядей",
+          "4": "Закрепление выбранным методом",
+          "5": "Смешивание для естественного вида",
+          "6": "Стрижка и придание формы при необходимости",
+          "7": "Укладка (фен, локоны или выпрямление)",
+          "8": "Финальный блеск и фиксация",
+          "9": "Проверка комфорта и внешнего вида"
+        }
+      },
+      "es": {
+        "title": "Extensiones de Cabello",
+        "details": {
+          "1": "Consulta de tipo, longitud y color",
+          "2": "Preparación del cabello natural",
+          "3": "Selección y preparación de piezas",
+          "4": "Colocación según el método elegido",
+          "5": "Integración para un aspecto uniforme",
+          "6": "Corte y forma si es necesario",
+          "7": "Peinado (secado, rizos o alisado)",
+          "8": "Productos de acabado y brillo",
+          "9": "Revisión final de comodidad y estética"
+        }
+      },
+      "it": {
+        "title": "Extension Capelli",
+        "details": {
+          "1": "Consulenza per tipo, lunghezza e colore",
+          "2": "Preparazione capelli naturali",
+          "3": "Scelta e preparazione delle ciocche",
+          "4": "Applicazione con il metodo scelto",
+          "5": "Integrazione per un look naturale",
+          "6": "Taglio e forma se necessario",
+          "7": "Styling (piega, ricci o piastra)",
+          "8": "Prodotti di finitura e lucentezza",
+          "9": "Controllo finale comfort e aspetto"
+        }
+      },
+      "sr": {
+        "title": "Nadogradnja kose",
+        "details": {
+          "1": "Konsultacije o tipu, dužini i boji",
+          "2": "Priprema prirodne kose",
+          "3": "Odabir i priprema pramenova",
+          "4": "Postavljanje odabranom metodom",
+          "5": "Stapanje sa prirodnom kosom",
+          "6": "Šišanje i oblikovanje po potrebi",
+          "7": "Stilizovanje (feniranje, lokne ili peglanje)",
+          "8": "Završni proizvodi za sjaj",
+          "9": "Provera udobnosti i prirodnog izgleda"
+        }
+      },
+      "sk": {
+        "title": "Predlžovanie vlasov",
+        "details": {
+          "1": "Konzultácia (typ, dĺžka a farba)",
+          "2": "Príprava prirodzených vlasov",
+          "3": "Výber a príprava prameňov",
+          "4": "Pripevnenie zvolenou metódou",
+          "5": "Zladenie s prirodzenými vlasmi",
+          "6": "Zstrihnutie a tvarovanie podľa potreby",
+          "7": "Styling (fúkaná, vlny alebo žehlenie)",
+          "8": "Záverečné produkty pre lesk",
+          "9": "Kontrola pohodlia a prirodzeného vzhľadu"
+        }
+      },
+      "et": {
+        "title": "Juuksepikendused",
+        "details": {
+          "1": "Konsultatsioon (tüüp, pikkus, värv)",
+          "2": "Loomulike juuste ettevalmistus",
+          "3": "Pikenduste valik ja ettevalmistus",
+          "4": "Paigaldamine valitud meetodil",
+          "5": "Ühtlustamine loomulike juustega",
+          "6": "Lõikamine ja kujundamine vajadusel",
+          "7": "Viimistlus (föön, lokid või sirgendamine)",
+          "8": "Lõppviimistlustooted läikeks",
+          "9": "Mugavuse ja välimuse kontroll"
+        }
+      },
+      "hu": {
+        "title": "Hajhosszabbítás",
+        "details": {
+          "1": "Konzultáció (típus, hossz, szín)",
+          "2": "Saját haj előkészítése",
+          "3": "Póthaj kiválasztása és előkészítése",
+          "4": "Felhelyezés a választott módszerrel",
+          "5": "Összedolgozás a természetes hajjal",
+          "6": "Vágás és formázás szükség szerint",
+          "7": "Hajformázás (szárítás, sütés vagy vasalás)",
+          "8": "Befejező termékek a fényért",
+          "9": "Kényelmi és esztétikai ellenőrzés"
+        }
+      },
+      "pl": {
+        "title": "Przedłużanie włosów",
+        "details": {
+          "1": "Konsultacja (rodzaj, długość, kolor)",
+          "2": "Przygotowanie włosów naturalnych",
+          "3": "Wybór i przygotowanie pasm",
+          "4": "Mocowanie wybraną metodą",
+          "5": "Cieniowanie dla naturalnego efektu",
+          "6": "Podcięcie i nadanie kształtu",
+          "7": "Stylizacja (modelowanie, loki lub prostowanie)",
+          "8": "Produkty wykończeniowe nabłyszczające",
+          "9": "Kontrola wygody i efektu końcowego"
+        }
+      },
+      "cs": {
+        "title": "Prodlužování vlasů",
+        "details": {
+          "1": "Konzultace (typ, délka a barva)",
+          "2": "Příprava vlastních vlasů",
+          "3": "Výběr a příprava pramenů",
+          "4": "Připevnění zvolenou metodou",
+          "5": "Sjednocení s přirozenými vlasy",
+          "6": "Zastřižení a tvarování dle potřeby",
+          "7": "Styling (foukaná, lokny nebo žehlení)",
+          "8": "Závěrečné produkty pro lesk",
+          "9": "Kontrola pohodlí a vzhledu"
+        }
+      },
+      "tr": {
+        "title": "Saç Kaynak",
+        "details": {
+          "1": "Tür, uzunluk ve renk için analiz",
+          "2": "Doğal saçın hazırlanması",
+          "3": "Kaynak parçalarının seçimi",
+          "4": "Seçilen yöntemle uygulama",
+          "5": "Doğal görünüm için dikişsiz birleştirme",
+          "6": "Gerekirse kesim ve şekillendirme",
+          "7": "Şekillendirme (fön, maşa veya düzleştirme)",
+          "8": "Parlaklık veren son dokunuşlar",
+          "9": "Konfor ve doğal görünüm kontrolü"
+        }
+      },
+      "zh": {
+        "title": "专业接发护理",
+        "details": {
+          "1": "接发类型、长度及颜色咨询",
+          "2": "原生发质清洁与分区准备",
+          "3": "接发材料的选择与处理",
+          "4": "采用选定方法进行接发",
+          "5": "与原生发完美融合处理",
+          "6": "根据需要修剪及调整形状",
+          "7": "造型设计（吹风、卷发或拉直）",
+          "8": "使用提亮及定型产品",
+          "9": "最终佩戴舒适度及自然感检查"
+        }
+      },
+      "ko": {
+        "title": "헤어 익스텐션 (붙임머리)",
+        "details": {
+          "1": "종류, 길이, 컬러 선정을 위한 상담",
+          "2": "자연모 준비 (클렌징 및 섹셔닝)",
+          "3": "익스텐션 피스 선택 및 준비",
+          "4": "선택한 방식으로 익스텐션 부착",
+          "5": "자연스러운 연출을 위한 블렌딩",
+          "6": "필요시 익스텐션 커트 및 쉐이핑",
+          "7": "스타일링 (드라이, 아이롱 또는 매직)",
+          "8": "윤기를 위한 마무리 제품 도포",
+          "9": "착용감 및 자연스러운 외관 최종 확인"
+        }
+      }
+    }
+  },
+  {
+    "id": "11",
+    "image": "assets/images/salon/11.webp",
+    "category": "salon",
+    "price_info": {
+      "salary": 60,
+      "after_disc": 45,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Eyelash Extensions",
+        "details": {
+          "1": "Consultation for lash style, length, and volume",
+          "2": "Cleanse natural lashes",
+          "3": "Apply under-eye protective pads",
+          "4": "Separate natural lashes",
+          "5": "Attach lashes with professional adhesive",
+          "6": "Adjust and shape for symmetry",
+          "7": "Check comfort and adhesion",
+          "8": "Brush and set lashes",
+          "9": "Final inspection for perfect results"
+        }
+      },
+      "ar": {
+        "title": "تركيب رموش (إكستنشن)",
+        "details": {
+          "1": "استشارة لاختيار شكل وطول وكثافة الرموش",
+          "2": "تنظيف الرموش الطبيعية",
+          "3": "وضع وسادات حماية تحت العين",
+          "4": "فصل الرموش الطبيعية بدقة",
+          "5": "تركيب الرموش باستخدام لاصق احترافي",
+          "6": "ضبط وتشكيل الرموش لضمان التماثل",
+          "7": "التأكد من الراحة وقوة الالتصاق",
+          "8": "تمشيط وتثبيت الرموش",
+          "9": "المراجعة النهائية لنتائج مثالية"
+        }
+      },
+      "de": {
+        "title": "Wimpernverlängerung",
+        "details": {
+          "1": "Beratung zu Stil, Länge und Volumen",
+          "2": "Reinigung der Naturwimpern",
+          "3": "Anbringen von Augenpads",
+          "4": "Separation der Naturwimpern",
+          "5": "Anbringen der Wimpern mit Profikleber",
+          "6": "Anpassung für Symmetrie",
+          "7": "Prüfung von Komfort und Haftung",
+          "8": "Bürsten und Fixieren",
+          "9": "Abschlusskontrolle"
+        }
+      },
+      "fr": {
+        "title": "Extensions de Cils",
+        "details": {
+          "1": "Consultation style, longueur et volume",
+          "2": "Nettoyage des cils naturels",
+          "3": "Pose de patchs de protection",
+          "4": "Séparation des cils naturels",
+          "5": "Pose de cils avec adhésif professionnel",
+          "6": "Ajustement de la symétrie",
+          "7": "Vérification du confort et de l'adhérence",
+          "8": "Brossage et mise en place",
+          "9": "Inspection finale"
+        }
+      },
+      "ru": {
+        "title": "Наращивание ресниц",
+        "details": {
+          "1": "Консультация по стилю, длине и объему",
+          "2": "Очищение натуральных ресниц",
+          "3": "Наложение защитных патчей",
+          "4": "Разделение натуральных ресниц",
+          "5": "Крепление ресниц проф. клеем",
+          "6": "Коррекция формы для симметрии",
+          "7": "Проверка комфорта и сцепки",
+          "8": "Расчесывание и фиксация",
+          "9": "Финальный осмотр результата"
+        }
+      },
+      "es": {
+        "title": "Extensiones de Pestañas",
+        "details": {
+          "1": "Consulta de estilo, longitud y volumen",
+          "2": "Limpieza de pestañas naturales",
+          "3": "Colocación de parches protectores",
+          "4": "Separación de pestañas naturales",
+          "5": "Adhesión de pestañas con pegamento profesional",
+          "6": "Ajuste de simetría",
+          "7": "Comprobación de comodidad y adhesión",
+          "8": "Cepillado y fijación",
+          "9": "Inspección final para resultados perfectos"
+        }
+      },
+      "it": {
+        "title": "Extension Ciglia",
+        "details": {
+          "1": "Consulenza per stile, lunghezza e volume",
+          "2": "Pulizia delle ciglia naturali",
+          "3": "Applicazione patch protettivi",
+          "4": "Separazione delle ciglia naturali",
+          "5": "Applicazione ciglia con adesivo professionale",
+          "6": "Regolazione per la simmetria",
+          "7": "Controllo comfort e adesione",
+          "8": "Pettinate e fissate",
+          "9": "Ispezione finale per risultati perfetti"
+        }
+      },
+      "sr": {
+        "title": "Nadogradnja trepavica",
+        "details": {
+          "1": "Konsultacije o stilu, dužini i volumenu",
+          "2": "Čišćenje prirodnih trepavica",
+          "3": "Postavljanje zaštitnih jastučića",
+          "4": "Razdvajanje prirodnih trepavica",
+          "5": "Postavljanje trepavica prof. lepkom",
+          "6": "Podešavanje simetrije",
+          "7": "Provera udobnosti i prijanjanja",
+          "8": "Četkanje i fiksiranje",
+          "9": "Finalni pregled za savršen rezultat"
+        }
+      },
+      "sk": {
+        "title": "Predlžovanie mihalníc",
+        "details": {
+          "1": "Konzultácia štýlu, dĺžky a objemu",
+          "2": "Čistenie prirodzených mihalníc",
+          "3": "Aplikácia ochranných podložiek",
+          "4": "Oddelenie prirodzených mihalníc",
+          "5": "Aplikácia mihalníc prof. lepidlom",
+          "6": "Úprava symetrie",
+          "7": "Kontrola pohodlia a priľnavosti",
+          "8": "Prečesanie a zafixovanie",
+          "9": "Záverečná kontrola výsledku"
+        }
+      },
+      "et": {
+        "title": "Ripsmepikendused",
+        "details": {
+          "1": "Konsultatsioon stiili ja mahu osas",
+          "2": "Loomulike ripsmete puhastamine",
+          "3": "Kaitsepatjade paigaldamine",
+          "4": "Loomulike ripsmete eraldamine",
+          "5": "Ripsmete kinnitamine profiliimiga",
+          "6": "Sümmeetria reguleerimine",
+          "7": "Mugavuse ja püsivuse kontroll",
+          "8": "Harjamine ja viimistlus",
+          "9": "Lõppkontroll täiuslikuks tulemuseks"
+        }
+      },
+      "hu": {
+        "title": "Szempilla-hosszabbítás",
+        "details": {
+          "1": "Konzultáció a stílusról és dúsításról",
+          "2": "Saját szempillák tisztítása",
+          "3": "Védőalátétek felhelyezése",
+          "4": "Saját pillák szétválasztása",
+          "5": "Pillák felhelyezése profi ragasztóval",
+          "6": "Szimmetria igazítása",
+          "7": "Kényelem és tapadás ellenőrzése",
+          "8": "Fésülés és fixálás",
+          "9": "Záró ellenőrzés a tökéletes végeredményért"
+        }
+      },
+      "pl": {
+        "title": "Przedłużanie rzęs",
+        "details": {
+          "1": "Konsultacja stylu, długości i objętości",
+          "2": "Oczyszczanie rzęs naturalnych",
+          "3": "Aplikacja płatków ochronnych",
+          "4": "Separacja rzęs naturalnych",
+          "5": "Mocowanie rzęs klejem profesjonalnym",
+          "6": "Regulacja symetrii",
+          "7": "Sprawdzenie wygody i retencji",
+          "8": "Czesanie i układanie",
+          "9": "Końcowa kontrola efektu"
+        }
+      },
+      "cs": {
+        "title": "Prodlužování řas",
+        "details": {
+          "1": "Konzultace stylu, délky a objemu",
+          "2": "Čištění přirozených řas",
+          "3": "Aplikace ochranných podložek",
+          "4": "Oddělení přirozených řas",
+          "5": "Aplikace řas prof. lepidlem",
+          "6": "Úprava symetrie",
+          "7": "Kontrola pohodlí a přilnavosti",
+          "8": "Pročesání a zafixování",
+          "9": "Závěrečná kontrola výsledku"
+        }
+      },
+      "tr": {
+        "title": "İpek Kirpik",
+        "details": {
+          "1": "Stil, uzunluk ve hacim analizi",
+          "2": "Doğal kirpiklerin temizliği",
+          "3": "Göz altı koruyucu bant uygulaması",
+          "4": "Doğal kirpiklerin ayrıştırılması",
+          "5": "Kirpiklerin prof. yapıştırıcı ile eklenmesi",
+          "6": "Simetri için form verme",
+          "7": "Konfor ve tutuş kontrolü",
+          "8": "Tarama ve sabitleme",
+          "9": "Kusursuz sonuç için son kontrol"
+        }
+      },
+      "zh": {
+        "title": "专业睫毛嫁接",
+        "details": {
+          "1": "款式、长度及密度咨询",
+          "2": "原生睫毛深层清洁",
+          "3": "贴敷眼底防护垫",
+          "4": "精准分离原生睫毛",
+          "5": "使用专业粘合剂嫁接睫毛",
+          "6": "调整及修饰对称度",
+          "7": "检查舒适度与牢固度",
+          "8": "梳理及定型",
+          "9": "最终检查确保完美效果"
+        }
+      },
+      "ko": {
+        "title": "속눈썹 연장",
+        "details": {
+          "1": "스타일, 길이, 볼륨 상담",
+          "2": "자연 속눈썹 클렌징",
+          "3": "아이패치 보호 패드 부착",
+          "4": "자연 속눈썹 분리 가공",
+          "5": "전문 글루를 이용한 속눈썹 부착",
+          "6": "대칭 유지를 위한 각도 조절",
+          "7": "착용감 및 접착 상태 확인",
+          "8": "브러싱 및 세팅",
+          "9": "최종 결과 확인"
+        }
+      }
+    }
+  },
+  {
+    "id": "12",
+    "image": "assets/images/salon/12.webp",
+    "category": "salon",
+    "price_info": {
+      "salary": 100,
+      "after_disc": 85,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Full Body Waxing",
+        "details": {
+          "1": "Consultation for areas and skin type",
+          "2": "Cleanse and prep the skin",
+          "3": "Apply pre-wax oil or powder",
+          "4": "Apply wax evenly to each area",
+          "5": "Remove wax carefully to eliminate hair",
+          "6": "Soothe skin with lotion or cooling gel",
+          "7": "Final check and aftercare advice"
+        }
+      },
+      "ar": {
+        "title": "إزالة شعر الجسم بالكامل (واكس)",
+        "details": {
+          "1": "استشارة لتحديد المناطق ونوع البشرة",
+          "2": "تنظيف وتجهيز البشرة",
+          "3": "وضع زيت أو بودرة ما قبل الواكس",
+          "4": "توزيع الواكس بالتساوي على كل منطقة",
+          "5": "إزالة الواكس بعناية لضمان إزالة الشعر",
+          "6": "تهدئة البشرة بلوشن أو جل مبرد",
+          "7": "المراجعة النهائية ونصائح العناية اللاحقة"
+        }
+      },
+      "de": {
+        "title": "Ganzkörper-Waxing",
+        "details": {
+          "1": "Beratung zu Bereichen und Hauttyp",
+          "2": "Hautreinigung und Vorbereitung",
+          "3": "Auftragen von Vorbehandlungsöl oder Puder",
+          "4": "Gleichmäßiges Auftragen des Wachses",
+          "5": "Sorgfältiges Entfernen der Haare",
+          "6": "Hautberuhigung mit Lotion oder Kühlgel",
+          "7": "Abschlusskontrolle und Pflegehinweise"
+        }
+      },
+      "fr": {
+        "title": "Épilation Complète au Wax",
+        "details": {
+          "1": "Consultation zones et type de peau",
+          "2": "Nettoyage et préparation de la peau",
+          "3": "Application d'huile ou de poudre pré-épilation",
+          "4": "Application uniforme de la cire",
+          "5": "Retrait soigneux de la cire",
+          "6": "Apaisement avec lotion ou gel rafraîchissant",
+          "7": "Vérification finale et conseils post-épilation"
+        }
+      },
+      "ru": {
+        "title": "Восковая депиляция всего тела",
+        "details": {
+          "1": "Консультация по зонам и типу кожи",
+          "2": "Очищение и подготовка кожи",
+          "3": "Нанесение масла или талька перед воском",
+          "4": "Равномерное нанесение воска",
+          "5": "Бережное удаление воска и волос",
+          "6": "Успокаивающий лосьон или охлаждающий гель",
+          "7": "Финальная проверка и рекомендации"
+        }
+      },
+      "es": {
+        "title": "Depilación Corporal Completa",
+        "details": {
+          "1": "Consulta de zonas y tipo de piel",
+          "2": "Limpieza y preparación de la piel",
+          "3": "Aplicación de aceite o polvo previo",
+          "4": "Aplicación uniforme de cera",
+          "5": "Retirada cuidadosa del vello",
+          "6": "Calmar la piel con loción o gel frío",
+          "7": "Revisión final y consejos de cuidado"
+        }
+      },
+      "it": {
+        "title": "Ceretta Corpo Completa",
+        "details": {
+          "1": "Consulenza zone e tipo di pelle",
+          "2": "Pulizia e preparazione della pelle",
+          "3": "Applicazione olio o polvere pre-cera",
+          "4": "Applicazione uniforme della cera",
+          "5": "Rimozione accurata dei peli",
+          "6": "Lenire con lozione o gel rinfrescante",
+          "7": "Controllo finale e consigli post-ceretta"
+        }
+      },
+      "sr": {
+        "title": "Depilacija celog tela voskom",
+        "details": {
+          "1": "Konsultacije o zonama i tipu kože",
+          "2": "Čišćenje i priprema kože",
+          "3": "Nanošenje ulja ili pudera pre voska",
+          "4": "Ravnomerno nanošenje voska",
+          "5": "Pažljivo uklanjanje voska i dlaka",
+          "6": "Umirivanje kože losionom ili gelom",
+          "7": "Finalna provera i saveti za negu"
+        }
+      },
+      "sk": {
+        "title": "Depilácia celého tela voskom",
+        "details": {
+          "1": "Konzultácia oblastí a typu pokožky",
+          "2": "Čistenie a príprava pokožky",
+          "3": "Aplikácia oleja alebo púdru pred voskom",
+          "4": "Rovnomerná aplikácia vosku",
+          "5": "Opatrné odstránenie chĺpkov",
+          "6": "Uskladnenie pokožky mliekom alebo gélom",
+          "7": "Záverečná kontrola a rady po depilácii"
+        }
+      },
+      "et": {
+        "title": "Kogu keha vahatamine",
+        "details": {
+          "1": "Konsultatsioon piirkondade ja nahatüübi osas",
+          "2": "Naha puhastamine ja ettevalmistus",
+          "3": "Vahatamiseelse õli või puudri pealekandmine",
+          "4": "Vaha ühtlane pealekandmine",
+          "5": "Vaha hoolikas eemaldamine",
+          "6": "Naha rahustamine losjooni või geeliga",
+          "7": "Lõppkontroll ja järelhoolduse nõuanded"
+        }
+      },
+      "hu": {
+        "title": "Teljes testgyanta",
+        "details": {
+          "1": "Konzultáció a területekről és bőrtípusról",
+          "2": "Bőrtisztítás és előkészítés",
+          "3": "Gyantázás előtti olaj vagy púder felvitele",
+          "4": "Gyanta egyenletes felvitele",
+          "5": "Gyanta óvatos eltávolítása",
+          "6": "Bőrnyugtatás krémmel vagy hűsítő géllel",
+          "7": "Záró ellenőrzés és utóápolási tanácsok"
+        }
+      },
+      "pl": {
+        "title": "Depilacja woskiem całego ciała",
+        "details": {
+          "1": "Konsultacja partii ciała i typu skóry",
+          "2": "Oczyszczanie i przygotowanie skóry",
+          "3": "Aplikacja oliwki lub pudru przed woskiem",
+          "4": "Równomierne nakładanie wosku",
+          "5": "Uważne usuwanie włosków",
+          "6": "Łagodzenie skóry balsamem lub żelem",
+          "7": "Kontrola końcowa i zalecenia po zabiegu"
+        }
+      },
+      "cs": {
+        "title": "Depilace celého těla voskem",
+        "details": {
+          "1": "Konzultace oblastí a typu pokožky",
+          "2": "Čištění a příprava pokožky",
+          "3": "Aplikace oleje nebo pudru před voskem",
+          "4": "Rovnoměrná aplikace vosku",
+          "5": "Opatrné odstranění chloupků",
+          "6": "Zklidnění pokožky mlékem nebo gelem",
+          "7": "Závěrečná kontrola a rady po depilaci"
+        }
+      },
+      "tr": {
+        "title": "Tüm Vücut Ağda",
+        "details": {
+          "1": "Bölgeler ve cilt tipi için analiz",
+          "2": "Cilt temizliği ve hazırlığı",
+          "3": "Ağda öncesi yağ veya pudra uygulaması",
+          "4": "Ağdanın bölgelere eşit dağıtılması",
+          "5": "Tüylerin kökten dikkatle temizlenmesi",
+          "6": "Löson veya soğutucu jel ile cildi yatıştırma",
+          "7": "Son kontrol ve bakım tavsiyeleri"
+        }
+      },
+      "zh": {
+        "title": "全身蜜蜡脱毛",
+        "details": {
+          "1": "针对部位及肤质进行咨询",
+          "2": "皮肤清洁及术前准备",
+          "3": "根据需要涂抹脱毛前护理油或粉",
+          "4": "在各部位均匀涂抹蜜蜡",
+          "5": "小心撕除蜜蜡以拔除毛发",
+          "6": "涂抹舒缓乳液或冰晶进行镇静",
+          "7": "最终检查及术后护理建议"
+        }
+      },
+      "ko": {
+        "title": "전신 왁싱",
+        "details": {
+          "1": "부위 및 피부 타입 상담",
+          "2": "피부 클렌징 및 준비",
+          "3": "왁싱 전 오일 또는 파우더 도포",
+          "4": "부위별 왁스 균일 도포",
+          "5": "모근 제거를 위한 세심한 왁스 제거",
+          "6": "로션 또는 쿨링 젤로 피부 진정",
+          "7": "최종 확인 및 사후 관리 안내"
+        }
+      }
+    }
+  },
+  {
+    "id": "13",
+    "image": "assets/images/salon/13.webp",
+    "category": "salon",
+    "price_info": {
+      "salary": 90,
+      "after_disc": 75,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Full Body Sugaring (Sweet)",
+        "details": {
+          "1": "Consultation for areas and skin type",
+          "2": "Cleanse and prep the skin",
+          "3": "Apply sugar paste to the area",
+          "4": "Spread in the direction of hair growth",
+          "5": "Remove quickly against growth direction",
+          "6": "Soothe skin with lotion or cooling gel",
+          "7": "Provide aftercare advice"
+        }
+      },
+      "ar": {
+        "title": "إزالة شعر الجسم (سويت/حلاوة)",
+        "details": {
+          "1": "استشارة لتحديد المناطق ونوع البشرة",
+          "2": "تنظيف وتجهيز البشرة",
+          "3": "تجهيز عجينة السكر (السويت) للمنطقة",
+          "4": "فرد العجينة في اتجاه نمو الشعر",
+          "5": "نزع العجينة بسرعة عكس اتجاه النمو",
+          "6": "تهدئة البشرة بلوشن أو جل مبرد",
+          "7": "تقديم نصائح العناية بعد الجلسة"
+        }
+      },
+      "de": {
+        "title": "Ganzkörper-Sugaring (Zuckerpaste)",
+        "details": {
+          "1": "Beratung zu Bereichen und Hauttyp",
+          "2": "Hautreinigung und Vorbereitung",
+          "3": "Auftragen der Zuckerpaste",
+          "4": "In Haarwuchsrichtung verteilen",
+          "5": "Schnelles Entfernen gegen die Wuchsrichtung",
+          "6": "Hautberuhigung mit Lotion oder Kühlgel",
+          "7": "Pflegehinweise für glatte Haut"
+        }
+      },
+      "fr": {
+        "title": "Épilation au Sucre (Sugaring)",
+        "details": {
+          "1": "Consultation zones et type de peau",
+          "2": "Nettoyage et préparation de la peau",
+          "3": "Application de la pâte de sucre",
+          "4": "Étaler dans le sens du poil",
+          "5": "Retrait rapide à contre-sens",
+          "6": "Apaisement avec lotion ou gel frais",
+          "7": "Conseils d'entretien post-épilation"
+        }
+      },
+      "ru": {
+        "title": "Шугаринг всего тела",
+        "details": {
+          "1": "Консультация по зонам и типу кожи",
+          "2": "Очищение и подготовка кожи",
+          "3": "Нанесение сахарной пасты",
+          "4": "Распределение по направлению роста волос",
+          "5": "Быстрое удаление против роста волос",
+          "6": "Успокаивающий лосьон или охлаждающий гель",
+          "7": "Советы по уходу за гладкой кожей"
+        }
+      },
+      "es": {
+        "title": "Sugaring Corporal Completo",
+        "details": {
+          "1": "Consulta de zonas y tipo de piel",
+          "2": "Limpieza y preparación de la piel",
+          "3": "Aplicación de pasta de azúcar",
+          "4": "Extender en dirección al crecimiento",
+          "5": "Retirar rápido en dirección opuesta",
+          "6": "Calmar con loción o gel frío",
+          "7": "Consejos para una piel suave"
+        }
+      },
+      "it": {
+        "title": "Sugaring Corpo Completo",
+        "details": {
+          "1": "Consulenza zone e tipo di pelle",
+          "2": "Pulizia e preparazione della pelle",
+          "3": "Applicazione della pasta di zucchero",
+          "4": "Stendere nel senso di crescita",
+          "5": "Rimozione rapida contropelo",
+          "6": "Lenire con lozione o gel rinfrescante",
+          "7": "Consigli post-trattamento"
+        }
+      },
+      "sr": {
+        "title": "Sugaring celog tela (Šećerna pasta)",
+        "details": {
+          "1": "Konsultacije o zonama i tipu kože",
+          "2": "Čišćenje i priprema kože",
+          "3": "Nanošenje šećerne paste",
+          "4": "Mazanje u smeru rasta dlake",
+          "5": "Brzo uklanjanje suprotno od smera rasta",
+          "6": "Umirivanje kože losionom ili gelom",
+          "7": "Saveti za negu glatke kože"
+        }
+      },
+      "sk": {
+        "title": "Sugaring celého tela (Cukrová pasta)",
+        "details": {
+          "1": "Konzultácia oblastí a typu pokožky",
+          "2": "Čistenie a príprava pokožky",
+          "3": "Aplikácia cukrovej pasty",
+          "4": "Rozotieranie v smere rastu chĺpkov",
+          "5": "Rýchle odstránenie proti smeru rastu",
+          "6": "Zklidnenie pokožky mliekom alebo gélom",
+          "7": "Rady pre hladkú pokožku"
+        }
+      },
+      "et": {
+        "title": "Kogu keha suhkrupastaga depilatsioon",
+        "details": {
+          "1": "Konsultatsioon piirkondade ja nahatüübi osas",
+          "2": "Naha puhastamine ja ettevalmistus",
+          "3": "Suhkrupasta pealekandmine",
+          "4": "Levitamine karvakasvu suunas",
+          "5": "Kiire eemaldamine vastukarva",
+          "6": "Naha rahustamine losjooni või geeliga",
+          "7": "Järelhoolduse nõuanded"
+        }
+      },
+      "hu": {
+        "title": "Teljes testcukrozás (Sugaring)",
+        "details": {
+          "1": "Konzultáció a területekről és bőrtípusról",
+          "2": "Bőrtisztítás és előkészítés",
+          "3": "Cukorpaszta felvitele",
+          "4": "Elsimítás a szőrnövekedés irányába",
+          "5": "Gyors eltávolítás növekedéssel ellentétesen",
+          "6": "Bőrnyugtatás krémmel vagy hűsítő géllel",
+          "7": "Tanácsok a sima bőrért"
+        }
+      },
+      "pl": {
+        "title": "Depilacja cukrowa całego ciała",
+        "details": {
+          "1": "Konsultacja partii ciała i typu skóry",
+          "2": "Oczyszczanie i przygotowanie skóry",
+          "3": "Nałożenie pasty cukrowej",
+          "4": "Rozprowadzenie zgodnie z kierunkiem wzrostu",
+          "5": "Szybkie zerwanie pod włos",
+          "6": "Łagodzenie skóry balsamem lub żelem",
+          "7": "Zalecenia po zabiegu"
+        }
+      },
+      "cs": {
+        "title": "Sugaring celého těla (Cukrová pasta)",
+        "details": {
+          "1": "Konzultace oblastí a typu pokožky",
+          "2": "Čištění a příprava pokožky",
+          "3": "Aplikace cukrové pasty",
+          "4": "Rozetření ve směru růstu chloupků",
+          "5": "Rychlé odstranění proti směru růstu",
+          "6": "Zklidnění pokožky mlékem nebo gelem",
+          "7": "Rady pro hladkou pokožku"
+        }
+      },
+      "tr": {
+        "title": "Tüm Vücut Şeker Ağda (Sugaring)",
+        "details": {
+          "1": "Bölgeler ve cilt tipi analizi",
+          "2": "Cilt temizliği ve hazırlığı",
+          "3": "Şeker macununun uygulanması",
+          "4": "Tüy çıkış yönüne doğru yayma",
+          "5": "Tüy çıkış yönünün tersine hızlıca çekme",
+          "6": "Löson veya jel ile cildi yatıştırma",
+          "7": "Pürüzsüz cilt için bakım tavsiyeleri"
+        }
+      },
+      "zh": {
+        "title": "全身糖浆脱毛 (Sugaring)",
+        "details": {
+          "1": "针对部位及肤质进行咨询",
+          "2": "皮肤清洁及术前准备",
+          "3": "涂抹薄层糖浆膜",
+          "4": "顺着毛发生长方向涂抹",
+          "5": "逆着毛发生长方向快速撕除",
+          "6": "涂抹舒缓乳液或冰晶进行镇静",
+          "7": "提供术后皮肤光滑护理建议"
+        }
+      },
+      "ko": {
+        "title": "전신 슈가링 (설탕 제모)",
+        "details": {
+          "1": "부위 및 피부 타입 상담",
+          "2": "피부 클렌징 및 준비",
+          "3": "제모 부위에 슈가 페이스트 도포",
+          "4": "털이 자라는 방향으로 펴 바르기",
+          "5": "털이 자라는 반대 방향으로 빠르게 제거",
+          "6": "로션 또는 쿨링 젤로 피부 진정",
+          "7": "매끄러운 피부를 위한 사후 관리 안내"
+        }
+      }
+    }
+  },
+  {
+    "id": "14",
+    "image": "assets/images/salon/14.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 120,
+      "after_disc": 100,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Professional Tattoo",
+        "details": {
+          "1": "Custom tattoo designs created with precision",
+          "2": "Highest hygiene and safety standards",
+          "3": "Professional artists for a creative touch",
+          "4": "Safe and comfortable experience",
+          "5": "Long-lasting results to express your style",
+          "6": "Professional aftercare guidance"
+        }
+      },
+      "ar": {
+        "title": "وشم احترافي (تاتو)",
+        "details": {
+          "1": "تصاميم تاتو مخصصة تنفذ بدقة عالية",
+          "2": "أعلى معايير التعقيم والسلامة الصحية",
+          "3": "فنانون محترفون بلمسات إبداعية",
+          "4": "تجربة آمنة ومريحة تماماً",
+          "5": "نتائج تدوم طويلاً لتعبر عن أسلوبك الخاص",
+          "6": "إرشادات احترافية للعناية بعد التاتو"
+        }
+      },
+      "de": {
+        "title": "Professionelles Tattoo",
+        "details": {
+          "1": "Individuelle Tattoo-Designs mit Präzision",
+          "2": "Höchste Hygiene- und Sicherheitsstandards",
+          "3": "Professionelle Künstler für kreative Akzente",
+          "4": "Sicheres und komfortables Erlebnis",
+          "5": "Langanhaltende Ergebnisse für Ihren Stil",
+          "6": "Professionelle Nachsorgeberatung"
+        }
+      },
+      "fr": {
+        "title": "Tatouage Professionnel",
+        "details": {
+          "1": "Designs personnalisés créés avec précision",
+          "2": "Normes d'hygiène et de sécurité les plus strictes",
+          "3": "Artistes professionnels pour une touche créative",
+          "4": "Expérience sûre et confortable",
+          "5": "Résultats durables pour exprimer votre style",
+          "6": "Conseils d'entretien post-tatouage"
+        }
+      },
+      "ru": {
+        "title": "Профессиональное тату",
+        "details": {
+          "1": "Индивидуальные эскизы, выполненные с точностью",
+          "2": "Высшие стандарты гигиены и безопасности",
+          "3": "Профессиональные мастера с творческим подходом",
+          "4": "Безопасный и комфортный процесс",
+          "5": "Долговечный результат, выражающий ваш стиль",
+          "6": "Рекомендации по профессиональному уходу"
+        }
+      },
+      "es": {
+        "title": "Tatuaje Profesional",
+        "details": {
+          "1": "Diseños personalizados creados con precisión",
+          "2": "Máximos estándares de higiene y seguridad",
+          "3": "Artistas profesionales con un toque creativo",
+          "4": "Experiencia segura y cómoda",
+          "5": "Resultados duraderos que expresan tu estilo",
+          "6": "Guía de cuidados posteriores profesional"
+        }
+      },
+      "it": {
+        "title": "Tatuaggio Professionale",
+        "details": {
+          "1": "Design personalizzati creati con precisione",
+          "2": "Massimi standard di igiene e sicurezza",
+          "3": "Artisti professionisti per un tocco creativo",
+          "4": "Esperienza sicura e confortevole",
+          "5": "Risultati duraturi per esprimere il tuo stile",
+          "6": "Guida professionale alla cura post-tatuaggio"
+        }
+      },
+      "sr": {
+        "title": "Profesionalna tetovaža",
+        "details": {
+          "1": "Prilagođeni dizajni kreirani sa preciznošću",
+          "2": "Najviši higijenski i bezbednosni standardi",
+          "3": "Profesionalni umetnici za kreativan dodir",
+          "4": "Bezbedno i udobno iskustvo",
+          "5": "Dugotrajni rezultati koji izražavaju vaš stil",
+          "6": "Profesionalni saveti za negu nakon tetoviranja"
+        }
+      },
+      "sk": {
+        "title": "Profesionálne tetovanie",
+        "details": {
+          "1": "Individuálne návrhy vytvorené s precíznosťou",
+          "2": "Najvyššie hygienické a bezpečnostné štandardy",
+          "3": "Profesionálni umelci s kreatívnym prístupom",
+          "4": "Bezpečný a pohodlný zážitok",
+          "5": "Dlhotrvajúce výsledky vyjadrujúce váš štýl",
+          "6": "Profesionálne poradenstvo o starostlivosti"
+        }
+      },
+      "et": {
+        "title": "Professionaalne tätoveering",
+        "details": {
+          "1": "Täpsusega loodud eritellimusel disainid",
+          "2": "Kõrgeimad hügieeni- ja ohutusstandardid",
+          "3": "Loova puudutusega professionaalsed kunstnikud",
+          "4": "Turvaline ja mugav kogemus",
+          "5": "Kestev tulemus teie stiili väljendamiseks",
+          "6": "Professionaalsed järelhoolduse juhised"
+        }
+      },
+      "hu": {
+        "title": "Professzionális tetoválás",
+        "details": {
+          "1": "Egyedi tervezésű minták precíz kivitelezéssel",
+          "2": "Legmagasabb higiéniai és biztonsági előírások",
+          "3": "Profi művészek kreatív megoldásokkal",
+          "4": "Biztonságos és kényelmes élmény",
+          "5": "Tartós eredmények az Ön stílusának megfelelően",
+          "6": "Professzionális utóápolási tanácsadás"
+        }
+      },
+      "pl": {
+        "title": "Tatuaż Profesjonalny",
+        "details": {
+          "1": "Indywidualne wzory tworzone z precyzją",
+          "2": "Najwyższe standardy higieny i bezpieczeństwa",
+          "3": "Profesjonalni artyści i kreatywne podejście",
+          "4": "Bezpieczne i komfortowe doświadczenie",
+          "5": "Trwałe efekty wyrażające Twój styl",
+          "6": "Profesjonalne wskazówki dotyczące pielęgnacji"
+        }
+      },
+      "cs": {
+        "title": "Profesionální tetování",
+        "details": {
+          "1": "Individuální návrhy vytvořené s precizností",
+          "2": "Nejvyšší hygienické a bezpečnostní standardy",
+          "3": "Profesionální umělci s kreativním cítěním",
+          "4": "Bezpečný a pohodlný zážitek",
+          "5": "Dlouhotrvající výsledky vyjadřující váš styl",
+          "6": "Profesionální instrukce k následné péči"
+        }
+      },
+      "tr": {
+        "title": "Profesyonel Dövme",
+        "details": {
+          "1": "Hassasiyetle oluşturulan özel dövme tasarımları",
+          "2": "En yüksek hijyen ve güvenlik standartları",
+          "3": "Yaratıcı dokunuşlar için profesyonel sanatçılar",
+          "4": "Güvenli ve konforlu bir deneyim",
+          "5": "Tarzınızı yansıtan kalıcı sonuçlar",
+          "6": "Profesyonel bakım talimatları"
+        }
+      },
+      "zh": {
+        "title": "专业纹身刺青",
+        "details": {
+          "1": "精准打造的个性化纹身设计",
+          "2": "最高卫生与安全标准",
+          "3": "具备专业艺术触觉的纹身师",
+          "4": "安全且舒适的纹身体验",
+          "5": "展现独特风格的长效持久效果",
+          "6": "专业的术后护理指导"
+        }
+      },
+      "ko": {
+        "title": "전문 타투",
+        "details": {
+          "1": "정교하게 제작되는 커스텀 타투 디자인",
+          "2": "최고 수준의 위생 및 안전 표준 준수",
+          "3": "창의적인 감각을 지닌 전문 아티스트",
+          "4": "안전하고 편안한 시술 경험",
+          "5": "개성을 표현하는 오래 지속되는 결과",
+          "6": "전문적인 사후 관리 안내"
+        }
+      }
+    }
+  },
+  {
+    "id": "15",
+    "image": "assets/images/salon/15.png",
+    "category": "salon",
+    "price_info": {
+      "salary": 25,
+      "after_disc": 15,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Natural Henna Art",
+        "details": {
+          "1": "Beautiful, natural henna designs",
+          "2": "Applied with care and artistic detail",
+          "3": "Skin-safe and natural ingredients",
+          "4": "Adds elegance and cultural charm",
+          "5": "Perfect for special occasions",
+          "6": "Unique and stylish temporary look"
+        }
+      },
+      "ar": {
+        "title": "نقش حناء طبيعي",
+        "details": {
+          "1": "تصاميم حناء طبيعية وجذابة",
+          "2": "تُنفذ بعناية فائقة وتفاصيل فنية",
+          "3": "مكونات طبيعية وآمنة تماماً على البشرة",
+          "4": "تضيف لمسة أناقة وسحر تراثي",
+          "5": "مثالية للمناسبات الخاصة",
+          "6": "مظهر فريد وعصري يدوم مؤقتاً"
+        }
+      },
+      "de": {
+        "title": "Natürliche Henna-Kunst",
+        "details": {
+          "1": "Wunderschöne, natürliche Henna-Designs",
+          "2": "Mit Sorgfalt und Liebe zum Detail aufgetragen",
+          "3": "Hautsichere und natürliche Inhaltsstoffe",
+          "4": "Verleiht Eleganz und kulturellen Charme",
+          "5": "Perfekt für besondere Anlässe",
+          "6": "Einzigartiger und stilvoller temporärer Look"
+        }
+      },
+      "fr": {
+        "title": "Art du Henné Naturel",
+        "details": {
+          "1": "Magnifiques motifs de henné naturel",
+          "2": "Appliqué avec soin et détails artistiques",
+          "3": "Ingrédients naturels et sans danger pour la peau",
+          "4": "Ajoute de l'élégance et un charme culturel",
+          "5": "Parfait pour les occasions spéciales",
+          "6": "Un look temporaire unique et élégant"
+        }
+      },
+      "ru": {
+        "title": "Искусство натуральной хны",
+        "details": {
+          "1": "Красивые узоры натуральной хной",
+          "2": "Нанесение с заботой и художественной точностью",
+          "3": "Безопасные для кожи натуральные ингредиенты",
+          "4": "Добавляет элегантности и культурного шарма",
+          "5": "Идеально подходит для особых случаев",
+          "6": "Уникальный и стильный временный образ"
+        }
+      },
+      "es": {
+        "title": "Arte de Henna Natural",
+        "details": {
+          "1": "Hermosos diseños de henna natural",
+          "2": "Aplicados con esmero y detalle artístico",
+          "3": "Ingredientes naturales seguros para la piel",
+          "4": "Añade elegancia y encanto cultural",
+          "5": "Ideal para ocasiones especiales",
+          "6": "Un aspecto temporal único y sofisticado"
+        }
+      },
+      "it": {
+        "title": "Arte all'Henné Naturale",
+        "details": {
+          "1": "Bellissimi disegni all'henné naturale",
+          "2": "Applicati con cura e dettaglio artistico",
+          "3": "Ingredienti naturali sicuri sulla pelle",
+          "4": "Aggiunge eleganza e fascino culturale",
+          "5": "Perfetto per occasioni speciali",
+          "6": "Un look temporaneo unico e di stile"
+        }
+      },
+      "sr": {
+        "title": "Umetnost prirodne kane",
+        "details": {
+          "1": "Prelepi dizajni od prirodne kane",
+          "2": "Naneseni pažljivo sa umetničkim detaljima",
+          "3": "Prirodni sastojci bezbedni za kožu",
+          "4": "Dodaje eleganciju i kulturni šarm",
+          "5": "Savršeno za posebne prilike",
+          "6": "Jedinstven i moderan privremeni izgled"
+        }
+      },
+      "sk": {
+        "title": "Umenie prírodnej henny",
+        "details": {
+          "1": "Krásne vzory z prírodnej henny",
+          "2": "Aplikované s dôrazom na umelecký detail",
+          "3": "Prírodné zložky bezpečné pre pokožku",
+          "4": "Dodáva eleganciu a kultúrne čaro",
+          "5": "Ideálne na špeciálne príležitosti",
+          "6": "Jedinečný a štýlový dočasný vzhľad"
+        }
+      },
+      "et": {
+        "title": "Looduslik hennakunst",
+        "details": {
+          "1": "Kaunid looduslikud hennamaalingud",
+          "2": "Peale kantud hoole ja kunstilise täpsusega",
+          "3": "Nahasõbralikud ja looduslikud koostisosad",
+          "4": "Lisab elegantsi ja kultuurilist võlu",
+          "5": "Ideaalne erilisteks sündmusteks",
+          "6": "Ainulaadne ja stiilne ajutine välimus"
+        }
+      },
+      "hu": {
+        "title": "Természetes henna művészet",
+        "details": {
+          "1": "Gyönyörű, természetes henna minták",
+          "2": "Gondos és művészi kivitelezés",
+          "3": "Bőrbiztos, természetes összetevők",
+          "4": "Eleganciát és kulturális bájt kölcsönöz",
+          "5": "Tökéletes különleges alkalmakra",
+          "6": "Egyedi és stílusos ideiglenes díszítés"
+        }
+      },
+      "pl": {
+        "title": "Naturalna sztuka henny",
+        "details": {
+          "1": "Piękne wzory z naturalnej henny",
+          "2": "Nakładane z dbałością o artystyczne detale",
+          "3": "Składniki naturalne bezpieczne dla skóry",
+          "4": "Dodaje elegancji i kulturowego uroku",
+          "5": "Idealne na specjalne okazje",
+          "6": "Wyjątkowy i stylowy efekt tymczasowy"
+        }
+      },
+      "cs": {
+        "title": "Umění přírodní henny",
+        "details": {
+          "1": "Krásné vzory z přírodní henny",
+          "2": "Aplikováno s péčí a uměleckým detailem",
+          "3": "Přírodní složky bezpečné pro pokožku",
+          "4": "Dodává eleganci a kulturní kouzlo",
+          "5": "Ideální pro zvláštní příležitosti",
+          "6": "Jedinečný a stylowý dočasný vzhľad"
+        }
+      },
+      "tr": {
+        "title": "Doğal Kına Sanatı",
+        "details": {
+          "1": "Göz alıcı, doğal kına desenleri",
+          "2": "Özenle ve sanatsal detaylarla uygulama",
+          "3": "Cilt dostu ve doğal içerikler",
+          "4": "Zarafet ve kültürel bir çekicilik katar",
+          "5": "Özel günler için mükemmel seçim",
+          "6": "Eşsiz ve şık geçici bir görünüm"
+        }
+      },
+      "zh": {
+        "title": "天然海娜手绘 (Henna)",
+        "details": {
+          "1": "精美的天然海娜彩绘设计",
+          "2": "细致且富有艺术感的绘制",
+          "3": "采用亲肤天然原材料",
+          "4": "增添优雅感与文化魅力",
+          "5": "特殊场合的完美选择",
+          "6": "独特且时尚的临时装饰"
+        }
+      },
+      "ko": {
+        "title": "천연 헤나 아트",
+        "details": {
+          "1": "아름답고 자연스러운 헤나 디자인",
+          "2": "섬세하고 예술적인 디테일의 시술",
+          "3": "피부에 안전한 천연 성분 사용",
+          "4": "우아함과 문화적인 매력 선사",
+          "5": "특별한 날을 위한 완벽한 선택",
+          "6": "독특하고 스타일리시한 일시적 장식"
+        }
+      }
+    }
+  }
+]

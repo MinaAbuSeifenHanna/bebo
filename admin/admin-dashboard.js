@@ -1,9 +1,9 @@
 // admin-dashboard.js - Updated for New Firebase Structure (price_info & translations)
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const script = document.createElement('script');
     script.src = '../js/firebase-config.js';
-    script.onload = function() {
+    script.onload = function () {
         initializeDashboard();
     };
     document.head.appendChild(script);
@@ -55,13 +55,13 @@ function initializeDashboard() {
     function renderServices(servicesToRender = services) {
         const tbody = document.getElementById('servicesTableBody');
         const emptyState = document.getElementById('emptyState');
-        
+
         if (servicesToRender.length === 0) {
             tbody.innerHTML = '';
             emptyState.classList.remove('hidden');
             return;
         }
-        
+
         emptyState.classList.add('hidden');
         tbody.innerHTML = servicesToRender.map(service => {
             // سحب البيانات من الهيكل الجديد
@@ -73,9 +73,9 @@ function initializeDashboard() {
                 <tr class="fade-in border-b border-gray-100 hover:bg-gray-50">
                     <td class="px-6 py-4 text-sm font-medium text-gray-900">${service.id}</td>
                     <td class="px-6 py-4">
-                        <img src="${service.image || '../assets/images/backimage.png'}" 
+                        <img src="${service.image || '../assets/images/backimage.webp'}" 
                              class="h-12 w-12 rounded shadow-sm object-cover border"
-                             onerror="this.src='../assets/images/backimage.png'">
+                             onerror="this.src='../assets/images/backimage.webp'">
                     </td>
                     <td class="px-6 py-4 text-sm text-gray-700 font-semibold">${title}</td>
                     <td class="px-6 py-4 text-xs">
@@ -98,18 +98,18 @@ function initializeDashboard() {
     }
 
     // --- تحديث دالة التعديل لتعبئة الحقول من الهيكل الجديد ---
-    window.editService = function(firestoreId) {
+    window.editService = function (firestoreId) {
         const service = services.find(s => s.firestoreId === firestoreId);
         if (!service) return;
 
         currentEditId = firestoreId;
         document.getElementById('modalTitle').textContent = 'Edit Service';
-        
+
         // الحقول الأساسية
         document.getElementById('serviceId').value = service.id || '';
         document.getElementById('serviceCategory').value = service.category || '';
         document.getElementById('serviceImage').value = service.image || '';
-        
+
         // حقول السعر (price_info)
         document.getElementById('serviceSalary').value = service.price_info?.salary || '';
         document.getElementById('serviceAfterDisc').value = service.price_info?.after_disc || '';
@@ -133,7 +133,7 @@ function initializeDashboard() {
     // --- تحديث الحفظ (Submit) ليرفع الداتا بالهيكل الجديد ---
     document.getElementById('serviceForm').addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         let detailsEn, detailsAr;
         try {
             detailsEn = JSON.parse(document.getElementById('detailsEn').value || '{}');
@@ -199,7 +199,7 @@ function initializeDashboard() {
     };
 
     window.deleteService = (id) => {
-        if(confirm('Are you sure you want to delete this service?')) {
+        if (confirm('Are you sure you want to delete this service?')) {
             db.collection('services').doc(id).delete();
         }
     };

@@ -54,6 +54,16 @@ body {
     padding-top: 180px;
 }
 
+body.subnav-hidden {
+    padding-top: 100px !important;
+}
+
+@media (max-width: 991px) {
+    body.subnav-hidden {
+        padding-top: 80px !important;
+    }
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -111,7 +121,8 @@ button {
 
 .master-sticky-header {
     position: relative;
-    /* Removed sticky properties */
+    /* Ensure this sits ABOVE the tier 2 nav (which has z-index: 5) */
+    z-index: 50;
     background-color: var(--header-bg);
     border-bottom: var(--border-thin);
     width: 100%;
@@ -692,6 +703,16 @@ button {
     letter-spacing: 3px;
 }
 
+/* Language Dropdown Adjustment */
+.utility-actions .dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    margin-top: 10px;
+    z-index: 1050 !important;
+    /* Ensure it stays on top of sticky nav */
+}
+
 .details-luxury-info {
     display: flex;
     justify-content: space-between;
@@ -797,28 +818,27 @@ button {
 .cart-item-luxury {
     display: flex;
     align-items: center;
-    padding: 10px;
-    /* Reduced from 15px */
+    padding: 15px;
     border: var(--border-thin);
-    border-radius: 4px;
-    margin-bottom: 12px;
+    border-radius: 12px;
+    margin-bottom: 15px;
     background: var(--bg-color);
-    transition: transform 0.2s ease, var(--transition);
-    min-height: 80px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .cart-item-luxury:hover {
-    transform: translateX(3px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .cart-img-pill {
-    width: 50px;
-    /* Reduced from 60px */
-    height: 50px;
-    border-radius: 25px 25px 0 0;
-    border: 1px solid #000;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin-right: 12px;
+    margin-right: 15px;
     flex-shrink: 0;
 }
 

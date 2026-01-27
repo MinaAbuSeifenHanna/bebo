@@ -26,11 +26,14 @@ function initializeApp() {
     }
 
     // Render initial services
-    renderAllSections();
+    // Instead of renderAllSections, we use the current router state
+    if (window.currentPage && window.initPageScripts) {
+      window.initPageScripts(window.currentPage, window.currentCategory);
+    }
 
     // Setup event listeners
     setupEventListeners();
-    setupTabListeners();
+    // setupTabListeners(); // Removed for SPA
 
     // Initial UI Updates
     if (typeof window.updateCartCounter === 'function') window.updateCartCounter();
@@ -93,9 +96,10 @@ function renderSkeletons() {
 }
 
 // --- Render Main Content based on Category ---
-function renderCategory(category) {
-  const container = document.getElementById('all-services-grid');
-  const titleEl = document.getElementById('section-title');
+// Render Category (Scoped to container if provided)
+function renderCategory(category, targetContainer = null) {
+  const container = targetContainer || document.getElementById('all-services-grid');
+  const titleEl = document.getElementById('section-title'); // Only relevant if no targetContainer or if explicitly wanting to update header
 
   if (!container) return;
 
@@ -103,8 +107,11 @@ function renderCategory(category) {
   const categoryMap = {
     'massages': 'massage',
     'scrubs': 'scrub',
+    'massages': 'massage',
+    'scrubs': 'scrub',
     'hammam': 'hammam',
-    'packages': 'packages'
+    'packages': 'packages',
+    'salon': 'salon'
   };
 
   const dbCategory = categoryMap[category] || category;
@@ -118,12 +125,25 @@ function renderCategory(category) {
 
   container.innerHTML = '';
 
-  let filteredServices = category === 'all'
-    ? services
-    : services.filter(s => s.category === dbCategory);
+  let filteredServices;
+  if (category === 'all') {
+    const salonServices = services.filter(s => s.category === 'salon').sort((a, b) => (parseInt(a.id) || 0) - (parseInt(b.id) || 0)).slice(0, 2);
+    const otherServices = services.filter(s => s.category !== 'salon');
+    filteredServices = [...salonServices, ...otherServices];
+  } else {
+    filteredServices = services.filter(s => s.category === dbCategory);
+  }
 
-  // Force strict numerical sort for display (1-27)
-  filteredServices.sort((a, b) => (parseInt(a.id) || 0) - (parseInt(b.id) || 0));
+  // Sort: Prioritize Salon if 'all', otherwise sort by ID
+  filteredServices.sort((a, b) => {
+    if (category === 'all') {
+      const isSalonA = a.category === 'salon';
+      const isSalonB = b.category === 'salon';
+      if (isSalonA && !isSalonB) return -1;
+      if (!isSalonA && isSalonB) return 1;
+    }
+    return (parseInt(a.id) || 0) - (parseInt(b.id) || 0);
+  });
 
   // Update Header (UI requires original key for i18n lookup)
   if (titleEl) {
@@ -144,8 +164,10 @@ function renderCategory(category) {
     filteredServices.forEach(service => {
       const cardCol = createServiceCard(service);
       fragment.appendChild(cardCol);
+      // SPA Observer Logic:
+      // Note: cardObserver must be active. 
       const card = cardCol.querySelector('.service-card-luxury');
-      if (card) cardObserver.observe(card);
+      if (card && typeof cardObserver !== 'undefined') cardObserver.observe(card);
     });
     container.appendChild(fragment);
   } else {
@@ -194,13 +216,13 @@ function createServiceCard(service) {
   if (window.Utils) imagePath = window.Utils.resolvePath(imagePath);
 
   col.innerHTML = `
-    <div class="service-card-luxury" onclick="window.viewDetails('${service.id}')">
-      <div class="card-image-arched">
+    <div class="service-card-luxury">
+      <div class="card-image-arched" onclick="window.location.hash = '#details?id=${service.id}'" style="cursor: pointer;">
         <img src="${imagePath}" alt="${title}" loading="lazy" onerror="this.src='${window.Utils ? window.Utils.resolvePath('assets/images/placeholder.png') : ''}'">
       </div>
       
       <div class="card-title-banner">
-        <span>${title}</span>
+        <a href="#details?id=${service.id}" data-link style="color: white; text-decoration: none;">${title}</a>
       </div>
 
       <div class="card-info-row">
@@ -221,7 +243,7 @@ function createServiceCard(service) {
       </ul>
 
       <div class="card-action-bar">
-        <div class="btn-book-luxury text-center" style="line-height: 1.5;">Book Now</div>
+        <a href="#booking?id=${service.id}" data-link class="btn-book-luxury text-center text-decoration-none" style="line-height: 1.5; display: block;">Book Now</a>
         <button class="btn-cart-luxury" onclick="event.stopPropagation(); window.addToCart('${service.id}')">
           <i class="fas fa-shopping-cart"></i>
         </button>
@@ -241,209 +263,182 @@ const cardObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-// Unified Tab Handler
-function handleTabClick(e) {
-  const button = e.target.closest('.nav-link');
-  if (!button) return;
+// --- REFACTORED FOR SPA ---
 
-  const category = button.getAttribute('data-category');
-  const target = button.getAttribute('data-bs-target');
-  const isLevel1Home = button.id === 'home-tab';
-  const isLevel2Home = button.id === 'home-local-tab';
+window.initPageScripts = function (page, category) {
+  console.log(`[initPageScripts] Page: ${page}, Category: ${category} `);
 
-  const serviceNav = document.getElementById('service-nav-container');
-  if (serviceNav) {
-    if (target === '#home-content' || isLevel2Home) {
-      serviceNav.style.display = 'block';
-    } else if (button.closest('#primaryNav')) {
-      // If clicking Salon or Gallery from level 1, hide service nav
-      serviceNav.style.display = 'none';
-    }
-  }
+  // Update Global UI Text (Translations)
+  if (typeof updateAllUIText === 'function') updateAllUIText();
+  if (typeof updateCartCounter === 'function') window.updateCartCounter();
 
-  // Handle Level 1 Home clicking -> Ensure Tier 2 Home is active
-  if (isLevel1Home) {
-    const localHomeTab = document.getElementById('home-local-tab');
-    if (localHomeTab) {
-      // Bootstrap tab switch
-      const tab = new bootstrap.Tab(localHomeTab);
-      tab.show();
-    }
-  }
-
-  if (target === '#home-content' || isLevel2Home) {
-    renderHomeContent();
-  } else if (target === '#salon-content') {
-    renderSalonContent();
-  } else if (target === '#gallery-content') {
-    renderGalleryContent();
-  } else {
+  // Handle Page Specifics
+  if (page === 'services') {
     renderCategory(category || 'all');
-  }
-
-  const contentSection = document.querySelector('.tab-content');
-  if (contentSection) {
-    const yOffset = -120; // Adjusted for sticky header
-    const y = contentSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
-}
-
-function renderAllSections() {
-  const activeTab = document.querySelector('.nav-link.active');
-  const serviceNav = document.getElementById('service-nav-container');
-
-  if (activeTab) {
-    const target = activeTab.getAttribute('data-bs-target');
-    const category = activeTab.getAttribute('data-category');
-    const isLevel2Home = activeTab.id === 'home-local-tab';
-
-    // Handle initial visibility
-    if (serviceNav) {
-      if (target === '#home-content' || isLevel2Home) {
-        serviceNav.style.display = 'block';
-      } else {
-        serviceNav.style.display = 'none';
-      }
+  } else if (page === 'salon') {
+    const salonGrid = document.getElementById('salon-services-grid');
+    if (salonGrid) {
+      renderCategory('salon', salonGrid);
     }
+  } else if (page === 'home') {
+    const homeGrid = document.getElementById('home-services-grid');
+    if (homeGrid) {
+      // Render all services or a subset
+      renderCategory('all', homeGrid);
+    }
+  } else if (page === 'details') {
+    // Get ID from global params exposed by router
+    const id = window.currentParams?.id;
+    if (id) initDetailsPage(id);
+    else console.error("Missing ID for details page");
+  } else if (page === 'booking') {
+    const id = window.currentParams?.id;
+    if (id) initBookingPage(id);
+    else console.error("Missing ID for booking page");
+  } else if (page === 'cart') {
+    if (window.renderCart) window.renderCart();
+  }
 
-    if (target === '#home-content' || isLevel2Home) {
-      renderHomeContent();
-    } else if (target === '#salon-content') {
-      renderSalonContent();
-    } else if (target === '#gallery-content') {
-      renderGalleryContent();
+  // Re-trigger skeleton if needed or data check
+  if (window.isFirebaseLoaded === false) {
+    console.log("Firebase not loaded yet, skeletons should be visible");
+  }
+};
+
+// Logic for Details Page (Merged from service-details.js)
+function initDetailsPage(serviceId) {
+  console.log("Initializing Details for:", serviceId);
+
+  // Find Service
+  // Wait for data if not ready
+  if (!window.allServices || window.allServices.length === 0) {
+    // Simple retry logic or listener
+    // existing event listener 'services-loaded' calls initializeApp, which calls initPageScripts
+    return;
+  }
+
+  const service = window.allServices.find(s => String(s.id) === String(serviceId));
+  if (!service) {
+    const titleEl = document.getElementById('det-title');
+    if (titleEl) titleEl.textContent = "Service Not Found";
+    return;
+  }
+
+  // Render Data
+  const lang = localStorage.getItem('selectedLanguage') || 'en';
+  const data = (service.translations && service.translations[lang]) ? service.translations[lang] : (service.translations?.['en'] || {});
+  const title = data.title || service.title || 'Service Details';
+
+  const titleEl = document.getElementById('det-title');
+  if (titleEl) titleEl.textContent = title;
+
+  const timeEl = document.getElementById('det-time');
+  if (timeEl) timeEl.textContent = service.duration || service.time || '2 Hrs';
+
+  // Price
+  const priceObj = service.price_info || {};
+  const currency = priceObj.currency || '€';
+  const salary = priceObj.salary;
+  const afterDisc = priceObj.after_disc;
+  const mainPrice = afterDisc !== undefined ? afterDisc : (salary || 0);
+
+  const priceEl = document.getElementById('det-new-price');
+  if (priceEl) priceEl.textContent = `${currency}${mainPrice} `;
+
+  const oldPriceEl = document.getElementById('det-old-price');
+  if (oldPriceEl) {
+    if (salary !== undefined && afterDisc !== undefined && salary > afterDisc) {
+      oldPriceEl.textContent = `${currency}${salary} `;
+      oldPriceEl.style.display = 'inline';
     } else {
-      // Default to all if category is missing
-      renderCategory(category || 'all');
-    }
-  } else {
-    // FALLBACK: If no tab is active, default to All Services
-    console.log("⚠️ No active tab found, defaulting to All Services");
-    renderCategory('all');
-
-    // Also try to set visual active state
-    const allTab = document.getElementById('all-tab');
-    if (allTab) {
-      const tab = new bootstrap.Tab(allTab);
-      tab.show();
+      oldPriceEl.style.display = 'none';
     }
   }
-}
 
-function setupTabListeners() {
-  document.querySelectorAll('button[data-bs-toggle="tab"]').forEach(tab => {
-    tab.addEventListener('shown.bs.tab', handleTabClick);
-  });
-}
 
-function renderHomeContent() {
-  const container = document.getElementById('home-content');
-  if (container) {
-    container.innerHTML = `
-      <div class="text-center py-5 fade-in-up">
-        <h2 class="section-title mb-4" data-i18n="welcome">Welcome to World Spa & Beauty</h2>
-        <p class="lead mb-5" data-i18n="homeDescription">Experience luxury spa treatments in heart of Hurghada</p>
-        <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-8">
-            <div class="contact-card-minimal">
-              <div class="card-body p-4 p-md-5">
-                <h5 class="card-title-bw mb-5" data-i18n="contactInfo">Contact Information</h5>
-                <div class="contact-info-grid">
-                  <a href="tel:+201007920759" class="contact-item-minimal">
-                    <div class="icon-bw"><i class="fas fa-phone"></i></div>
-                    <span class="fw-bold">+201007920759</span>
-                  </a>
-                  <a href="mailto:minaabuseifen@gmail.com" class="contact-item-minimal">
-                    <div class="icon-bw"><i class="fas fa-envelope"></i></div>
-                    <span class="fw-bold">minaabuseifen@gmail.com</span>
-                  </a>
-                  <div class="contact-item-minimal">
-                    <div class="icon-bw"><i class="fas fa-map-marker-alt"></i></div>
-                    <span class="fw-bold">Hurghada, Egypt</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+  // Features
+  const stepsCont = document.getElementById('det-steps');
+  if (stepsCont && data.details) {
+    stepsCont.innerHTML = Object.values(data.details).map(detailStr => `
+      <div class="details-feature-item">
+        <i class="fas fa-check"></i>
+        <div class="f-content">
+          <strong>${detailStr}</strong>
         </div>
       </div>
-    `;
-    if (typeof updateAllUIText === 'function') updateAllUIText();
+    `).join('');
   }
 }
 
-function renderSalonContent() {
-  const container = document.getElementById('salon-content');
-  if (container) {
-    container.innerHTML = `
-      <div class="py-5 fade-in-up">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-             <div class="salon-img-box">
-                <img src="assets/images/backimage.png" alt="Salon" class="img-fluid w-100">
-             </div>
-          </div>
-          <div class="col-lg-6 px-lg-5">
-            <h2 class="section-title mb-4" data-i18n="salon">Our Salon</h2>
-            <p class="text-muted mb-5 lead">Welcome to our state-of-the-art beauty salon. We offer a wide range of professional beauty treatments tailored to your needs.</p>
-            <ul class="salon-services-list">
-               <li><div class="icon-bw-small"><i class="fas fa-check"></i></div> <span>Professional Hair Styling</span></li>
-               <li><div class="icon-bw-small"><i class="fas fa-check"></i></div> <span>Expert Makeup Services</span></li>
-               <li><div class="icon-bw-small"><i class="fas fa-check"></i></div> <span>Premium Nail Care</span></li>
-               <li><div class="icon-bw-small"><i class="fas fa-check"></i></div> <span>Luxury Facial Treatments</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `;
-    if (typeof updateAllUIText === 'function') updateAllUIText();
-  }
+// Logic for Booking Page (Merged from booking.js)
+function initBookingPage(serviceId) {
+  console.log("Initializing Booking for:", serviceId);
+
+  if (!window.allServices || window.allServices.length === 0) return;
+
+  const service = window.allServices.find(s => String(s.id) === String(serviceId));
+  if (!service) return;
+
+  const lang = localStorage.getItem('selectedLanguage') || 'en';
+  const data = service.translations?.[lang] || service.translations?.['en'];
+
+  const titleEl = document.getElementById('book-title');
+  if (titleEl) titleEl.textContent = data.title;
+
+  // Form Submittion Global Handler
+  window.submitSingleBooking = function () {
+    const name = document.getElementById('form-name').value;
+    const date = document.getElementById('form-date').value;
+    const time = document.getElementById('form-time').value;
+    const residence = document.getElementById('form-residence').value || 'Seegull hotel';
+    const room = document.getElementById('form-room').value || '22';
+
+    if (!name || !date || !time) {
+      alert('Please fill in required fields');
+      return;
+    }
+
+    // Construct WhatsApp Message
+    const currency = service.price_info?.currency || '€';
+    const price = service.price_info.after_disc;
+    const duration = data.duration || service.duration || 'N/A';
+
+    const message = `Dear world SPA AND BEAUTY SALON 
+
+Kindly I want to reserve the following services:
+
+Name : ${name}
+
+Date : ${date}
+
+Time : ${time}
+
+Hotel : ${residence}
+
+Room Number : ${room}
+
+Title : *${data.title}*
+
+Duration : ${duration}
+
+Price per person : ${price}${currency}
+
+Quantity : 1
+
+Total : ${price}${currency}
+
+Confirm via: https://womenworldspa.com`;
+
+    const waLink = `https://wa.me/201007920759?text=${encodeURIComponent(message)}`;
+    window.open(waLink, '_blank');
+
+    // Clean up or redirect
+    window.history.back();
+  };
 }
 
-function renderGalleryContent() {
-  const container = document.getElementById('gallery-content');
-  if (container) {
-    container.innerHTML = `
-      <div class="py-5 fade-in-up">
-         <h2 class="section-title text-center mb-5" data-i18n="gallery">Photo Gallery</h2>
-         <div class="row g-3">
-            <div class="col-6 col-md-4">
-               <div class="gallery-item-bw">
-                  <img src="assets/images/1.png" alt="Gallery 1" class="img-fluid w-100 gallery-img">
-               </div>
-            </div>
-            <div class="col-6 col-md-4">
-                <div class="gallery-item-bw">
-                   <img src="assets/images/2.png" alt="Gallery 2" class="img-fluid w-100 gallery-img">
-                </div>
-             </div>
-             <div class="col-6 col-md-4">
-                <div class="gallery-item-bw">
-                   <img src="assets/images/3.png" alt="Gallery 3" class="img-fluid w-100 gallery-img">
-                </div>
-             </div>
-             <div class="col-6 col-md-4">
-                <div class="gallery-item-bw">
-                   <img src="assets/images/4.png" alt="Gallery 4" class="img-fluid w-100 gallery-img">
-                </div>
-             </div>
-             <div class="col-6 col-md-4">
-                <div class="gallery-item-bw">
-                   <img src="assets/images/backimage.png" alt="Gallery 5" class="img-fluid w-100 gallery-img">
-                </div>
-             </div>
-             <div class="col-6 col-md-4">
-                <div class="gallery-item-bw">
-                   <img src="assets/images/logo.jpg" alt="Gallery 6" class="img-fluid w-100 gallery-img">
-                </div>
-             </div>
-         </div>
-      </div>
-    `;
-    if (typeof updateAllUIText === 'function') updateAllUIText();
-  }
-}
+
 
 // Show checkout modal (bridge to Cart UI)
 function showCheckoutModal() {

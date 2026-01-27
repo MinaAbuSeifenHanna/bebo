@@ -1,4197 +1,4197 @@
 ﻿[
-   {
-  "id": "1",
-  "image": "assets/images/1.png",
-  "category": "packages",
-  "time": "3 Hrs",
-  "price_info": {
-    "salary": 59,
-    "after_disc": 35,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "VIP Program",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Hammam",
-        "4": "Full Body Chocolate Mask",
-        "5": "Full Body Coconut Mask",
-        "6": "Face Mask",
-        "7": "Full Body Massage (60 Mins)"
-      }
-    },
-    "ar": {
-      "title": "برنامج VIP",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "حمام مغربي",
-        "4": "ماسك شوكولاتة كامل للجسم",
-        "5": "ماسك جوز هند كامل للجسم",
-        "6": "ماسك للوجه",
-        "7": "مساج كامل للجسم (60 دقيقة)"
-      }
-    },
-    "de": {
-      "title": "VIP-Programm",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Hammam",
-        "4": "Ganzkörper-Schokoladenmaske",
-        "5": "Ganzkörper-Kokosmaske",
-        "6": "Gesichtsmaske",
-        "7": "Ganzkörpermassage (60 Min.)"
-      }
-    },
-    "fr": {
-      "title": "Programme VIP",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Hammam",
-        "4": "Masque au chocolat pour tout le corps",
-        "5": "Masque à la noix de coco pour tout le corps",
-        "6": "Masque facial",
-        "7": "Massage complet du corps (60 min)"
-      }
-    },
-    "ru": {
-      "title": "VIP-программа",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Хаммам",
-        "4": "Шоколадная маска для всего тела",
-        "5": "Кокосовая маска для всего тела",
-        "6": "Маска для лица",
-        "7": "Массаж всего тела (60 мин.)"
-      }
-    },
-    "es": {
-      "title": "Programa VIP",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Hammam",
-        "4": "Mascarilla de chocolate para todo el cuerpo",
-        "5": "Mascarilla de coco para todo el cuerpo",
-        "6": "Mascarilla facial",
-        "7": "Masaje corporal completo (60 min)"
-      }
-    },
-    "it": {
-      "title": "Programma VIP",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Hammam",
-        "4": "Maschera al cioccolato per tutto il corpo",
-        "5": "Maschera al cocco per tutto il corpo",
-        "6": "Maschera per il viso",
-        "7": "Massaggio total body (60 min)"
-      }
-    },
-    "sr": {
-      "title": "VIP program",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Hamam",
-        "4": "Čokoladna maska za celo telo",
-        "5": "Kokos maska za celo telo",
-        "6": "Maska za lice",
-        "7": "Masaža celog tela (60 min)"
-      }
-    },
-    "sk": {
-      "title": "VIP program",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Hammam",
-        "4": "Čokoládová maska na celé telo",
-        "5": "Kokosová maska na celé telo",
-        "6": "Pleťová maska",
-        "7": "Masáž celého tela (60 min)"
-      }
-    },
-    "et": {
-      "title": "VIP programm",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Hamam",
-        "4": "Šokolaadi mähis kogu kehale",
-        "5": "Kookose mähis kogu kehale",
-        "6": "Näomask",
-        "7": "Kogu keha massaaž (60 min)"
-      }
-    },
-    "hu": {
-      "title": "VIP program",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Hammam",
-        "4": "Teljes test csokoládé maszk",
-        "5": "Teljes test kókusz maszk",
-        "6": "Arcpakolás",
-        "7": "Teljes testmasszázs (60 perc)"
-      }
-    },
-    "pl": {
-      "title": "Program VIP",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Hammam",
-        "4": "Czekoladowa maska na całe ciało",
-        "5": "Kokosowa maska na całe ciało",
-        "6": "Maska na twarz",
-        "7": "Masaż całego ciała (60 min)"
-      }
-    },
-    "cs": {
-      "title": "VIP program",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Hammam",
-        "4": "Čokoládová maska na celé tělo",
-        "5": "Kokosová maska na celé tělo",
-        "6": "Pleťová maska",
-        "7": "Masáž celého těla (60 min)"
-      }
-    },
-    "tr": {
-      "title": "VIP Programı",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Hamam",
-        "4": "Tüm Vücut Çikolata Maskesi",
-        "5": "Tüm Vücut Hindistan Cevizi Maskesi",
-        "6": "Yüz maskesi",
-        "7": "Tüm Vücut Masajı (60 dk)"
-      }
-    },
-    "zh": {
-      "title": "VIP 方案",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "汉曼",
-        "4": "全身巧克力体膜",
-        "5": "全身椰子体膜",
-        "6": "面膜",
-        "7": "全身按摩 (60 分钟)"
-      }
-    },
-    "ko": {
-      "title": "VIP 프로그램",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "해맘",
-        "4": "전신 초콜릿 팩",
-        "5": "전신 코코넛 팩",
-        "6": "얼굴 팩",
-        "7": "전신 마사지 (60분)"
-      }
-    }
-  }
-},
-    
-    {
-  "id": "2",
-  "image": "assets/images/2.png",
-  "category": "packages",
-  "time": "2 Hrs",
-  "price_info": {
-    "salary": 42,
-    "after_disc": 25,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Damascus Hammam and Massage",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Peeling with coarse loofah and Soap",
-        "4": "Face Mask",
-        "5": "Full Body Massage (50 Mins)"
-      }
-    },
-    "ar": {
-      "title": "حمام دمشق ومساج",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "تقشير باللوفة الخشنة والصابون",
-        "4": "ماسك للوجه",
-        "5": "مساج كامل للجسم (50 دقيقة)"
-      }
-    },
-    "de": {
-      "title": "Damaskus Hammam und Massage",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Peeling mit grobem Luffa und Seife",
-        "4": "Gesichtsmaske",
-        "5": "Ganzkörpermassage (50 Min.)"
-      }
-    },
-    "fr": {
-      "title": "Hammam de Damas et Massage",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage au luffa rêche et savon",
-        "4": "Masque facial",
-        "5": "Massage complet du corps (50 min)"
-      }
-    },
-    "ru": {
-      "title": "Дамасский хаммам и массаж",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Пилинг грубой мочалкой и мылом",
-        "4": "Маска для лица",
-        "5": "Массаж всего тела (50 мин.)"
-      }
-    },
-    "es": {
-      "title": "Hammam de Damasco y Masaje",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación con lufa gruesa y jabón",
-        "4": "Mascarilla facial",
-        "5": "Masaje corporal completo (50 min)"
-      }
-    },
-    "it": {
-      "title": "Hammam di Damasco e massaggio",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Tratamiento per capelli - crema",
-        "3": "Peeling con loofah ruvida e sapone",
-        "4": "Maschera per il viso",
-        "5": "Massaggio completo del corpo (50 min)"
-      }
-    },
-    "sr": {
-      "title": "Damaskus Hamam i masaža",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling grubom lufom i sapunom",
-        "4": "Maska za lice",
-        "5": "Masaža celog tela (50 min)"
-      }
-    },
-    "sk": {
-      "title": "Damašský hammam a masáž",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Peeling s drsnou lufou a mydlom",
-        "4": "Pleťová maska",
-        "5": "Masáž celého tela (50 min)"
-      }
-    },
-    "et": {
-      "title": "Damaskuse hamam ja massaaž",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Koorimine kareda lufa ja seebiga",
-        "4": "Näomask",
-        "5": "Kogu keha massaaž (50 min)"
-      }
-    },
-    "hu": {
-      "title": "Damaszkuszi Hammam és masszázs",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Peeling durva luffával és szappannal",
-        "4": "Arcpakolás",
-        "5": "Teljes testmasszázs (50 perc)"
-      }
-    },
-    "pl": {
-      "title": "Damasceński Hammam i masaż",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Peeling szorstką luffą i mydłem",
-        "4": "Maska na twarz",
-        "5": "Masaż całego ciała (50 min)"
-      }
-    },
-    "cs": {
-      "title": "Damašský hammam a masáž",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Peeling hrubou lufou a mýdlem",
-        "4": "Pleťová maska",
-        "5": "Masáž celého těla (50 min)"
-      }
-    },
-    "tr": {
-      "title": "Şam Hamamı ve Masaj",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Kaba lif kabağı ve sabun ile peeling",
-        "4": "Yüz maskesi",
-        "5": "Tüm vücut masajı (50 dk)"
-      }
-    },
-    "zh": {
-      "title": "大马士革汉曼与按摩",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "粗丝瓜络肥皂去角质",
-        "4": "面膜",
-        "5": "全身按摩 (50 分钟)"
-      }
-    },
-    "ko": {
-      "title": "다마스쿠스 해맘 및 마사지",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "거친 루파와 비누를 이용한 각질 제거",
-        "4": "얼굴 팩",
-        "5": "전신 마사지 (50분)"
-      }
-    }
-  }
-}
-  ,  
-    
-     {
-  "id": "3",
-  "image": "assets/images/3.png",
-  "category": "packages",
-  "time": "2 Hrs",
-  "price_info": {
-    "salary": 42,
-    "after_disc": 25,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Turkish Hammam and Massage",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Peeling with Kessa Mitten and Foam",
-        "4": "Soap Massage (5 min)",
-        "5": "Face Mask",
-        "6": "Full Body Massage (50 Mins)"
-      }
-    },
-    "ar": {
-      "title": "الحمام التركي والمساج",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "تقشير بليفة الكيسة والرغوة",
-        "4": "مساج بالصابون (5 دقائق)",
-        "5": "ماسك للوجه",
-        "6": "مساج كامل للجسم (50 دقيقة)"
-      }
-    },
-    "de": {
-      "title": "Türkisches Hammam und Massage",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Peeling mit Kessa-Handschuh und Schaum",
-        "4": "Seifenmassage (5 Min.)",
-        "5": "Gesichtsmaske",
-        "6": "Ganzkörpermassage (50 Min.)"
-      }
-    },
-    "fr": {
-      "title": "Hammam Turc et Massage",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage au gant Kessa et mousse",
-        "4": "Massage au savon (5 min)",
-        "5": "Masque facial",
-        "6": "Massage complet du corps (50 min)"
-      }
-    },
-    "ru": {
-      "title": "Турецкий хаммам и массаж",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Пилинг рукавицей Кесе и пеной",
-        "4": "Мыльный массаж (5 мин.)",
-        "5": "Маска для лица",
-        "6": "Массаж всего тела (50 мин.)"
-      }
-    },
-    "es": {
-      "title": "Hammam Turco y Masaje",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación con guante Kessa y espuma",
-        "4": "Masaje con jabón (5 min)",
-        "5": "Mascarilla facial",
-        "6": "Masaje corporal completo (50 min)"
-      }
-    },
-    "it": {
-      "title": "Hammam Turco e Massaggio",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Peeling con guanto Kessa e schiuma",
-        "4": "Massaggio con sapone (5 min)",
-        "5": "Maschera per il viso",
-        "6": "Massaggio completo del corpo (50 min)"
-      }
-    },
-    "sr": {
-      "title": "Turski hamam i masaža",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling sa Kessa rukavicom i penom",
-        "4": "Masaža sapunom (5 min)",
-        "5": "Maska za lice",
-        "6": "Masaža celog tela (50 min)"
-      }
-    },
-    "sk": {
-      "title": "Turecký hammam a masáž",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Peeling s rukavicou Kessa a penou",
-        "4": "Mydlová masáž (5 min)",
-        "5": "Pleťová maska",
-        "6": "Masáž celého tela (50 min)"
-      }
-    },
-    "et": {
-      "title": "Türgi hamam ja massaaž",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Koorimine Kessa kinda ja vahuga",
-        "4": "Seebimassaaž (5 min)",
-        "5": "Näomask",
-        "6": "Kogu keha massaaž (50 min)"
-      }
-    },
-    "hu": {
-      "title": "Török Hammam és masszázs",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Peeling Kessa kesztyűvel és habbal",
-        "4": "Szappanos masszázs (5 perc)",
-        "5": "Arcpakolás",
-        "6": "Teljes testmasszázs (50 perc)"
-      }
-    },
-    "pl": {
-      "title": "Turecki Hammam i masaż",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Peeling rękawicą Kessa i pianą",
-        "4": "Masaż mydłem (5 min)",
-        "5": "Maska na twarz",
-        "6": "Masaż całego ciała (50 min)"
-      }
-    },
-    "cs": {
-      "title": "Turecký hammam a masáž",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Peeling rukavicí Kessa a pěnou",
-        "4": "Mýdlová masáž (5 min)",
-        "5": "Pleťová maska",
-        "6": "Masáž celého těla (50 min)"
-      }
-    },
-    "tr": {
-      "title": "Türk Hamamı ve Masaj",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Kese ve Köpük ile peeling",
-        "4": "Sabun Masajı (5 dk)",
-        "5": "Yüz maskesi",
-        "6": "Tüm vücut masajı (50 dk)"
-      }
-    },
-    "zh": {
-      "title": "土耳其汉曼与按摩",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "使用 Kessa 手套和泡沫去角质",
-        "4": "肥皂按摩 (5 分钟)",
-        "5": "面膜",
-        "6": "全身按摩 (50 分钟)"
-      }
-    },
-    "ko": {
-      "title": "터키식 해맘 및 마사지",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "케사 미튼과 거품을 이용한 각질 제거",
-        "4": "비누 마사지 (5분)",
-        "5": "얼굴 팩",
-        "6": "전신 마사지 (50분)"
-      }
-    }
-  }
-}
-    ,
-      {
-  "id": "4",
-  "image": "assets/images/4.png",
-  "category": "packages",
-  "time": "2 Hrs",
-  "price_info": {
-    "salary": 42,
-    "after_disc": 25,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Moroccan Hammam and Massage",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Peeling & Moroccan mask for body",
-        "4": "Face Mask",
-        "5": "Full Body Massage (50 Mins)"
-      }
-    },
-    "ar": {
-      "title": "الحمام المغربي والمساج",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "تقشير وماسك مغربي للجسم",
-        "4": "ماسك للوجه",
-        "5": "مساج كامل للجسم (50 دقيقة)"
-      }
-    },
-    "de": {
-      "title": "Marokkanisches Hammam und Massage",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Peeling & Marokkanische Maske für den Körper",
-        "4": "Gesichtsmaske",
-        "5": "Ganzkörpermassage (50 Min.)"
-      }
-    },
-    "fr": {
-      "title": "Hammam Marocain et Massage",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage & masque marocain pour le corps",
-        "4": "Masque facial",
-        "5": "Massage complet du corps (50 min)"
-      }
-    },
-    "ru": {
-      "title": "Марокканский хаммам и массаж",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Пилинг и марокканская маска для тела",
-        "4": "Маска для лица",
-        "5": "Массаж всего тела (50 мин.)"
-      }
-    },
-    "es": {
-      "title": "Hammam Marroquí y Masaje",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación y mascarilla marroquí para el cuerpo",
-        "4": "Mascarilla facial",
-        "5": "Masaje corporal completo (50 min)"
-      }
-    },
-    "it": {
-      "title": "Hammam Marocchino e Massaggio",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Peeling e maschera marocchina per il corpo",
-        "4": "Maschera per il viso",
-        "5": "Massaggio completo del corpo (50 min)"
-      }
-    },
-    "sr": {
-      "title": "Marokanski hamam i masaža",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling i marokanska maska za telo",
-        "4": "Maska za lice",
-        "5": "Masaža celog tela (50 min)"
-      }
-    },
-    "sk": {
-      "title": "Marocký hammam a masáž",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Peeling a marocká maska na telo",
-        "4": "Pleťová maska",
-        "5": "Masáž celého tela (50 min)"
-      }
-    },
-    "et": {
-      "title": "Maroko hamam ja massaaž",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Koorimine ja Maroko kehamask",
-        "4": "Näomask",
-        "5": "Kogu keha massaaž (50 min)"
-      }
-    },
-    "hu": {
-      "title": "Marokkói Hammam és masszázs",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Peeling és marokkói testmaszk",
-        "4": "Arcpakolás",
-        "5": "Teljes testmasszázs (50 perc)"
-      }
-    },
-    "pl": {
-      "title": "Marokański Hammam i masaż",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Peeling i marokańska maska na ciało",
-        "4": "Maska na twarz",
-        "5": "Masaż całego ciała (50 min)"
-      }
-    },
-    "cs": {
-      "title": "Marocký hammam a masáž",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Peeling a marocká maska na tělo",
-        "4": "Pleťová maska",
-        "5": "Masáž celého těla (50 min)"
-      }
-    },
-    "tr": {
-      "title": "Fas Hamamı ve Masaj",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Vücut için peeling ve Fas maskesi",
-        "4": "Yüz maskesi",
-        "5": "Tüm vücut masajı (50 dk)"
-      }
-    },
-    "zh": {
-      "title": "摩洛哥汉曼与按摩",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "全身去角质及摩洛哥体膜",
-        "4": "面膜",
-        "5": "全身按摩 (50 分钟)"
-      }
-    },
-    "ko": {
-      "title": "모로코식 해맘 및 마사지",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "전신 각질 제거 및 모로코 바디 팩",
-        "4": "얼굴 팩",
-        "5": "전신 마사지 (50분)"
-      }
-    }
-  }
-},
-    
-      {
-  "id": "5",
-  "image": "assets/images/5.png",
-  "category": "packages",
-  "time": "2 Hrs",
-  "price_info": {
-    "salary": 42,
-    "after_disc": 25,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Coconut Body Scrub and Massage",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Coconut Body Scrub",
-        "4": "Face Mask",
-        "5": "Full Body Massage (50 Mins)"
-      }
-    },
-    "ar": {
-      "title": "سنفرة الجسم بجوز الهند والمساج",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة جوز الهند للجسم",
-        "4": "ماسك للوجه",
-        "5": "مساج كامل للجسم (50 دقيقة)"
-      }
-    },
-    "de": {
-      "title": "Kokos-Körperpeeling und Massage",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Kokos-Körperpeeling",
-        "4": "Gesichtsmaske",
-        "5": "Ganzkörpermassage (50 Min.)"
-      }
-    },
-    "fr": {
-      "title": "Gommage du corps à la noix de coco et massage",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel à la noix de coco",
-        "4": "Masque facial",
-        "5": "Massage complet du corps (50 min)"
-      }
-    },
-    "ru": {
-      "title": "Кокосовый скраб для тела и массаж",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Кокосовый скраб для тела",
-        "4": "Маска для лица",
-        "5": "Массаж всего тела (50 мин.)"
-      }
-    },
-    "es": {
-      "title": "Exfoliante corporal de coco y masaje",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con coco",
-        "4": "Mascarilla facial",
-        "5": "Masaje corporal completo (50 min)"
-      }
-    },
-    "it": {
-      "title": "Scrub corpo al cocco e massaggio",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo al cocco",
-        "4": "Maschera per il viso",
-        "5": "Massaggio completo del corpo (50 min)"
-      }
-    },
-    "sr": {
-      "title": "Piling tela od kokosa i masaža",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Kokos piling za telo",
-        "4": "Maska za lice",
-        "5": "Masaža celog tela (50 min)"
-      }
-    },
-    "sk": {
-      "title": "Kokosový telový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Kokosový telový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého tela (50 min)"
-      }
-    },
-    "et": {
-      "title": "Kookose kehakoorimine ja massaaž",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Kookose kehakoorimine",
-        "4": "Näomask",
-        "5": "Kogu keha massaaž (50 min)"
-      }
-    },
-    "hu": {
-      "title": "Kókuszos testradír és masszázs",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Kókuszos testradír",
-        "4": "Arcpakolás",
-        "5": "Teljes testmasszázs (50 perc)"
-      }
-    },
-    "pl": {
-      "title": "Kokosowy peeling ciała i masaż",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Kokosowy peeling do ciała",
-        "4": "Maska na twarz",
-        "5": "Masaż całego ciała (50 min)"
-      }
-    },
-    "cs": {
-      "title": "Kokosový tělový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Kokosový tělový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého těla (50 min)"
-      }
-    },
-    "tr": {
-      "title": "Hindistan Cevizi Vücut Peelingi ve Masaj",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Hindistan Cevizi Vücut Peelingi",
-        "4": "Yüz maskesi",
-        "5": "Tüm vücut masajı (50 dk)"
-      }
-    },
-    "zh": {
-      "title": "椰子身体磨砂与按摩",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "椰子身体磨砂",
-        "4": "面膜",
-        "5": "全身按摩 (50 分钟)"
-      }
-    },
-    "ko": {
-      "title": "코코넛 바디 스크럽 및 마사지",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "코코넛 바디 스크럽",
-        "4": "얼굴 팩",
-        "5": "전신 마사지 (50분)"
-      }
-    }
-  }
-},
-
-
-    
-     {
-  "id": "6",
-  "image": "assets/images/6.png",
-  "category": "packages",
-  "time": "2 Hrs",
-  "price_info": {
-    "salary": 42,
-    "after_disc": 25,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Chocolate Body Scrub and Massage",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Chocolate Body Scrub",
-        "4": "Face Mask",
-        "5": "Full Body Massage (50 Mins)"
-      }
-    },
-    "ar": {
-      "title": "سنفرة الجسم بالشوكولاتة والمساج",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة الشوكولاتة للجسم",
-        "4": "ماسك للوجه",
-        "5": "مساج كامل للجسم (50 دقيقة)"
-      }
-    },
-    "de": {
-      "title": "Schokoladen-Körperpeeling und Massage",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Schokoladen-Körperpeeling",
-        "4": "Gesichtsmaske",
-        "5": "Ganzkörpermassage (50 Min.)"
-      }
-    },
-    "fr": {
-      "title": "Gommage du corps au chocolat et massage",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel au chocolat",
-        "4": "Masque facial",
-        "5": "Massage complet du corps (50 min)"
-      }
-    },
-    "ru": {
-      "title": "Шоколадный скраб для тела и массаж",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Шоколадный скраб для тела",
-        "4": "Маска для лица",
-        "5": "Массаж всего тела (50 мин.)"
-      }
-    },
-    "es": {
-      "title": "Exfoliante corporal de chocolate y masaje",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con chocolate",
-        "4": "Mascarilla facial",
-        "5": "Masaje corporal completo (50 min)"
-      }
-    },
-    "it": {
-      "title": "Scrub corpo al cioccolato e massaggio",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo al cioccolato",
-        "4": "Maschera per il viso",
-        "5": "Massaggio completo del corpo (50 min)"
-      }
-    },
-    "sr": {
-      "title": "Piling tela od čokolade i masaža",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Čokoladni piling za telo",
-        "4": "Maska za lice",
-        "5": "Masaža celog tela (50 min)"
-      }
-    },
-    "sk": {
-      "title": "Čokoládový telový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Čokoládový telový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého tela (50 min)"
-      }
-    },
-    "et": {
-      "title": "Šokolaadi kehakoorimine ja massaaž",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Šokolaadi kehakoorimine",
-        "4": "Näomask",
-        "5": "Kogu keha massaaž (50 min)"
-      }
-    },
-    "hu": {
-      "title": "Csokoládés testradír és masszázs",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Csokoládés testradír",
-        "4": "Arcpakolás",
-        "5": "Teljes testmasszázs (50 perc)"
-      }
-    },
-    "pl": {
-      "title": "Czekoladowy peeling ciała i masaż",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Czekoladowy peeling do ciała",
-        "4": "Maska na twarz",
-        "5": "Masaż całego ciała (50 min)"
-      }
-    },
-    "cs": {
-      "title": "Čokoládový tělový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Čokoládový tělový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého těla (50 min)"
-      }
-    },
-    "tr": {
-      "title": "Çikolata Vücut Peelingi ve Masaj",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Çikolata Vücut Peelingi",
-        "4": "Yüz maskesi",
-        "5": "Tüm vücut masajı (50 dk)"
-      }
-    },
-    "zh": {
-      "title": "巧克力身体磨砂与按摩",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "巧克力身体磨砂",
-        "4": "面膜",
-        "5": "全身按摩 (50 分钟)"
-      }
-    },
-    "ko": {
-      "title": "초콜릿 바디 스크럽 및 마사지",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "초콜릿 바디 스크럽",
-        "4": "얼굴 팩",
-        "5": "전신 마사지 (50분)"
-      }
-    }
-  }
-},
-{
-  "id": "7",
-  "image": "assets/images/7.png",
-  "category": "packages",
-  "time": "2 Hrs",
-  "price_info": {
-    "salary": 42,
-    "after_disc": 25,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Salt Body Scrub and Massage",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Salt Body Scrub",
-        "4": "Face Mask",
-        "5": "Full Body Massage (50 Mins)"
-      }
-    },
-    "ar": {
-      "title": "سنفرة الجسم بالملح والمساج",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة الملح للجسم",
-        "4": "ماسك للوجه",
-        "5": "مساج كامل للجسم (50 دقيقة)"
-      }
-    },
-    "de": {
-      "title": "Salz-Körperpeeling und Massage",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Salz-Körperpeeling",
-        "4": "Gesichtsmaske",
-        "5": "Ganzkörpermassage (50 Min.)"
-      }
-    },
-    "fr": {
-      "title": "Gommage du corps au sel et massage",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel au sel",
-        "4": "Masque facial",
-        "5": "Massage complet du corps (50 min)"
-      }
-    },
-    "ru": {
-      "title": "Солевой скраб для тела и массаж",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Солевой скраб для тела",
-        "4": "Маска для лица",
-        "5": "Массаж всего тела (50 мин.)"
-      }
-    },
-    "es": {
-      "title": "Exfoliante corporal de sal y masaje",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con sal",
-        "4": "Mascarilla facial",
-        "5": "Masaje corporal completo (50 min)"
-      }
-    },
-    "it": {
-      "title": "Scrub corpo al sale e massaggio",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo al sale",
-        "4": "Maschera per il viso",
-        "5": "Massaggio completo del corpo (50 min)"
-      }
-    },
-    "sr": {
-      "title": "Piling tela solju i masaža",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Slani piling za telo",
-        "4": "Maska za lice",
-        "5": "Masaža celog tela (50 min)"
-      }
-    },
-    "sk": {
-      "title": "Soľný telový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Soľný telový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého tela (50 min)"
-      }
-    },
-    "et": {
-      "title": "Soola-kehakoorimine ja massaaž",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Soola-kehakoorimine",
-        "4": "Näomask",
-        "5": "Kogu keha massaaž (50 min)"
-      }
-    },
-    "hu": {
-      "title": "Sós testradír és masszázs",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Sós testradír",
-        "4": "Arcpakolás",
-        "5": "Teljes testmasszázs (50 perc)"
-      }
-    },
-    "pl": {
-      "title": "Solny peeling ciała i masaż",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Solny peeling do ciała",
-        "4": "Maska na twarz",
-        "5": "Masaż całego ciała (50 min)"
-      }
-    },
-    "cs": {
-      "title": "Solný tělový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Solný tělový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého těla (50 min)"
-      }
-    },
-    "tr": {
-      "title": "Tuz Vücut Peelingi ve Masaj",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Tuz Vücut Peelingi",
-        "4": "Yüz maskesi",
-        "5": "Tüm vücut masajı (50 dk)"
-      }
-    },
-    "zh": {
-      "title": "海盐身体磨砂与按摩",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "海盐身体磨砂",
-        "4": "面膜",
-        "5": "全身按摩 (50 分钟)"
-      }
-    },
-    "ko": {
-      "title": "솔트 바디 스크럽 및 마사지",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "솔트 바디 스크럽",
-        "4": "얼굴 팩",
-        "5": "전신 마사지 (50분)"
-      }
-    }
-  }
-},
-
-    {
-  "id": "8",
-  "image": "assets/images/8.png",
-  "category": "packages",
-  "time": "2 Hrs",
-  "price_info": {
-    "salary": 42,
-    "after_disc": 25,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Clay Body Scrub and Massage",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Clay Body Scrub",
-        "4": "Face Mask",
-        "5": "Full Body Massage (50 Mins)"
-      }
-    },
-    "ar": {
-      "title": "سنفرة الجسم بالطمي والمساج",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة الطمي للجسم",
-        "4": "ماسك للوجه",
-        "5": "مساج كامل للجسم (50 دقيقة)"
-      }
-    },
-    "de": {
-      "title": "Tonerde-Körperpeeling und Massage",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Tonerde-Körperpeeling",
-        "4": "Gesichtsmaske",
-        "5": "Ganzkörpermassage (50 Min.)"
-      }
-    },
-    "fr": {
-      "title": "Gommage du corps à l'argile et massage",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel à l'argile",
-        "4": "Masque facial",
-        "5": "Massage complet du corps (50 min)"
-      }
-    },
-    "ru": {
-      "title": "Глиняный скраб для тела и массаж",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Глиняный скраб для тела",
-        "4": "Маска для лица",
-        "5": "Массаж всего тела (50 мин.)"
-      }
-    },
-    "es": {
-      "title": "Exfoliante corporal de arcilla y masaje",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con arcilla",
-        "4": "Mascarilla facial",
-        "5": "Masaje corporal completo (50 min)"
-      }
-    },
-    "it": {
-      "title": "Scrub corpo all'argilla e massaggio",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo all'argilla",
-        "4": "Maschera per il viso",
-        "5": "Massaggio completo del corpo (50 min)"
-      }
-    },
-    "sr": {
-      "title": "Piling tela glinom i masaža",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling glinom za telo",
-        "4": "Maska za lice",
-        "5": "Masaža celog tela (50 min)"
-      }
-    },
-    "sk": {
-      "title": "Ílový telový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Ílový telový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého tela (50 min)"
-      }
-    },
-    "et": {
-      "title": "Saviga kehakoorimine ja massaaž",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Saviga kehakoorimine",
-        "4": "Näomask",
-        "5": "Kogu keha massaaž (50 min)"
-      }
-    },
-    "hu": {
-      "title": "Agyagos testradír és masszázs",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Agyagos testradír",
-        "4": "Arcpakolás",
-        "5": "Teljes testmasszázs (50 perc)"
-      }
-    },
-    "pl": {
-      "title": "Glinkowy peeling ciała i masaż",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Peeling glinkowy do ciała",
-        "4": "Maska na twarz",
-        "5": "Masaż całego ciała (50 min)"
-      }
-    },
-    "cs": {
-      "title": "Jílový tělový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Jílový tělový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého těla (50 min)"
-      }
-    },
-    "tr": {
-      "title": "Kil Vücut Peelingi ve Masaj",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Kil Vücut Peelingi",
-        "4": "Yüz maskesi",
-        "5": "Tüm vücut masajı (50 dk)"
-      }
-    },
-    "zh": {
-      "title": "泥土身体磨砂与按摩",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "泥土身体磨砂",
-        "4": "面膜",
-        "5": "全身按摩 (50 分钟)"
-      }
-    },
-    "ko": {
-      "title": "클레이 바디 스크럽 및 마사지",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "클레이 바디 스크럽",
-        "4": "얼굴 팩",
-        "5": "전신 마사지 (50분)"
-      }
-    }
-  }
-},
-    
-{
-  "id": "9",
-  "image": "assets/images/9.png",
-  "category": "packages",
-  "time": "2 Hrs",
-  "price_info": {
-    "salary": 42,
-    "after_disc": 25,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Coffee Body Scrub and Massage",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Coffee Body Scrub",
-        "4": "Face Mask",
-        "5": "Full Body Massage (50 Mins)"
-      }
-    },
-    "ar": {
-      "title": "سنفرة الجسم بالقهوة والمساج",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة القهوة للجسم",
-        "4": "ماسك للوجه",
-        "5": "مساج كامل للجسم (50 دقيقة)"
-      }
-    },
-    "de": {
-      "title": "Kaffee-Körperpeeling und Massage",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Kaffee-Körperpeeling",
-        "4": "Gesichtsmaske",
-        "5": "Ganzkörpermassage (50 Min.)"
-      }
-    },
-    "fr": {
-      "title": "Gommage du corps au café et massage",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel au café",
-        "4": "Masque facial",
-        "5": "Massage complet du corps (50 min)"
-      }
-    },
-    "ru": {
-      "title": "Кофейный скраб для тела и массаж",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Кофейный скраб для тела",
-        "4": "Маска для лица",
-        "5": "Массаж всего тела (50 мин.)"
-      }
-    },
-    "es": {
-      "title": "Exfoliante corporal de café y masaje",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con café",
-        "4": "Mascarilla facial",
-        "5": "Masaje corporal completo (50 min)"
-      }
-    },
-    "it": {
-      "title": "Scrub corpo al caffè e massaggio",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo al caffè",
-        "4": "Maschera per il viso",
-        "5": "Massaggio completo del corpo (50 min)"
-      }
-    },
-    "sr": {
-      "title": "Piling tela kafom i masaža",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling kafom za telo",
-        "4": "Maska za lice",
-        "5": "Masaža celog tela (50 min)"
-      }
-    },
-    "sk": {
-      "title": "Kávový telový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Kávový telový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého tela (50 min)"
-      }
-    },
-    "et": {
-      "title": "Kohviga kehakoorimine ja massaaž",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Kohviga kehakoorimine",
-        "4": "Näomask",
-        "5": "Kogu keha massaaž (50 min)"
-      }
-    },
-    "hu": {
-      "title": "Kávés testradír és masszázs",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Kávés testradír",
-        "4": "Arcpakolás",
-        "5": "Teljes testmasszázs (50 perc)"
-      }
-    },
-    "pl": {
-      "title": "Kawowy peeling ciała i masaż",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Kawowy peeling do ciała",
-        "4": "Maska na twarz",
-        "5": "Masaż całego ciała (50 min)"
-      }
-    },
-    "cs": {
-      "title": "Kávový tělový peeling a masáž",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Kávový tělový peeling",
-        "4": "Pleťová maska",
-        "5": "Masáž celého těla (50 min)"
-      }
-    },
-    "tr": {
-      "title": "Kahve Vücut Peelingi ve Masaj",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Kahve Vücut Peelingi",
-        "4": "Yüz maskesi",
-        "5": "Tüm vücut masajı (50 dk)"
-      }
-    },
-    "zh": {
-      "title": "咖啡身体磨砂与按摩",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "咖啡身体磨砂",
-        "4": "面膜",
-        "5": "全身按摩 (50 分钟)"
-      }
-    },
-    "ko": {
-      "title": "커피 바디 스크럽 및 마사지",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "커피 바디 스크럽",
-        "4": "얼굴 팩",
-        "5": "전신 마사지 (50분)"
-      }
-    }
-  }
-},
-
-    
-    
-
-
-    {
-  "id": "10",
-  "image": "assets/images/10.png",
-  "category": "massage",
-  "time": "60 Mins",
-  "price_info": {
-    "salary": 23,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Swedish Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "A classic technique that uses long, flowing strokes, kneading, and circular movements to ease tension and improve circulation, leaving you completely relaxed."
-      }
-    },
-    "ar": {
-      "title": "المساج السويدي",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "تقنية كلاسيكية تستخدم حركات انسيابية طويلة، وعجن، وحركات دائرية لتخفيف التوتر وتحسين الدورة الدموية، مما يمنحك استرخاءً تاماً."
-      }
-    },
-    "de": {
-      "title": "Schwedische Massage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Eine klassische Technik mit langen, fließenden Streichbewegungen, Kneten und kreisenden Bewegungen, um Spannungen zu lösen, die Durchblutung zu fördern und tiefe Entspannung zu bewirken."
-      }
-    },
-    "fr": {
-      "title": "Massage Suédois",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Une technique classique utilisant de longs mouvements fluides, des pétrissages et des mouvements circulaires pour apaiser les tensions et améliorer la circulation, vous laissant totalement détendu."
-      }
-    },
-    "ru": {
-      "title": "Шведский массаж",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Классическая техника, сочетающая длинные плавные движения, разминание и круговые жесты для снятия напряжения и улучшения кровообращения, обеспечивая полное расслабление."
-      }
-    },
-    "es": {
-      "title": "Masaje Sueco",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Una técnica clásica que utiliza movimientos largos y fluidos, amasamiento y movimientos circulares para aliviar la tensión y mejorar la circulación, dejándote completamente relajado."
-      }
-    },
-    "it": {
-      "title": "Massaggio Svedese",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Una tecnica classica che utilizza movimenti lunghi e fluidi, impastamenti e movimenti circolari per sciogliere le tensioni e migliorare la circolazione, regalandoti un relax totale."
-      }
-    },
-    "sr": {
-      "title": "Švedska masaža",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Klasična tehnika koja koristi duge, tečne pokrete, gnječenje i kružne pokrete za ublažavanje napetosti i poboljšanje cirkulacije, ostavljajući vas potpuno opuštenim."
-      }
-    },
-    "sk": {
-      "title": "Švédska masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Klasická technika využívajúca dlhé, plynulé ťahy, miesenie a krúživé pohyby na zmiernenie napätia a zlepšenie krvného obehu, čím vás zanechá úplne uvoľnených."
-      }
-    },
-    "et": {
-      "title": "Rootsi massaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "Klassikaline tehnika, mis kasutab pikki voolavaid liigutusi, sõtkumist ja ringjaid liigutusi pinge leevendamiseks ja vereringe parandamiseks, pakkudes täielikku lõõgastust."
-      }
-    },
-    "hu": {
-      "title": "Svédmasszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "Klasszikus technika hosszú, simító mozdulatokkal, gyúrással és körkörös mozdulatokkal a feszültség oldására és a keringés javítására, a teljes ellazulásért."
-      }
-    },
-    "pl": {
-      "title": "Masaż szwedzki",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Klasyczna technika wykorzystująca długie, płynne pociągnięcia, ugniatanie i ruchy okrężne, aby złagodzić napięcie i poprawić krążenie, pozostawiając Cię całkowicie zrelaksowanym."
-      }
-    },
-    "cs": {
-      "title": "Švédská masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Klasická technika využívající dlouhé, plynulé tahy, hnětení a krouživé pohyby ke zmírnění napětí a zlepšení krevního oběhu, která vás zanechá zcela uvolněné."
-      }
-    },
-    "tr": {
-      "title": "İsveç Masajı",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Gerginliği azaltmak ve kan dolaşımını iyileştirmek için uzun, akıcı vuruşlar, yoğurma ve dairesel hareketler kullanan, sizi tamamen rahatlatan klasik bir teknik."
-      }
-    },
-    "zh": {
-      "title": "瑞典式按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "一种经典的按摩技术，通过长而流畅的推拿、揉捏和圆周运动来缓解紧张感并促进血液循环，让您身心完全放松。"
-      }
-    },
-    "ko": {
-      "title": "스웨디시 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "긴 흐름의 스트로크, 주무르기, 원형 동작을 사용하여 긴장을 완화하고 혈액순환을 개선하여 완전한 휴식을 선사하는 클래식한 기법입니다."
-      }
-    }
-  }
-},
-    
-      {
-  "id": "11",
-  "image": "assets/images/11.png",
-  "category": "massage",
-  "time": "60 Mins",
-  "price_info": {
-    "salary": 23,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Aromatherapy Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "This massage incorporates essential oils extracted from plants, offering a dual benefit of soothing aromas and gentle massage techniques to balance your mind and body."
-      }
-    },
-    "ar": {
-      "title": "مساج الروائح العطرية",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "يجمع هذا التدليك بين الزيوت العطرية المستخلصة من النباتات، مما يوفر فائدة مزدوجة من الروائح المهدئة وتقنيات التدليك اللطيفة لموازنة عقلك وجسمك."
-      }
-    },
-    "de": {
-      "title": "Aromatherapie-Massage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Diese Massage kombiniert ätherische Öle aus Pflanzen und bietet den doppelten Nutzen von beruhigenden Aromen und sanften Massagetechniken, um Geist und Körper in Einklang zu bringen."
-      }
-    },
-    "fr": {
-      "title": "Massage d'Aromathérapie",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Ce massage utilise des huiles essentielles extraites de plantes, offrant le double avantage d'arômes apaisants et de techniques de massage douces pour équilibrer l'esprit et le corps."
-      }
-    },
-    "ru": {
-      "title": "Ароматерапевтический массаж",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Этот массаж включает использование эфирных масел растений, обеспечивая двойную пользу: успокаивающие ароматы и мягкие техники массажа для гармонии души и тела."
-      }
-    },
-    "es": {
-      "title": "Masaje de Aromaterapia",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Este masaje incorpora aceites esenciales extraídos de plantas, ofreciendo el doble beneficio de aromas relajantes y técnicas de masaje suaves para equilibrar mente y cuerpo."
-      }
-    },
-    "it": {
-      "title": "Massaggio Aromaterapico",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Questo massaggio utilizza oli essenziali estratti dalle piante, offrendo il doppio beneficio di aromi rilassanti e tecniche di massaggio delicate per equilibrare mente e corpo."
-      }
-    },
-    "sr": {
-      "title": "Aromaterapijska masaža",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Ova masaža uključuje esencijalna ulja ekstrahovana iz biljaka, nudeći dvostruku korist umirujućih mirisa i nežnih tehnika masaže za balans uma i tela."
-      }
-    },
-    "sk": {
-      "title": "Aromaterapeutická masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Táto masáž využíva esenciálne oleje z rastlín a ponúka dvojitý prínos upokojujúcich vôní a jemných masážnych techník na vyváženie mysle a tela."
-      }
-    },
-    "et": {
-      "title": "Aroomiteraapiline massaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "See massaaž kasutab taimedest ekstraheeritud eeterlikke õlisid, pakkudes rahustavate aroomide ja õrnade massaaživõtete kahekordset kasu vaimu ja keha tasakaalustamiseks."
-      }
-    },
-    "hu": {
-      "title": "Aromaterápiás masszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "Ez a masszázs növényi illóolajokat használ, így az illatok és a gyengéd technikák kettős előnyével teremti meg az elme és a test egyensúlyát."
-      }
-    },
-    "pl": {
-      "title": "Masaż aromaterapeutyczny",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Ten masaż wykorzystuje olejki eteryczne z roślin, oferując podwójną korzyść: kojące aromaty i delikatne techniki masażu, które równoważą umysł i ciało."
-      }
-    },
-    "cs": {
-      "title": "Aromaterapeutická masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Tato masáž využívá esenciální oleje z rostlin a nabízí dvojí přínos uklidňujících vůní a jemných masážních technik k vyvážení mysli i těla."
-      }
-    },
-    "tr": {
-      "title": "Aromaterapi Masajı",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Bitkilerden çıkarılan uçucu yağları içeren bu masaj, zihninizi ve vücudunuzu dengelemek için yatıştırıcı aromalar ve nazik masaj tekniklerinin ikili faydasını sunar."
-      }
-    },
-    "zh": {
-      "title": "芳香疗法按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "这种按摩融合了从植物中提取的精油，通过舒缓的香气和柔和的按摩技术双管齐下，平衡您的身心。"
-      }
-    },
-    "ko": {
-      "title": "아로마테라피 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "식물에서 추출한 에센셜 오일을 사용하는 이 마사지는 마음과 몸의 균형을 잡아주는 은은한 향기와 부드러운 마사지 기법의 두 가지 효과를 제공합니다."
-      }
-    }
-  }
-},
-
-
-    
-     {
-  "id": "12",
-  "image": "assets/images/12.png",
-  "category": "massage",
-  "time": "60 Mins",
-  "price_info": {
-    "salary": 23,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Medical Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "A therapeutic approach that targets specific musculoskeletal issues, using clinical techniques to alleviate pain, reduce inflammation, and support recovery from injuries."
-      }
-    },
-    "ar": {
-      "title": "المساج الطبي",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "نهج علاجي يستهدف مشاكل العضلات والعظام المحددة، باستخدام تقنيات سريرية لتخفيف الألم، وتقليل الالتهاب، ودعم التعافي من الإصابات."
-      }
-    },
-    "de": {
-      "title": "Medizinische Massage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Ein therapeutischer Ansatz, der auf spezifische Probleme des Bewegungsapparats abzielt und klinische Techniken einsetzt, um Schmerzen zu lindern, Entzündungen zu hemmen und die Genesung nach Verletzungen zu unterstützen."
-      }
-    },
-    "fr": {
-      "title": "Massage Médical",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Une approche thérapeutique qui cible des problèmes musculo-squelettiques spécifiques, utilisant des techniques cliniques pour soulager la douleur, réduire l'inflammation et favoriser la guérison des blessures."
-      }
-    },
-    "ru": {
-      "title": "Медицинский массаж",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Терапевтический подход, направленный на решение конкретных проблем опорно-двигательного аппарата с использованием клинических методов для облегчения боли, уменьшения воспаления и ускорения восстановления после травм."
-      }
-    },
-    "es": {
-      "title": "Masaje Médico",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Un enfoque terapéutico que aborda problemas musculoesqueléticos específicos, utilizando técnicas clínicas para aliviar el dolor, reducir la inflamación y apoyar la recuperación de lesiones."
-      }
-    },
-    "it": {
-      "title": "Massaggio Medico",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Un approccio terapeutico che mira a specifici problemi muscolo-scheletrici, utilizzando tecniche cliniche per alleviare il dolore, ridurre l'infiammazione e supportare il recupero dagli infortuni."
-      }
-    },
-    "sr": {
-      "title": "Medicinska masaža",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Terapeutski pristup koji cilja na specifične mišićno-skeletne probleme, koristeći kliničke tehnike za ublažavanje bolova, smanjenje upale i podršku oporavku od povreda."
-      }
-    },
-    "sk": {
-      "title": "Liečebná masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Terapeutický prístup zameraný na špecifické muskuloskeletálne problémy, využívajúci klinické techniky na zmiernenie bolesti, zníženie zápalu a podporu zotavenia po zraneniach."
-      }
-    },
-    "et": {
-      "title": "Ravimassaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "Terapeutiline lähenemine, mis on suunatud konkreetsetele lihas-skeleti probleemidele, kasutades kliinilisi võtteid valu leevendamiseks, põletiku vähendamiseks ja vigastustest taastumise toetamiseks."
-      }
-    },
-    "hu": {
-      "title": "Orvosi masszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "Terápiás megközelítés, amely specifikus váz- és izomrendszeri problémákra irányul, klinikai technikákat alkalmazva a fájdalom enyhítésére, a gyulladás csökkentésére és a sérülések utáni felépülés segítésére."
-      }
-    },
-    "pl": {
-      "title": "Masaż medyczny",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Podejście terapeutyczne ukierunkowane na konkretne problemy układu mięśniowo-szkieletowego, wykorzystujące techniki kliniczne w celu łagodzenia bólu, zmniejszania stanów zapalnych i wspomagania regeneracji po urazach."
-      }
-    },
-    "cs": {
-      "title": "Lékařská masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Terapeutický přístup zaměřený na specifické muskuloskeletální problémy, využívající klinické techniky ke zmírnění bolesti, snížení zánětu a podpoře zotavení po úrazech."
-      }
-    },
-    "tr": {
-      "title": "Medikal Masaj",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Ağrıyı hafifletmek, iltihabı azaltmak ve yaralanmalardan iyileşmeyi desteklemek için klinik teknikler kullanan, spesifik kas-iskelet sorunlarını hedefleyen terapötik bir yaklaşım."
-      }
-    },
-    "zh": {
-      "title": "医疗按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "一种针对特定肌肉骨骼问题的治疗方法，使用临床技术来缓解疼痛、减轻炎症并支持伤后恢复。"
-      }
-    },
-    "ko": {
-      "title": "의료 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "특정 근골격계 문제를 목표로 하는 치료적 접근 방식으로, 임상 기법을 사용하여 통증을 완화하고 염증을 줄이며 부상 회복을 돕습니다."
-      }
-    }
-  }
-},
-
-{
-  "id": "13",
-  "image": "assets/images/13.png",
-  "category": "massage",
-  "time": "60 Mins",
-  "price_info": {
-    "salary": 23,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Classic Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "Specially designed for active individuals and athletes, this massage focuses on deep tissue work and stretching to improve performance, prevent injuries, and accelerate recovery."
-      }
-    },
-    "ar": {
-      "title": "المساج الكلاسيكي",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "صُمم خصيصاً للأشخاص النشيطين والرياضيين، حيث يركز على العمل على الأنسجة العميقة والإطالات لتحسين الأداء، والوقاية من الإصابات، وتسريع عملية التعافي."
-      }
-    },
-    "de": {
-      "title": "Klassische Massage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Speziell für aktive Menschen und Sportler entwickelt, konzentriert sich diese Massage auf Tiefengewebsarbeit und Dehnung, um die Leistung zu steigern, Verletzungen vorzubeugen und die Erholung zu beschleunigen."
-      }
-    },
-    "fr": {
-      "title": "Massage Classique",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Spécialement conçu pour les personnes actives et les athlètes, ce massage se concentre sur le travail des tissus profonds et les étirements pour améliorer les performances, prévenir les blessures et accélérer la récupération."
-      }
-    },
-    "ru": {
-      "title": "Классический массаж",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Этот массаж, специально разработанный для активных людей и спортсменов, направлен на глубокую проработку тканей и растяжку для повышения работоспособности, предотвращения травм и ускорения восстановления."
-      }
-    },
-    "es": {
-      "title": "Masaje Clásico",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Especialmente diseñado para personas activas y deportistas, este masaje se centra en el trabajo de tejidos profundos y estiramientos para mejorar el rendimiento, prevenir lesiones y acelerar la recuperación."
-      }
-    },
-    "it": {
-      "title": "Massaggio Classico",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Appositamente progettato per persone attive e atleti, questo massaggio si concentra sul lavoro dei tessuti profondi e sullo stretching per migliorare le prestazioni, prevenire infortuni e accelerare il recupero."
-      }
-    },
-    "sr": {
-      "title": "Klasična masaža",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Specijalno dizajnirana za aktivne pojedince i sportiste, ova masaža se fokusira na rad dubokih tkiva i istezanje radi poboljšanja performansi, sprečavanja povreda i ubrzanja oporavka."
-      }
-    },
-    "sk": {
-      "title": "Klasická masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Táto masáž, špeciálne navrhnutá pre aktívnych ľudí a športovcov, sa zameriava na prácu s hlbokými tkanivami a strečing na zlepšenie výkonu, prevenciu zranení a urýchlenie regenerácie."
-      }
-    },
-    "et": {
-      "title": "Klassikaline massaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "Spetsiaalselt aktiivsetele inimestele ja sportlastele mõeldud massaaž keskendub süvakudedele ja venitustele, et parandada sooritust, ennetada vigastusi ja kiirendada taastumist."
-      }
-    },
-    "hu": {
-      "title": "Klasszikus masszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "Kifejezetten aktív egyének és sportolók számára kifejlesztve; a mélyszöveti munkára és a nyújtásra összpontosít a teljesítmény javítása, a sérülések megelőzése és a felépülés felgyorsítása érdekében."
-      }
-    },
-    "pl": {
-      "title": "Masaż klasyczny",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Zaprojektowany specjalnie dla osób aktywnych i sportowców, masaż ten koncentruje się na pracy na tkankach głębokich i rozciąganiu, aby poprawić wydajność, zapobiegać kontuzjom i przyspieszyć regenerację."
-      }
-    },
-    "cs": {
-      "title": "Klasická masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Tato masáž, speciálně navržená pro aktivní jedince a sportovce, se zaměřuje na práci s hlubokými tkáněmi a strečink pro zlepšení výkonu, prevenci zranění a urychlení regenerace."
-      }
-    },
-    "tr": {
-      "title": "Klasik Masaj",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Aktif bireyler ve sporcular için özel olarak tasarlanan bu masaj, performansı artırmak, yaralanmaları önlemek ve iyileşmeyi hızlandırmak için derin doku çalışmasına ve esnetmeye odaklanır."
-      }
-    },
-    "zh": {
-      "title": "经典按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "专为活跃人士和运动员设计，这种按摩侧重于深层组织推拿和拉伸，以提高表现、预防受伤并加速恢复。"
-      }
-    },
-    "ko": {
-      "title": "클래식 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "활동적인 분들과 운동선수들을 위해 특별히 고안된 이 마사지는 심부 조직 관리와 스트레칭에 집중하여 경기력을 향상시키고 부상을 예방하며 회복을 촉진합니다."
-      }
-    }
-  }
-},
-    
   {
-  "id": "14",
-  "image": "assets/images/14.png",
-  "category": "massage",
-  "time": "60 Mins",
-  "price_info": {
-    "salary": 31,
-    "after_disc": 20,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Deep Tissue Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "This massage employs firm, targeted pressure to reach deeper layers of muscle and connective tissue, effectively relieving chronic tension and alleviating pain."
-      }
+    "id": "1",
+    "image": "assets/images/1.webp",
+    "category": "packages",
+    "time": "3 Hrs",
+    "price_info": {
+      "salary": 59,
+      "after_disc": 35,
+      "currency": "€"
     },
-    "ar": {
-      "title": "مساج الأنسجة العميقة",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "يستخدم هذا التدليك ضغطاً قوياً ومستهدفاً للوصول إلى الطبقات العميقة من العضلات والأنسجة الضامة، مما يساعد بفعالية في تخفيف التوتر المزمن وتسكين الآلام."
-      }
-    },
-    "de": {
-      "title": "Tiefengewebsmassage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Diese Massage verwendet festen, gezielten Druck, um tiefere Schichten von Muskeln und Bindegewebe zu erreichen und chronische Verspannungen sowie Schmerzen effektiv zu lösen."
-      }
-    },
-    "fr": {
-      "title": "Massage des Tissus Profonds",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Ce massage utilise une pression ferme et ciblée pour atteindre les couches profondes des muscles et des tissus conjonctifs, soulageant efficacement les tensions chroniques et la douleur."
-      }
-    },
-    "ru": {
-      "title": "Глубокотканный массаж",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Этот массаж использует сильное, точечное давление для проработки глубоких слоев мышц и соединительной ткани, эффективно снимая хроническое напряжение и боль."
-      }
-    },
-    "es": {
-      "title": "Masaje de Tejido Profundo",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Este masaje emplea una presión firme y dirigida para llegar a las capas más profundas de los músculos y el tejido conectivo, aliviando eficazmente la tensión crónica y el dolor."
-      }
-    },
-    "it": {
-      "title": "Massaggio Decontratturante / Deep Tissue",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Questo massaggio utilizza una pressione decisa e mirata per raggiungere gli strati più profondi dei muscoli e del tessuto connettivo, alleviando efficacemente le tensioni croniche e il dolore."
-      }
-    },
-    "sr": {
-      "title": "Masaža dubokih tkiva",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Ova masaža koristi čvrst, ciljani pritisak kako bi došla do dubljih slojeva mišića i vezivnog tkiva, efikasno ublažavajući hroničnu napetost i bol."
-      }
-    },
-    "sk": {
-      "title": "Hĺbková masáž tkanív",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Táto masáž využíva pevný, cielený tlak na dosiahnutie hlbších vrstiev svalov a spojivového tkaniva, čím účinne uvoľňuje chronické napätie a zmierňuje bolesť."
-      }
-    },
-    "et": {
-      "title": "Süvakudede massaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "See massaaž kasutab tugevat ja suunatud survet, et jõuda lihaste ja sidekoe sügavamate kihtideni, leevendades tõhusalt kroonilist pinget ja valu."
-      }
-    },
-    "hu": {
-      "title": "Mélyszöveti masszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "Ez a masszázs erős, célzott nyomást alkalmaz az izmok és a kötőszövet mélyebb rétegeinek eléréséhez, hatékonyan oldva a krónikus feszültséget és a fájdalmat."
-      }
-    },
-    "pl": {
-      "title": "Masaż tkanek głębokich",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Ten masaż wykorzystuje zdecydowany, celowany ucisk, aby dotrzeć do głębszych warstw mięśni i tkanki łącznej, skutecznie uwalniając od przewlekłego napięcia i bólu."
-      }
-    },
-    "cs": {
-      "title": "Hloubková masáž tkání",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Tato masáž využívá pevný, cílený tlak k dosažení hlubších vrstev svalů a pojivové tkáně, čímž účinně uvolňuje chronické napětí a zmírňuje bolest."
-      }
-    },
-    "tr": {
-      "title": "Derin Doku Masajı",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Bu masaj, kasların ve bağ dokusunun daha derin katmanlarına ulaşmak için sert ve hedeflenmiş bir basınç uygulayarak kronik gerginliği ve ağrıyı etkili bir şekilde giderir."
-      }
-    },
-    "zh": {
-      "title": "深层组织按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "这种按摩采用坚实、有针对性的压力来触及肌肉和结缔组织的深层，有效缓解慢性紧张和疼痛。"
-      }
-    },
-    "ko": {
-      "title": "딥 티슈 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "이 마사지는 단단하고 집중적인 압력을 가하여 근육과 결합 조직의 깊은 층까지 도달함으로써 만성적인 긴장을 풀고 통증을 효과적으로 완화합니다."
-      }
-    }
-  }
-},
-    
-{
-  "id": "15",
-  "image": "assets/images/15.png",
-  "category": "massage",
-  "time": "60 Mins",
-  "price_info": {
-    "salary": 31,
-    "after_disc": 20,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Sport Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "Specially designed for active individuals and athletes, this massage focuses on deep tissue work and stretching to improve performance, prevent injuries, and accelerate recovery."
-      }
-    },
-    "ar": {
-      "title": "المساج الرياضي",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "صُمم خصيصاً للأشخاص النشيطين والرياضيين، حيث يركز على العمل على الأنسجة العميقة والإطالات لتحسين الأداء، والوقاية من الإصابات، وتسريع عملية التعافي."
-      }
-    },
-    "de": {
-      "title": "Sportmassage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Speziell für aktive Menschen und Sportler entwickelt, konzentriert sich diese Massage auf Tiefengewebsarbeit und Dehnung, um die Leistung zu steigern, Verletzungen vorzubeugen und die Erholung zu beschleunigen."
-      }
-    },
-    "fr": {
-      "title": "Massage Sportif",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Spécialement conçu pour les personnes actives et les athlètes, ce massage se concentre sur le travail des tissus profonds et les étirements pour améliorer les performances, prévenir les blessures et accélérer la récupération."
-      }
-    },
-    "ru": {
-      "title": "Спортивный массаж",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Этот массаж, специально разработанный для активных людей и спортсменов, направлен на глубокую проработку тканей и растяжку для повышения работоспособности, предотвращения травм и ускорения восстановления."
-      }
-    },
-    "es": {
-      "title": "Masaje Deportivo",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Especialmente diseñado para personas activas y deportistas, este massage se centra en el trabajo de tejidos profundos y estiramientos para mejorar el rendimiento, prevenir lesiones y acelerar la recuperación."
-      }
-    },
-    "it": {
-      "title": "Massaggio Sportivo",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Appositamente progettato per persone attive e atleti, questo massaggio si concentra sul lavoro dei tessuti profondi e sullo stretching per migliorare le prestazioni, prevenire infortuni e accelerare il recupero."
-      }
-    },
-    "sr": {
-      "title": "Sportska masaža",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Specijalno dizajnirana za aktivne pojedince i sportiste, ova masaža se fokusira na rad dubokih tkiva i istezanje radi poboljšanja performansi, sprečavanja povreda i ubrzanja oporavka."
-      }
-    },
-    "sk": {
-      "title": "Športová masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Táto masáž, špeciálne navrhnutá pre aktívnych ľudí a športovcov, sa zameriava na prácu s hlbokými tkanivami a strečing na zlepšenie výkonu, prevenciu zranení a urýchlenie regenerácie."
-      }
-    },
-    "et": {
-      "title": "Spordimassaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "Spetsiaalselt aktiivsetele inimestele ja sportlastele mõeldud massaaž keskendub süvakudedele ja venitustele, et parandada sooritust, ennetada vigastusi ja kiirendada taastumist."
-      }
-    },
-    "hu": {
-      "title": "Sportmasszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "Kifejezetten aktív egyének és sportolók számára kifejlesztve; a mélyszöveti munkára és a nyújtásra összpontosít a teljesítmény javítása, a sérülések megelőzése és a felépülés felgyorsítása érdekében."
-      }
-    },
-    "pl": {
-      "title": "Masaż sportowy",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Zaprojektowany specjalnie dla osób aktywnych i sportowców, masaż ten koncentruje se na pracy na tkankach głębokich i rozciąganiu, aby poprawić wydajność, zapobiegać kontuzjom i przyspieszyć regenerację."
-      }
-    },
-    "cs": {
-      "title": "Sportovní masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Tato masáž, speciálně navržená pro aktivní jedince a sportovce, se zaměřuje na práci s hlubokými tkáněmi a strečink pro zlepšení výkonu, prevenci zranění a urychlení regenerace."
-      }
-    },
-    "tr": {
-      "title": "Spor Masajı",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Aktif bireyler ve sporcular için özel olarak tasarlanan bu masaj, performansı artırmak, yaralanmaları önlemek ve iyileşmeyi hızlandırmak için derin doku çalışmasına ve esnetmeye odaklanır."
-      }
-    },
-    "zh": {
-      "title": "运动按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "专为活跃人士和运动员设计，这种按摩侧重于深层组织推拿和拉伸，以提高表现、预防受伤并加速恢复。"
-      }
-    },
-    "ko": {
-      "title": "스포츠 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "활동적인 분들과 운동선수들을 위해 특별히 고안된 이 마사지는 심부 조직 관리와 스트레칭에 집중하여 경기력을 향상시키고 부상을 예방하며 회복을 촉진합니다."
+    "translations": {
+      "en": {
+        "title": "VIP Program",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Hammam",
+          "4": "Full Body Chocolate Mask",
+          "5": "Full Body Coconut Mask",
+          "6": "Face Mask",
+          "7": "Full Body Massage (60 Mins)"
+        }
+      },
+      "ar": {
+        "title": "برنامج VIP",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "حمام مغربي",
+          "4": "ماسك شوكولاتة كامل للجسم",
+          "5": "ماسك جوز هند كامل للجسم",
+          "6": "ماسك للوجه",
+          "7": "مساج كامل للجسم (60 دقيقة)"
+        }
+      },
+      "de": {
+        "title": "VIP-Programm",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Hammam",
+          "4": "Ganzkörper-Schokoladenmaske",
+          "5": "Ganzkörper-Kokosmaske",
+          "6": "Gesichtsmaske",
+          "7": "Ganzkörpermassage (60 Min.)"
+        }
+      },
+      "fr": {
+        "title": "Programme VIP",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Hammam",
+          "4": "Masque au chocolat pour tout le corps",
+          "5": "Masque à la noix de coco pour tout le corps",
+          "6": "Masque facial",
+          "7": "Massage complet du corps (60 min)"
+        }
+      },
+      "ru": {
+        "title": "VIP-программа",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Хаммам",
+          "4": "Шоколадная маска для всего тела",
+          "5": "Кокосовая маска для всего тела",
+          "6": "Маска для лица",
+          "7": "Массаж всего тела (60 мин.)"
+        }
+      },
+      "es": {
+        "title": "Programa VIP",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Hammam",
+          "4": "Mascarilla de chocolate para todo el cuerpo",
+          "5": "Mascarilla de coco para todo el cuerpo",
+          "6": "Mascarilla facial",
+          "7": "Masaje corporal completo (60 min)"
+        }
+      },
+      "it": {
+        "title": "Programma VIP",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Hammam",
+          "4": "Maschera al cioccolato per tutto il corpo",
+          "5": "Maschera al cocco per tutto il corpo",
+          "6": "Maschera per il viso",
+          "7": "Massaggio total body (60 min)"
+        }
+      },
+      "sr": {
+        "title": "VIP program",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Hamam",
+          "4": "Čokoladna maska za celo telo",
+          "5": "Kokos maska za celo telo",
+          "6": "Maska za lice",
+          "7": "Masaža celog tela (60 min)"
+        }
+      },
+      "sk": {
+        "title": "VIP program",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Hammam",
+          "4": "Čokoládová maska na celé telo",
+          "5": "Kokosová maska na celé telo",
+          "6": "Pleťová maska",
+          "7": "Masáž celého tela (60 min)"
+        }
+      },
+      "et": {
+        "title": "VIP programm",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Hamam",
+          "4": "Šokolaadi mähis kogu kehale",
+          "5": "Kookose mähis kogu kehale",
+          "6": "Näomask",
+          "7": "Kogu keha massaaž (60 min)"
+        }
+      },
+      "hu": {
+        "title": "VIP program",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Hammam",
+          "4": "Teljes test csokoládé maszk",
+          "5": "Teljes test kókusz maszk",
+          "6": "Arcpakolás",
+          "7": "Teljes testmasszázs (60 perc)"
+        }
+      },
+      "pl": {
+        "title": "Program VIP",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Hammam",
+          "4": "Czekoladowa maska na całe ciało",
+          "5": "Kokosowa maska na całe ciało",
+          "6": "Maska na twarz",
+          "7": "Masaż całego ciała (60 min)"
+        }
+      },
+      "cs": {
+        "title": "VIP program",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Hammam",
+          "4": "Čokoládová maska na celé tělo",
+          "5": "Kokosová maska na celé tělo",
+          "6": "Pleťová maska",
+          "7": "Masáž celého těla (60 min)"
+        }
+      },
+      "tr": {
+        "title": "VIP Programı",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Hamam",
+          "4": "Tüm Vücut Çikolata Maskesi",
+          "5": "Tüm Vücut Hindistan Cevizi Maskesi",
+          "6": "Yüz maskesi",
+          "7": "Tüm Vücut Masajı (60 dk)"
+        }
+      },
+      "zh": {
+        "title": "VIP 方案",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "汉曼",
+          "4": "全身巧克力体膜",
+          "5": "全身椰子体膜",
+          "6": "面膜",
+          "7": "全身按摩 (60 分钟)"
+        }
+      },
+      "ko": {
+        "title": "VIP 프로그램",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "해맘",
+          "4": "전신 초콜릿 팩",
+          "5": "전신 코코넛 팩",
+          "6": "얼굴 팩",
+          "7": "전신 마사지 (60분)"
+        }
       }
     }
-  }
-},
-    
-   {
-  "id": "16",
-  "image": "assets/images/16.png",
-  "category": "massage",
-  "time": "60 Mins",
-  "price_info": {
-    "salary": 31,
-    "after_disc": 20,
-    "currency": "€"
   },
-  "translations": {
-    "en": {
-      "title": "Hot Stone Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "Heated, smooth stones are strategically placed on key points to warm muscles, enhance circulation, and dissolve deep-seated tension for a profoundly soothing experience."
-      }
-    },
-    "ar": {
-      "title": "مساج الأحجار الساخنة",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "توضع أحجار ملساء ساخنة بشكل استراتيجي على نقاط رئيسية لتدفئة العضلات، وتحسين الدورة الدموية، وإذابة التوتر العميق لتجربة مهدئة للغاية."
-      }
-    },
-    "de": {
-      "title": "Hot-Stone-Massage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Erhitzte, glatte Steine werden strategisch auf wichtige Punkte platziert, um die Muskeln zu wärmen, die Durchblutung zu fördern und tiefsitzende Verspannungen für ein tief entspannendes Erlebnis zu lösen."
-      }
-    },
-    "fr": {
-      "title": "Massage aux Pierres Chaudes",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Des pierres lisses et chauffées sont placées stratégiquement sur des points clés pour réchauffer les muscles, améliorer la circulation et dissoudre les tensions profondes pour une expérience profondément apaisante."
-      }
-    },
-    "ru": {
-      "title": "Массаж горячими камнями",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Нагретые гладкие камни стратегически размещаются на ключевых точках, чтобы прогреть мышцы, улучшить кровообращение и снять глубокое напряжение для достижения глубокого успокаивающего эффекта."
-      }
-    },
-    "es": {
-      "title": "Masaje con Piedras Calientes",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Piedras lisas y calientes se colocan estratégicamente en puntos clave para calentar los músculos, mejorar la circulación y disolver la tensión profunda para una experiencia profundamente relajante."
-      }
-    },
-    "it": {
-      "title": "Massaggio con Pietre Calde",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Pietre lisce e riscaldate vengono posizionate strategicamente su punti chiave per riscaldare i muscoli, migliorare la circolazione e sciogliere le tensioni profonde per un'esperienza profondamente lenitiva."
-      }
-    },
-    "sr": {
-      "title": "Masaža toplim kamenjem",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Zagrejan, glatki kamen se strateški postavlja na ključne tačke kako bi zagrejao mišiće, poboljšao cirkulaciju i rastvorio duboku napetost za duboko umirujuće iskustvo."
-      }
-    },
-    "sk": {
-      "title": "Masáž horúcimi kameňmi",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Zohriate, hladké kamene sú strategicky umiestnené na kľúčové body, aby zahriali svaly, zlepšili krvný obeh a uvoľnili hlboké napätie pre hlboko upokojujúci zážitok."
-      }
-    },
-    "et": {
-      "title": "Kuumakivimassaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "Soojendatud siledad kivid asetatakse strateegiliselt põhipunktidele, et soojendada lihaseid, parandada vereringet ja leevendada sügavat pinget sügavalt rahustava kogemuse saamiseks."
-      }
-    },
-    "hu": {
-      "title": "Lávaköves masszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "Hevített, sima köveket helyeznek el stratégiai pontokon az izmok melegítése, a keringés javítása és a mélyen fekvő feszültség oldása érdekében a mélyen nyugtató élményért."
-      }
-    },
-    "pl": {
-      "title": "Masaż gorącymi kamieniami",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Podgrzane, gładkie kamienie są strategicznie rozmieszczone w kluczowych punktach, aby rozgrzać mięśnie, poprawić krążenie i rozpuścić głębokie napięcie, zapewniając głęboko kojące wrażenia."
-      }
-    },
-    "cs": {
-      "title": "Masáž horkými kameny",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Zahřáté hladké kameny jsou strategicky umístěny na klíčové body, aby zahřály svaly, zlepšily krevní oběh a uvolnile hluboké napětí pro hluboce uklidňující zážitek."
-      }
-    },
-    "tr": {
-      "title": "Sıcak Taş Masajı",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Isıtılmış, pürüzsüz taşlar kasları ısıtmak, kan dolaşımını artırmak ve derinlerdeki gerginliği gidermek için stratejik noktalara yerleştirilerek derinlemesine yatıştırıcı bir deneyim sunar."
-      }
-    },
-    "zh": {
-      "title": "热石按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "将加热的光滑石头有策略地放置在关键穴位，以温热肌肉、增强循环并化解深层紧张，提供深层舒缓的体验。"
-      }
-    },
-    "ko": {
-      "title": "핫스톤 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "따뜻하고 매끄러운 돌을 주요 부위에 배치하여 근육을 데우고 혈액순환을 촉진하며 깊은 곳의 긴장을 풀어주는 깊고 평온한 경험을 선사합니다."
-      }
-    }
-  }
-},
-    
-{
-  "id": "17",
-  "image": "assets/images/17.png",
-  "category": "massage",
-  "time": "60 Mins",
-  "price_info": {
-    "salary": 39,
-    "after_disc": 25,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Anti-Cellulite Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "Utilizing specialized techniques to stimulate lymphatic drainage and boost circulation, this treatment helps reduce the appearance of cellulite and firm the skin in targeted areas."
-      }
-    },
-    "ar": {
-      "title": "مساج مكافحة السيلوليت",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "باستخدام تقنيات متخصصة لتحفيز التصريف اللمفاوي وتعزيز الدورة الدموية، يساعد هذا العلاج في تقليل ظهور السيلوليت وشد الجلد في المناطق المستهدفة."
-      }
-    },
-    "de": {
-      "title": "Anti-Cellulite-Massage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Durch den Einsatz spezieller Techniken zur Förderung der Lymphdrainage und Durchblutung hilft diese Behandlung, das Erscheinungsbild von Cellulite zu reduzieren und die Haut in den Zielbereichen zu festigen."
-      }
-    },
-    "fr": {
-      "title": "Massage Anti-Cellulite",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Utilisant des techniques spécialisées pour stimuler le drainage lymphatique et booster la circulation, ce soin aide à réduire l'aspect de la cellulite et à raffermir la peau dans les zones ciblées."
-      }
-    },
-    "ru": {
-      "title": "Антицеллюлитный массаж",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Использование специализированных техник для стимуляции лимфодренажа и улучшения кровообращения помогает уменьшить видимость целлюлита и укрепить кожу в проблемных зонах."
-      }
-    },
-    "es": {
-      "title": "Masaje Anticelulítico",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Utilizando técnicas especializadas para estimular el drenaje linfático y aumentar la circulación, este tratamiento ayuda a reducir la apariencia de la celulitis y a reafirmar la piel en áreas específicas."
-      }
-    },
-    "it": {
-      "title": "Massaggio Anticellulite",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Utilizzando tecniche specializzate per stimolare il drenaggio linfatico e aumentare la circolacija, questo trattamento aiuta a ridurre l'aspetto della cellulite e a rassodare la pelle nelle zone mirate."
-      }
-    },
-    "sr": {
-      "title": "Anticelulit masaža",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Koristeći specijalizovane tehnike za stimulaciju limfne drenaže i poboljšanje cirkulacije, ovaj tretman pomaže u smanjenju vidljivosti celulita i učvršćivanju kože u ciljanim područjima."
-      }
-    },
-    "sk": {
-      "title": "Anticelulitídna masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Využitím špecializovaných techník na stimuláciu lymfatickej drenáže a podporu cirkulácie tento ošetrenie pomáha znižovať vzhľad celulitídy a spevňovať pokožku v cieľových oblastiach."
-      }
-    },
-    "et": {
-      "title": "Antitselluliidimassaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "Kasutades spetsiaalseid meetodeid lümfidrenaaži stimuleerimiseks ja vereringe parandamiseks, aitab see hooldus vähendada tselluliidi nähtavust ja pinguldada nahka sihtpiirkondades."
-      }
-    },
-    "hu": {
-      "title": "Anticellulit masszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "Speciális technikákat alkalmazva a nyirokkeringés serkentésére és a vérkeringés fokozására, ez a kezelés segít csökkenteni a narancsbőr láthatóságát és feszesíteni a bőrt a célterületeken."
-      }
-    },
-    "pl": {
-      "title": "Masaż antycellulitowy",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Wykorzystując specjalistyczne techniki stymulujące drenaż limfatyczny i poprawiające krążenie, zabieg ten pomaga zmniejszyć widoczność cellulitu i ujędrnić skórę w wybranych obszarach."
-      }
-    },
-    "cs": {
-      "title": "Anticelulitidní masáž",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Využitím specializovaných technik ke stimulaci lymfatické drenáže a podpoře cirkulace pomáhá toto ošetření snižovat výskyt celulitidy a zpevňovat pokožku v cílových oblastech."
-      }
-    },
-    "tr": {
-      "title": "Selülit Karşıtı Masaj",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Lenf drenajını uyarmak ve dolaşımı hızlandırmak için özel teknikler kullanan bu bakım, selülit görünümünü azaltmaya ve hedeflenen bölgelerdeki cildi sıkılaştırmaya yardımcı olur."
-      }
-    },
-    "zh": {
-      "title": "抗橘皮组织按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "利用专业技术刺激淋巴排毒并促进循环，该护理有助于减少橘皮组织的出现，并使目标区域的皮肤紧致。"
-      }
-    },
-    "ko": {
-      "title": "안티 셀룰라이트 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "림프 배수 자극과 순환 촉진을 위한 전문 기법을 사용하여 셀룰라이트의 가시적인 감소를 돕고 특정 부위의 피부 탄력을 강화합니다."
-      }
-    }
-  }
-},
-
-
-    
-  {
-  "id": "18",
-  "image": "assets/images/18.png",
-  "category": "massage",
-  "time": "30 Mins",
-  "price_info": {
-    "salary": 16,
-    "after_disc": 10,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Back Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "Concentrating on the muscles of the back, this massage targets tension and pain with focused techniques that improve posture and alleviate stress-related discomfort."
-      }
-    },
-    "ar": {
-      "title": "مساج الظهر",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "يركز هذا التدليك على عضلات الظهر، ويستهدف التوتر والألم بتقنيات مركزة تحسن من وضعية الجسم وتخفف الانزعاج المرتبط بالتوتر."
-      }
-    },
-    "de": {
-      "title": "Rückenmassage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Diese Massage konzentriert sich auf die Rückenmuskulatur und bekämpft Verspannungen und Schmerzen mit gezielten Techniken, die die Körperhaltung verbessern und stressbedingte Beschwerden lindern."
-      }
-    },
-    "fr": {
-      "title": "Massage du Dos",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Concentré sur les muscles du dos, ce massage cible les tensions et les douleurs grâce à des techniques ciblées qui améliorent la posture et soulagent les inconforts liés au stress."
-      }
-    },
-    "ru": {
-      "title": "Массаж спины",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Этот массаж фокусируется на мышцах спины, устраняя напряжение и боль с помощью специальных техник, которые улучшают осанку и снимают дискомфорт, вызванный стрессом."
-      }
-    },
-    "es": {
-      "title": "Masaje de Espalda",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Concentrándose en los músculos de la espalda, este masaje aborda la tensión y el dolor con técnicas enfocadas que mejoran la postura y alivian las molestias relacionadas con el estrés."
-      }
-    },
-    "it": {
-      "title": "Massaggio alla Schiena",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Concentrandosi sui muscoli della schiena, questo massaggio mira alla tensione e al dolore con tecniche mirate che migliorano la postura e alleviano i disagi legati allo stress."
-      }
-    },
-    "sr": {
-      "title": "Masaža leđa",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Koncentrišući se na mišiće leđa, ova masaža cilja napetost i bol fokusiranim tehnikama koje poboljšavaju držanje i ublažavaju nelagodnost uzrokovanu stresom."
-      }
-    },
-    "sk": {
-      "title": "Masáž chrbta",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Táto masáž sa sústreďuje na svaly chrbta a zameriava sa na napätie a bolesť pomocou cielených techník, ktoré zlepšujú držanie tela a zmierňujú nepohodlie súvisiace so stresom."
-      }
-    },
-    "et": {
-      "title": "Seljamassaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "Keskendudes seljalihastele, on see massaaž suunatud pingetele ja valule, kasutades fokuseeritud tehnikaid, mis parandavad rühti ja leevendavaju stressiga seotud ebamugavustunnet."
-      }
-    },
-    "hu": {
-      "title": "Hátmasszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "A hátizmokra összpontosítva ez a masszázs a feszültséget és a fájdalmat célozza meg olyan technikákkal, amelyek javítják a testtartást és enyhítik a stressz okozta kellemetlenségeket."
-      }
-    },
-    "pl": {
-      "title": "Masaż pleców",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Koncentrując się na mięśniach pleców, masaż ten niweluje napięcie i ból dzięki ukierunkovanym technikom, które poprawiają postawę i łagodzą dyskomfort związany ze stresem."
-      }
-    },
-    "cs": {
-      "title": "Masáž zad",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Tato masáž se soustředí na svaly zad a zaměřuje se na napětí a bolest pomocí cílených technik, které zlepšují držení těla a zmírňují nepohodlí související se stresem."
-      }
-    },
-    "tr": {
-      "title": "Sırt Masajı",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Sırt kaslarına odaklanan bu masaj, duruşu düzelten ve stres kaynaklı rahatsızlığı gideren odaklanmış tekniklerle gerginliği ve ağrıyı hedefler."
-      }
-    },
-    "zh": {
-      "title": "背部按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "针对背部肌肉，通过专注的技术缓解紧张和疼痛，改善体态并减轻压力引起的不适。"
-      }
-    },
-    "ko": {
-      "title": "등 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "등 근육에 집중하여 긴장과 통증을 목표로 하며, 자세를 개선하고 스트레스로 인한 불편함을 완화하는 집중 기술을 사용합니다."
-      }
-    }
-  }
-},
-
-
-    
-{
-  "id": "19",
-  "image": "assets/images/19.png",
-  "category": "massage",
-  "time": "30 Mins",
-  "price_info": {
-    "salary": 16,
-    "after_disc": 10,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Foot Massage",
-      "details": {
-        "1": "Sauna (10-20 Mins)",
-        "2": "A soothing treatment dedicated to the feet, this massage applies pressure to key reflex points to relieve fatigue, improve circulation, and promote overall relaxation."
-      }
-    },
-    "ar": {
-      "title": "مساج القدمين",
-      "details": {
-        "1": "سونا (10-20 دقيقة)",
-        "2": "علاج مهدئ مخصص للقدمين، يطبق هذا التدليك الضغط على نقاط الانعكاس الرئيسية لتخفيف التعب، وتحسين الدورة الدموية، وتعزيز الاسترخاء العام."
-      }
-    },
-    "de": {
-      "title": "Fußmassage",
-      "details": {
-        "1": "Sauna (10-20 Min.)",
-        "2": "Eine wohltuende Behandlung für die Füße, bei der Druck auf wichtige Reflexzonen ausgeübt wird, um Müdigkeit zu lindern, die Durchblutung zu fördern und die allgemeine Entspannung zu steigern."
-      }
-    },
-    "fr": {
-      "title": "Massage des Pieds",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Un soin apaisant dédié aux pieds, ce massage applique une pression sur les points réflexes clés pour soulager la fatigue, améliorer la circulation et favoriser une relaxation totale."
-      }
-    },
-    "ru": {
-      "title": "Массаж стоп",
-      "details": {
-        "1": "Сауна (10-20 мин.)",
-        "2": "Успокаивающая процедура для ног, при которой воздействие на ключевые рефлекторные точки снимает усталость, улучшает кровообращение и способствует общему расслаблению."
-      }
-    },
-    "es": {
-      "title": "Masaje de Pies",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Un tratamiento calmante dedicado a los pies, este masaje aplica presión en puntos reflexológicos clave para aliviar la fatiga, mejorar la circulación y promover la relajación general."
-      }
-    },
-    "it": {
-      "title": "Massaggio ai Piedi",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Un trattamento lenitivo dedicato ai piedi, questo massaggio esercita pressione sui punti riflessi chiave per alleviare la fatica, migliorare la circolazione e favorire il relax generale."
-      }
-    },
-    "sr": {
-      "title": "Masaža stopala",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Umirujući tretman posvećen stopalima, ova masaža vrši pritisak na ključne refleksne tačke kako bi se ublažio umor, poboljšala cirkulacija i podstakla opšta relaksacija."
-      }
-    },
-    "sk": {
-      "title": "Masáž nôh",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Upokojujúce ošetrenie venované nohám, táto masáž vyvíja tlak na kľúčové reflexné body, aby zmiernila únavu, zlepšila krvný obeh a podporila celkové uvoľnenie."
-      }
-    },
-    "et": {
-      "title": "Jalamassaaž",
-      "details": {
-        "1": "Saun (10-20 min)",
-        "2": "Rahustav jalgadele pühendatud hooldus, kus rakendatakse survet peamistele refleksipunktidele, et leevendada väsimust, parandada vereringet ja soodustada üldist lõõgastust."
-      }
-    },
-    "hu": {
-      "title": "Talpmasszázs",
-      "details": {
-        "1": "Szauna (10-20 perc)",
-        "2": "A lábaknak szentelt nyugtató kezelés, amely nyomást gyakorol a legfontosabb reflexpontokra a fáradtság enyhítése, a keringés javítása és az általános ellazulás elősegítése érdekében."
-      }
-    },
-    "pl": {
-      "title": "Masaż stóp",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Kojący zabieg dedykowany stopom, polegający na uciskaniu kluczowych punktów refleksyjnych w celu złagodzenia zmęczenia, poprawy krążenia i promowania ogólnego odprężenia."
-      }
-    },
-    "cs": {
-      "title": "Masáž nohou",
-      "details": {
-        "1": "Sauna (10-20 min)",
-        "2": "Uklidňující ošetření věnované nohám, tato masáž vyvíjí tlak na klíčové reflexní body, aby zmírnila únavu, zlepšila krevní oběh a podpořila celkové uvolnění."
-      }
-    },
-    "tr": {
-      "title": "Ayak Masajı",
-      "details": {
-        "1": "Sauna (10-20 dk)",
-        "2": "Ayaklara özel yatıştırıcı bir bakım olan bu masaj, yorgunluğu gidermek, dolaşımı iyileştirmek ve genel rahatlamayı sağlamak için temel refleks noktalarına basınç uygular."
-      }
-    },
-    "zh": {
-      "title": "足部按摩",
-      "details": {
-        "1": "桑拿 (10-20 分钟)",
-        "2": "一种专门针对双脚的舒缓护理，通过对关键反射点施加压力，缓解疲劳，促进血液循环，从而达到全身放松的效果。"
-      }
-    },
-    "ko": {
-      "title": "발 마사지",
-      "details": {
-        "1": "사우나 (10-20분)",
-        "2": "발을 위한 진정 트리트먼트로, 주요 반사점에 압력을 가하여 피로를 풀고 혈액순환을 개선하며 전신 휴식을 돕습니다."
-      }
-    }
-  }
-},
 
   {
-  "id": "20",
-  "image": "assets/images/20.png",
-  "category": "hammam",
-  "time": "1 Hr",
-  "price_info": {
-    "salary": 20,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Damascus Hammam",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Peeling with coarse loofah and Soap",
-        "4": "Face Mask"
-      }
+    "id": "2",
+    "image": "assets/images/2.webp",
+    "category": "packages",
+    "time": "2 Hrs",
+    "price_info": {
+      "salary": 42,
+      "after_disc": 25,
+      "currency": "€"
     },
-    "ar": {
-      "title": "حمام دمشق",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "تقشير باللوفة الخشنة والصابون",
-        "4": "ماسك للوجه"
-      }
-    },
-    "de": {
-      "title": "Damaskus Hammam",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Peeling mit grobem Luffa und Seife",
-        "4": "Gesichtsmaske"
-      }
-    },
-    "fr": {
-      "title": "Hammam de Damas",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage au luffa rêche et savon",
-        "4": "Masque facial"
-      }
-    },
-    "ru": {
-      "title": "Дамасский хаммам",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Пилинг грубой мочалкой и мылом",
-        "4": "Маска для лица"
-      }
-    },
-    "es": {
-      "title": "Hammam de Damasco",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación con lufa gruesa y jabón",
-        "4": "Mascarilla facial"
-      }
-    },
-    "it": {
-      "title": "Hammam di Damasco",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Peeling con loofah ruvida e sapone",
-        "4": "Maschera per il viso"
-      }
-    },
-    "sr": {
-      "title": "Damaskus Hamam",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling grubom lufom i sapunom",
-        "4": "Maska za lice"
-      }
-    },
-    "sk": {
-      "title": "Damašský hammam",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Peeling s drsnou lufou a mydlom",
-        "4": "Pleťová maska"
-      }
-    },
-    "et": {
-      "title": "Damaskuse hamam",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Koorimine kareda lufa ja seebiga",
-        "4": "Näomask"
-      }
-    },
-    "hu": {
-      "title": "Damaszkuszi Hammam",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Peeling durva luffával és szappannal",
-        "4": "Arcpakolás"
-      }
-    },
-    "pl": {
-      "title": "Damasceński Hammam",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Peeling szorstką luffą i mydłem",
-        "4": "Maska na twarz"
-      }
-    },
-    "cs": {
-      "title": "Damašský hammam",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Peeling hrubou lufou a mýdlem",
-        "4": "Pleťová maska"
-      }
-    },
-    "tr": {
-      "title": "Şam Hamamı",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Kaba lif kabağı ve sabun ile peeling",
-        "4": "Yüz maskesi"
-      }
-    },
-    "zh": {
-      "title": "大马士革汉曼",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "粗丝瓜络肥皂去角质",
-        "4": "面膜"
-      }
-    },
-    "ko": {
-      "title": "다마스쿠스 해맘",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "거친 루파와 비누를 이용한 각질 제거",
-        "4": "얼굴 팩"
+    "translations": {
+      "en": {
+        "title": "Damascus Hammam and Massage",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Peeling with coarse loofah and Soap",
+          "4": "Face Mask",
+          "5": "Full Body Massage (50 Mins)"
+        }
+      },
+      "ar": {
+        "title": "حمام دمشق ومساج",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "تقشير باللوفة الخشنة والصابون",
+          "4": "ماسك للوجه",
+          "5": "مساج كامل للجسم (50 دقيقة)"
+        }
+      },
+      "de": {
+        "title": "Damaskus Hammam und Massage",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Peeling mit grobem Luffa und Seife",
+          "4": "Gesichtsmaske",
+          "5": "Ganzkörpermassage (50 Min.)"
+        }
+      },
+      "fr": {
+        "title": "Hammam de Damas et Massage",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage au luffa rêche et savon",
+          "4": "Masque facial",
+          "5": "Massage complet du corps (50 min)"
+        }
+      },
+      "ru": {
+        "title": "Дамасский хаммам и массаж",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Пилинг грубой мочалкой и мылом",
+          "4": "Маска для лица",
+          "5": "Массаж всего тела (50 мин.)"
+        }
+      },
+      "es": {
+        "title": "Hammam de Damasco y Masaje",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación con lufa gruesa y jabón",
+          "4": "Mascarilla facial",
+          "5": "Masaje corporal completo (50 min)"
+        }
+      },
+      "it": {
+        "title": "Hammam di Damasco e massaggio",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Tratamiento per capelli - crema",
+          "3": "Peeling con loofah ruvida e sapone",
+          "4": "Maschera per il viso",
+          "5": "Massaggio completo del corpo (50 min)"
+        }
+      },
+      "sr": {
+        "title": "Damaskus Hamam i masaža",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling grubom lufom i sapunom",
+          "4": "Maska za lice",
+          "5": "Masaža celog tela (50 min)"
+        }
+      },
+      "sk": {
+        "title": "Damašský hammam a masáž",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Peeling s drsnou lufou a mydlom",
+          "4": "Pleťová maska",
+          "5": "Masáž celého tela (50 min)"
+        }
+      },
+      "et": {
+        "title": "Damaskuse hamam ja massaaž",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Koorimine kareda lufa ja seebiga",
+          "4": "Näomask",
+          "5": "Kogu keha massaaž (50 min)"
+        }
+      },
+      "hu": {
+        "title": "Damaszkuszi Hammam és masszázs",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Peeling durva luffával és szappannal",
+          "4": "Arcpakolás",
+          "5": "Teljes testmasszázs (50 perc)"
+        }
+      },
+      "pl": {
+        "title": "Damasceński Hammam i masaż",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Peeling szorstką luffą i mydłem",
+          "4": "Maska na twarz",
+          "5": "Masaż całego ciała (50 min)"
+        }
+      },
+      "cs": {
+        "title": "Damašský hammam a masáž",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Peeling hrubou lufou a mýdlem",
+          "4": "Pleťová maska",
+          "5": "Masáž celého těla (50 min)"
+        }
+      },
+      "tr": {
+        "title": "Şam Hamamı ve Masaj",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Kaba lif kabağı ve sabun ile peeling",
+          "4": "Yüz maskesi",
+          "5": "Tüm vücut masajı (50 dk)"
+        }
+      },
+      "zh": {
+        "title": "大马士革汉曼与按摩",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "粗丝瓜络肥皂去角质",
+          "4": "面膜",
+          "5": "全身按摩 (50 分钟)"
+        }
+      },
+      "ko": {
+        "title": "다마스쿠스 해맘 및 마사지",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "거친 루파와 비누를 이용한 각질 제거",
+          "4": "얼굴 팩",
+          "5": "전신 마사지 (50분)"
+        }
       }
     }
   }
-},
+  ,
 
-    
-   {
-  "id": "21",
-  "image": "assets/images/21.png",
-  "category": "hammam",
-  "time": "1 Hr",
-  "price_info": {
-    "salary": 20,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Turkish Hammam",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Peeling with Kessa Mitten and Foam",
-        "4": "Soap Massage (5 min)",
-        "5": "Face Mask"
-      }
+  {
+    "id": "3",
+    "image": "assets/images/3.png",
+    "category": "packages",
+    "time": "2 Hrs",
+    "price_info": {
+      "salary": 42,
+      "after_disc": 25,
+      "currency": "€"
     },
-    "ar": {
-      "title": "الحمام التركي",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "تقشير بليفة الكيسة والرغوة",
-        "4": "مساج بالصابون (5 دقائق)",
-        "5": "ماسك للوجه"
-      }
-    },
-    "de": {
-      "title": "Türkisches Hammam",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Peeling mit Kessa-Handschuh und Schaum",
-        "4": "Seifenmassage (5 Min.)",
-        "5": "Gesichtsmaske"
-      }
-    },
-    "fr": {
-      "title": "Hammam Turc",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage au gant Kessa et mousse",
-        "4": "Massage au savon (5 min)",
-        "5": "Masque facial"
-      }
-    },
-    "ru": {
-      "title": "Турецкий хаммам",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Пилинг рукавицей Кесе и пеной",
-        "4": "Мыльный массаж (5 мин.)",
-        "5": "Маска для лица"
-      }
-    },
-    "es": {
-      "title": "Hammam Turco",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación con guante Kessa y espuma",
-        "4": "Masaje con jabón (5 min)",
-        "5": "Mascarilla facial"
-      }
-    },
-    "it": {
-      "title": "Hammam Turco",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Peeling con guanto Kessa e schiuma",
-        "4": "Massaggio con sapone (5 min)",
-        "5": "Maschera per il viso"
-      }
-    },
-    "sr": {
-      "title": "Turski hamam",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling sa Kessa rukavicom i penom",
-        "4": "Masaža sapunom (5 min)",
-        "5": "Maska za lice"
-      }
-    },
-    "sk": {
-      "title": "Turecký hammam",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Peeling s rukavicou Kessa a penou",
-        "4": "Mydlová masáž (5 min)",
-        "5": "Pleťová maska"
-      }
-    },
-    "et": {
-      "title": "Türgi hamam",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Koorimine Kessa kinda ja vahuga",
-        "4": "Seebimassaaž (5 min)",
-        "5": "Näomask"
-      }
-    },
-    "hu": {
-      "title": "Török Hammam",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Peeling Kessa kesztyűvel és habbal",
-        "4": "Szappanos masszázs (5 perc)",
-        "5": "Arcpakolás"
-      }
-    },
-    "pl": {
-      "title": "Turecki Hammam",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Peeling rękawicą Kessa i pianą",
-        "4": "Masaż mydłem (5 min)",
-        "5": "Maska na twarz"
-      }
-    },
-    "cs": {
-      "title": "Turecký hammam",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Peeling rukavicí Kessa a pěnou",
-        "4": "Mýdlová masáž (5 min)",
-        "5": "Pleťová maska"
-      }
-    },
-    "tr": {
-      "title": "Türk Hamamı",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Kese ve Köpük ile peeling",
-        "4": "Sabun Masajı (5 dk)",
-        "5": "Yüz maskesi"
-      }
-    },
-    "zh": {
-      "title": "土耳其汉曼",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "使用 Kessa 手套和泡沫去角质",
-        "4": "肥皂按摩 (5 分钟)",
-        "5": "面膜"
-      }
-    },
-    "ko": {
-      "title": "터키식 해맘",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "케사 미튼과 거품을 이용한 각질 제거",
-        "4": "비누 마사지 (5분)",
-        "5": "얼굴 팩"
+    "translations": {
+      "en": {
+        "title": "Turkish Hammam and Massage",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Peeling with Kessa Mitten and Foam",
+          "4": "Soap Massage (5 min)",
+          "5": "Face Mask",
+          "6": "Full Body Massage (50 Mins)"
+        }
+      },
+      "ar": {
+        "title": "الحمام التركي والمساج",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "تقشير بليفة الكيسة والرغوة",
+          "4": "مساج بالصابون (5 دقائق)",
+          "5": "ماسك للوجه",
+          "6": "مساج كامل للجسم (50 دقيقة)"
+        }
+      },
+      "de": {
+        "title": "Türkisches Hammam und Massage",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Peeling mit Kessa-Handschuh und Schaum",
+          "4": "Seifenmassage (5 Min.)",
+          "5": "Gesichtsmaske",
+          "6": "Ganzkörpermassage (50 Min.)"
+        }
+      },
+      "fr": {
+        "title": "Hammam Turc et Massage",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage au gant Kessa et mousse",
+          "4": "Massage au savon (5 min)",
+          "5": "Masque facial",
+          "6": "Massage complet du corps (50 min)"
+        }
+      },
+      "ru": {
+        "title": "Турецкий хаммам и массаж",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Пилинг рукавицей Кесе и пеной",
+          "4": "Мыльный массаж (5 мин.)",
+          "5": "Маска для лица",
+          "6": "Массаж всего тела (50 мин.)"
+        }
+      },
+      "es": {
+        "title": "Hammam Turco y Masaje",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación con guante Kessa y espuma",
+          "4": "Masaje con jabón (5 min)",
+          "5": "Mascarilla facial",
+          "6": "Masaje corporal completo (50 min)"
+        }
+      },
+      "it": {
+        "title": "Hammam Turco e Massaggio",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Peeling con guanto Kessa e schiuma",
+          "4": "Massaggio con sapone (5 min)",
+          "5": "Maschera per il viso",
+          "6": "Massaggio completo del corpo (50 min)"
+        }
+      },
+      "sr": {
+        "title": "Turski hamam i masaža",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling sa Kessa rukavicom i penom",
+          "4": "Masaža sapunom (5 min)",
+          "5": "Maska za lice",
+          "6": "Masaža celog tela (50 min)"
+        }
+      },
+      "sk": {
+        "title": "Turecký hammam a masáž",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Peeling s rukavicou Kessa a penou",
+          "4": "Mydlová masáž (5 min)",
+          "5": "Pleťová maska",
+          "6": "Masáž celého tela (50 min)"
+        }
+      },
+      "et": {
+        "title": "Türgi hamam ja massaaž",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Koorimine Kessa kinda ja vahuga",
+          "4": "Seebimassaaž (5 min)",
+          "5": "Näomask",
+          "6": "Kogu keha massaaž (50 min)"
+        }
+      },
+      "hu": {
+        "title": "Török Hammam és masszázs",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Peeling Kessa kesztyűvel és habbal",
+          "4": "Szappanos masszázs (5 perc)",
+          "5": "Arcpakolás",
+          "6": "Teljes testmasszázs (50 perc)"
+        }
+      },
+      "pl": {
+        "title": "Turecki Hammam i masaż",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Peeling rękawicą Kessa i pianą",
+          "4": "Masaż mydłem (5 min)",
+          "5": "Maska na twarz",
+          "6": "Masaż całego ciała (50 min)"
+        }
+      },
+      "cs": {
+        "title": "Turecký hammam a masáž",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Peeling rukavicí Kessa a pěnou",
+          "4": "Mýdlová masáž (5 min)",
+          "5": "Pleťová maska",
+          "6": "Masáž celého těla (50 min)"
+        }
+      },
+      "tr": {
+        "title": "Türk Hamamı ve Masaj",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Kese ve Köpük ile peeling",
+          "4": "Sabun Masajı (5 dk)",
+          "5": "Yüz maskesi",
+          "6": "Tüm vücut masajı (50 dk)"
+        }
+      },
+      "zh": {
+        "title": "土耳其汉曼与按摩",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "使用 Kessa 手套和泡沫去角质",
+          "4": "肥皂按摩 (5 分钟)",
+          "5": "面膜",
+          "6": "全身按摩 (50 分钟)"
+        }
+      },
+      "ko": {
+        "title": "터키식 해맘 및 마사지",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "케사 미튼과 거품을 이용한 각질 제거",
+          "4": "비누 마사지 (5분)",
+          "5": "얼굴 팩",
+          "6": "전신 마사지 (50분)"
+        }
       }
     }
   }
-},
-    
- {
-  "id": "22",
-  "image": "assets/images/22.png",
-  "category": "hammam",
-  "time": "1 Hr",
-  "price_info": {
-    "salary": 20,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Moroccan Hammam",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Peeling & Moroccan mask for body",
-        "4": "Face Mask"
-      }
+  ,
+  {
+    "id": "4",
+    "image": "assets/images/4.png",
+    "category": "packages",
+    "time": "2 Hrs",
+    "price_info": {
+      "salary": 42,
+      "after_disc": 25,
+      "currency": "€"
     },
-    "ar": {
-      "title": "الحمام المغربي",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "تقشير وماسك مغربي للجسم",
-        "4": "ماسك للوجه"
-      }
-    },
-    "de": {
-      "title": "Marokkanisches Hammam",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Peeling & Marokkanische Maske für den Körper",
-        "4": "Gesichtsmaske"
-      }
-    },
-    "fr": {
-      "title": "Hammam Marocain",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage & masque marocain pour le corps",
-        "4": "Masque facial"
-      }
-    },
-    "ru": {
-      "title": "Марокканский хаммам",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Пилинг и марокканская маска для тела",
-        "4": "Маска для лица"
-      }
-    },
-    "es": {
-      "title": "Hammam Marroquí",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación y mascarilla marroquí para el cuerpo",
-        "4": "Mascarilla facial"
-      }
-    },
-    "it": {
-      "title": "Hammam Marocchino",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Peeling e maschera marocchina per il corpo",
-        "4": "Maschera per il viso"
-      }
-    },
-    "sr": {
-      "title": "Marokanski hamam",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling i marokanska maska za telo",
-        "4": "Maska za lice"
-      }
-    },
-    "sk": {
-      "title": "Marocký hammam",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Peeling a marocká maska na telo",
-        "4": "Pleťová maska"
-      }
-    },
-    "et": {
-      "title": "Maroko hamam",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Koorimine ja Maroko kehamask",
-        "4": "Näomask"
-      }
-    },
-    "hu": {
-      "title": "Marokkói Hammam",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Peeling és marokkói testmaszk",
-        "4": "Arcpakolás"
-      }
-    },
-    "pl": {
-      "title": "Marokański Hammam",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Peeling i marokańska maska na ciało",
-        "4": "Maska na twarz"
-      }
-    },
-    "cs": {
-      "title": "Marocký hammam",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Peeling a marocká maska na tělo",
-        "4": "Pleťová maska"
-      }
-    },
-    "tr": {
-      "title": "Fas Hamamı",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Vücut için peeling ve Fas maskesi",
-        "4": "Yüz maskesi"
-      }
-    },
-    "zh": {
-      "title": "摩洛哥汉曼",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "全身去角质及摩洛哥体膜",
-        "4": "面膜"
-      }
-    },
-    "ko": {
-      "title": "모로코식 해맘",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "전신 각질 제거 및 모로코 바디 팩",
-        "4": "얼굴 팩"
+    "translations": {
+      "en": {
+        "title": "Moroccan Hammam and Massage",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Peeling & Moroccan mask for body",
+          "4": "Face Mask",
+          "5": "Full Body Massage (50 Mins)"
+        }
+      },
+      "ar": {
+        "title": "الحمام المغربي والمساج",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "تقشير وماسك مغربي للجسم",
+          "4": "ماسك للوجه",
+          "5": "مساج كامل للجسم (50 دقيقة)"
+        }
+      },
+      "de": {
+        "title": "Marokkanisches Hammam und Massage",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Peeling & Marokkanische Maske für den Körper",
+          "4": "Gesichtsmaske",
+          "5": "Ganzkörpermassage (50 Min.)"
+        }
+      },
+      "fr": {
+        "title": "Hammam Marocain et Massage",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage & masque marocain pour le corps",
+          "4": "Masque facial",
+          "5": "Massage complet du corps (50 min)"
+        }
+      },
+      "ru": {
+        "title": "Марокканский хаммам и массаж",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Пилинг и марокканская маска для тела",
+          "4": "Маска для лица",
+          "5": "Массаж всего тела (50 мин.)"
+        }
+      },
+      "es": {
+        "title": "Hammam Marroquí y Masaje",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación y mascarilla marroquí para el cuerpo",
+          "4": "Mascarilla facial",
+          "5": "Masaje corporal completo (50 min)"
+        }
+      },
+      "it": {
+        "title": "Hammam Marocchino e Massaggio",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Peeling e maschera marocchina per il corpo",
+          "4": "Maschera per il viso",
+          "5": "Massaggio completo del corpo (50 min)"
+        }
+      },
+      "sr": {
+        "title": "Marokanski hamam i masaža",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling i marokanska maska za telo",
+          "4": "Maska za lice",
+          "5": "Masaža celog tela (50 min)"
+        }
+      },
+      "sk": {
+        "title": "Marocký hammam a masáž",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Peeling a marocká maska na telo",
+          "4": "Pleťová maska",
+          "5": "Masáž celého tela (50 min)"
+        }
+      },
+      "et": {
+        "title": "Maroko hamam ja massaaž",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Koorimine ja Maroko kehamask",
+          "4": "Näomask",
+          "5": "Kogu keha massaaž (50 min)"
+        }
+      },
+      "hu": {
+        "title": "Marokkói Hammam és masszázs",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Peeling és marokkói testmaszk",
+          "4": "Arcpakolás",
+          "5": "Teljes testmasszázs (50 perc)"
+        }
+      },
+      "pl": {
+        "title": "Marokański Hammam i masaż",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Peeling i marokańska maska na ciało",
+          "4": "Maska na twarz",
+          "5": "Masaż całego ciała (50 min)"
+        }
+      },
+      "cs": {
+        "title": "Marocký hammam a masáž",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Peeling a marocká maska na tělo",
+          "4": "Pleťová maska",
+          "5": "Masáž celého těla (50 min)"
+        }
+      },
+      "tr": {
+        "title": "Fas Hamamı ve Masaj",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Vücut için peeling ve Fas maskesi",
+          "4": "Yüz maskesi",
+          "5": "Tüm vücut masajı (50 dk)"
+        }
+      },
+      "zh": {
+        "title": "摩洛哥汉曼与按摩",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "全身去角质及摩洛哥体膜",
+          "4": "面膜",
+          "5": "全身按摩 (50 分钟)"
+        }
+      },
+      "ko": {
+        "title": "모로코식 해맘 및 마사지",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "전신 각질 제거 및 모로코 바디 팩",
+          "4": "얼굴 팩",
+          "5": "전신 마사지 (50분)"
+        }
       }
     }
-  }
-},
+  },
 
-    {
-  "id": "23",
-  "image": "assets/images/23.png",
-  "category": "scrub",
-  "time": "1 Hr",
-  "price_info": {
-    "salary": 20,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Coconut Body Scrub",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Coconut Body Scrub",
-        "4": "Face Mask"
-      }
+  {
+    "id": "5",
+    "image": "assets/images/5.png",
+    "category": "packages",
+    "time": "2 Hrs",
+    "price_info": {
+      "salary": 42,
+      "after_disc": 25,
+      "currency": "€"
     },
-    "ar": {
-      "title": "سنفرة الجسم بجوز الهند",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة جوز الهند للجسم",
-        "4": "ماسك للوجه"
-      }
-    },
-    "de": {
-      "title": "Kokos-Körperpeeling",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Kokos-Körperpeeling",
-        "4": "Gesichtsmaske"
-      }
-    },
-    "fr": {
-      "title": "Gommage corporel à la noix de coco",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel à la noix de coco",
-        "4": "Masque facial"
-      }
-    },
-    "ru": {
-      "title": "Кокосовый скраб для тела",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Кокосовый скраб для тела",
-        "4": "Маска для лица"
-      }
-    },
-    "es": {
-      "title": "Exfoliante corporal de coco",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con coco",
-        "4": "Mascarilla facial"
-      }
-    },
-    "it": {
-      "title": "Scrub corpo al cocco",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo al cocco",
-        "4": "Maschera per il viso"
-      }
-    },
-    "sr": {
-      "title": "Piling tela od kokosa",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Kokos piling za telo",
-        "4": "Maska za lice"
-      }
-    },
-    "sk": {
-      "title": "Kokosový telový peeling",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Kokosový telový peeling",
-        "4": "Pleťová maska"
-      }
-    },
-    "et": {
-      "title": "Kookose kehakoorimine",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Kookose kehakoorimine",
-        "4": "Näomask"
-      }
-    },
-    "hu": {
-      "title": "Kókuszos testradír",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Kókuszos testradír",
-        "4": "Arcpakolás"
-      }
-    },
-    "pl": {
-      "title": "Kokosowy peeling ciała",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Kokosowy peeling do ciała",
-        "4": "Maska na twarz"
-      }
-    },
-    "cs": {
-      "title": "Kokosový tělový peeling",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Kokosový tělový peeling",
-        "4": "Pleťová maska"
-      }
-    },
-    "tr": {
-      "title": "Hindistan Cevizi Vücut Peelingi",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Hindistan Cevizi Vücut Peelingi",
-        "4": "Yüz maskesi"
-      }
-    },
-    "zh": {
-      "title": "椰子身体磨砂",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "椰子身体磨砂",
-        "4": "面膜"
-      }
-    },
-    "ko": {
-      "title": "코코넛 바디 스크럽",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "코코넛 바디 스크럽",
-        "4": "얼굴 팩"
+    "translations": {
+      "en": {
+        "title": "Coconut Body Scrub and Massage",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Coconut Body Scrub",
+          "4": "Face Mask",
+          "5": "Full Body Massage (50 Mins)"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بجوز الهند والمساج",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة جوز الهند للجسم",
+          "4": "ماسك للوجه",
+          "5": "مساج كامل للجسم (50 دقيقة)"
+        }
+      },
+      "de": {
+        "title": "Kokos-Körperpeeling und Massage",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Kokos-Körperpeeling",
+          "4": "Gesichtsmaske",
+          "5": "Ganzkörpermassage (50 Min.)"
+        }
+      },
+      "fr": {
+        "title": "Gommage du corps à la noix de coco et massage",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel à la noix de coco",
+          "4": "Masque facial",
+          "5": "Massage complet du corps (50 min)"
+        }
+      },
+      "ru": {
+        "title": "Кокосовый скраб для тела и массаж",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Кокосовый скраб для тела",
+          "4": "Маска для лица",
+          "5": "Массаж всего тела (50 мин.)"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de coco y masaje",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con coco",
+          "4": "Mascarilla facial",
+          "5": "Masaje corporal completo (50 min)"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo al cocco e massaggio",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo al cocco",
+          "4": "Maschera per il viso",
+          "5": "Massaggio completo del corpo (50 min)"
+        }
+      },
+      "sr": {
+        "title": "Piling tela od kokosa i masaža",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Kokos piling za telo",
+          "4": "Maska za lice",
+          "5": "Masaža celog tela (50 min)"
+        }
+      },
+      "sk": {
+        "title": "Kokosový telový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Kokosový telový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého tela (50 min)"
+        }
+      },
+      "et": {
+        "title": "Kookose kehakoorimine ja massaaž",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Kookose kehakoorimine",
+          "4": "Näomask",
+          "5": "Kogu keha massaaž (50 min)"
+        }
+      },
+      "hu": {
+        "title": "Kókuszos testradír és masszázs",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Kókuszos testradír",
+          "4": "Arcpakolás",
+          "5": "Teljes testmasszázs (50 perc)"
+        }
+      },
+      "pl": {
+        "title": "Kokosowy peeling ciała i masaż",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Kokosowy peeling do ciała",
+          "4": "Maska na twarz",
+          "5": "Masaż całego ciała (50 min)"
+        }
+      },
+      "cs": {
+        "title": "Kokosový tělový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Kokosový tělový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého těla (50 min)"
+        }
+      },
+      "tr": {
+        "title": "Hindistan Cevizi Vücut Peelingi ve Masaj",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Hindistan Cevizi Vücut Peelingi",
+          "4": "Yüz maskesi",
+          "5": "Tüm vücut masajı (50 dk)"
+        }
+      },
+      "zh": {
+        "title": "椰子身体磨砂与按摩",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "椰子身体磨砂",
+          "4": "面膜",
+          "5": "全身按摩 (50 分钟)"
+        }
+      },
+      "ko": {
+        "title": "코코넛 바디 스크럽 및 마사지",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "코코넛 바디 스크럽",
+          "4": "얼굴 팩",
+          "5": "전신 마사지 (50분)"
+        }
       }
     }
-  }
-},
-    
-     {
-  "id": "24",
-  "image": "assets/images/24.png",
-  "category": "scrub",
-  "time": "1 Hr",
-  "price_info": {
-    "salary": 20,
-    "after_disc": 15,
-    "currency": "€"
   },
-  "translations": {
-    "en": {
-      "title": "Chocolate Body Scrub",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Chocolate Body Scrub",
-        "4": "Face Mask"
-      }
-    },
-    "ar": {
-      "title": "سنفرة الجسم بالشوكولاتة",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة الشوكولاتة للجسم",
-        "4": "ماسك للوجه"
-      }
-    },
-    "de": {
-      "title": "Schokoladen-Körperpeeling",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Schokoladen-Körperpeeling",
-        "4": "Gesichtsmaske"
-      }
-    },
-    "fr": {
-      "title": "Gommage corporel au chocolat",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel au chocolat",
-        "4": "Masque facial"
-      }
-    },
-    "ru": {
-      "title": "Шоколадный скраб для тела",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Шоколадный скраб для тела",
-        "4": "Маска для лица"
-      }
-    },
-    "es": {
-      "title": "Exfoliante corporal de chocolate",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con chocolate",
-        "4": "Mascarilla facial"
-      }
-    },
-    "it": {
-      "title": "Scrub corpo al cioccolato",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo al cioccolato",
-        "4": "Maschera per il viso"
-      }
-    },
-    "sr": {
-      "title": "Piling tela od čokolade",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Čokoladni piling za telo",
-        "4": "Maska za lice"
-      }
-    },
-    "sk": {
-      "title": "Čokoládový telový peeling",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Čokoládový telový peeling",
-        "4": "Pleťová maska"
-      }
-    },
-    "et": {
-      "title": "Šokolaadi kehakoorimine",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Šokolaadi kehakoorimine",
-        "4": "Näomask"
-      }
-    },
-    "hu": {
-      "title": "Csokoládés testradír",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Csokoládés testradír",
-        "4": "Arcpakolás"
-      }
-    },
-    "pl": {
-      "title": "Czekoladowy peeling ciała",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Czekoladowy peeling do ciała",
-        "4": "Maska na twarz"
-      }
-    },
-    "cs": {
-      "title": "Čokoládový tělový peeling",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Čokoládový tělový peeling",
-        "4": "Pleťová maska"
-      }
-    },
-    "tr": {
-      "title": "Çikolatalı Vücut Peelingi",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Çikolatalı Vücut Peelingi",
-        "4": "Yüz maskesi"
-      }
-    },
-    "zh": {
-      "title": "巧克力身体磨砂",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "巧克力身体磨砂",
-        "4": "面膜"
-      }
-    },
-    "ko": {
-      "title": "초콜릿 바디 스크럽",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "초콜릿 바디 스크럽",
-        "4": "얼굴 팩"
-      }
-    }
-  }
-},
-
-    {
-  "id": "25",
-  "image": "assets/images/25.png",
-  "category": "scrub",
-  "time": "1 Hr",
-  "price_info": {
-    "salary": 20,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Salt Body Scrub",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Salt Body Scrub",
-        "4": "Face Mask"
-      }
-    },
-    "ar": {
-      "title": "سنفرة الجسم بالملح",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة الملح للجسم",
-        "4": "ماسك للوجه"
-      }
-    },
-    "de": {
-      "title": "Salz-Körperpeeling",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Salz-Körperpeeling",
-        "4": "Gesichtsmaske"
-      }
-    },
-    "fr": {
-      "title": "Gommage corporel au sel",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel au sel",
-        "4": "Masque facial"
-      }
-    },
-    "ru": {
-      "title": "Солевой скраб для тела",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Солевой скраб для тела",
-        "4": "Маска для лица"
-      }
-    },
-    "es": {
-      "title": "Exfoliante corporal de sal",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con sal",
-        "4": "Mascarilla facial"
-      }
-    },
-    "it": {
-      "title": "Scrub corpo al sale",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo al sale",
-        "4": "Maschera per il viso"
-      }
-    },
-    "sr": {
-      "title": "Piling tela solju",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Slani piling za telo",
-        "4": "Maska za lice"
-      }
-    },
-    "sk": {
-      "title": "Soľný telový peeling",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Soľný telový peeling",
-        "4": "Pleťová maska"
-      }
-    },
-    "et": {
-      "title": "Soolaga kehakoorimine",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Soolaga kehakoorimine",
-        "4": "Näomask"
-      }
-    },
-    "hu": {
-      "title": "Sós testradír",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Sós testradír",
-        "4": "Arcpakolás"
-      }
-    },
-    "pl": {
-      "title": "Solny peeling ciała",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosы - krem",
-        "3": "Solny peeling do ciała",
-        "4": "Maska na twarz"
-      }
-    },
-    "cs": {
-      "title": "Solný tělový peeling",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Solný tělový peeling",
-        "4": "Pleťová maska"
-      }
-    },
-    "tr": {
-      "title": "Tuzlu Vücut Peelingi",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Tuzlu Vücut Peelingi",
-        "4": "Yüz maskesi"
-      }
-    },
-    "zh": {
-      "title": "盐浴身体磨砂",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "盐浴身体磨砂",
-        "4": "面膜"
-      }
-    },
-    "ko": {
-      "title": "소금 바디 스크럽",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "소금 바디 스크럽",
-        "4": "얼굴 팩"
-      }
-    }
-  }
-},
 
 
-    
- {
-  "id": "26",
-  "image": "assets/images/26.png",
-  "category": "scrub",
-  "time": "1 Hr",
-  "price_info": {
-    "salary": 20,
-    "after_disc": 15,
-    "currency": "€"
+
+  {
+    "id": "6",
+    "image": "assets/images/6.png",
+    "category": "packages",
+    "time": "2 Hrs",
+    "price_info": {
+      "salary": 42,
+      "after_disc": 25,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Chocolate Body Scrub and Massage",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Chocolate Body Scrub",
+          "4": "Face Mask",
+          "5": "Full Body Massage (50 Mins)"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بالشوكولاتة والمساج",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة الشوكولاتة للجسم",
+          "4": "ماسك للوجه",
+          "5": "مساج كامل للجسم (50 دقيقة)"
+        }
+      },
+      "de": {
+        "title": "Schokoladen-Körperpeeling und Massage",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Schokoladen-Körperpeeling",
+          "4": "Gesichtsmaske",
+          "5": "Ganzkörpermassage (50 Min.)"
+        }
+      },
+      "fr": {
+        "title": "Gommage du corps au chocolat et massage",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel au chocolat",
+          "4": "Masque facial",
+          "5": "Massage complet du corps (50 min)"
+        }
+      },
+      "ru": {
+        "title": "Шоколадный скраб для тела и массаж",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Шоколадный скраб для тела",
+          "4": "Маска для лица",
+          "5": "Массаж всего тела (50 мин.)"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de chocolate y masaje",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con chocolate",
+          "4": "Mascarilla facial",
+          "5": "Masaje corporal completo (50 min)"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo al cioccolato e massaggio",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo al cioccolato",
+          "4": "Maschera per il viso",
+          "5": "Massaggio completo del corpo (50 min)"
+        }
+      },
+      "sr": {
+        "title": "Piling tela od čokolade i masaža",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Čokoladni piling za telo",
+          "4": "Maska za lice",
+          "5": "Masaža celog tela (50 min)"
+        }
+      },
+      "sk": {
+        "title": "Čokoládový telový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Čokoládový telový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého tela (50 min)"
+        }
+      },
+      "et": {
+        "title": "Šokolaadi kehakoorimine ja massaaž",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Šokolaadi kehakoorimine",
+          "4": "Näomask",
+          "5": "Kogu keha massaaž (50 min)"
+        }
+      },
+      "hu": {
+        "title": "Csokoládés testradír és masszázs",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Csokoládés testradír",
+          "4": "Arcpakolás",
+          "5": "Teljes testmasszázs (50 perc)"
+        }
+      },
+      "pl": {
+        "title": "Czekoladowy peeling ciała i masaż",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Czekoladowy peeling do ciała",
+          "4": "Maska na twarz",
+          "5": "Masaż całego ciała (50 min)"
+        }
+      },
+      "cs": {
+        "title": "Čokoládový tělový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Čokoládový tělový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého těla (50 min)"
+        }
+      },
+      "tr": {
+        "title": "Çikolata Vücut Peelingi ve Masaj",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Çikolata Vücut Peelingi",
+          "4": "Yüz maskesi",
+          "5": "Tüm vücut masajı (50 dk)"
+        }
+      },
+      "zh": {
+        "title": "巧克力身体磨砂与按摩",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "巧克力身体磨砂",
+          "4": "面膜",
+          "5": "全身按摩 (50 分钟)"
+        }
+      },
+      "ko": {
+        "title": "초콜릿 바디 스크럽 및 마사지",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "초콜릿 바디 스크럽",
+          "4": "얼굴 팩",
+          "5": "전신 마사지 (50분)"
+        }
+      }
+    }
   },
-  "translations": {
-    "en": {
-      "title": "Clay Body Scrub",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Clay Body Scrub",
-        "4": "Face Mask"
-      }
+  {
+    "id": "7",
+    "image": "assets/images/7.png",
+    "category": "packages",
+    "time": "2 Hrs",
+    "price_info": {
+      "salary": 42,
+      "after_disc": 25,
+      "currency": "€"
     },
-    "ar": {
-      "title": "سنفرة الجسم بالطمي",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة الطمي للجسم",
-        "4": "ماسك للوجه"
+    "translations": {
+      "en": {
+        "title": "Salt Body Scrub and Massage",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Salt Body Scrub",
+          "4": "Face Mask",
+          "5": "Full Body Massage (50 Mins)"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بالملح والمساج",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة الملح للجسم",
+          "4": "ماسك للوجه",
+          "5": "مساج كامل للجسم (50 دقيقة)"
+        }
+      },
+      "de": {
+        "title": "Salz-Körperpeeling und Massage",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Salz-Körperpeeling",
+          "4": "Gesichtsmaske",
+          "5": "Ganzkörpermassage (50 Min.)"
+        }
+      },
+      "fr": {
+        "title": "Gommage du corps au sel et massage",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel au sel",
+          "4": "Masque facial",
+          "5": "Massage complet du corps (50 min)"
+        }
+      },
+      "ru": {
+        "title": "Солевой скраб для тела и массаж",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Солевой скраб для тела",
+          "4": "Маска для лица",
+          "5": "Массаж всего тела (50 мин.)"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de sal y masaje",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con sal",
+          "4": "Mascarilla facial",
+          "5": "Masaje corporal completo (50 min)"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo al sale e massaggio",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo al sale",
+          "4": "Maschera per il viso",
+          "5": "Massaggio completo del corpo (50 min)"
+        }
+      },
+      "sr": {
+        "title": "Piling tela solju i masaža",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Slani piling za telo",
+          "4": "Maska za lice",
+          "5": "Masaža celog tela (50 min)"
+        }
+      },
+      "sk": {
+        "title": "Soľný telový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Soľný telový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého tela (50 min)"
+        }
+      },
+      "et": {
+        "title": "Soola-kehakoorimine ja massaaž",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Soola-kehakoorimine",
+          "4": "Näomask",
+          "5": "Kogu keha massaaž (50 min)"
+        }
+      },
+      "hu": {
+        "title": "Sós testradír és masszázs",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Sós testradír",
+          "4": "Arcpakolás",
+          "5": "Teljes testmasszázs (50 perc)"
+        }
+      },
+      "pl": {
+        "title": "Solny peeling ciała i masaż",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Solny peeling do ciała",
+          "4": "Maska na twarz",
+          "5": "Masaż całego ciała (50 min)"
+        }
+      },
+      "cs": {
+        "title": "Solný tělový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Solný tělový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého těla (50 min)"
+        }
+      },
+      "tr": {
+        "title": "Tuz Vücut Peelingi ve Masaj",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Tuz Vücut Peelingi",
+          "4": "Yüz maskesi",
+          "5": "Tüm vücut masajı (50 dk)"
+        }
+      },
+      "zh": {
+        "title": "海盐身体磨砂与按摩",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "海盐身体磨砂",
+          "4": "面膜",
+          "5": "全身按摩 (50 分钟)"
+        }
+      },
+      "ko": {
+        "title": "솔트 바디 스크럽 및 마사지",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "솔트 바디 스크럽",
+          "4": "얼굴 팩",
+          "5": "전신 마사지 (50분)"
+        }
       }
+    }
+  },
+
+  {
+    "id": "8",
+    "image": "assets/images/8.png",
+    "category": "packages",
+    "time": "2 Hrs",
+    "price_info": {
+      "salary": 42,
+      "after_disc": 25,
+      "currency": "€"
     },
-    "de": {
-      "title": "Tonerde-Körperpeeling",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Tonerde-Körperpeeling",
-        "4": "Gesichtsmaske"
+    "translations": {
+      "en": {
+        "title": "Clay Body Scrub and Massage",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Clay Body Scrub",
+          "4": "Face Mask",
+          "5": "Full Body Massage (50 Mins)"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بالطمي والمساج",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة الطمي للجسم",
+          "4": "ماسك للوجه",
+          "5": "مساج كامل للجسم (50 دقيقة)"
+        }
+      },
+      "de": {
+        "title": "Tonerde-Körperpeeling und Massage",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Tonerde-Körperpeeling",
+          "4": "Gesichtsmaske",
+          "5": "Ganzkörpermassage (50 Min.)"
+        }
+      },
+      "fr": {
+        "title": "Gommage du corps à l'argile et massage",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel à l'argile",
+          "4": "Masque facial",
+          "5": "Massage complet du corps (50 min)"
+        }
+      },
+      "ru": {
+        "title": "Глиняный скраб для тела и массаж",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Глиняный скраб для тела",
+          "4": "Маска для лица",
+          "5": "Массаж всего тела (50 мин.)"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de arcilla y masaje",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con arcilla",
+          "4": "Mascarilla facial",
+          "5": "Masaje corporal completo (50 min)"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo all'argilla e massaggio",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo all'argilla",
+          "4": "Maschera per il viso",
+          "5": "Massaggio completo del corpo (50 min)"
+        }
+      },
+      "sr": {
+        "title": "Piling tela glinom i masaža",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling glinom za telo",
+          "4": "Maska za lice",
+          "5": "Masaža celog tela (50 min)"
+        }
+      },
+      "sk": {
+        "title": "Ílový telový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Ílový telový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého tela (50 min)"
+        }
+      },
+      "et": {
+        "title": "Saviga kehakoorimine ja massaaž",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Saviga kehakoorimine",
+          "4": "Näomask",
+          "5": "Kogu keha massaaž (50 min)"
+        }
+      },
+      "hu": {
+        "title": "Agyagos testradír és masszázs",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Agyagos testradír",
+          "4": "Arcpakolás",
+          "5": "Teljes testmasszázs (50 perc)"
+        }
+      },
+      "pl": {
+        "title": "Glinkowy peeling ciała i masaż",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Peeling glinkowy do ciała",
+          "4": "Maska na twarz",
+          "5": "Masaż całego ciała (50 min)"
+        }
+      },
+      "cs": {
+        "title": "Jílový tělový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Jílový tělový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého těla (50 min)"
+        }
+      },
+      "tr": {
+        "title": "Kil Vücut Peelingi ve Masaj",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Kil Vücut Peelingi",
+          "4": "Yüz maskesi",
+          "5": "Tüm vücut masajı (50 dk)"
+        }
+      },
+      "zh": {
+        "title": "泥土身体磨砂与按摩",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "泥土身体磨砂",
+          "4": "面膜",
+          "5": "全身按摩 (50 分钟)"
+        }
+      },
+      "ko": {
+        "title": "클레이 바디 스크럽 및 마사지",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "클레이 바디 스크럽",
+          "4": "얼굴 팩",
+          "5": "전신 마사지 (50분)"
+        }
       }
+    }
+  },
+
+  {
+    "id": "9",
+    "image": "assets/images/9.png",
+    "category": "packages",
+    "time": "2 Hrs",
+    "price_info": {
+      "salary": 42,
+      "after_disc": 25,
+      "currency": "€"
     },
-    "fr": {
-      "title": "Gommage corporel à l'argile",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel à l'argile",
-        "4": "Masque facial"
+    "translations": {
+      "en": {
+        "title": "Coffee Body Scrub and Massage",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Coffee Body Scrub",
+          "4": "Face Mask",
+          "5": "Full Body Massage (50 Mins)"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بالقهوة والمساج",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة القهوة للجسم",
+          "4": "ماسك للوجه",
+          "5": "مساج كامل للجسم (50 دقيقة)"
+        }
+      },
+      "de": {
+        "title": "Kaffee-Körperpeeling und Massage",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Kaffee-Körperpeeling",
+          "4": "Gesichtsmaske",
+          "5": "Ganzkörpermassage (50 Min.)"
+        }
+      },
+      "fr": {
+        "title": "Gommage du corps au café et massage",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel au café",
+          "4": "Masque facial",
+          "5": "Massage complet du corps (50 min)"
+        }
+      },
+      "ru": {
+        "title": "Кофейный скраб для тела и массаж",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Кофейный скраб для тела",
+          "4": "Маска для лица",
+          "5": "Массаж всего тела (50 мин.)"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de café y masaje",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con café",
+          "4": "Mascarilla facial",
+          "5": "Masaje corporal completo (50 min)"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo al caffè e massaggio",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo al caffè",
+          "4": "Maschera per il viso",
+          "5": "Massaggio completo del corpo (50 min)"
+        }
+      },
+      "sr": {
+        "title": "Piling tela kafom i masaža",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling kafom za telo",
+          "4": "Maska za lice",
+          "5": "Masaža celog tela (50 min)"
+        }
+      },
+      "sk": {
+        "title": "Kávový telový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Kávový telový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého tela (50 min)"
+        }
+      },
+      "et": {
+        "title": "Kohviga kehakoorimine ja massaaž",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Kohviga kehakoorimine",
+          "4": "Näomask",
+          "5": "Kogu keha massaaž (50 min)"
+        }
+      },
+      "hu": {
+        "title": "Kávés testradír és masszázs",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Kávés testradír",
+          "4": "Arcpakolás",
+          "5": "Teljes testmasszázs (50 perc)"
+        }
+      },
+      "pl": {
+        "title": "Kawowy peeling ciała i masaż",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Kawowy peeling do ciała",
+          "4": "Maska na twarz",
+          "5": "Masaż całego ciała (50 min)"
+        }
+      },
+      "cs": {
+        "title": "Kávový tělový peeling a masáž",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Kávový tělový peeling",
+          "4": "Pleťová maska",
+          "5": "Masáž celého těla (50 min)"
+        }
+      },
+      "tr": {
+        "title": "Kahve Vücut Peelingi ve Masaj",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Kahve Vücut Peelingi",
+          "4": "Yüz maskesi",
+          "5": "Tüm vücut masajı (50 dk)"
+        }
+      },
+      "zh": {
+        "title": "咖啡身体磨砂与按摩",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "咖啡身体磨砂",
+          "4": "面膜",
+          "5": "全身按摩 (50 分钟)"
+        }
+      },
+      "ko": {
+        "title": "커피 바디 스크럽 및 마사지",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "커피 바디 스크럽",
+          "4": "얼굴 팩",
+          "5": "전신 마사지 (50분)"
+        }
       }
+    }
+  },
+
+
+
+
+
+  {
+    "id": "10",
+    "image": "assets/images/10.png",
+    "category": "massage",
+    "time": "60 Mins",
+    "price_info": {
+      "salary": 23,
+      "after_disc": 15,
+      "currency": "€"
     },
-    "ru": {
-      "title": "Глиняный скраб для тела",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Глиняный скраб для тела",
-        "4": "Маска для лица"
+    "translations": {
+      "en": {
+        "title": "Swedish Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "A classic technique that uses long, flowing strokes, kneading, and circular movements to ease tension and improve circulation, leaving you completely relaxed."
+        }
+      },
+      "ar": {
+        "title": "المساج السويدي",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "تقنية كلاسيكية تستخدم حركات انسيابية طويلة، وعجن، وحركات دائرية لتخفيف التوتر وتحسين الدورة الدموية، مما يمنحك استرخاءً تاماً."
+        }
+      },
+      "de": {
+        "title": "Schwedische Massage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Eine klassische Technik mit langen, fließenden Streichbewegungen, Kneten und kreisenden Bewegungen, um Spannungen zu lösen, die Durchblutung zu fördern und tiefe Entspannung zu bewirken."
+        }
+      },
+      "fr": {
+        "title": "Massage Suédois",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Une technique classique utilisant de longs mouvements fluides, des pétrissages et des mouvements circulaires pour apaiser les tensions et améliorer la circulation, vous laissant totalement détendu."
+        }
+      },
+      "ru": {
+        "title": "Шведский массаж",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Классическая техника, сочетающая длинные плавные движения, разминание и круговые жесты для снятия напряжения и улучшения кровообращения, обеспечивая полное расслабление."
+        }
+      },
+      "es": {
+        "title": "Masaje Sueco",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Una técnica clásica que utiliza movimientos largos y fluidos, amasamiento y movimientos circulares para aliviar la tensión y mejorar la circulación, dejándote completamente relajado."
+        }
+      },
+      "it": {
+        "title": "Massaggio Svedese",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Una tecnica classica che utilizza movimenti lunghi e fluidi, impastamenti e movimenti circolari per sciogliere le tensioni e migliorare la circolazione, regalandoti un relax totale."
+        }
+      },
+      "sr": {
+        "title": "Švedska masaža",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Klasična tehnika koja koristi duge, tečne pokrete, gnječenje i kružne pokrete za ublažavanje napetosti i poboljšanje cirkulacije, ostavljajući vas potpuno opuštenim."
+        }
+      },
+      "sk": {
+        "title": "Švédska masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Klasická technika využívajúca dlhé, plynulé ťahy, miesenie a krúživé pohyby na zmiernenie napätia a zlepšenie krvného obehu, čím vás zanechá úplne uvoľnených."
+        }
+      },
+      "et": {
+        "title": "Rootsi massaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "Klassikaline tehnika, mis kasutab pikki voolavaid liigutusi, sõtkumist ja ringjaid liigutusi pinge leevendamiseks ja vereringe parandamiseks, pakkudes täielikku lõõgastust."
+        }
+      },
+      "hu": {
+        "title": "Svédmasszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "Klasszikus technika hosszú, simító mozdulatokkal, gyúrással és körkörös mozdulatokkal a feszültség oldására és a keringés javítására, a teljes ellazulásért."
+        }
+      },
+      "pl": {
+        "title": "Masaż szwedzki",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Klasyczna technika wykorzystująca długie, płynne pociągnięcia, ugniatanie i ruchy okrężne, aby złagodzić napięcie i poprawić krążenie, pozostawiając Cię całkowicie zrelaksowanym."
+        }
+      },
+      "cs": {
+        "title": "Švédská masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Klasická technika využívající dlouhé, plynulé tahy, hnětení a krouživé pohyby ke zmírnění napětí a zlepšení krevního oběhu, která vás zanechá zcela uvolněné."
+        }
+      },
+      "tr": {
+        "title": "İsveç Masajı",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Gerginliği azaltmak ve kan dolaşımını iyileştirmek için uzun, akıcı vuruşlar, yoğurma ve dairesel hareketler kullanan, sizi tamamen rahatlatan klasik bir teknik."
+        }
+      },
+      "zh": {
+        "title": "瑞典式按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "一种经典的按摩技术，通过长而流畅的推拿、揉捏和圆周运动来缓解紧张感并促进血液循环，让您身心完全放松。"
+        }
+      },
+      "ko": {
+        "title": "스웨디시 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "긴 흐름의 스트로크, 주무르기, 원형 동작을 사용하여 긴장을 완화하고 혈액순환을 개선하여 완전한 휴식을 선사하는 클래식한 기법입니다."
+        }
       }
+    }
+  },
+
+  {
+    "id": "11",
+    "image": "assets/images/11.webp",
+    "category": "massage",
+    "time": "60 Mins",
+    "price_info": {
+      "salary": 23,
+      "after_disc": 15,
+      "currency": "€"
     },
-    "es": {
-      "title": "Exfoliante corporal de arcilla",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con arcilla",
-        "4": "Mascarilla facial"
+    "translations": {
+      "en": {
+        "title": "Aromatherapy Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "This massage incorporates essential oils extracted from plants, offering a dual benefit of soothing aromas and gentle massage techniques to balance your mind and body."
+        }
+      },
+      "ar": {
+        "title": "مساج الروائح العطرية",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "يجمع هذا التدليك بين الزيوت العطرية المستخلصة من النباتات، مما يوفر فائدة مزدوجة من الروائح المهدئة وتقنيات التدليك اللطيفة لموازنة عقلك وجسمك."
+        }
+      },
+      "de": {
+        "title": "Aromatherapie-Massage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Diese Massage kombiniert ätherische Öle aus Pflanzen und bietet den doppelten Nutzen von beruhigenden Aromen und sanften Massagetechniken, um Geist und Körper in Einklang zu bringen."
+        }
+      },
+      "fr": {
+        "title": "Massage d'Aromathérapie",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Ce massage utilise des huiles essentielles extraites de plantes, offrant le double avantage d'arômes apaisants et de techniques de massage douces pour équilibrer l'esprit et le corps."
+        }
+      },
+      "ru": {
+        "title": "Ароматерапевтический массаж",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Этот массаж включает использование эфирных масел растений, обеспечивая двойную пользу: успокаивающие ароматы и мягкие техники массажа для гармонии души и тела."
+        }
+      },
+      "es": {
+        "title": "Masaje de Aromaterapia",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Este masaje incorpora aceites esenciales extraídos de plantas, ofreciendo el doble beneficio de aromas relajantes y técnicas de masaje suaves para equilibrar mente y cuerpo."
+        }
+      },
+      "it": {
+        "title": "Massaggio Aromaterapico",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Questo massaggio utilizza oli essenziali estratti dalle piante, offrendo il doppio beneficio di aromi rilassanti e tecniche di massaggio delicate per equilibrare mente e corpo."
+        }
+      },
+      "sr": {
+        "title": "Aromaterapijska masaža",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Ova masaža uključuje esencijalna ulja ekstrahovana iz biljaka, nudeći dvostruku korist umirujućih mirisa i nežnih tehnika masaže za balans uma i tela."
+        }
+      },
+      "sk": {
+        "title": "Aromaterapeutická masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Táto masáž využíva esenciálne oleje z rastlín a ponúka dvojitý prínos upokojujúcich vôní a jemných masážnych techník na vyváženie mysle a tela."
+        }
+      },
+      "et": {
+        "title": "Aroomiteraapiline massaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "See massaaž kasutab taimedest ekstraheeritud eeterlikke õlisid, pakkudes rahustavate aroomide ja õrnade massaaživõtete kahekordset kasu vaimu ja keha tasakaalustamiseks."
+        }
+      },
+      "hu": {
+        "title": "Aromaterápiás masszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "Ez a masszázs növényi illóolajokat használ, így az illatok és a gyengéd technikák kettős előnyével teremti meg az elme és a test egyensúlyát."
+        }
+      },
+      "pl": {
+        "title": "Masaż aromaterapeutyczny",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Ten masaż wykorzystuje olejki eteryczne z roślin, oferując podwójną korzyść: kojące aromaty i delikatne techniki masażu, które równoważą umysł i ciało."
+        }
+      },
+      "cs": {
+        "title": "Aromaterapeutická masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Tato masáž využívá esenciální oleje z rostlin a nabízí dvojí přínos uklidňujících vůní a jemných masážních technik k vyvážení mysli i těla."
+        }
+      },
+      "tr": {
+        "title": "Aromaterapi Masajı",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Bitkilerden çıkarılan uçucu yağları içeren bu masaj, zihninizi ve vücudunuzu dengelemek için yatıştırıcı aromalar ve nazik masaj tekniklerinin ikili faydasını sunar."
+        }
+      },
+      "zh": {
+        "title": "芳香疗法按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "这种按摩融合了从植物中提取的精油，通过舒缓的香气和柔和的按摩技术双管齐下，平衡您的身心。"
+        }
+      },
+      "ko": {
+        "title": "아로마테라피 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "식물에서 추출한 에센셜 오일을 사용하는 이 마사지는 마음과 몸의 균형을 잡아주는 은은한 향기와 부드러운 마사지 기법의 두 가지 효과를 제공합니다."
+        }
       }
+    }
+  },
+
+
+
+  {
+    "id": "12",
+    "image": "assets/images/12.webp",
+    "category": "massage",
+    "time": "60 Mins",
+    "price_info": {
+      "salary": 23,
+      "after_disc": 15,
+      "currency": "€"
     },
-    "it": {
-      "title": "Scrub corpo all'argilla",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo all'argilla",
-        "4": "Maschera per il viso"
+    "translations": {
+      "en": {
+        "title": "Medical Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "A therapeutic approach that targets specific musculoskeletal issues, using clinical techniques to alleviate pain, reduce inflammation, and support recovery from injuries."
+        }
+      },
+      "ar": {
+        "title": "المساج الطبي",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "نهج علاجي يستهدف مشاكل العضلات والعظام المحددة، باستخدام تقنيات سريرية لتخفيف الألم، وتقليل الالتهاب، ودعم التعافي من الإصابات."
+        }
+      },
+      "de": {
+        "title": "Medizinische Massage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Ein therapeutischer Ansatz, der auf spezifische Probleme des Bewegungsapparats abzielt und klinische Techniken einsetzt, um Schmerzen zu lindern, Entzündungen zu hemmen und die Genesung nach Verletzungen zu unterstützen."
+        }
+      },
+      "fr": {
+        "title": "Massage Médical",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Une approche thérapeutique qui cible des problèmes musculo-squelettiques spécifiques, utilisant des techniques cliniques pour soulager la douleur, réduire l'inflammation et favoriser la guérison des blessures."
+        }
+      },
+      "ru": {
+        "title": "Медицинский массаж",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Терапевтический подход, направленный на решение конкретных проблем опорно-двигательного аппарата с использованием клинических методов для облегчения боли, уменьшения воспаления и ускорения восстановления после травм."
+        }
+      },
+      "es": {
+        "title": "Masaje Médico",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Un enfoque terapéutico que aborda problemas musculoesqueléticos específicos, utilizando técnicas clínicas para aliviar el dolor, reducir la inflamación y apoyar la recuperación de lesiones."
+        }
+      },
+      "it": {
+        "title": "Massaggio Medico",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Un approccio terapeutico che mira a specifici problemi muscolo-scheletrici, utilizzando tecniche cliniche per alleviare il dolore, ridurre l'infiammazione e supportare il recupero dagli infortuni."
+        }
+      },
+      "sr": {
+        "title": "Medicinska masaža",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Terapeutski pristup koji cilja na specifične mišićno-skeletne probleme, koristeći kliničke tehnike za ublažavanje bolova, smanjenje upale i podršku oporavku od povreda."
+        }
+      },
+      "sk": {
+        "title": "Liečebná masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Terapeutický prístup zameraný na špecifické muskuloskeletálne problémy, využívajúci klinické techniky na zmiernenie bolesti, zníženie zápalu a podporu zotavenia po zraneniach."
+        }
+      },
+      "et": {
+        "title": "Ravimassaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "Terapeutiline lähenemine, mis on suunatud konkreetsetele lihas-skeleti probleemidele, kasutades kliinilisi võtteid valu leevendamiseks, põletiku vähendamiseks ja vigastustest taastumise toetamiseks."
+        }
+      },
+      "hu": {
+        "title": "Orvosi masszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "Terápiás megközelítés, amely specifikus váz- és izomrendszeri problémákra irányul, klinikai technikákat alkalmazva a fájdalom enyhítésére, a gyulladás csökkentésére és a sérülések utáni felépülés segítésére."
+        }
+      },
+      "pl": {
+        "title": "Masaż medyczny",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Podejście terapeutyczne ukierunkowane na konkretne problemy układu mięśniowo-szkieletowego, wykorzystujące techniki kliniczne w celu łagodzenia bólu, zmniejszania stanów zapalnych i wspomagania regeneracji po urazach."
+        }
+      },
+      "cs": {
+        "title": "Lékařská masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Terapeutický přístup zaměřený na specifické muskuloskeletální problémy, využívající klinické techniky ke zmírnění bolesti, snížení zánětu a podpoře zotavení po úrazech."
+        }
+      },
+      "tr": {
+        "title": "Medikal Masaj",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Ağrıyı hafifletmek, iltihabı azaltmak ve yaralanmalardan iyileşmeyi desteklemek için klinik teknikler kullanan, spesifik kas-iskelet sorunlarını hedefleyen terapötik bir yaklaşım."
+        }
+      },
+      "zh": {
+        "title": "医疗按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "一种针对特定肌肉骨骼问题的治疗方法，使用临床技术来缓解疼痛、减轻炎症并支持伤后恢复。"
+        }
+      },
+      "ko": {
+        "title": "의료 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "특정 근골격계 문제를 목표로 하는 치료적 접근 방식으로, 임상 기법을 사용하여 통증을 완화하고 염증을 줄이며 부상 회복을 돕습니다."
+        }
       }
+    }
+  },
+
+  {
+    "id": "13",
+    "image": "assets/images/13.webp",
+    "category": "massage",
+    "time": "60 Mins",
+    "price_info": {
+      "salary": 23,
+      "after_disc": 15,
+      "currency": "€"
     },
-    "sr": {
-      "title": "Piling tela glinom",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling glinom za telo",
-        "4": "Maska za lice"
+    "translations": {
+      "en": {
+        "title": "Classic Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "Specially designed for active individuals and athletes, this massage focuses on deep tissue work and stretching to improve performance, prevent injuries, and accelerate recovery."
+        }
+      },
+      "ar": {
+        "title": "المساج الكلاسيكي",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "صُمم خصيصاً للأشخاص النشيطين والرياضيين، حيث يركز على العمل على الأنسجة العميقة والإطالات لتحسين الأداء، والوقاية من الإصابات، وتسريع عملية التعافي."
+        }
+      },
+      "de": {
+        "title": "Klassische Massage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Speziell für aktive Menschen und Sportler entwickelt, konzentriert sich diese Massage auf Tiefengewebsarbeit und Dehnung, um die Leistung zu steigern, Verletzungen vorzubeugen und die Erholung zu beschleunigen."
+        }
+      },
+      "fr": {
+        "title": "Massage Classique",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Spécialement conçu pour les personnes actives et les athlètes, ce massage se concentre sur le travail des tissus profonds et les étirements pour améliorer les performances, prévenir les blessures et accélérer la récupération."
+        }
+      },
+      "ru": {
+        "title": "Классический массаж",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Этот массаж, специально разработанный для активных людей и спортсменов, направлен на глубокую проработку тканей и растяжку для повышения работоспособности, предотвращения травм и ускорения восстановления."
+        }
+      },
+      "es": {
+        "title": "Masaje Clásico",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Especialmente diseñado para personas activas y deportistas, este masaje se centra en el trabajo de tejidos profundos y estiramientos para mejorar el rendimiento, prevenir lesiones y acelerar la recuperación."
+        }
+      },
+      "it": {
+        "title": "Massaggio Classico",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Appositamente progettato per persone attive e atleti, questo massaggio si concentra sul lavoro dei tessuti profondi e sullo stretching per migliorare le prestazioni, prevenire infortuni e accelerare il recupero."
+        }
+      },
+      "sr": {
+        "title": "Klasična masaža",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Specijalno dizajnirana za aktivne pojedince i sportiste, ova masaža se fokusira na rad dubokih tkiva i istezanje radi poboljšanja performansi, sprečavanja povreda i ubrzanja oporavka."
+        }
+      },
+      "sk": {
+        "title": "Klasická masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Táto masáž, špeciálne navrhnutá pre aktívnych ľudí a športovcov, sa zameriava na prácu s hlbokými tkanivami a strečing na zlepšenie výkonu, prevenciu zranení a urýchlenie regenerácie."
+        }
+      },
+      "et": {
+        "title": "Klassikaline massaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "Spetsiaalselt aktiivsetele inimestele ja sportlastele mõeldud massaaž keskendub süvakudedele ja venitustele, et parandada sooritust, ennetada vigastusi ja kiirendada taastumist."
+        }
+      },
+      "hu": {
+        "title": "Klasszikus masszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "Kifejezetten aktív egyének és sportolók számára kifejlesztve; a mélyszöveti munkára és a nyújtásra összpontosít a teljesítmény javítása, a sérülések megelőzése és a felépülés felgyorsítása érdekében."
+        }
+      },
+      "pl": {
+        "title": "Masaż klasyczny",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Zaprojektowany specjalnie dla osób aktywnych i sportowców, masaż ten koncentruje się na pracy na tkankach głębokich i rozciąganiu, aby poprawić wydajność, zapobiegać kontuzjom i przyspieszyć regenerację."
+        }
+      },
+      "cs": {
+        "title": "Klasická masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Tato masáž, speciálně navržená pro aktivní jedince a sportovce, se zaměřuje na práci s hlubokými tkáněmi a strečink pro zlepšení výkonu, prevenci zranění a urychlení regenerace."
+        }
+      },
+      "tr": {
+        "title": "Klasik Masaj",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Aktif bireyler ve sporcular için özel olarak tasarlanan bu masaj, performansı artırmak, yaralanmaları önlemek ve iyileşmeyi hızlandırmak için derin doku çalışmasına ve esnetmeye odaklanır."
+        }
+      },
+      "zh": {
+        "title": "经典按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "专为活跃人士和运动员设计，这种按摩侧重于深层组织推拿和拉伸，以提高表现、预防受伤并加速恢复。"
+        }
+      },
+      "ko": {
+        "title": "클래식 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "활동적인 분들과 운동선수들을 위해 특별히 고안된 이 마사지는 심부 조직 관리와 스트레칭에 집중하여 경기력을 향상시키고 부상을 예방하며 회복을 촉진합니다."
+        }
       }
+    }
+  },
+
+  {
+    "id": "14",
+    "image": "assets/images/14.png",
+    "category": "massage",
+    "time": "60 Mins",
+    "price_info": {
+      "salary": 31,
+      "after_disc": 20,
+      "currency": "€"
     },
-    "sk": {
-      "title": "Ílový telový peeling",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Ílový telový peeling",
-        "4": "Pleťová maska"
+    "translations": {
+      "en": {
+        "title": "Deep Tissue Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "This massage employs firm, targeted pressure to reach deeper layers of muscle and connective tissue, effectively relieving chronic tension and alleviating pain."
+        }
+      },
+      "ar": {
+        "title": "مساج الأنسجة العميقة",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "يستخدم هذا التدليك ضغطاً قوياً ومستهدفاً للوصول إلى الطبقات العميقة من العضلات والأنسجة الضامة، مما يساعد بفعالية في تخفيف التوتر المزمن وتسكين الآلام."
+        }
+      },
+      "de": {
+        "title": "Tiefengewebsmassage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Diese Massage verwendet festen, gezielten Druck, um tiefere Schichten von Muskeln und Bindegewebe zu erreichen und chronische Verspannungen sowie Schmerzen effektiv zu lösen."
+        }
+      },
+      "fr": {
+        "title": "Massage des Tissus Profonds",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Ce massage utilise une pression ferme et ciblée pour atteindre les couches profondes des muscles et des tissus conjonctifs, soulageant efficacement les tensions chroniques et la douleur."
+        }
+      },
+      "ru": {
+        "title": "Глубокотканный массаж",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Этот массаж использует сильное, точечное давление для проработки глубоких слоев мышц и соединительной ткани, эффективно снимая хроническое напряжение и боль."
+        }
+      },
+      "es": {
+        "title": "Masaje de Tejido Profundo",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Este masaje emplea una presión firme y dirigida para llegar a las capas más profundas de los músculos y el tejido conectivo, aliviando eficazmente la tensión crónica y el dolor."
+        }
+      },
+      "it": {
+        "title": "Massaggio Decontratturante / Deep Tissue",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Questo massaggio utilizza una pressione decisa e mirata per raggiungere gli strati più profondi dei muscoli e del tessuto connettivo, alleviando efficacemente le tensioni croniche e il dolore."
+        }
+      },
+      "sr": {
+        "title": "Masaža dubokih tkiva",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Ova masaža koristi čvrst, ciljani pritisak kako bi došla do dubljih slojeva mišića i vezivnog tkiva, efikasno ublažavajući hroničnu napetost i bol."
+        }
+      },
+      "sk": {
+        "title": "Hĺbková masáž tkanív",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Táto masáž využíva pevný, cielený tlak na dosiahnutie hlbších vrstiev svalov a spojivového tkaniva, čím účinne uvoľňuje chronické napätie a zmierňuje bolesť."
+        }
+      },
+      "et": {
+        "title": "Süvakudede massaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "See massaaž kasutab tugevat ja suunatud survet, et jõuda lihaste ja sidekoe sügavamate kihtideni, leevendades tõhusalt kroonilist pinget ja valu."
+        }
+      },
+      "hu": {
+        "title": "Mélyszöveti masszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "Ez a masszázs erős, célzott nyomást alkalmaz az izmok és a kötőszövet mélyebb rétegeinek eléréséhez, hatékonyan oldva a krónikus feszültséget és a fájdalmat."
+        }
+      },
+      "pl": {
+        "title": "Masaż tkanek głębokich",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Ten masaż wykorzystuje zdecydowany, celowany ucisk, aby dotrzeć do głębszych warstw mięśni i tkanki łącznej, skutecznie uwalniając od przewlekłego napięcia i bólu."
+        }
+      },
+      "cs": {
+        "title": "Hloubková masáž tkání",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Tato masáž využívá pevný, cílený tlak k dosažení hlubších vrstev svalů a pojivové tkáně, čímž účinně uvolňuje chronické napětí a zmírňuje bolest."
+        }
+      },
+      "tr": {
+        "title": "Derin Doku Masajı",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Bu masaj, kasların ve bağ dokusunun daha derin katmanlarına ulaşmak için sert ve hedeflenmiş bir basınç uygulayarak kronik gerginliği ve ağrıyı etkili bir şekilde giderir."
+        }
+      },
+      "zh": {
+        "title": "深层组织按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "这种按摩采用坚实、有针对性的压力来触及肌肉和结缔组织的深层，有效缓解慢性紧张和疼痛。"
+        }
+      },
+      "ko": {
+        "title": "딥 티슈 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "이 마사지는 단단하고 집중적인 압력을 가하여 근육과 결합 조직의 깊은 층까지 도달함으로써 만성적인 긴장을 풀고 통증을 효과적으로 완화합니다."
+        }
       }
+    }
+  },
+
+  {
+    "id": "15",
+    "image": "assets/images/15.png",
+    "category": "massage",
+    "time": "60 Mins",
+    "price_info": {
+      "salary": 31,
+      "after_disc": 20,
+      "currency": "€"
     },
-    "et": {
-      "title": "Saviga kehakoorimine",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Saviga kehakoorimine",
-        "4": "Näomask"
+    "translations": {
+      "en": {
+        "title": "Sport Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "Specially designed for active individuals and athletes, this massage focuses on deep tissue work and stretching to improve performance, prevent injuries, and accelerate recovery."
+        }
+      },
+      "ar": {
+        "title": "المساج الرياضي",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "صُمم خصيصاً للأشخاص النشيطين والرياضيين، حيث يركز على العمل على الأنسجة العميقة والإطالات لتحسين الأداء، والوقاية من الإصابات، وتسريع عملية التعافي."
+        }
+      },
+      "de": {
+        "title": "Sportmassage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Speziell für aktive Menschen und Sportler entwickelt, konzentriert sich diese Massage auf Tiefengewebsarbeit und Dehnung, um die Leistung zu steigern, Verletzungen vorzubeugen und die Erholung zu beschleunigen."
+        }
+      },
+      "fr": {
+        "title": "Massage Sportif",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Spécialement conçu pour les personnes actives et les athlètes, ce massage se concentre sur le travail des tissus profonds et les étirements pour améliorer les performances, prévenir les blessures et accélérer la récupération."
+        }
+      },
+      "ru": {
+        "title": "Спортивный массаж",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Этот массаж, специально разработанный для активных людей и спортсменов, направлен на глубокую проработку тканей и растяжку для повышения работоспособности, предотвращения травм и ускорения восстановления."
+        }
+      },
+      "es": {
+        "title": "Masaje Deportivo",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Especialmente diseñado para personas activas y deportistas, este massage se centra en el trabajo de tejidos profundos y estiramientos para mejorar el rendimiento, prevenir lesiones y acelerar la recuperación."
+        }
+      },
+      "it": {
+        "title": "Massaggio Sportivo",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Appositamente progettato per persone attive e atleti, questo massaggio si concentra sul lavoro dei tessuti profondi e sullo stretching per migliorare le prestazioni, prevenire infortuni e accelerare il recupero."
+        }
+      },
+      "sr": {
+        "title": "Sportska masaža",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Specijalno dizajnirana za aktivne pojedince i sportiste, ova masaža se fokusira na rad dubokih tkiva i istezanje radi poboljšanja performansi, sprečavanja povreda i ubrzanja oporavka."
+        }
+      },
+      "sk": {
+        "title": "Športová masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Táto masáž, špeciálne navrhnutá pre aktívnych ľudí a športovcov, sa zameriava na prácu s hlbokými tkanivami a strečing na zlepšenie výkonu, prevenciu zranení a urýchlenie regenerácie."
+        }
+      },
+      "et": {
+        "title": "Spordimassaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "Spetsiaalselt aktiivsetele inimestele ja sportlastele mõeldud massaaž keskendub süvakudedele ja venitustele, et parandada sooritust, ennetada vigastusi ja kiirendada taastumist."
+        }
+      },
+      "hu": {
+        "title": "Sportmasszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "Kifejezetten aktív egyének és sportolók számára kifejlesztve; a mélyszöveti munkára és a nyújtásra összpontosít a teljesítmény javítása, a sérülések megelőzése és a felépülés felgyorsítása érdekében."
+        }
+      },
+      "pl": {
+        "title": "Masaż sportowy",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Zaprojektowany specjalnie dla osób aktywnych i sportowców, masaż ten koncentruje se na pracy na tkankach głębokich i rozciąganiu, aby poprawić wydajność, zapobiegać kontuzjom i przyspieszyć regenerację."
+        }
+      },
+      "cs": {
+        "title": "Sportovní masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Tato masáž, speciálně navržená pro aktivní jedince a sportovce, se zaměřuje na práci s hlubokými tkáněmi a strečink pro zlepšení výkonu, prevenci zranění a urychlení regenerace."
+        }
+      },
+      "tr": {
+        "title": "Spor Masajı",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Aktif bireyler ve sporcular için özel olarak tasarlanan bu masaj, performansı artırmak, yaralanmaları önlemek ve iyileşmeyi hızlandırmak için derin doku çalışmasına ve esnetmeye odaklanır."
+        }
+      },
+      "zh": {
+        "title": "运动按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "专为活跃人士和运动员设计，这种按摩侧重于深层组织推拿和拉伸，以提高表现、预防受伤并加速恢复。"
+        }
+      },
+      "ko": {
+        "title": "스포츠 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "활동적인 분들과 운동선수들을 위해 특별히 고안된 이 마사지는 심부 조직 관리와 스트레칭에 집중하여 경기력을 향상시키고 부상을 예방하며 회복을 촉진합니다."
+        }
       }
+    }
+  },
+
+  {
+    "id": "16",
+    "image": "assets/images/16.png",
+    "category": "massage",
+    "time": "60 Mins",
+    "price_info": {
+      "salary": 31,
+      "after_disc": 20,
+      "currency": "€"
     },
-    "hu": {
-      "title": "Agyagos testradír",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Agyagos testradír",
-        "4": "Arcpakolás"
+    "translations": {
+      "en": {
+        "title": "Hot Stone Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "Heated, smooth stones are strategically placed on key points to warm muscles, enhance circulation, and dissolve deep-seated tension for a profoundly soothing experience."
+        }
+      },
+      "ar": {
+        "title": "مساج الأحجار الساخنة",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "توضع أحجار ملساء ساخنة بشكل استراتيجي على نقاط رئيسية لتدفئة العضلات، وتحسين الدورة الدموية، وإذابة التوتر العميق لتجربة مهدئة للغاية."
+        }
+      },
+      "de": {
+        "title": "Hot-Stone-Massage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Erhitzte, glatte Steine werden strategisch auf wichtige Punkte platziert, um die Muskeln zu wärmen, die Durchblutung zu fördern und tiefsitzende Verspannungen für ein tief entspannendes Erlebnis zu lösen."
+        }
+      },
+      "fr": {
+        "title": "Massage aux Pierres Chaudes",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Des pierres lisses et chauffées sont placées stratégiquement sur des points clés pour réchauffer les muscles, améliorer la circulation et dissoudre les tensions profondes pour une expérience profondément apaisante."
+        }
+      },
+      "ru": {
+        "title": "Массаж горячими камнями",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Нагретые гладкие камни стратегически размещаются на ключевых точках, чтобы прогреть мышцы, улучшить кровообращение и снять глубокое напряжение для достижения глубокого успокаивающего эффекта."
+        }
+      },
+      "es": {
+        "title": "Masaje con Piedras Calientes",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Piedras lisas y calientes se colocan estratégicamente en puntos clave para calentar los músculos, mejorar la circulación y disolver la tensión profunda para una experiencia profundamente relajante."
+        }
+      },
+      "it": {
+        "title": "Massaggio con Pietre Calde",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Pietre lisce e riscaldate vengono posizionate strategicamente su punti chiave per riscaldare i muscoli, migliorare la circolazione e sciogliere le tensioni profonde per un'esperienza profondamente lenitiva."
+        }
+      },
+      "sr": {
+        "title": "Masaža toplim kamenjem",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Zagrejan, glatki kamen se strateški postavlja na ključne tačke kako bi zagrejao mišiće, poboljšao cirkulaciju i rastvorio duboku napetost za duboko umirujuće iskustvo."
+        }
+      },
+      "sk": {
+        "title": "Masáž horúcimi kameňmi",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Zohriate, hladké kamene sú strategicky umiestnené na kľúčové body, aby zahriali svaly, zlepšili krvný obeh a uvoľnili hlboké napätie pre hlboko upokojujúci zážitok."
+        }
+      },
+      "et": {
+        "title": "Kuumakivimassaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "Soojendatud siledad kivid asetatakse strateegiliselt põhipunktidele, et soojendada lihaseid, parandada vereringet ja leevendada sügavat pinget sügavalt rahustava kogemuse saamiseks."
+        }
+      },
+      "hu": {
+        "title": "Lávaköves masszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "Hevített, sima köveket helyeznek el stratégiai pontokon az izmok melegítése, a keringés javítása és a mélyen fekvő feszültség oldása érdekében a mélyen nyugtató élményért."
+        }
+      },
+      "pl": {
+        "title": "Masaż gorącymi kamieniami",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Podgrzane, gładkie kamienie są strategicznie rozmieszczone w kluczowych punktach, aby rozgrzać mięśnie, poprawić krążenie i rozpuścić głębokie napięcie, zapewniając głęboko kojące wrażenia."
+        }
+      },
+      "cs": {
+        "title": "Masáž horkými kameny",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Zahřáté hladké kameny jsou strategicky umístěny na klíčové body, aby zahřály svaly, zlepšily krevní oběh a uvolnile hluboké napětí pro hluboce uklidňující zážitek."
+        }
+      },
+      "tr": {
+        "title": "Sıcak Taş Masajı",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Isıtılmış, pürüzsüz taşlar kasları ısıtmak, kan dolaşımını artırmak ve derinlerdeki gerginliği gidermek için stratejik noktalara yerleştirilerek derinlemesine yatıştırıcı bir deneyim sunar."
+        }
+      },
+      "zh": {
+        "title": "热石按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "将加热的光滑石头有策略地放置在关键穴位，以温热肌肉、增强循环并化解深层紧张，提供深层舒缓的体验。"
+        }
+      },
+      "ko": {
+        "title": "핫스톤 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "따뜻하고 매끄러운 돌을 주요 부위에 배치하여 근육을 데우고 혈액순환을 촉진하며 깊은 곳의 긴장을 풀어주는 깊고 평온한 경험을 선사합니다."
+        }
       }
+    }
+  },
+
+  {
+    "id": "17",
+    "image": "assets/images/17.png",
+    "category": "massage",
+    "time": "60 Mins",
+    "price_info": {
+      "salary": 39,
+      "after_disc": 25,
+      "currency": "€"
     },
-    "pl": {
-      "title": "Glinkowy peeling ciała",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Peeling glinkowy do ciała",
-        "4": "Maska na twarz"
+    "translations": {
+      "en": {
+        "title": "Anti-Cellulite Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "Utilizing specialized techniques to stimulate lymphatic drainage and boost circulation, this treatment helps reduce the appearance of cellulite and firm the skin in targeted areas."
+        }
+      },
+      "ar": {
+        "title": "مساج مكافحة السيلوليت",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "باستخدام تقنيات متخصصة لتحفيز التصريف اللمفاوي وتعزيز الدورة الدموية، يساعد هذا العلاج في تقليل ظهور السيلوليت وشد الجلد في المناطق المستهدفة."
+        }
+      },
+      "de": {
+        "title": "Anti-Cellulite-Massage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Durch den Einsatz spezieller Techniken zur Förderung der Lymphdrainage und Durchblutung hilft diese Behandlung, das Erscheinungsbild von Cellulite zu reduzieren und die Haut in den Zielbereichen zu festigen."
+        }
+      },
+      "fr": {
+        "title": "Massage Anti-Cellulite",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Utilisant des techniques spécialisées pour stimuler le drainage lymphatique et booster la circulation, ce soin aide à réduire l'aspect de la cellulite et à raffermir la peau dans les zones ciblées."
+        }
+      },
+      "ru": {
+        "title": "Антицеллюлитный массаж",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Использование специализированных техник для стимуляции лимфодренажа и улучшения кровообращения помогает уменьшить видимость целлюлита и укрепить кожу в проблемных зонах."
+        }
+      },
+      "es": {
+        "title": "Masaje Anticelulítico",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Utilizando técnicas especializadas para estimular el drenaje linfático y aumentar la circulación, este tratamiento ayuda a reducir la apariencia de la celulitis y a reafirmar la piel en áreas específicas."
+        }
+      },
+      "it": {
+        "title": "Massaggio Anticellulite",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Utilizzando tecniche specializzate per stimolare il drenaggio linfatico e aumentare la circolacija, questo trattamento aiuta a ridurre l'aspetto della cellulite e a rassodare la pelle nelle zone mirate."
+        }
+      },
+      "sr": {
+        "title": "Anticelulit masaža",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Koristeći specijalizovane tehnike za stimulaciju limfne drenaže i poboljšanje cirkulacije, ovaj tretman pomaže u smanjenju vidljivosti celulita i učvršćivanju kože u ciljanim područjima."
+        }
+      },
+      "sk": {
+        "title": "Anticelulitídna masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Využitím špecializovaných techník na stimuláciu lymfatickej drenáže a podporu cirkulácie tento ošetrenie pomáha znižovať vzhľad celulitídy a spevňovať pokožku v cieľových oblastiach."
+        }
+      },
+      "et": {
+        "title": "Antitselluliidimassaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "Kasutades spetsiaalseid meetodeid lümfidrenaaži stimuleerimiseks ja vereringe parandamiseks, aitab see hooldus vähendada tselluliidi nähtavust ja pinguldada nahka sihtpiirkondades."
+        }
+      },
+      "hu": {
+        "title": "Anticellulit masszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "Speciális technikákat alkalmazva a nyirokkeringés serkentésére és a vérkeringés fokozására, ez a kezelés segít csökkenteni a narancsbőr láthatóságát és feszesíteni a bőrt a célterületeken."
+        }
+      },
+      "pl": {
+        "title": "Masaż antycellulitowy",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Wykorzystując specjalistyczne techniki stymulujące drenaż limfatyczny i poprawiające krążenie, zabieg ten pomaga zmniejszyć widoczność cellulitu i ujędrnić skórę w wybranych obszarach."
+        }
+      },
+      "cs": {
+        "title": "Anticelulitidní masáž",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Využitím specializovaných technik ke stimulaci lymfatické drenáže a podpoře cirkulace pomáhá toto ošetření snižovat výskyt celulitidy a zpevňovat pokožku v cílových oblastech."
+        }
+      },
+      "tr": {
+        "title": "Selülit Karşıtı Masaj",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Lenf drenajını uyarmak ve dolaşımı hızlandırmak için özel teknikler kullanan bu bakım, selülit görünümünü azaltmaya ve hedeflenen bölgelerdeki cildi sıkılaştırmaya yardımcı olur."
+        }
+      },
+      "zh": {
+        "title": "抗橘皮组织按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "利用专业技术刺激淋巴排毒并促进循环，该护理有助于减少橘皮组织的出现，并使目标区域的皮肤紧致。"
+        }
+      },
+      "ko": {
+        "title": "안티 셀룰라이트 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "림프 배수 자극과 순환 촉진을 위한 전문 기법을 사용하여 셀룰라이트의 가시적인 감소를 돕고 특정 부위의 피부 탄력을 강화합니다."
+        }
       }
+    }
+  },
+
+
+
+  {
+    "id": "18",
+    "image": "assets/images/18.png",
+    "category": "massage",
+    "time": "30 Mins",
+    "price_info": {
+      "salary": 16,
+      "after_disc": 10,
+      "currency": "€"
     },
-    "cs": {
-      "title": "Jílový tělový peeling",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Jílový tělový peeling",
-        "4": "Pleťová maska"
+    "translations": {
+      "en": {
+        "title": "Back Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "Concentrating on the muscles of the back, this massage targets tension and pain with focused techniques that improve posture and alleviate stress-related discomfort."
+        }
+      },
+      "ar": {
+        "title": "مساج الظهر",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "يركز هذا التدليك على عضلات الظهر، ويستهدف التوتر والألم بتقنيات مركزة تحسن من وضعية الجسم وتخفف الانزعاج المرتبط بالتوتر."
+        }
+      },
+      "de": {
+        "title": "Rückenmassage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Diese Massage konzentriert sich auf die Rückenmuskulatur und bekämpft Verspannungen und Schmerzen mit gezielten Techniken, die die Körperhaltung verbessern und stressbedingte Beschwerden lindern."
+        }
+      },
+      "fr": {
+        "title": "Massage du Dos",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Concentré sur les muscles du dos, ce massage cible les tensions et les douleurs grâce à des techniques ciblées qui améliorent la posture et soulagent les inconforts liés au stress."
+        }
+      },
+      "ru": {
+        "title": "Массаж спины",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Этот массаж фокусируется на мышцах спины, устраняя напряжение и боль с помощью специальных техник, которые улучшают осанку и снимают дискомфорт, вызванный стрессом."
+        }
+      },
+      "es": {
+        "title": "Masaje de Espalda",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Concentrándose en los músculos de la espalda, este masaje aborda la tensión y el dolor con técnicas enfocadas que mejoran la postura y alivian las molestias relacionadas con el estrés."
+        }
+      },
+      "it": {
+        "title": "Massaggio alla Schiena",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Concentrandosi sui muscoli della schiena, questo massaggio mira alla tensione e al dolore con tecniche mirate che migliorano la postura e alleviano i disagi legati allo stress."
+        }
+      },
+      "sr": {
+        "title": "Masaža leđa",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Koncentrišući se na mišiće leđa, ova masaža cilja napetost i bol fokusiranim tehnikama koje poboljšavaju držanje i ublažavaju nelagodnost uzrokovanu stresom."
+        }
+      },
+      "sk": {
+        "title": "Masáž chrbta",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Táto masáž sa sústreďuje na svaly chrbta a zameriava sa na napätie a bolesť pomocou cielených techník, ktoré zlepšujú držanie tela a zmierňujú nepohodlie súvisiace so stresom."
+        }
+      },
+      "et": {
+        "title": "Seljamassaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "Keskendudes seljalihastele, on see massaaž suunatud pingetele ja valule, kasutades fokuseeritud tehnikaid, mis parandavad rühti ja leevendavaju stressiga seotud ebamugavustunnet."
+        }
+      },
+      "hu": {
+        "title": "Hátmasszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "A hátizmokra összpontosítva ez a masszázs a feszültséget és a fájdalmat célozza meg olyan technikákkal, amelyek javítják a testtartást és enyhítik a stressz okozta kellemetlenségeket."
+        }
+      },
+      "pl": {
+        "title": "Masaż pleców",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Koncentrując się na mięśniach pleców, masaż ten niweluje napięcie i ból dzięki ukierunkovanym technikom, które poprawiają postawę i łagodzą dyskomfort związany ze stresem."
+        }
+      },
+      "cs": {
+        "title": "Masáž zad",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Tato masáž se soustředí na svaly zad a zaměřuje se na napětí a bolest pomocí cílených technik, které zlepšují držení těla a zmírňují nepohodlí související se stresem."
+        }
+      },
+      "tr": {
+        "title": "Sırt Masajı",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Sırt kaslarına odaklanan bu masaj, duruşu düzelten ve stres kaynaklı rahatsızlığı gideren odaklanmış tekniklerle gerginliği ve ağrıyı hedefler."
+        }
+      },
+      "zh": {
+        "title": "背部按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "针对背部肌肉，通过专注的技术缓解紧张和疼痛，改善体态并减轻压力引起的不适。"
+        }
+      },
+      "ko": {
+        "title": "등 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "등 근육에 집중하여 긴장과 통증을 목표로 하며, 자세를 개선하고 스트레스로 인한 불편함을 완화하는 집중 기술을 사용합니다."
+        }
       }
+    }
+  },
+
+
+
+  {
+    "id": "19",
+    "image": "assets/images/19.png",
+    "category": "massage",
+    "time": "30 Mins",
+    "price_info": {
+      "salary": 16,
+      "after_disc": 10,
+      "currency": "€"
     },
-    "tr": {
-      "title": "Kil Vücut Peelingi",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Kil Vücut Peelingi",
-        "4": "Yüz maskesi"
+    "translations": {
+      "en": {
+        "title": "Foot Massage",
+        "details": {
+          "1": "Sauna (10-20 Mins)",
+          "2": "A soothing treatment dedicated to the feet, this massage applies pressure to key reflex points to relieve fatigue, improve circulation, and promote overall relaxation."
+        }
+      },
+      "ar": {
+        "title": "مساج القدمين",
+        "details": {
+          "1": "سونا (10-20 دقيقة)",
+          "2": "علاج مهدئ مخصص للقدمين، يطبق هذا التدليك الضغط على نقاط الانعكاس الرئيسية لتخفيف التعب، وتحسين الدورة الدموية، وتعزيز الاسترخاء العام."
+        }
+      },
+      "de": {
+        "title": "Fußmassage",
+        "details": {
+          "1": "Sauna (10-20 Min.)",
+          "2": "Eine wohltuende Behandlung für die Füße, bei der Druck auf wichtige Reflexzonen ausgeübt wird, um Müdigkeit zu lindern, die Durchblutung zu fördern und die allgemeine Entspannung zu steigern."
+        }
+      },
+      "fr": {
+        "title": "Massage des Pieds",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Un soin apaisant dédié aux pieds, ce massage applique une pression sur les points réflexes clés pour soulager la fatigue, améliorer la circulation et favoriser une relaxation totale."
+        }
+      },
+      "ru": {
+        "title": "Массаж стоп",
+        "details": {
+          "1": "Сауна (10-20 мин.)",
+          "2": "Успокаивающая процедура для ног, при которой воздействие на ключевые рефлекторные точки снимает усталость, улучшает кровообращение и способствует общему расслаблению."
+        }
+      },
+      "es": {
+        "title": "Masaje de Pies",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Un tratamiento calmante dedicado a los pies, este masaje aplica presión en puntos reflexológicos clave para aliviar la fatiga, mejorar la circulación y promover la relajación general."
+        }
+      },
+      "it": {
+        "title": "Massaggio ai Piedi",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Un trattamento lenitivo dedicato ai piedi, questo massaggio esercita pressione sui punti riflessi chiave per alleviare la fatica, migliorare la circolazione e favorire il relax generale."
+        }
+      },
+      "sr": {
+        "title": "Masaža stopala",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Umirujući tretman posvećen stopalima, ova masaža vrši pritisak na ključne refleksne tačke kako bi se ublažio umor, poboljšala cirkulacija i podstakla opšta relaksacija."
+        }
+      },
+      "sk": {
+        "title": "Masáž nôh",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Upokojujúce ošetrenie venované nohám, táto masáž vyvíja tlak na kľúčové reflexné body, aby zmiernila únavu, zlepšila krvný obeh a podporila celkové uvoľnenie."
+        }
+      },
+      "et": {
+        "title": "Jalamassaaž",
+        "details": {
+          "1": "Saun (10-20 min)",
+          "2": "Rahustav jalgadele pühendatud hooldus, kus rakendatakse survet peamistele refleksipunktidele, et leevendada väsimust, parandada vereringet ja soodustada üldist lõõgastust."
+        }
+      },
+      "hu": {
+        "title": "Talpmasszázs",
+        "details": {
+          "1": "Szauna (10-20 perc)",
+          "2": "A lábaknak szentelt nyugtató kezelés, amely nyomást gyakorol a legfontosabb reflexpontokra a fáradtság enyhítése, a keringés javítása és az általános ellazulás elősegítése érdekében."
+        }
+      },
+      "pl": {
+        "title": "Masaż stóp",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Kojący zabieg dedykowany stopom, polegający na uciskaniu kluczowych punktów refleksyjnych w celu złagodzenia zmęczenia, poprawy krążenia i promowania ogólnego odprężenia."
+        }
+      },
+      "cs": {
+        "title": "Masáž nohou",
+        "details": {
+          "1": "Sauna (10-20 min)",
+          "2": "Uklidňující ošetření věnované nohám, tato masáž vyvíjí tlak na klíčové reflexní body, aby zmírnila únavu, zlepšila krevní oběh a podpořila celkové uvolnění."
+        }
+      },
+      "tr": {
+        "title": "Ayak Masajı",
+        "details": {
+          "1": "Sauna (10-20 dk)",
+          "2": "Ayaklara özel yatıştırıcı bir bakım olan bu masaj, yorgunluğu gidermek, dolaşımı iyileştirmek ve genel rahatlamayı sağlamak için temel refleks noktalarına basınç uygular."
+        }
+      },
+      "zh": {
+        "title": "足部按摩",
+        "details": {
+          "1": "桑拿 (10-20 分钟)",
+          "2": "一种专门针对双脚的舒缓护理，通过对关键反射点施加压力，缓解疲劳，促进血液循环，从而达到全身放松的效果。"
+        }
+      },
+      "ko": {
+        "title": "발 마사지",
+        "details": {
+          "1": "사우나 (10-20분)",
+          "2": "발을 위한 진정 트리트먼트로, 주요 반사점에 압력을 가하여 피로를 풀고 혈액순환을 개선하며 전신 휴식을 돕습니다."
+        }
       }
+    }
+  },
+
+  {
+    "id": "20",
+    "image": "assets/images/20.png",
+    "category": "hammam",
+    "time": "1 Hr",
+    "price_info": {
+      "salary": 20,
+      "after_disc": 15,
+      "currency": "€"
     },
-    "zh": {
-      "title": "泥土身体磨砂",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "泥土身体磨砂",
-        "4": "面膜"
+    "translations": {
+      "en": {
+        "title": "Damascus Hammam",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Peeling with coarse loofah and Soap",
+          "4": "Face Mask"
+        }
+      },
+      "ar": {
+        "title": "حمام دمشق",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "تقشير باللوفة الخشنة والصابون",
+          "4": "ماسك للوجه"
+        }
+      },
+      "de": {
+        "title": "Damaskus Hammam",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Peeling mit grobem Luffa und Seife",
+          "4": "Gesichtsmaske"
+        }
+      },
+      "fr": {
+        "title": "Hammam de Damas",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage au luffa rêche et savon",
+          "4": "Masque facial"
+        }
+      },
+      "ru": {
+        "title": "Дамасский хаммам",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Пилинг грубой мочалкой и мылом",
+          "4": "Маска для лица"
+        }
+      },
+      "es": {
+        "title": "Hammam de Damasco",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación con lufa gruesa y jabón",
+          "4": "Mascarilla facial"
+        }
+      },
+      "it": {
+        "title": "Hammam di Damasco",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Peeling con loofah ruvida e sapone",
+          "4": "Maschera per il viso"
+        }
+      },
+      "sr": {
+        "title": "Damaskus Hamam",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling grubom lufom i sapunom",
+          "4": "Maska za lice"
+        }
+      },
+      "sk": {
+        "title": "Damašský hammam",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Peeling s drsnou lufou a mydlom",
+          "4": "Pleťová maska"
+        }
+      },
+      "et": {
+        "title": "Damaskuse hamam",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Koorimine kareda lufa ja seebiga",
+          "4": "Näomask"
+        }
+      },
+      "hu": {
+        "title": "Damaszkuszi Hammam",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Peeling durva luffával és szappannal",
+          "4": "Arcpakolás"
+        }
+      },
+      "pl": {
+        "title": "Damasceński Hammam",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Peeling szorstką luffą i mydłem",
+          "4": "Maska na twarz"
+        }
+      },
+      "cs": {
+        "title": "Damašský hammam",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Peeling hrubou lufou a mýdlem",
+          "4": "Pleťová maska"
+        }
+      },
+      "tr": {
+        "title": "Şam Hamamı",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Kaba lif kabağı ve sabun ile peeling",
+          "4": "Yüz maskesi"
+        }
+      },
+      "zh": {
+        "title": "大马士革汉曼",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "粗丝瓜络肥皂去角质",
+          "4": "面膜"
+        }
+      },
+      "ko": {
+        "title": "다마스쿠스 해맘",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "거친 루파와 비누를 이용한 각질 제거",
+          "4": "얼굴 팩"
+        }
       }
+    }
+  },
+
+
+  {
+    "id": "21",
+    "image": "assets/images/21.webp",
+    "category": "hammam",
+    "time": "1 Hr",
+    "price_info": {
+      "salary": 20,
+      "after_disc": 15,
+      "currency": "€"
     },
-    "ko": {
-      "title": "클레이 바디 스크럽",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "클레이 바디 스크럽",
-        "4": "얼굴 팩"
+    "translations": {
+      "en": {
+        "title": "Turkish Hammam",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Peeling with Kessa Mitten and Foam",
+          "4": "Soap Massage (5 min)",
+          "5": "Face Mask"
+        }
+      },
+      "ar": {
+        "title": "الحمام التركي",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "تقشير بليفة الكيسة والرغوة",
+          "4": "مساج بالصابون (5 دقائق)",
+          "5": "ماسك للوجه"
+        }
+      },
+      "de": {
+        "title": "Türkisches Hammam",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Peeling mit Kessa-Handschuh und Schaum",
+          "4": "Seifenmassage (5 Min.)",
+          "5": "Gesichtsmaske"
+        }
+      },
+      "fr": {
+        "title": "Hammam Turc",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage au gant Kessa et mousse",
+          "4": "Massage au savon (5 min)",
+          "5": "Masque facial"
+        }
+      },
+      "ru": {
+        "title": "Турецкий хаммам",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Пилинг рукавицей Кесе и пеной",
+          "4": "Мыльный массаж (5 мин.)",
+          "5": "Маска для лица"
+        }
+      },
+      "es": {
+        "title": "Hammam Turco",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación con guante Kessa y espuma",
+          "4": "Masaje con jabón (5 min)",
+          "5": "Mascarilla facial"
+        }
+      },
+      "it": {
+        "title": "Hammam Turco",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Peeling con guanto Kessa e schiuma",
+          "4": "Massaggio con sapone (5 min)",
+          "5": "Maschera per il viso"
+        }
+      },
+      "sr": {
+        "title": "Turski hamam",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling sa Kessa rukavicom i penom",
+          "4": "Masaža sapunom (5 min)",
+          "5": "Maska za lice"
+        }
+      },
+      "sk": {
+        "title": "Turecký hammam",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Peeling s rukavicou Kessa a penou",
+          "4": "Mydlová masáž (5 min)",
+          "5": "Pleťová maska"
+        }
+      },
+      "et": {
+        "title": "Türgi hamam",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Koorimine Kessa kinda ja vahuga",
+          "4": "Seebimassaaž (5 min)",
+          "5": "Näomask"
+        }
+      },
+      "hu": {
+        "title": "Török Hammam",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Peeling Kessa kesztyűvel és habbal",
+          "4": "Szappanos masszázs (5 perc)",
+          "5": "Arcpakolás"
+        }
+      },
+      "pl": {
+        "title": "Turecki Hammam",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Peeling rękawicą Kessa i pianą",
+          "4": "Masaż mydłem (5 min)",
+          "5": "Maska na twarz"
+        }
+      },
+      "cs": {
+        "title": "Turecký hammam",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Peeling rukavicí Kessa a pěnou",
+          "4": "Mýdlová masáž (5 min)",
+          "5": "Pleťová maska"
+        }
+      },
+      "tr": {
+        "title": "Türk Hamamı",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Kese ve Köpük ile peeling",
+          "4": "Sabun Masajı (5 dk)",
+          "5": "Yüz maskesi"
+        }
+      },
+      "zh": {
+        "title": "土耳其汉曼",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "使用 Kessa 手套和泡沫去角质",
+          "4": "肥皂按摩 (5 分钟)",
+          "5": "面膜"
+        }
+      },
+      "ko": {
+        "title": "터키식 해맘",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "케사 미튼과 거품을 이용한 각질 제거",
+          "4": "비누 마사지 (5분)",
+          "5": "얼굴 팩"
+        }
+      }
+    }
+  },
+
+  {
+    "id": "22",
+    "image": "assets/images/22.webp",
+    "category": "hammam",
+    "time": "1 Hr",
+    "price_info": {
+      "salary": 20,
+      "after_disc": 15,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Moroccan Hammam",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Peeling & Moroccan mask for body",
+          "4": "Face Mask"
+        }
+      },
+      "ar": {
+        "title": "الحمام المغربي",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "تقشير وماسك مغربي للجسم",
+          "4": "ماسك للوجه"
+        }
+      },
+      "de": {
+        "title": "Marokkanisches Hammam",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Peeling & Marokkanische Maske für den Körper",
+          "4": "Gesichtsmaske"
+        }
+      },
+      "fr": {
+        "title": "Hammam Marocain",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage & masque marocain pour le corps",
+          "4": "Masque facial"
+        }
+      },
+      "ru": {
+        "title": "Марокканский хаммам",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Пилинг и марокканская маска для тела",
+          "4": "Маска для лица"
+        }
+      },
+      "es": {
+        "title": "Hammam Marroquí",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación y mascarilla marroquí para el cuerpo",
+          "4": "Mascarilla facial"
+        }
+      },
+      "it": {
+        "title": "Hammam Marocchino",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Peeling e maschera marocchina per il corpo",
+          "4": "Maschera per il viso"
+        }
+      },
+      "sr": {
+        "title": "Marokanski hamam",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling i marokanska maska za telo",
+          "4": "Maska za lice"
+        }
+      },
+      "sk": {
+        "title": "Marocký hammam",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Peeling a marocká maska na telo",
+          "4": "Pleťová maska"
+        }
+      },
+      "et": {
+        "title": "Maroko hamam",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Koorimine ja Maroko kehamask",
+          "4": "Näomask"
+        }
+      },
+      "hu": {
+        "title": "Marokkói Hammam",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Peeling és marokkói testmaszk",
+          "4": "Arcpakolás"
+        }
+      },
+      "pl": {
+        "title": "Marokański Hammam",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Peeling i marokańska maska na ciało",
+          "4": "Maska na twarz"
+        }
+      },
+      "cs": {
+        "title": "Marocký hammam",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Peeling a marocká maska na tělo",
+          "4": "Pleťová maska"
+        }
+      },
+      "tr": {
+        "title": "Fas Hamamı",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Vücut için peeling ve Fas maskesi",
+          "4": "Yüz maskesi"
+        }
+      },
+      "zh": {
+        "title": "摩洛哥汉曼",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "全身去角质及摩洛哥体膜",
+          "4": "面膜"
+        }
+      },
+      "ko": {
+        "title": "모로코식 해맘",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "전신 각질 제거 및 모로코 바디 팩",
+          "4": "얼굴 팩"
+        }
+      }
+    }
+  },
+
+  {
+    "id": "23",
+    "image": "assets/images/23.png",
+    "category": "scrub",
+    "time": "1 Hr",
+    "price_info": {
+      "salary": 20,
+      "after_disc": 15,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Coconut Body Scrub",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Coconut Body Scrub",
+          "4": "Face Mask"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بجوز الهند",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة جوز الهند للجسم",
+          "4": "ماسك للوجه"
+        }
+      },
+      "de": {
+        "title": "Kokos-Körperpeeling",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Kokos-Körperpeeling",
+          "4": "Gesichtsmaske"
+        }
+      },
+      "fr": {
+        "title": "Gommage corporel à la noix de coco",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel à la noix de coco",
+          "4": "Masque facial"
+        }
+      },
+      "ru": {
+        "title": "Кокосовый скраб для тела",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Кокосовый скраб для тела",
+          "4": "Маска для лица"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de coco",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con coco",
+          "4": "Mascarilla facial"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo al cocco",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo al cocco",
+          "4": "Maschera per il viso"
+        }
+      },
+      "sr": {
+        "title": "Piling tela od kokosa",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Kokos piling za telo",
+          "4": "Maska za lice"
+        }
+      },
+      "sk": {
+        "title": "Kokosový telový peeling",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Kokosový telový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "et": {
+        "title": "Kookose kehakoorimine",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Kookose kehakoorimine",
+          "4": "Näomask"
+        }
+      },
+      "hu": {
+        "title": "Kókuszos testradír",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Kókuszos testradír",
+          "4": "Arcpakolás"
+        }
+      },
+      "pl": {
+        "title": "Kokosowy peeling ciała",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Kokosowy peeling do ciała",
+          "4": "Maska na twarz"
+        }
+      },
+      "cs": {
+        "title": "Kokosový tělový peeling",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Kokosový tělový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "tr": {
+        "title": "Hindistan Cevizi Vücut Peelingi",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Hindistan Cevizi Vücut Peelingi",
+          "4": "Yüz maskesi"
+        }
+      },
+      "zh": {
+        "title": "椰子身体磨砂",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "椰子身体磨砂",
+          "4": "面膜"
+        }
+      },
+      "ko": {
+        "title": "코코넛 바디 스크럽",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "코코넛 바디 스크럽",
+          "4": "얼굴 팩"
+        }
+      }
+    }
+  },
+
+  {
+    "id": "24",
+    "image": "assets/images/24.png",
+    "category": "scrub",
+    "time": "1 Hr",
+    "price_info": {
+      "salary": 20,
+      "after_disc": 15,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Chocolate Body Scrub",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Chocolate Body Scrub",
+          "4": "Face Mask"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بالشوكولاتة",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة الشوكولاتة للجسم",
+          "4": "ماسك للوجه"
+        }
+      },
+      "de": {
+        "title": "Schokoladen-Körperpeeling",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Schokoladen-Körperpeeling",
+          "4": "Gesichtsmaske"
+        }
+      },
+      "fr": {
+        "title": "Gommage corporel au chocolat",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel au chocolat",
+          "4": "Masque facial"
+        }
+      },
+      "ru": {
+        "title": "Шоколадный скраб для тела",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Шоколадный скраб для тела",
+          "4": "Маска для лица"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de chocolate",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con chocolate",
+          "4": "Mascarilla facial"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo al cioccolato",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo al cioccolato",
+          "4": "Maschera per il viso"
+        }
+      },
+      "sr": {
+        "title": "Piling tela od čokolade",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Čokoladni piling za telo",
+          "4": "Maska za lice"
+        }
+      },
+      "sk": {
+        "title": "Čokoládový telový peeling",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Čokoládový telový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "et": {
+        "title": "Šokolaadi kehakoorimine",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Šokolaadi kehakoorimine",
+          "4": "Näomask"
+        }
+      },
+      "hu": {
+        "title": "Csokoládés testradír",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Csokoládés testradír",
+          "4": "Arcpakolás"
+        }
+      },
+      "pl": {
+        "title": "Czekoladowy peeling ciała",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Czekoladowy peeling do ciała",
+          "4": "Maska na twarz"
+        }
+      },
+      "cs": {
+        "title": "Čokoládový tělový peeling",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Čokoládový tělový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "tr": {
+        "title": "Çikolatalı Vücut Peelingi",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Çikolatalı Vücut Peelingi",
+          "4": "Yüz maskesi"
+        }
+      },
+      "zh": {
+        "title": "巧克力身体磨砂",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "巧克力身体磨砂",
+          "4": "面膜"
+        }
+      },
+      "ko": {
+        "title": "초콜릿 바디 스크럽",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "초콜릿 바디 스크럽",
+          "4": "얼굴 팩"
+        }
+      }
+    }
+  },
+
+  {
+    "id": "25",
+    "image": "assets/images/25.png",
+    "category": "scrub",
+    "time": "1 Hr",
+    "price_info": {
+      "salary": 20,
+      "after_disc": 15,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Salt Body Scrub",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Salt Body Scrub",
+          "4": "Face Mask"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بالملح",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة الملح للجسم",
+          "4": "ماسك للوجه"
+        }
+      },
+      "de": {
+        "title": "Salz-Körperpeeling",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Salz-Körperpeeling",
+          "4": "Gesichtsmaske"
+        }
+      },
+      "fr": {
+        "title": "Gommage corporel au sel",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel au sel",
+          "4": "Masque facial"
+        }
+      },
+      "ru": {
+        "title": "Солевой скраб для тела",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Солевой скраб для тела",
+          "4": "Маска для лица"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de sal",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con sal",
+          "4": "Mascarilla facial"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo al sale",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo al sale",
+          "4": "Maschera per il viso"
+        }
+      },
+      "sr": {
+        "title": "Piling tela solju",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Slani piling za telo",
+          "4": "Maska za lice"
+        }
+      },
+      "sk": {
+        "title": "Soľný telový peeling",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Soľný telový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "et": {
+        "title": "Soolaga kehakoorimine",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Soolaga kehakoorimine",
+          "4": "Näomask"
+        }
+      },
+      "hu": {
+        "title": "Sós testradír",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Sós testradír",
+          "4": "Arcpakolás"
+        }
+      },
+      "pl": {
+        "title": "Solny peeling ciała",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosы - krem",
+          "3": "Solny peeling do ciała",
+          "4": "Maska na twarz"
+        }
+      },
+      "cs": {
+        "title": "Solný tělový peeling",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Solný tělový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "tr": {
+        "title": "Tuzlu Vücut Peelingi",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Tuzlu Vücut Peelingi",
+          "4": "Yüz maskesi"
+        }
+      },
+      "zh": {
+        "title": "盐浴身体磨砂",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "盐浴身体磨砂",
+          "4": "面膜"
+        }
+      },
+      "ko": {
+        "title": "소금 바디 스크럽",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "소금 바디 스크럽",
+          "4": "얼굴 팩"
+        }
+      }
+    }
+  },
+
+
+
+  {
+    "id": "26",
+    "image": "assets/images/26.png",
+    "category": "scrub",
+    "time": "1 Hr",
+    "price_info": {
+      "salary": 20,
+      "after_disc": 15,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Clay Body Scrub",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Clay Body Scrub",
+          "4": "Face Mask"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بالطمي",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة الطمي للجسم",
+          "4": "ماسك للوجه"
+        }
+      },
+      "de": {
+        "title": "Tonerde-Körperpeeling",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Tonerde-Körperpeeling",
+          "4": "Gesichtsmaske"
+        }
+      },
+      "fr": {
+        "title": "Gommage corporel à l'argile",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel à l'argile",
+          "4": "Masque facial"
+        }
+      },
+      "ru": {
+        "title": "Глиняный скраб для тела",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Глиняный скраб для тела",
+          "4": "Маска для лица"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de arcilla",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con arcilla",
+          "4": "Mascarilla facial"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo all'argilla",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo all'argilla",
+          "4": "Maschera per il viso"
+        }
+      },
+      "sr": {
+        "title": "Piling tela glinom",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling glinom za telo",
+          "4": "Maska za lice"
+        }
+      },
+      "sk": {
+        "title": "Ílový telový peeling",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Ílový telový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "et": {
+        "title": "Saviga kehakoorimine",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Saviga kehakoorimine",
+          "4": "Näomask"
+        }
+      },
+      "hu": {
+        "title": "Agyagos testradír",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Agyagos testradír",
+          "4": "Arcpakolás"
+        }
+      },
+      "pl": {
+        "title": "Glinkowy peeling ciała",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Peeling glinkowy do ciała",
+          "4": "Maska na twarz"
+        }
+      },
+      "cs": {
+        "title": "Jílový tělový peeling",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Jílový tělový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "tr": {
+        "title": "Kil Vücut Peelingi",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Kil Vücut Peelingi",
+          "4": "Yüz maskesi"
+        }
+      },
+      "zh": {
+        "title": "泥土身体磨砂",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "泥土身体磨砂",
+          "4": "面膜"
+        }
+      },
+      "ko": {
+        "title": "클레이 바디 스크럽",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "클레이 바디 스크럽",
+          "4": "얼굴 팩"
+        }
+      }
+    }
+  },
+
+  {
+    "id": "27",
+    "image": "assets/images/27.png",
+    "category": "scrub",
+    "time": "1 Hr",
+    "price_info": {
+      "salary": 20,
+      "after_disc": 15,
+      "currency": "€"
+    },
+    "translations": {
+      "en": {
+        "title": "Coffee Body Scrub",
+        "details": {
+          "1": "Sauna - Steam bath",
+          "2": "Hair treatment - cream",
+          "3": "Coffee Body Scrub",
+          "4": "Face Mask"
+        }
+      },
+      "ar": {
+        "title": "سنفرة الجسم بالقهوة",
+        "details": {
+          "1": "سونا - حمام بخار",
+          "2": "حمام كريم للشعر",
+          "3": "سنفرة القهوة للجسم",
+          "4": "ماسك للوجه"
+        }
+      },
+      "de": {
+        "title": "Kaffee-Körperpeeling",
+        "details": {
+          "1": "Sauna - Dampfbad",
+          "2": "Haarkur - Creme",
+          "3": "Kaffee-Körperpeeling",
+          "4": "Gesichtsmaske"
+        }
+      },
+      "fr": {
+        "title": "Gommage corporel au café",
+        "details": {
+          "1": "Sauna - Hammam",
+          "2": "Soin capillaire - crème",
+          "3": "Gommage corporel au café",
+          "4": "Masque facial"
+        }
+      },
+      "ru": {
+        "title": "Кофейный скраб для тела",
+        "details": {
+          "1": "Сауна - Паровая баня",
+          "2": "Крем для ухода за волосами",
+          "3": "Кофейный скраб для тела",
+          "4": "Маска для лица"
+        }
+      },
+      "es": {
+        "title": "Exfoliante corporal de café",
+        "details": {
+          "1": "Sauna - Baño de vapor",
+          "2": "Tratamiento capilar - crema",
+          "3": "Exfoliación corporal con café",
+          "4": "Mascarilla facial"
+        }
+      },
+      "it": {
+        "title": "Scrub corpo al caffè",
+        "details": {
+          "1": "Sauna - Bagno turco",
+          "2": "Trattamento per capelli - crema",
+          "3": "Scrub corpo al caffè",
+          "4": "Maschera per il viso"
+        }
+      },
+      "sr": {
+        "title": "Piling tela od kafe",
+        "details": {
+          "1": "Sauna - Parno kupatilo",
+          "2": "Tretman kose - krema",
+          "3": "Piling kafom za telo",
+          "4": "Maska za lice"
+        }
+      },
+      "sk": {
+        "title": "Kávový telový peeling",
+        "details": {
+          "1": "Sauna - Parný kúpeľ",
+          "2": "Kúra na vlasy - krém",
+          "3": "Kávový telový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "et": {
+        "title": "Kohviga kehakoorimine",
+        "details": {
+          "1": "Saun - Aurusaun",
+          "2": "Juuksehooldus - kreem",
+          "3": "Kohviga kehakoorimine",
+          "4": "Näomask"
+        }
+      },
+      "hu": {
+        "title": "Kávés testradír",
+        "details": {
+          "1": "Szauna - Gőzfürdő",
+          "2": "Hajápoló krém",
+          "3": "Kávés testradír",
+          "4": "Arcpakolás"
+        }
+      },
+      "pl": {
+        "title": "Kawowy peeling ciała",
+        "details": {
+          "1": "Sauna - Łaźnia parowa",
+          "2": "Kuracja do włosów - krem",
+          "3": "Kawowy peeling do ciała",
+          "4": "Maska na twarz"
+        }
+      },
+      "cs": {
+        "title": "Kávový tělový peeling",
+        "details": {
+          "1": "Sauna - Parní lázeň",
+          "2": "Vlasová kúra - krém",
+          "3": "Kávový tělový peeling",
+          "4": "Pleťová maska"
+        }
+      },
+      "tr": {
+        "title": "Kahve Vücut Peelingi",
+        "details": {
+          "1": "Sauna - Buhar banyosu",
+          "2": "Saç bakımı - krem",
+          "3": "Kahve Vücut Peelingi",
+          "4": "Yüz maskesi"
+        }
+      },
+      "zh": {
+        "title": "咖啡身体磨砂",
+        "details": {
+          "1": "桑拿 - 蒸汽浴",
+          "2": "发质护理 - 发膜",
+          "3": "咖啡身体磨砂",
+          "4": "面膜"
+        }
+      },
+      "ko": {
+        "title": "커피 바디 스크럽",
+        "details": {
+          "1": "사우나 - 증기탕",
+          "2": "헤어 트리트먼트 - 크림",
+          "3": "커피 바디 스크럽",
+          "4": "얼굴 팩"
+        }
       }
     }
   }
-},
-    
-     {
-  "id": "27",
-  "image": "assets/images/27.png",
-  "category": "scrub",
-  "time": "1 Hr",
-  "price_info": {
-    "salary": 20,
-    "after_disc": 15,
-    "currency": "€"
-  },
-  "translations": {
-    "en": {
-      "title": "Coffee Body Scrub",
-      "details": {
-        "1": "Sauna - Steam bath",
-        "2": "Hair treatment - cream",
-        "3": "Coffee Body Scrub",
-        "4": "Face Mask"
-      }
-    },
-    "ar": {
-      "title": "سنفرة الجسم بالقهوة",
-      "details": {
-        "1": "سونا - حمام بخار",
-        "2": "حمام كريم للشعر",
-        "3": "سنفرة القهوة للجسم",
-        "4": "ماسك للوجه"
-      }
-    },
-    "de": {
-      "title": "Kaffee-Körperpeeling",
-      "details": {
-        "1": "Sauna - Dampfbad",
-        "2": "Haarkur - Creme",
-        "3": "Kaffee-Körperpeeling",
-        "4": "Gesichtsmaske"
-      }
-    },
-    "fr": {
-      "title": "Gommage corporel au café",
-      "details": {
-        "1": "Sauna - Hammam",
-        "2": "Soin capillaire - crème",
-        "3": "Gommage corporel au café",
-        "4": "Masque facial"
-      }
-    },
-    "ru": {
-      "title": "Кофейный скраб для тела",
-      "details": {
-        "1": "Сауна - Паровая баня",
-        "2": "Крем для ухода за волосами",
-        "3": "Кофейный скраб для тела",
-        "4": "Маска для лица"
-      }
-    },
-    "es": {
-      "title": "Exfoliante corporal de café",
-      "details": {
-        "1": "Sauna - Baño de vapor",
-        "2": "Tratamiento capilar - crema",
-        "3": "Exfoliación corporal con café",
-        "4": "Mascarilla facial"
-      }
-    },
-    "it": {
-      "title": "Scrub corpo al caffè",
-      "details": {
-        "1": "Sauna - Bagno turco",
-        "2": "Trattamento per capelli - crema",
-        "3": "Scrub corpo al caffè",
-        "4": "Maschera per il viso"
-      }
-    },
-    "sr": {
-      "title": "Piling tela od kafe",
-      "details": {
-        "1": "Sauna - Parno kupatilo",
-        "2": "Tretman kose - krema",
-        "3": "Piling kafom za telo",
-        "4": "Maska za lice"
-      }
-    },
-    "sk": {
-      "title": "Kávový telový peeling",
-      "details": {
-        "1": "Sauna - Parný kúpeľ",
-        "2": "Kúra na vlasy - krém",
-        "3": "Kávový telový peeling",
-        "4": "Pleťová maska"
-      }
-    },
-    "et": {
-      "title": "Kohviga kehakoorimine",
-      "details": {
-        "1": "Saun - Aurusaun",
-        "2": "Juuksehooldus - kreem",
-        "3": "Kohviga kehakoorimine",
-        "4": "Näomask"
-      }
-    },
-    "hu": {
-      "title": "Kávés testradír",
-      "details": {
-        "1": "Szauna - Gőzfürdő",
-        "2": "Hajápoló krém",
-        "3": "Kávés testradír",
-        "4": "Arcpakolás"
-      }
-    },
-    "pl": {
-      "title": "Kawowy peeling ciała",
-      "details": {
-        "1": "Sauna - Łaźnia parowa",
-        "2": "Kuracja do włosów - krem",
-        "3": "Kawowy peeling do ciała",
-        "4": "Maska na twarz"
-      }
-    },
-    "cs": {
-      "title": "Kávový tělový peeling",
-      "details": {
-        "1": "Sauna - Parní lázeň",
-        "2": "Vlasová kúra - krém",
-        "3": "Kávový tělový peeling",
-        "4": "Pleťová maska"
-      }
-    },
-    "tr": {
-      "title": "Kahve Vücut Peelingi",
-      "details": {
-        "1": "Sauna - Buhar banyosu",
-        "2": "Saç bakımı - krem",
-        "3": "Kahve Vücut Peelingi",
-        "4": "Yüz maskesi"
-      }
-    },
-    "zh": {
-      "title": "咖啡身体磨砂",
-      "details": {
-        "1": "桑拿 - 蒸汽浴",
-        "2": "发质护理 - 发膜",
-        "3": "咖啡身体磨砂",
-        "4": "面膜"
-      }
-    },
-    "ko": {
-      "title": "커피 바디 스크럽",
-      "details": {
-        "1": "사우나 - 증기탕",
-        "2": "헤어 트리트먼트 - 크림",
-        "3": "커피 바디 스크럽",
-        "4": "얼굴 팩"
-      }
-    }
-  }
-}
 ]
 
 
 
-;
+  ;
 
-  console.log('📊 Prepared to upload ' + finalServicesData.length + ' services...');
+console.log('📊 Prepared to upload ' + finalServicesData.length + ' services...');
 
-  const collection = window.firebaseDB.collection('services');
+const collection = window.firebaseDB.collection('services');
 
-  for (const item of finalServicesData) {
-      // Clean ID
-      const docId = String(item.id).trim();
-      
-      try {
-          // setDoc using compat SDK syntax
-          await collection.doc(docId).set(item);
-          console.log('✅ [' + docId + '] Uploaded');
-      } catch (e) {
-          console.error('❌ Failed to upload [' + docId + ']', e);
-      }
+for (const item of finalServicesData) {
+  // Clean ID
+  const docId = String(item.id).trim();
+
+  try {
+    // setDoc using compat SDK syntax
+    await collection.doc(docId).set(item);
+    console.log('✅ [' + docId + '] Uploaded');
+  } catch (e) {
+    console.error('❌ Failed to upload [' + docId + ']', e);
   }
+}
 
-  console.log('🎉 SUCCESS: Firestore is now updated with 27 services!');
-  alert('🎉 SUCCESS: Firestore is now updated with 27 services!');
+console.log('🎉 SUCCESS: Firestore is now updated with 27 services!');
+alert('🎉 SUCCESS: Firestore is now updated with 27 services!');
 }
 
 uploadNow();
