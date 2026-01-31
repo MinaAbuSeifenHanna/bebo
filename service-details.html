@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - World Spa & Beauty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="details-luxury-container">
+        <!-- Back Link -->
+        <div class="mb-5 d-flex align-items-center justify-content-between">
+            <a href="../index.html" class="icon-btn d-inline-flex align-items-center gap-2"
+                style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                <i class="fas fa-arrow-left"></i> <span data-i18n="backToServices">Back to Services</span>
+            </a>
+
+            <div class="dropdown">
+                <button class="icon-btn dropdown-toggle no-caret" type="button" data-bs-toggle="dropdown"
+                    id="langSwitcherBtn">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">🇺🇸 English</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('ar')">🇸🇦 العربية</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('de')">🇩🇪 Deutsch</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">🇫🇷 Français</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('ru')">🇷🇺 Русский</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">🇮🇹 Italiano</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('hu')">🇭🇺 Magyar</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('hr')">🇭🇷 Hrvatski</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">🇪🇸 Español</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('cs')">🇨🇿 Čeština</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('lv')">🇱🇻 Latviešu</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('zh')">🇨🇳 中文</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('tr')">🇹🇷 Türkçe</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('pl')">🇵🇱 Polski</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('et')">🇪🇪 Eesti</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="switchLanguage('sr')">🇷🇸 Srpski</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Arched Hero -->
+        <div class="details-hero-arched fade-in-up">
+            <img id="det-image" src="" alt="Service Image">
+        </div>
+
+        <!-- Boxed Banner -->
+        <div class="details-title-banner fade-in-up">
+            <h1 id="det-title">Loading Service...</h1>
+        </div>
+
+        <!-- Luxury Info Bar -->
+        <div class="details-luxury-info fade-in-up">
+            <div class="item">
+                <span class="label" data-i18n="duration">Duration</span>
+                <span class="value" id="det-time">0 Mins</span>
+            </div>
+            <div class="item text-end">
+                <span class="label" data-i18n="price">Price</span>
+                <span class="value">
+                    <span id="det-old-price" class="original-price me-2"
+                        style="font-size: 0.8rem; opacity: 0.5;"></span>
+                    <span id="det-new-price">0.00€</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Feature Grid (Checklist) -->
+        <div class="details-feature-grid fade-in-up" id="det-steps">
+            <!-- Dynamic Features Loaded Here -->
+        </div>
+
+        <!-- Desktop Action -->
+        <div class="mt-5 text-center d-none d-md-block fade-in-up">
+            <button class="btn-book-luxury w-100" style="padding: 20px; font-size: 1.1rem;"
+                onclick="addToCartFromDetails()" data-i18n="addToCart">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Sticky CTA (Luxury Refined) -->
+    <div class="add-to-cart-sticky">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h6 class="mb-0 fw-bold" id="sticky-title"
+                        style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Service Name</h6>
+                    <span class="fw-bold" id="sticky-price" style="font-size: 1.1rem;">0.00€</span>
+                </div>
+                <button class="btn-book-luxury px-4" style="padding: 12px 25px; border-radius: 6px;"
+                    onclick="addToCartFromDetails()" data-i18n="addToCart">
+                    Add
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+    <!-- Configuration -->
+    <script src="../js/firebase-config.js"></script>
+
+    <!-- Core Tools -->
+    <script src="../js/utils.js"></script>
+    <script src="../js/theme.js"></script>
+
+    <!-- Data Loader -->
+    <script src="../js/firebase-data-loader.js"></script>
+    <script src="../js/working-language-system.js"></script>
+
+    <!-- Cart Logic -->
+    <script src="../js/cart.js"></script>
+
+    <!-- Page Logic -->
+    <script src="../js/service-details.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof initializeLanguageSystem === 'function') initializeLanguageSystem();
+        });
+    </script>
+</body>
+
+</html>
