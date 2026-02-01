@@ -610,7 +610,7 @@ function viewDetails(serviceId) {
   title.textContent = service.title;
   image.src = service.image;
   image.alt = service.title;
-  time.textContent = service.time;
+  // time.textContent = service.time;
 
   // Price Logic (New Schema)
   const priceInfo = service.price_info || {};

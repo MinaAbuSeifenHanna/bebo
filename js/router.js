@@ -27,6 +27,34 @@ const handleLocation = async () => {
     // Get full hash
     let fullHash = window.location.hash.replace('#', '') || '/';
 
+    // Hash Routing for Language: Support #en/services
+    // If hash starts with a language code, extract it and update system, 
+    // then strip it so the router sees the correct path.
+    const langMatch = fullHash.match(/^([a-z]{2})(\/|$)/);
+    if (langMatch) {
+        const lang = langMatch[1];
+        // Switch language if needed (without changing URL again)
+        if (typeof window.LanguageRouter !== 'undefined') {
+            if (document.documentElement.lang !== lang) {
+                console.log(`Router: Prefix detected, switching to ${lang}`);
+                window.LanguageRouter.setDir(lang);
+                window.LanguageRouter.updateContent(lang);
+            }
+        }
+
+        // Strip prefix for routing
+        // #en -> "" (home)
+        // #en/ -> "" (home)
+        // #en/services -> services
+        if (fullHash === lang) {
+            fullHash = '/';
+        } else if (fullHash.startsWith(`${lang}/`)) {
+            fullHash = fullHash.substring(lang.length + 1); // remove "en/"
+        }
+
+        if (fullHash === '') fullHash = '/';
+    }
+
     // separate path and query params (e.g., details?id=123)
     let [path, queryString] = fullHash.split('?');
 

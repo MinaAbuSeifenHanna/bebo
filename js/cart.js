@@ -196,7 +196,7 @@
                   <span class="cart-total-label">Total Amount</span>
                   <span class="cart-total-value">${subtotal}${currency}</span>
               </div>
-              <button class="btn-book-luxury w-100 py-3" onclick="showCheckoutForm()">
+              <button class="btn-book-luxury w-100 py-3" onclick="window.location.hash = '#booking?mode=cart'">
                   Proceed to Booking
               </button>
             </div>
@@ -230,7 +230,7 @@
     if (pageTitle) pageTitle.style.display = 'block';
   };
 
-  window.submitSidebarBooking = function () {
+  window.submitSidebarBooking = function (method = 'whatsapp') {
     const name = document.getElementById('sidebarName').value;
     const phone = document.getElementById('sidebarPhone').value;
     const date = document.getElementById('sidebarDate').value;
@@ -242,10 +242,10 @@
     }
 
     const customerData = { name, phone, date, time };
-    window.processBooking(customerData);
+    window.processBooking(customerData, method);
   };
 
-  window.submitCartBooking = function () {
+  window.submitCartBooking = function (method = 'whatsapp') {
     const name = document.getElementById('cart-name').value;
     const phone = document.getElementById('cart-phone').value;
     const date = document.getElementById('cart-date').value;
@@ -261,7 +261,7 @@
     }
 
     const customerData = { name, phone, date, time, notes, transport, residence, room };
-    window.processBooking(customerData);
+    window.processBooking(customerData, method);
   };
 
   // --- Booking Logic (Unified) ---
@@ -315,9 +315,16 @@ ${servicesList}Total : ${total}${currency}
 
 Confirm via: https://womenworldspa.com`;
 
-    // رقم الواتساب الخاص بك
-    const waLink = `https://wa.me/201007920759?text=${encodeURIComponent(message)}`;
-    window.open(waLink, '_blank');
+    if (method === 'email') {
+      const subject = encodeURIComponent("Booking Request - " + customerData.name);
+      const body = encodeURIComponent(message.replace(/\*/g, '')); // Remove markdown asterisks for email
+      const mailLink = `mailto:worldspahurghada@gmail.com?subject=${subject}&body=${body}`;
+      window.open(mailLink, '_blank');
+    } else {
+      // WhatsApp default
+      const waLink = `https://wa.me/201007920759?text=${encodeURIComponent(message)}`;
+      window.open(waLink, '_blank');
+    }
 
     // مسح السلة وقفل المودال
     window.clearCart();

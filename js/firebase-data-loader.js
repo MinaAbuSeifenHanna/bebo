@@ -37,8 +37,15 @@ function initializeFirebaseData() {
 
     // Helper to merge and update
     const updateGlobalState = () => {
+        // Namespace Salon IDs to avoid collision with Spa Service IDs (1, 2, 3...)
+        const namespacedSalon = salonServices.map(s => {
+            // Avoid double prefixing if listener sends it (though unlikely)
+            const newId = String(s.id).startsWith('salon-') ? s.id : `salon-${s.id}`;
+            return { ...s, id: newId };
+        });
+
         // Merge both arrays
-        const combined = [...spaServices, ...salonServices];
+        const combined = [...spaServices, ...namespacedSalon];
 
         if (combined.length > 0) {
             console.log(`✅ Live Sync: Total ${combined.length} items (Spa: ${spaServices.length}, Salon: ${salonServices.length})`);

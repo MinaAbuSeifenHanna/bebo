@@ -11,13 +11,13 @@ import { fileURLToPath } from 'url';
 
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyB0v1ltLw4J_6cpxNNQo65iBRubPekOSdQ",
-    authDomain: "bebospa-f75b7.firebaseapp.com",
-    projectId: "bebospa-f75b7",
-    storageBucket: "bebospa-f75b7.firebasestorage.app",
-    messagingSenderId: "395454882182",
-    appId: "1:395454882182:web:d290d21e237f4c8f40cc07",
-    measurementId: "G-YZZL9ZGS7H"
+    apiKey: "AIzaSyBC_JeNjLiTvVrIL-9XERpGigWmaYbnZB0",
+    authDomain: "world-spa-c1e6e.firebaseapp.com",
+    projectId: "world-spa-c1e6e",
+    storageBucket: "world-spa-c1e6e.firebasestorage.app",
+    messagingSenderId: "939154414480",
+    appId: "1:939154414480:web:268a7add29eaa8b8ee3115",
+    measurementId: "G-QV6W5DFCP9"
 };
 
 // Initialize Firebase
@@ -32,12 +32,12 @@ const auth = getAuth(app);
  */
 async function syncServicesToFirestore(email = null, password = null) {
     console.log('🔄 Starting sync: services.json → Firestore');
-    
+
     try {
         // Authenticate
         const adminEmail = email || process.env.FIREBASE_EMAIL || 'admin@tech.com';
         const adminPassword = password || process.env.FIREBASE_PASSWORD || '12345678';
-        
+
         console.log(`🔐 Authenticating with ${adminEmail}...`);
         await signInWithEmailAndPassword(auth, adminEmail, adminPassword);
         console.log('✅ Authenticated successfully');
@@ -46,15 +46,15 @@ async function syncServicesToFirestore(email = null, password = null) {
         const __filename = fileURLToPath(import.meta.url);
         const __dirname = path.dirname(__filename);
         const servicesJsonPath = path.join(__dirname, 'service.json');
-        
+
         console.log(`📂 Loading data from: ${servicesJsonPath}`);
         const jsonData = fs.readFileSync(servicesJsonPath, 'utf8');
         const services = JSON.parse(jsonData);
-        
+
         if (!Array.isArray(services)) {
             throw new Error('services.json must contain an array');
         }
-        
+
         console.log(`📊 Found ${services.length} services to sync`);
 
         // Get services collection reference
@@ -64,11 +64,11 @@ async function syncServicesToFirestore(email = null, password = null) {
         console.log('🗑️  Deleting all existing documents...');
         const existingDocs = await getDocs(servicesRef);
         const deletePromises = [];
-        
+
         existingDocs.forEach((docSnapshot) => {
             deletePromises.push(deleteDoc(doc(servicesRef, docSnapshot.id)));
         });
-        
+
         await Promise.all(deletePromises);
         console.log(`✅ Deleted ${deletePromises.length} existing document(s)`);
 
@@ -88,10 +88,10 @@ async function syncServicesToFirestore(email = null, password = null) {
 
                 // Use the id field as the document ID
                 const serviceDoc = doc(servicesRef, service.id.toString());
-                
+
                 // Upload the service (image paths remain as strings)
                 await setDoc(serviceDoc, service);
-                
+
                 successCount++;
                 const serviceTitle = service.translations?.en?.title || service.title || `Service ${service.id}`;
                 console.log(`✅ Uploaded: ${service.id} - ${serviceTitle}`);
@@ -106,7 +106,7 @@ async function syncServicesToFirestore(email = null, password = null) {
         console.log(`   ❌ Errors: ${errorCount}`);
         console.log(`   📝 Total processed: ${services.length}`);
         console.log('\n✅ Sync completed successfully!');
-        
+
         process.exit(0);
     } catch (error) {
         console.error('❌ Sync failed:', error.message);

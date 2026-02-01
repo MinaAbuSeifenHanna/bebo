@@ -4192,6 +4192,6 @@ for (const item of finalServicesData) {
 
 console.log('🎉 SUCCESS: Firestore is now updated with 27 services!');
 alert('🎉 SUCCESS: Firestore is now updated with 27 services!');
-}
+
 
 uploadNow();

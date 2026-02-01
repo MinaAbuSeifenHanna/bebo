@@ -226,7 +226,7 @@ function createServiceCard(service) {
       </div>
 
       <div class="card-info-row">
-        <div class="card-duration">${duration} <span>Hrs</span></div>
+        ${service.category !== 'salon' ? `<div class="card-duration">${duration} <span>Hrs</span></div>` : '<div></div>'}
         <div class="card-price-stack">
           ${salary !== undefined && after_disc !== undefined && salary > after_disc ? `<span class="card-price-old">${currency}${salary}</span>` : ''}
           <div class="card-price-main"><span>${currency}</span>${mainPrice}</div>
@@ -293,8 +293,9 @@ window.initPageScripts = function (page, category) {
     else console.error("Missing ID for details page");
   } else if (page === 'booking') {
     const id = window.currentParams?.id;
-    if (id) initBookingPage(id);
-    else console.error("Missing ID for booking page");
+    const mode = window.currentParams?.mode;
+    if (id || mode === 'cart') initBookingPage(id);
+    else console.error("Missing ID/Mode for booking page");
   } else if (page === 'cart') {
     if (window.renderCart) window.renderCart();
   }
@@ -310,20 +311,53 @@ function initDetailsPage(serviceId) {
   console.log("Initializing Details for:", serviceId);
 
   // Find Service
+  // Find Service
   // Wait for data if not ready
   if (!window.allServices || window.allServices.length === 0) {
-    // Simple retry logic or listener
-    // existing event listener 'services-loaded' calls initializeApp, which calls initPageScripts
-    return;
+    // Retry or wait - handled by event listener usually
+    // But we can try fallback fetch here too
+    console.log("⚠️ Cache empty, attempting direct fetch...");
+  } else {
+    // Try finding in existing cache
+    let service = window.allServices.find(s => String(s.id) === String(serviceId));
+    if (service) {
+      renderDetailsContent(service);
+      return;
+    }
   }
 
-  const service = window.allServices.find(s => String(s.id) === String(serviceId));
-  if (!service) {
-    const titleEl = document.getElementById('det-title');
-    if (titleEl) titleEl.textContent = "Service Not Found";
-    return;
-  }
+  // Fallback: Fetch from Firestore directly
+  // Determine collection based on ID prefix
+  if (window.firebaseDB) {
+    const isSalon = String(serviceId).startsWith('salon-');
+    const collectionName = isSalon ? 'salon' : 'services';
+    const docId = isSalon ? String(serviceId).replace('salon-', '') : String(serviceId);
 
+    console.log(`Fetching direct: ${collectionName} -> ${docId}`);
+
+    window.firebaseDB.collection(collectionName).doc(docId).get().then(doc => {
+      if (doc.exists) {
+        const data = doc.data();
+        const service = { ...data, id: serviceId }; // Keep namespaced ID
+        renderDetailsContent(service);
+      } else {
+        safeSetText('det-title', 'Service Not Found');
+      }
+    }).catch(err => {
+      console.error("Error fetching service:", err);
+      safeSetText('det-title', 'Error Loading Service');
+    });
+  } else {
+    safeSetText('det-title', 'Loading...');
+  }
+}
+
+function safeSetText(id, text) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = text;
+}
+
+function renderDetailsContent(service) {
   // Render Data
   const lang = localStorage.getItem('selectedLanguage') || 'en';
   const data = (service.translations && service.translations[lang]) ? service.translations[lang] : (service.translations?.['en'] || {});
@@ -333,7 +367,15 @@ function initDetailsPage(serviceId) {
   if (titleEl) titleEl.textContent = title;
 
   const timeEl = document.getElementById('det-time');
-  if (timeEl) timeEl.textContent = service.duration || service.time || '2 Hrs';
+  if (timeEl) {
+    if (service.category === 'salon') {
+      // Hide parent container if possible, or just the value
+      timeEl.parentElement.style.display = 'none';
+    } else {
+      timeEl.parentElement.style.display = 'block'; // Ensure visible for others
+      timeEl.textContent = service.duration || service.time || '2 Hrs';
+    }
+  }
 
   // Price
   const priceObj = service.price_info || {};
@@ -369,73 +411,182 @@ function initDetailsPage(serviceId) {
       </div>
     `).join('');
   }
+
+  // Render "What to Bring"
+  renderWhatToBring(service);
+}
+
+// Helper to render "What to Bring" section
+function renderWhatToBring(service) {
+  // 1. Check if Salon (Skip)
+  if (service.category === 'salon') {
+    const existing = document.getElementById('what-to-bring-container');
+    if (existing) existing.remove();
+    return;
+  }
+
+  // 2. Get Translations
+  if (typeof spaTranslations === 'undefined') {
+    console.warn("spaTranslations not loaded for What To Bring section");
+    return;
+  }
+
+  const lang = localStorage.getItem('selectedLanguage') || 'en';
+  const t = spaTranslations[lang] || spaTranslations['en'];
+
+  if (!t) return;
+
+  // 3. Find Placement (After Features Grid)
+  const featuresGrid = document.getElementById('det-steps');
+  if (!featuresGrid || !featuresGrid.parentNode) return;
+
+  // 4. Create or Update Container
+  let container = document.getElementById('what-to-bring-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.id = 'what-to-bring-container';
+    container.className = 'details-feature-grid fade-in-up mt-5 p-4';
+    container.style.backgroundColor = 'var(--bg-light)';
+    container.style.borderRadius = '12px';
+    featuresGrid.parentNode.insertBefore(container, featuresGrid.nextSibling);
+  }
+
+  // 5. Inject Content
+  container.innerHTML = `
+        <h3 class="mb-4" style="font-weight: 800; font-family: 'Inter', sans-serif;">${t.title}</h3>
+        <div class="d-flex flex-column gap-3">
+            <div class="d-flex align-items-start">
+                <i class="fas fa-check-circle text-success me-3 mt-1" style="font-size: 1.2rem;"></i>
+                <div style="font-size: 1.1rem; font-weight: 500;">
+                    ${t.item1}
+                </div>
+            </div>
+             <div class="d-flex align-items-start">
+                <i class="fas fa-check-circle text-success me-3 mt-1" style="font-size: 1.2rem;"></i>
+                <div style="font-size: 1.1rem; font-weight: 500;">
+                    ${t.item2}
+                </div>
+            </div>
+        </div>
+    `;
 }
 
 // Logic for Booking Page (Merged from booking.js)
 function initBookingPage(serviceId) {
-  console.log("Initializing Booking for:", serviceId);
+  const urlParams = new URLSearchParams(window.location.hash.split('?')[1]);
+  const isCartMode = urlParams.get('mode') === 'cart';
 
-  if (!window.allServices || window.allServices.length === 0) return;
+  console.log("Initializing Booking for:", isCartMode ? "Cart Mode" : serviceId);
 
-  const service = window.allServices.find(s => String(s.id) === String(serviceId));
-  if (!service) return;
-
-  const lang = localStorage.getItem('selectedLanguage') || 'en';
-  const data = service.translations?.[lang] || service.translations?.['en'];
-
+  // Setup Title
   const titleEl = document.getElementById('book-title');
-  if (titleEl) titleEl.textContent = data.title;
 
-  // Form Submittion Global Handler
-  window.submitSingleBooking = function () {
-    const name = document.getElementById('form-name').value;
-    const date = document.getElementById('form-date').value;
-    const time = document.getElementById('form-time').value;
-    const residence = document.getElementById('form-residence').value || 'Seegull hotel';
-    const room = document.getElementById('form-room').value || '22';
+  // SHARED FORM LOGIC
+  const setupFormSubmission = (onSubmit) => {
+    // Unbind old listeners to prevent duplication if SPA re-renders (though innerHTML refill usually handles this, safe to override)
+    window.submitSingleBooking = onSubmit;
+  };
 
-    if (!name || !date || !time) {
-      alert('Please fill in required fields');
-      return;
-    }
+  if (isCartMode) {
+    // --- CART MODE ---
+    if (titleEl) titleEl.textContent = "Booking Your Selection";
 
-    // Construct WhatsApp Message
-    const currency = service.price_info?.currency || '€';
-    const price = service.price_info.after_disc;
-    const duration = data.duration || service.duration || 'N/A';
+    const cartTotal = window.getCartTotal ? window.getCartTotal() : 0;
+    // You could append total price to title or subtitle here
 
-    const message = `Dear world SPA AND BEAUTY SALON 
+    setupFormSubmission(function (method = 'whatsapp') {
+      // Reuse Cart Submission Logic (from cart.js or duplicated here)
+      const name = document.getElementById('form-name').value;
+      const date = document.getElementById('form-date').value;
+      const time = document.getElementById('form-time').value;
+      const residence = document.getElementById('form-residence').value;
+      const room = document.getElementById('form-room').value;
+      const notes = document.getElementById('form-notes').value;
 
+      if (!name || !date || !time) {
+        alert('Please fill in required fields');
+        return;
+      }
+
+      const customerData = { name, phone: document.getElementById('form-phone').value, date, time, residence, room, notes };
+
+      if (window.processBooking) {
+        window.processBooking(customerData, method);
+        // After booking, maybe redirect home?
+        // window.location.hash = '#home'; // Process booking does this now
+      } else {
+        console.error("processBooking not found");
+      }
+    });
+
+  } else {
+    // --- SINGLE SERVICE MODE ---
+    if (!window.allServices || window.allServices.length === 0) return;
+    const service = window.allServices.find(s => String(s.id) === String(serviceId));
+    if (!service) return;
+
+    const lang = localStorage.getItem('selectedLanguage') || 'en';
+    const data = service.translations?.[lang] || service.translations?.['en'];
+
+    if (titleEl) titleEl.textContent = data.title;
+
+    setupFormSubmission(function (method = 'whatsapp') {
+      const name = document.getElementById('form-name').value;
+      const date = document.getElementById('form-date').value;
+      const time = document.getElementById('form-time').value;
+      const residence = document.getElementById('form-residence').value || 'Seegull hotel';
+      const room = document.getElementById('form-room').value || '22';
+
+      if (!name || !date || !time) {
+        alert('Please fill in required fields');
+        return;
+      }
+
+      // Construct Message
+      const currency = service.price_info?.currency || '€';
+      const price = service.price_info.after_disc;
+      const duration = data.duration || service.duration || 'N/A';
+
+      const message = `Dear world SPA AND BEAUTY SALON 
+    
 Kindly I want to reserve the following services:
-
+    
 Name : ${name}
-
+    
 Date : ${date}
-
+    
 Time : ${time}
-
+    
 Hotel : ${residence}
-
+    
 Room Number : ${room}
-
+    
 Title : *${data.title}*
-
+    
 Duration : ${duration}
-
+    
 Price per person : ${price}${currency}
-
+    
 Quantity : 1
-
+    
 Total : ${price}${currency}
-
+    
 Confirm via: https://womenworldspa.com`;
 
-    const waLink = `https://wa.me/201007920759?text=${encodeURIComponent(message)}`;
-    window.open(waLink, '_blank');
+      if (method === 'email') {
+        const subject = encodeURIComponent("Booking Request - " + data.title);
+        const body = encodeURIComponent(message.replace(/\*/g, ''));
+        window.open(`mailto:worldspahurghada@gmail.com?subject=${subject}&body=${body}`, '_blank');
+      } else {
+        // WhatsApp
+        const waLink = `https://wa.me/201007920759?text=${encodeURIComponent(message)}`;
+        window.open(waLink, '_blank');
+      }
 
-    // Clean up or redirect
-    window.history.back();
-  };
+      // Clean up or redirect
+      window.history.back();
+    });
+  }
 }
 
 

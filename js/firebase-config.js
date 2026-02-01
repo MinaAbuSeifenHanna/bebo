@@ -3,13 +3,13 @@
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB0v1ltLw4J_6cpxNNQo65iBRubPekOSdQ",
-  authDomain: "bebospa-f75b7.firebaseapp.com",
-  projectId: "bebospa-f75b7",
-  storageBucket: "bebospa-f75b7.firebasestorage.app",
-  messagingSenderId: "395454882182",
-  appId: "1:395454882182:web:d290d21e237f4c8f40cc07",
-  measurementId: "G-YZZL9ZGS7H"
+  apiKey: "AIzaSyBC_JeNjLiTvVrIL-9XERpGigWmaYbnZB0",
+  authDomain: "world-spa-c1e6e.firebaseapp.com",
+  projectId: "world-spa-c1e6e",
+  storageBucket: "world-spa-c1e6e.firebasestorage.app",
+  messagingSenderId: "939154414480",
+  appId: "1:939154414480:web:268a7add29eaa8b8ee3115",
+  measurementId: "G-QV6W5DFCP9"
 };
 
 // Initialize Firebase

@@ -72,7 +72,14 @@
         // Existing page expects "0 Mins". 
         // If "3 Hrs", let's just show it. Or convert? 
         // Let's use service.time directly if available.
-        safeSetText('det-time', service.time || service.duration || '2 Hrs');
+        if (service.category === 'salon') {
+            const timeEl = document.getElementById('det-time');
+            if (timeEl && timeEl.parentElement) timeEl.parentElement.style.display = 'none';
+        } else {
+            const timeEl = document.getElementById('det-time');
+            if (timeEl && timeEl.parentElement) timeEl.parentElement.style.display = 'block';
+            safeSetText('det-time', service.time || service.duration || '2 Hrs');
+        }
 
         safeSetText('sticky-title', title);
 
@@ -128,6 +135,9 @@
             }, index * 100);
         });
 
+        // Render "What to Bring"
+        renderWhatToBring(service);
+
         // Helper for Add to Cart
         window.addToCartFromDetails = function () {
             // Check if cart logic is loaded
@@ -139,6 +149,58 @@
                 alert("Cart system loading... please try again.");
             }
         };
+    }
+
+    // Helper to render "What to Bring" section
+    function renderWhatToBring(service) {
+        // 1. Check if Salon (Skip)
+        if (service.category === 'salon') {
+            const existing = document.getElementById('what-to-bring-container');
+            if (existing) existing.remove();
+            return;
+        }
+
+        // 2. Get Translations
+        if (typeof spaTranslations === 'undefined') return;
+
+        const lang = localStorage.getItem('selectedLanguage') || 'en';
+        const t = spaTranslations[lang] || spaTranslations['en'];
+
+        if (!t) return;
+
+        // 3. Find Placement (After Features Grid)
+        const featuresGrid = document.getElementById('det-steps');
+        if (!featuresGrid || !featuresGrid.parentNode) return;
+
+        // 4. Create or Update Container
+        let container = document.getElementById('what-to-bring-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'what-to-bring-container';
+            container.className = 'details-feature-grid fade-in-up mt-5 p-4';
+            container.style.backgroundColor = 'var(--bg-light)';
+            container.style.borderRadius = '12px';
+            featuresGrid.parentNode.insertBefore(container, featuresGrid.nextSibling);
+        }
+
+        // 5. Inject Content
+        container.innerHTML = `
+            <h3 class="mb-4" style="font-weight: 800; font-family: 'Inter', sans-serif;">${t.title}</h3>
+            <div class="d-flex flex-column gap-3">
+                <div class="d-flex align-items-start">
+                    <i class="fas fa-check-circle text-success me-3 mt-1" style="font-size: 1.2rem;"></i>
+                    <div style="font-size: 1.1rem; font-weight: 500;">
+                        ${t.item1}
+                    </div>
+                </div>
+                 <div class="d-flex align-items-start">
+                    <i class="fas fa-check-circle text-success me-3 mt-1" style="font-size: 1.2rem;"></i>
+                    <div style="font-size: 1.1rem; font-weight: 500;">
+                        ${t.item2}
+                    </div>
+                </div>
+            </div>
+        `;
     }
 
     function safeSetText(id, text) {
